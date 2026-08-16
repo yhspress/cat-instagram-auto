@@ -1,0 +1,21 @@
+{
+  "project_name": "인스타 고양이 대환장극",
+  "timezone": "Asia/Seoul",
+  "concepts_file": "data/cat_concepts_500.txt",
+  "story_prompt_file": "prompts/story_generator_prompt.txt",
+  "batch_size": 5,
+  "queue_refill_threshold": 1,
+  "images_per_story": 3,
+  "image_generate_size": "1024x1536",
+  "image_publish_width": 1024,
+  "image_publish_height": 1280,
+  "image_quality": "medium",
+  "caption_mode": "hook_plus_explanation",
+  "caption_max_chars": 2200,
+  "prevent_duplicate_slot": true,
+  "recent_history_limit": 30,
+  "public_media_root": "public/posts",
+  "instagram_api_base": "https://graph.instagram.com",
+  "instagram_container_poll_attempts": 12,
+  "instagram_container_poll_seconds": 5
+}
