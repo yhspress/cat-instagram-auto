@@ -1,3 +1,314 @@
 {
-  "stories": []
+  "stories": [
+    {
+      "title_ko": "야시장 웅덩이 택시",
+      "hook": "Toy taxi, real cab in the puddle!",
+      "caption_explanation_en": "After a warm-night downpour, a street puddle turns a tiny toy into a city cab and our tabby steps up like a traffic pro.",
+      "hashtags": [
+        "#PuddleIllusion",
+        "#NightMarket",
+        "#ToyTaxi"
+      ],
+      "source_concepts": [
+        {
+          "id": "098",
+          "name_ko": "택시 기사",
+          "category_ko": "직업과 출근"
+        },
+        {
+          "id": "423",
+          "name_ko": "물웅덩이 반사",
+          "category_ko": "촬영 시점과 화면 장치"
+        },
+        {
+          "id": "180",
+          "name_ko": "야시장 풍선 상인",
+          "category_ko": "여행과 도시"
+        },
+        {
+          "id": "304",
+          "name_ko": "태풍 다음 날의 웅덩이",
+          "category_ko": "계절·시간·날씨"
+        }
+      ],
+      "overview_ko": "비 온 뒤 야시장 웅덩이에 비친 장난감 택시가 실제 택시처럼 보이고, 고양이가 손짓해 다가서다 마지막엔 반사 속 세계에서만 탄 듯 보인다.",
+      "continuity_ko": "장소: 비 온 뒤의 서울 야시장 골목; 조명: 네온 간판과 주황색 가로등, 젖은 노면 반사; 날씨: 빗방울 그친 직후의 습한 밤, 바닥은 젖음 유지; 소품: 노란 장난감 택시, 큰 웅덩이, 멀리 풍선 가판대; 시각적 흔적: 물방울, 젖은 발자국, 웅덩이 물결, 반사 정렬 유지.",
+      "creative_fingerprint": {
+        "location_ko": "비 온 뒤의 서울 야시장 골목",
+        "core_prop_ko": "노란 장난감 택시와 큰 웅덩이",
+        "twist_ko": "마지막 반사 장면에서만 택시를 탄 모습이 완성",
+        "camera_setups": [
+          "24mm low wide over puddle, reflection-dominant",
+          "35mm sidewalk eye-level medium with motion",
+          "50mm top-down reflection POV aligning billboard interior"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Environmental wide, very low angle just above puddle, 24mm lens, vertical 4:5, cat centered, reflection-dominant composition with neon bokeh and wet street texture.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5 frame. Night market after a summer downpour: neon signs and warm sodium streetlights reflect on a glossy wet lane. Foreground: a large puddle occupying the lower half of frame; next to it sits a palm-sized yellow toy taxi on real wet asphalt with tiny water beads. Behind-frame practical billboard across the street shows a full-size taxi side view; from this very low 24mm angle the billboard aligns in the puddle so the reflection convincingly looks like a life-size cab rolling by. Centered and immediately visible: an attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Keep facial bone structure, fur placement, mouth marking, bright cheese-tabby color, four white paws, eye color, body proportions, age and size identical across all 15 images. Never abbreviate with “same cat” or “previous cat”. The cat stands poised at the puddle edge, weight distributed naturally on wet asphalt, tail balanced, ears up, intent expression. Distant balloon cart and damp paper lanterns hint at the market (soft focus). Realistic reflections and shadows, accurate scale and perspective; individual guard hairs catch rim light; micro droplets on fur tips; subtle atmospheric humidity; natural sensor grain; gentle highlight roll-off. High-end editorial photography. Safety: quiet closed lane, no traffic, everything staged as an optical alignment. Exclude: plastic-looking or waxy fur, excessive HDR, artificial outlines, cartoon/3D looks, fake bokeh, wrong reflections, floating objects, duplicate cats or limbs, human hands, text/logos/watermarks/UI."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Medium shot from sidewalk height, 35mm lens, vertical 4:5, diagonal composition; the cat raises a paw as if hailing, puddle and toy taxi still in frame; moderate shutter for motion blur.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Same night market lane and weather continuity: wet asphalt, neon and warm streetlight reflections, balloon vendor softly glowing in the distance. The yellow toy taxi remains on the puddle’s near edge, water ripples fanning outward from earlier footsteps. The attractive adult Korean Shorthair cheese-tabby cat (identical appearance and proportions as defined earlier, including the congenital orange curry-like mouth marking, bright cheese-tabby color, four white paws, amber-brown eyes, pink nose, realistic whiskers, short dense fur, slightly rounded cheeks) is now mid-gesture: front right paw lifted like a confident traffic pro, body angled three-quarters, natural balance with hind legs gripping slick ground; whiskers forward, ears alert. The 35mm sidewalk-height view captures the cat big in frame while holding the puddle reflection in the lower third: the billboard taxi reflection streaks past with a slight motion blur consistent with shutter and angle. Small wet pawprints trail behind the cat; raindrops cling to fur guard hairs. Realistic reflections/shadows, accurate scale, physically plausible lighting, natural depth of field. Subtle sensor grain, soft highlight roll-off, restrained cinematic grade. Safety: closed pedestrian alley, no vehicles actually present. Exclude: overprocessed color, glowing edges, cartoonish textures, duplicate animals, human-like paws, text/logos/watermarks."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Unusual viewpoint: top-down 50mm looking straight into the puddle, vertical 4:5; frame the reflection as the main scene while including the toy taxi at the edge for orientation.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Top-down 50mm shot directly over the same puddle to create a reflection-only portal effect. Practical alignment: outside frame, a backlit print of a car interior door is positioned so its reflection fills the puddle. In the reflection, the full-size cab door appears open and, inside that reflected door, the attractive adult Korean Shorthair cheese-tabby cat (exact same face structure, bright cheese-tabby coat with darker stripes, white muzzle-to-belly, four white paws, congenital orange curry-like mouth marking, amber-brown eyes, pink nose, natural whiskers, short dense fur, slightly rounded cheeks, identical age/size) seems serenely seated on the back seat looking out, tail curled, ears relaxed. In the real world (non-reflection), the small yellow toy taxi sits at the puddle’s rim in the top corner, wet asphalt texture and small ring ripples visible, neon speckles scattered. This creates a clear, satisfying illusion: the toy car and the reflection complete each other. Realistic physics: precise reflection behavior, correct perspective and parallax, subtle water surface texture, micro debris, accurate shadowing from signage. Restrained cinematic color, soft highlight roll-off, subtle sensor grain. High-end editorial realism. Safety: purely optical alignment, no actual vehicles, quiet pedestrian space. Exclude: fake bokeh, plastic fur, HDR halos, wrong shadows, floating props, duplicate cats or limbs, human hands, logos/text."
+        }
+      ],
+      "story_id": "20260817072443-01-fefacaa5"
+    },
+    {
+      "title_ko": "자정 편의점의 손님",
+      "hook": "At midnight, the store rewrites itself",
+      "caption_explanation_en": "When the date flips, packaging styles jump decades, the monitors predict seconds ahead, and a vanishing sampler keeps raiding the tray.",
+      "hashtags": [
+        "#MidnightShift",
+        "#ConvenienceStore",
+        "#SecurityCam"
+      ],
+      "source_concepts": [
+        {
+          "id": "332",
+          "name_ko": "자정 편의점 직원",
+          "category_ko": "계절·시간·날씨"
+        },
+        {
+          "id": "093",
+          "name_ko": "슈퍼마켓 시식 직원",
+          "category_ko": "직업과 출근"
+        },
+        {
+          "id": "296",
+          "name_ko": "야간 경비 카메라 요원",
+          "category_ko": "영화·잠입·패러디"
+        },
+        {
+          "id": "410",
+          "name_ko": "로봇청소기 시점",
+          "category_ko": "촬영 시점과 화면 장치"
+        }
+      ],
+      "overview_ko": "자정에 상품 포장 시대가 바뀌고 모니터는 몇 초 뒤를 보여주며, 사라지는 시식의 범인이 로봇청소기였음이 드러난다.",
+      "continuity_ko": "장소: 24시간 편의점 내부; 시간/조명: 자정 직전에서 직후까지, 형광등 일정; 소품: 시식 트레이, 빵 부스러기, 보안 모니터 월, 선반 아래 로봇청소기; 흔적: 부스러기 자국, 바뀐 포장 디자인이 그대로 유지, 고양이의 동선과 발자국.",
+      "creative_fingerprint": {
+        "location_ko": "24시간 편의점",
+        "core_prop_ko": "시식 트레이와 보안 모니터",
+        "twist_ko": "로봇청소기 POV로 진범이 밝혀짐",
+        "camera_setups": [
+          "24mm entrance-wide aisle symmetry",
+          "85mm OTS to predictive monitor close-up",
+          "16mm ultra-low robot-vacuum POV up-angle"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Environmental wide from entrance, 24mm lens, vertical 4:5, symmetrical aisles leading lines to counter; clock at 11:59:59; mid-aisle packages mid-morph.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. A fluorescent-lit 24h convenience store moments before midnight: clean glossy floor, tidy aisles, digital wall clock reading 11:59:59. Along the middle aisle, identical products appear in two eras at once—some retro packaging already swapped where staff just faced them, others modern—caught mid-change as if a reset is about to happen. At center near the counter stands the attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Keep facial bone structure, fur placement, mouth marking, bright cheese-tabby color, four white paws, eye color, body proportions, age and size identical across all 15 images. Never abbreviate with “same cat” or “previous cat”. On the counter sits a sampling tray with bite-size snacks and a sprinkle of fresh crumbs. Realistic reflections and shadows, accurate scale/perspective, lifelike plastic/foil/paper textures, subtle air-conditioning haze, natural sensor grain, soft highlight roll-off, restrained cinematic grade. High-end documentary realism. Safety: quiet closed aisle, no people shown. Exclude: waxy fur, excessive HDR, fake bokeh, cartoon/3D look, wrong reflections, floating items, duplicate cats/limbs, human hands, logos/text."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Intimate OTS close-up, 85mm lens, vertical 4:5, from beside the cat toward a wall of security monitors; shallow DOF; motion blur as the cat springs.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Over-the-shoulder of the attractive adult Korean Shorthair cheese-tabby cat (identical appearance and features specified previously) watching a wall of security monitors. One screen displays the sampling tray three seconds in the future—its front edge beginning to slide—while the real tray in foreground still sits centered; a trail of fine crumbs on the counter points toward the snack’s usual direction of disappearance. The cat launches into a sprint, one white paw just leaving the glossy floor, muscles defined under short dense fur, whiskers swept back, ears focused; natural motion blur on the extended paw and tail tip. Packaging on nearby shelf now fully shifted to a retro look as the clock flips past midnight, matching continuity. Realistic screen glow on fur, accurate reflections on tile, lifelike metal and plastic textures. Physically plausible lighting, soft highlight roll-off, subtle sensor grain, controlled depth of field. Safety: no hazards, store closed to customers. Exclude: overprocessed color, HDR halos, fake UI overlays, text/logos, duplicate cats, human-like paws."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Unusual viewpoint: ultra-low 16mm wide, vertical 4:5, robot vacuum POV under the shelf looking up; circular vignette edges hint device body.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. From the robot vacuum’s top camera POV under the front shelf (subtle circular housing edge visible), a 16mm ultra-wide up-angle frames the counter and the attractive adult Korean Shorthair cheese-tabby cat (exact same identity and features as defined) leaning in, catching a sliding snack from the sampling tray with a gentle paw tap. In the extreme foreground, the vacuum’s soft bumper barely nudges the shelf leg, explaining the harmless tray creep; a few crumbs cling to the bumper, consistent with earlier traces. Packaging on shelves remains in the post-midnight retro style for continuity. Realistic device plastics, dust, and scuff micro-imperfections; accurate perspective and shadows; motion-appropriate blur on the tray edge; lifelike food texture. Restrained cinematic grade, soft highlight roll-off, subtle sensor grain. High-end editorial realism. Safety: slow-moving cleaning device, no risk to the cat. Exclude: plastic-looking fur, over-sharpened edges, fake bokeh, floating objects, duplicate animals/limbs, human hands, logos/text."
+        }
+      ],
+      "story_id": "20260817072443-02-dcccedf8"
+    },
+    {
+      "title_ko": "욕실 정글 구조작전",
+      "hook": "Shower curtain opens to a rainforest",
+      "caption_explanation_en": "Steam, leaves, and an orange rescue tube turn bath time into a gentle jungle mission for a necklace lost near the drain.",
+      "hashtags": [
+        "#BathroomJungle",
+        "#RescueCat",
+        "#UnderwaterPOV"
+      ],
+      "source_concepts": [
+        {
+          "id": "039",
+          "name_ko": "샤워 커튼 탐험가",
+          "category_ko": "일상 속 우연"
+        },
+        {
+          "id": "162",
+          "name_ko": "해변 구조대",
+          "category_ko": "여행과 도시"
+        },
+        {
+          "id": "297",
+          "name_ko": "장난감 잠수부",
+          "category_ko": "영화·잠입·패러디"
+        },
+        {
+          "id": "445",
+          "name_ko": "수중 카메라 튜브 고양이",
+          "category_ko": "촬영 시점과 화면 장치"
+        }
+      ],
+      "overview_ko": "샤워 커튼 뒤 욕실이 식물과 김으로 정글처럼 보이고, 고양이가 튜브와 장난감 잠수부로 배수구 근처의 목걸이를 건져 올린다.",
+      "continuity_ko": "장소: 집 욕실의 같은 하얀 욕조와 타일 벽; 조명: 따뜻한 욕실등과 습기로 퍼진 확산광; 소품: 주황색 튜브, 장난감 잠수부, 은색 목걸이, 잎무늬 커튼과 화분; 흔적: 물방울 맺힌 털, 욕조 가장자리 발자국, 물결 자국, 커튼과 식물 위치 유지.",
+      "creative_fingerprint": {
+        "location_ko": "집 욕실/하얀 욕조",
+        "core_prop_ko": "주황색 튜브와 장난감 잠수부, 은색 목걸이",
+        "twist_ko": "수중 시점에서 구조 성공이 드러남",
+        "camera_setups": [
+          "35mm tub-height medium-wide, curtain reveal",
+          "85mm close-up over rim, focused rescue action",
+          "24mm underwater up-angle through clear wall"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Medium-wide at tub height, 35mm lens, vertical 4:5; slight low angle toward curtain; steam haze; plants frame the scene.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. A domestic bathroom transformed by staging: a white tub brims shallowly; warm ceiling light diffuses through steam; potted greenery and a leafy-pattern shower curtain create a lush rainforest feel. The attractive adult Korean Shorthair cheese-tabby cat—natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; distinctive congenital orange cheese-tabby mouth marking (not food or dirt); round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face; identical anatomy and proportions to all images—stands on the tub rim, forepaws spaced naturally, gently pulling the leafy curtain aside with one paw. A bright orange rescue tube floats in the tub near a tiny toy diver. Water beads cling to tile and rim; steam glows; subtle sensor grain; soft highlight roll-off; restrained cinematic color grade. High-end editorial realism; accurate reflections/shadows; individual guard hairs visible with humidity. Safety: very shallow warm water, non-slip mat, cat free to move; staged plants. Exclude: plastic/waxy fur, excessive HDR, fake bokeh, wrong reflections, floating props, duplicate animals/limbs, human hands, logos/text."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Tight action close-up from tub rim, 85mm lens, vertical 4:5; shallow depth of field; diagonal composition toward the drain.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Close-up from the tub rim toward the water’s surface: the orange tube drifts as the toy diver bobs beside it. Near the drain, a silver necklace glints on pale porcelain just beneath the waterline. The attractive adult Korean Shorthair cheese-tabby cat (exact same identity and appearance: warm orange tabby with darker stripes, white muzzle-to-belly and four white paws, congenital orange mouth marking, amber-brown eyes, pink nose, dense short fur, whiskers, rounded cheeks, identical size/age) leans in, eyes intent, whiskers forward, one white paw delicately nudging the tube toward the necklace. Natural weight and balance on the rim; droplets bead on paw fur; small ripples radiate from contact. Realistic lighting through steam, accurate scale and reflections, lifelike metal chain texture. Motion-appropriate blur on the tube edge; subtle sensor grain; gentle highlight roll-off; restrained cinematic grade. Safety: shallow water, stable stance. Exclude: cartoonish look, over-sharp halos, fake bokeh, floating objects, duplicate limbs, text/logos."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Unusual viewpoint: underwater up-angle through the clear tub wall, 24mm lens, vertical 4:5; bubbles and surface ripples as natural frame.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Underwater POV from inside the tub looking up through clear water and side wall: surface ripples shimmer overhead; small bubbles rise along the orange tube. The toy diver, now wedged helpfully beneath the silver necklace, pushes it upward so the necklace rests securely across the tube. Above, distorted by refraction, the attractive adult Korean Shorthair cheese-tabby cat (identical features and proportions: bright orange tabby with darker stripes, white muzzle-to-belly, four white paws, congenital orange mouth marking, amber-brown eyes, pink nose, whiskers, short dense fur) peers down with soft, relieved eyes; one white paw hovers just above the surface ready to lift the tube out. The leafy curtain and plants form green reflections on the water underside, matching earlier staging. Realistic physics: correct refraction, caustics, bubbles, metal sheen, and shadows; accurate scale; natural sensor grain; soft highlight roll-off; restrained cinematic grade. High-end editorial realism. Safety: very shallow warm water, controlled staging. Exclude: plastic fur, exaggerated HDR, fake bokeh, wrong shadows/reflections, duplicate cats/limbs, human hands, text/logos."
+        }
+      ],
+      "story_id": "20260817072443-03-7595cc18"
+    },
+    {
+      "title_ko": "책장 시간의 문",
+      "hook": "A slim portal opens behind books",
+      "caption_explanation_en": "One fallen novel unlocks a frozen-moment library where an illustration stares back and a pressed leaf becomes a bridge.",
+      "hashtags": [
+        "#BookPortal",
+        "#TimeFreeze",
+        "#IllustrationPOV"
+      ],
+      "source_concepts": [
+        {
+          "id": "008",
+          "name_ko": "책장 사서",
+          "category_ko": "일상 속 우연"
+        },
+        {
+          "id": "069",
+          "name_ko": "도서관 사서",
+          "category_ko": "직업과 출근"
+        },
+        {
+          "id": "427",
+          "name_ko": "책 속 삽화 시점",
+          "category_ko": "촬영 시점과 화면 장치"
+        },
+        {
+          "id": "328",
+          "name_ko": "가을 서점 사서",
+          "category_ko": "계절·시간·날씨"
+        }
+      ],
+      "overview_ko": "넘어진 책 뒤에서 길 같은 틈이 열리고, 연체된 책을 펼치자 시간이 멈추며 삽화가 응시하고, 낙엽 책갈피가 다리로 변해 통로가 완성된다.",
+      "continuity_ko": "장소: 거실 책장 앞 따뜻한 스탠드 조명; 시간: 같은 저녁; 소품: 연체 도장 찍힌 도서, 책갈피 낙엽, 먼지 입자; 흔적: 쓰러진 책 위치와 포털의 빛, 멈춘 먼지와 책장 배치 유지.",
+      "creative_fingerprint": {
+        "location_ko": "거실 책장 앞 작은 독서 공간",
+        "core_prop_ko": "연체 도장 책과 낙엽 책갈피",
+        "twist_ko": "삽화 시점에서 낙엽 다리가 놓이며 통로 완성",
+        "camera_setups": [
+          "24mm shelf-level wide reveal",
+          "85mm page-level emotional close-up",
+          "50mm inside-illustration POV frame-within-frame"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Environmental wide at shelf level, 24mm lens, vertical 4:5; low angle through book spines to reveal a glowing slit.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Cozy living-room bookshelf under a warm reading lamp. One hardcover has toppled, and between staggered book spines a razor-slim glowing gap like a hidden hallway is visible. A pressed ocher leaf lies on the rug. The attractive adult Korean Shorthair cheese-tabby cat—natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; distinctive congenital orange cheese-tabby mouth marking (not food or dirt); round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face; identical anatomy and proportions to all images—stands central, one white paw resting on the fallen book, ears perked toward the glow. Dust motes sparkle in the lamp beam. Realistic wood grain, paper texture, accurate reflections/shadows, correct perspective. Subtle sensor grain, soft highlight roll-off, restrained cinematic grade. High-end editorial realism. Safety: stable indoor scene. Exclude: plastic fur, excessive HDR, cartoon/3D feel, fake bokeh, floating items, duplicates, human hands, text/logos."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Emotional close-up at page level, 85mm lens, vertical 4:5; shallow DOF; the cat noses open an overdue library book; dust frozen midair.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Page-level 85mm close-up: the attractive adult Korean Shorthair cheese-tabby cat (exact identical features and proportions: bright orange tabby with darker stripes, white muzzle-to-belly and four white paws, congenital orange mouth marking, amber-brown eyes, pink nose, short dense fur, whiskers, rounded cheeks) noses open a stamped-overdue library book. As the page turns, dust motes in the lamp beam hang unnaturally still—time visually paused. On the newly revealed illustration, a drawn cat character turns its gaze outward, meeting the real cat’s eyes. The pressed leaf is tucked halfway as a bookmark, its edge trembling. Realistic paper fibers, ink stipple, cloth-bound cover texture; accurate shallow DOF; lifelike fur guard hairs catching warm light; correct shadows. Subtle sensor grain, soft highlight roll-off, restrained cinematic grade. Safety: calm indoor setup. Exclude: overprocessed HDR, fake bokeh, cartoonish surfaces, wrong reflections, duplicate limbs, human hands, text/logos."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Unusual viewpoint: from inside the illustration looking out, 50mm lens, vertical 4:5; page margins frame the real scene; portal glow beyond.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Frame-within-frame from inside the illustration POV: the textured paper margin and deckled edge softly vignette the scene. Beyond the page, the bookshelf gap glows steadily. The attractive adult Korean Shorthair cheese-tabby cat (identical identity and appearance as specified: orange tabby with darker stripes, white muzzle-to-belly, four white paws, congenital orange mouth marking, amber-brown eyes, pink nose, natural whiskers, short dense fur, slightly rounded cheeks) reaches gently with a white paw, laying the pressed leaf across two protruding book spines, forming a small natural bridge that now clearly spans to the glowing slit. The earlier fallen book and frozen dust remain in place for continuity, while a few dust motes just begin to move—time restarting. Realistic paper, leaf veins, wood grain, soft lamp glow, accurate perspective and shadows. Subtle sensor grain, highlight roll-off, restrained cinematic grade. High-end editorial realism. Safety: stable indoor scene. Exclude: plastic fur, HDR halos, fake bokeh, floating objects, duplicate cats/limbs, human hands, logos/text."
+        }
+      ],
+      "story_id": "20260817072443-04-55c31952"
+    },
+    {
+      "title_ko": "옥상 반딧불 길",
+      "hook": "Fireflies draw a path across rooftops",
+      "caption_explanation_en": "Under humid city night, a tent-lit rooftop becomes a star map as a tiny lighthouse beam rallies fireflies into a secret paw-shaped route.",
+      "hashtags": [
+        "#RooftopCamping",
+        "#FireflyGuide",
+        "#DroneView"
+      ],
+      "source_concepts": [
+        {
+          "id": "179",
+          "name_ko": "도시 옥상 캠핑",
+          "category_ko": "여행과 도시"
+        },
+        {
+          "id": "310",
+          "name_ko": "여름밤 반딧불 기사",
+          "category_ko": "계절·시간·날씨"
+        },
+        {
+          "id": "036",
+          "name_ko": "캣타워 등대지기",
+          "category_ko": "일상 속 우연"
+        },
+        {
+          "id": "431",
+          "name_ko": "드론 시점 미로",
+          "category_ko": "촬영 시점과 화면 장치"
+        }
+      ],
+      "overview_ko": "도심 옥상 캠핑 중 작은 등대 빛을 따라 반딧불이 길을 만들고, 마지막엔 위에서 보면 발바닥 모양 경로가 드러난다.",
+      "continuity_ko": "장소: 도시 옥상, 텐트와 낮은 난간, 주변 스카이라인; 조명/날씨: 여름밤의 습한 공기, 텐트의 따뜻한 조명과 도시 네온, 반딧불 잔광; 소품: 작은 랜턴(등대 역할), 나무 상자, 얇은 지도, 스트링라이트; 흔적: 고양이 발자국의 먼지, 반딧불 궤적, 텐트와 랜턴 위치 고정.",
+      "creative_fingerprint": {
+        "location_ko": "도심 옥상 캠핑장",
+        "core_prop_ko": "작은 랜턴과 반딧불 무리",
+        "twist_ko": "드론 시점에서 발바닥 모양 경로가 완성",
+        "camera_setups": [
+          "24mm roof-level environmental with skyline",
+          "50mm semi-low kinetic lantern sweep",
+          "35mm overhead drone POV mapping shape"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Environmental wide at roof level, 24mm lens, vertical 4:5; cat foreground by tent; humid glow and city skyline; fireflies forming an arrow.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. A summer night on a safe urban rooftop: a small camping tent glows warmly, string lights flicker, a low protective railing frames the edge; humid haze softens distant high-rises. Fireflies gather and streak into a bright arrow pointing across adjacent rooftops. Foreground: the attractive adult Korean Shorthair cheese-tabby cat—natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain (not food or dirt); round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face; identical anatomy and proportions to all images—stands at the tent entrance, paws planted on dusty rooftop, tail gently curved, ears forward. A small lantern sits atop a wooden crate nearby. Realistic lighting and shadows, accurate scale and perspective, lifelike fabric and metal textures, atmospheric humidity, subtle sensor grain, soft highlight roll-off, restrained cinematic color. High-end editorial realism. Safety: clear railings, wide distance from edges. Exclude: plastic/waxy fur, excessive HDR, fake bokeh, wrong reflections, floating props, duplicate animals/limbs, human hands, logos/text."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Dynamic mid-close from slightly below lantern level, 50mm lens, vertical 4:5; the cat sweeps a beam like a lighthouse keeper; motion trails of fireflies.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. The attractive adult Korean Shorthair cheese-tabby cat (same identity and exact appearance: bright orange tabby with darker stripes, white muzzle-to-belly and four white paws, congenital orange mouth marking, amber-brown eyes, pink nose, short dense fur, whiskers, slightly rounded cheeks) stands with forepaws on a wooden crate, one paw steadying a small lantern whose beam arcs across the roof like a lighthouse. The beam sweeps left to right, and fireflies reorganize into linked switchbacks leading toward neighboring rooftops. The tent and railing remain in place for continuity; a thin film of rooftop dust shows fresh white pawprints. 50mm semi-low angle emphasizes the cat’s focused face and the lantern while keeping city bokeh behind. Realistic light bloom, insect motion streaks per shutter, accurate shadows and perspective; lifelike cloth, glass, and metal textures; subtle sensor grain; soft highlight roll-off; restrained cinematic grade. Safety: secure footing, no open flames (LED lantern). Exclude: overprocessed HDR, fake bokeh, floating items, duplicate cats/limbs, human hands, text/logos."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Unusual viewpoint: overhead drone POV, 35mm equivalent, vertical 4:5; map-like composition reveals fireflies forming a cat paw path across roofs.",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Safe drone-height overhead of the same rooftop and adjacent buildings: warm tent glow and small lantern still visible; the attractive adult Korean Shorthair cheese-tabby cat (identical features and proportions specified) sits calmly by the crate. Across several rooftops, fireflies align into a luminous paw-print route—one large pad and four clear toe shapes—leading away into the city, echoing a secret map. Realistic urban textures: gravel, tar seams, AC units, parapet shadows; accurate scale and perspective; soft summer haze; subtle sensor grain; restrained cinematic grade, soft highlight roll-off. High-end editorial realism. Safety: drone at safe altitude, no rotor disturbance to the cat; railings visible. Exclude: plastic-looking fur, excessive HDR, wrong shadows or reflections, floating objects, duplicate animals/limbs, human hands, logos/text."
+        }
+      ],
+      "story_id": "20260817072443-05-5f8a91dd"
+    }
+  ]
 }
