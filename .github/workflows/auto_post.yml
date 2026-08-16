@@ -98,7 +98,7 @@ jobs:
         run: |
           FORCE_ARG=""
           if [ "${{ steps.vars.outputs.force }}" = "true" ]; then FORCE_ARG="--force"; fi
-          python scripts/run_pipeline.py --phase dry-run --slot "${{ steps.vars.outputs.slot }}" $FORCE_ARG
+          python scripts/run_pipeline_entry.py --phase dry-run --slot "${{ steps.vars.outputs.slot }}" $FORCE_ARG
 
       - name: Prepare story and three images
         if: ${{ steps.vars.outputs.mode == 'publish' }}
@@ -106,7 +106,7 @@ jobs:
         run: |
           FORCE_ARG=""
           if [ "${{ steps.vars.outputs.force }}" = "true" ]; then FORCE_ARG="--force"; fi
-          python scripts/run_pipeline.py --phase prepare --slot "${{ steps.vars.outputs.slot }}" $FORCE_ARG
+          python scripts/run_pipeline_entry.py --phase prepare --slot "${{ steps.vars.outputs.slot }}" $FORCE_ARG
 
       - name: Commit prepared media to GitHub
         if: ${{ steps.vars.outputs.mode == 'publish' }}
