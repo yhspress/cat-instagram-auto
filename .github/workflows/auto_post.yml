@@ -8,7 +8,7 @@ on:
         required: true
         default: '1'
         type: choice
-        options: ['1', '2', '3']
+        options: ['1', '2', '3', '4', '5']
       mode:
         description: 'dry-run 또는 실제 게시'
         required: true
@@ -24,7 +24,11 @@ on:
   schedule:
     - cron: '0 7 * * *'
       timezone: 'Asia/Seoul'
+    - cron: '0 10 * * *'
+      timezone: 'Asia/Seoul'
     - cron: '0 13 * * *'
+      timezone: 'Asia/Seoul'
+    - cron: '0 16 * * *'
       timezone: 'Asia/Seoul'
     - cron: '0 19 * * *'
       timezone: 'Asia/Seoul'
@@ -81,8 +85,10 @@ jobs:
           else
             case "$SCHEDULE_EXPR" in
               "0 7 * * *") SLOT=1 ;;
-              "0 13 * * *") SLOT=2 ;;
-              "0 19 * * *") SLOT=3 ;;
+              "0 10 * * *") SLOT=2 ;;
+              "0 13 * * *") SLOT=3 ;;
+              "0 16 * * *") SLOT=4 ;;
+              "0 19 * * *") SLOT=5 ;;
               *) echo "Unknown schedule: $SCHEDULE_EXPR"; exit 1 ;;
             esac
             MODE="publish"
