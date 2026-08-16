@@ -56,8 +56,7 @@ TEXT LIMITS
 - hook: English, maximum 50 characters including spaces and punctuation, event-first, curiosity/emotion, do not reveal payoff.
 - caption_explanation_en: exactly 1 English sentence, maximum 160 characters including spaces and punctuation, vivid and hooky, caption-friendly, and must not spoil the payoff.
 - hashtags: exactly 3 English hashtags, focused on event/genre/key prop.
-- image_prompt: English, maximum 1000 characters including spaces and punctuation. HARD TARGET: 720-850 characters; never exceed 900 on first draft. Compress aggressively while preserving every required fact.
-- Each image prompt must itself include protagonist appearance, scene/action, continuity, camera/lens, realism, 4:5, and exclusions. Compress wording but do not omit required identity or realism constraints.
+- image_prompt: English, no fixed character cap. Include every required identity, scene, continuity, camera/lens, realism, safety, and exclusion detail needed for an independently executable prompt. Prefer concise, information-dense wording, but never remove important facts merely to shorten the prompt.
 
 OUTPUT JSON SCHEMA
 Return valid JSON only. No markdown fences. No commentary.
@@ -83,17 +82,17 @@ Return valid JSON only. No markdown fences. No commentary.
         {
           "role": "HOOK",
           "camera_strategy": "English shot size, angle, viewpoint, height, lens, depth of field, composition",
-          "image_prompt": "English <= 1000 chars"
+          "image_prompt": "English standalone image prompt; no fixed character cap"
         },
         {
           "role": "ESCALATION",
           "camera_strategy": "clearly different English camera setup",
-          "image_prompt": "English <= 1000 chars"
+          "image_prompt": "English standalone image prompt; no fixed character cap"
         },
         {
           "role": "PAYOFF",
           "camera_strategy": "third clearly different English camera setup",
-          "image_prompt": "English <= 1000 chars"
+          "image_prompt": "English standalone image prompt; no fixed character cap"
         }
       ]
     }
