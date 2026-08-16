@@ -1,0 +1,149 @@
+name: Cat Instagram Carousel Auto Post
+
+on:
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: '게시 슬롯 번호'
+        required: true
+        default: '1'
+        type: choice
+        options: ['1', '2', '3']
+      mode:
+        description: 'dry-run 또는 실제 게시'
+        required: true
+        default: 'dry-run'
+        type: choice
+        options: ['dry-run', 'publish']
+      force:
+        description: '준비 중 콘텐츠 교체 / 중복 슬롯 허용'
+        required: true
+        default: false
+        type: boolean
+
+  schedule:
+    - cron: '0 7 * * *'
+      timezone: 'Asia/Seoul'
+    - cron: '0 13 * * *'
+      timezone: 'Asia/Seoul'
+    - cron: '0 19 * * *'
+      timezone: 'Asia/Seoul'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cat-instagram-auto-post
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Restore secrets
+        env:
+          AUTOPOST_ENV: ${{ secrets.AUTOPOST_ENV }}
+        run: |
+          test -n "$AUTOPOST_ENV" || (echo "AUTOPOST_ENV secret missing" && exit 1)
+          printf '%s' "$AUTOPOST_ENV" > .env
+
+      - name: Determine slot and mode
+        id: vars
+        shell: bash
+        env:
+          MANUAL_SLOT: ${{ inputs.slot }}
+          MANUAL_MODE: ${{ inputs.mode }}
+          MANUAL_FORCE: ${{ inputs.force }}
+          SCHEDULE_EXPR: ${{ github.event.schedule }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLOT="$MANUAL_SLOT"
+            MODE="$MANUAL_MODE"
+            FORCE="$MANUAL_FORCE"
+          else
+            case "$SCHEDULE_EXPR" in
+              "0 7 * * *") SLOT=1 ;;
+              "0 13 * * *") SLOT=2 ;;
+              "0 19 * * *") SLOT=3 ;;
+              *) echo "Unknown schedule: $SCHEDULE_EXPR"; exit 1 ;;
+            esac
+            MODE="publish"
+            FORCE="false"
+          fi
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "force=$FORCE" >> "$GITHUB_OUTPUT"
+
+      - name: Dry run
+        if: ${{ steps.vars.outputs.mode == 'dry-run' }}
+        shell: bash
+        run: |
+          FORCE_ARG=""
+          if [ "${{ steps.vars.outputs.force }}" = "true" ]; then FORCE_ARG="--force"; fi
+          python scripts/run_pipeline.py --phase dry-run --slot "${{ steps.vars.outputs.slot }}" $FORCE_ARG
+
+      - name: Prepare story and three images
+        if: ${{ steps.vars.outputs.mode == 'publish' }}
+        shell: bash
+        run: |
+          FORCE_ARG=""
+          if [ "${{ steps.vars.outputs.force }}" = "true" ]; then FORCE_ARG="--force"; fi
+          python scripts/run_pipeline.py --phase prepare --slot "${{ steps.vars.outputs.slot }}" $FORCE_ARG
+
+      - name: Commit prepared media to GitHub
+        if: ${{ steps.vars.outputs.mode == 'publish' }}
+        shell: bash
+        run: |
+          git config user.name "cat-instagram-auto-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/posts state/story_queue.json state/prepared.json
+          if ! git diff --cached --quiet; then
+            git commit -m "content: prepare Instagram carousel [skip ci]"
+            git push
+          fi
+
+      - name: Publish three-image carousel to Instagram
+        if: ${{ steps.vars.outputs.mode == 'publish' }}
+        env:
+          MEDIA_BRANCH: ${{ github.ref_name }}
+        run: |
+          python scripts/run_pipeline.py --phase publish --slot "${{ steps.vars.outputs.slot }}"
+
+      - name: Commit publish state and creative history
+        if: ${{ steps.vars.outputs.mode == 'publish' }}
+        shell: bash
+        run: |
+          git config user.name "cat-instagram-auto-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/published.json state/story_queue.json state/creative_history.json state/prepared.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: record Instagram publish state [skip ci]"
+            git push
+          fi
+
+      - name: Upload run artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cat-instagram-${{ github.run_id }}
+          path: output/
+          retention-days: 14
+          if-no-files-found: warn
