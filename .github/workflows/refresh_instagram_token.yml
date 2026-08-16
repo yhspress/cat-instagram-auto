@@ -1,0 +1,75 @@
+name: Refresh Instagram Access Token
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 4 * * 0'
+      timezone: 'Asia/Seoul'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: instagram-token-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Restore AUTOPOST_ENV securely
+        env:
+          AUTOPOST_ENV: ${{ secrets.AUTOPOST_ENV }}
+        run: |
+          test -n "$AUTOPOST_ENV" || (echo "AUTOPOST_ENV secret missing" && exit 1)
+          printf '%s' "$AUTOPOST_ENV" > .env
+          chmod 600 .env
+
+      - name: Refresh Instagram long-lived token
+        id: refresh
+        shell: bash
+        run: |
+          set +e
+          python scripts/refresh_instagram_token.py --output /tmp/AUTOPOST_ENV.refreshed
+          CODE=$?
+          set -e
+          if [ "$CODE" -eq 0 ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif [ "$CODE" -eq 2 ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            exit "$CODE"
+          fi
+
+      - name: Replace AUTOPOST_ENV GitHub Secret
+        if: ${{ steps.refresh.outputs.changed == 'true' }}
+        shell: bash
+        run: |
+          set -a
+          source .env
+          set +a
+          test -n "$GITHUB_SECRET_PAT" || (echo "GITHUB_SECRET_PAT missing inside AUTOPOST_ENV" && exit 1)
+          GH_TOKEN="$GITHUB_SECRET_PAT" gh secret set AUTOPOST_ENV --repo "$GITHUB_REPOSITORY" < /tmp/AUTOPOST_ENV.refreshed
+          echo "[PASS] AUTOPOST_ENV updated with the refreshed Instagram token."
+
+      - name: Cleanup sensitive temporary files
+        if: always()
+        shell: bash
+        run: |
+          rm -f .env /tmp/AUTOPOST_ENV.refreshed
