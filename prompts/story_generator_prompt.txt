@@ -56,7 +56,7 @@ TEXT LIMITS
 - hook: English, maximum 50 characters including spaces and punctuation, event-first, curiosity/emotion, do not reveal payoff.
 - caption_explanation_en: exactly 1 English sentence, maximum 160 characters including spaces and punctuation, vivid and hooky, caption-friendly, and must not spoil the payoff.
 - hashtags: exactly 3 English hashtags, focused on event/genre/key prop.
-- image_prompt: English, maximum 1000 characters including spaces and punctuation.
+- image_prompt: English, maximum 1000 characters including spaces and punctuation. HARD TARGET: 720-850 characters; never exceed 900 on first draft. Compress aggressively while preserving every required fact.
 - Each image prompt must itself include protagonist appearance, scene/action, continuity, camera/lens, realism, 4:5, and exclusions. Compress wording but do not omit required identity or realism constraints.
 
 OUTPUT JSON SCHEMA
