@@ -43,6 +43,28 @@
         ]
       },
       "published_key": "2026-08-17:02"
+    },
+    {
+      "story_id": "20260817072443-03-7595cc18",
+      "title_ko": "욕실 정글 구조작전",
+      "hook": "Shower curtain opens to a rainforest",
+      "source_ids": [
+        "039",
+        "162",
+        "297",
+        "445"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "집 욕실/하얀 욕조",
+        "core_prop_ko": "주황색 튜브와 장난감 잠수부, 은색 목걸이",
+        "twist_ko": "수중 시점에서 구조 성공이 드러남",
+        "camera_setups": [
+          "35mm tub-height medium-wide, curtain reveal",
+          "85mm close-up over rim, focused rescue action",
+          "24mm underwater up-angle through clear wall"
+        ]
+      },
+      "published_key": "2026-08-17:03"
     }
   ]
 }
