@@ -21,6 +21,28 @@
         ]
       },
       "published_key": "2026-08-17:01"
+    },
+    {
+      "story_id": "20260817072443-02-dcccedf8",
+      "title_ko": "자정 편의점의 손님",
+      "hook": "At midnight, the store rewrites itself",
+      "source_ids": [
+        "332",
+        "093",
+        "296",
+        "410"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "24시간 편의점",
+        "core_prop_ko": "시식 트레이와 보안 모니터",
+        "twist_ko": "로봇청소기 POV로 진범이 밝혀짐",
+        "camera_setups": [
+          "24mm entrance-wide aisle symmetry",
+          "85mm OTS to predictive monitor close-up",
+          "16mm ultra-low robot-vacuum POV up-angle"
+        ]
+      },
+      "published_key": "2026-08-17:02"
     }
   ]
 }
