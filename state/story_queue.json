@@ -1,68 +1,6 @@
 {
   "stories": [
     {
-      "title_ko": "책장 시간의 문",
-      "hook": "A slim portal opens behind books",
-      "caption_explanation_en": "One fallen novel unlocks a frozen-moment library where an illustration stares back and a pressed leaf becomes a bridge.",
-      "hashtags": [
-        "#BookPortal",
-        "#TimeFreeze",
-        "#IllustrationPOV"
-      ],
-      "source_concepts": [
-        {
-          "id": "008",
-          "name_ko": "책장 사서",
-          "category_ko": "일상 속 우연"
-        },
-        {
-          "id": "069",
-          "name_ko": "도서관 사서",
-          "category_ko": "직업과 출근"
-        },
-        {
-          "id": "427",
-          "name_ko": "책 속 삽화 시점",
-          "category_ko": "촬영 시점과 화면 장치"
-        },
-        {
-          "id": "328",
-          "name_ko": "가을 서점 사서",
-          "category_ko": "계절·시간·날씨"
-        }
-      ],
-      "overview_ko": "넘어진 책 뒤에서 길 같은 틈이 열리고, 연체된 책을 펼치자 시간이 멈추며 삽화가 응시하고, 낙엽 책갈피가 다리로 변해 통로가 완성된다.",
-      "continuity_ko": "장소: 거실 책장 앞 따뜻한 스탠드 조명; 시간: 같은 저녁; 소품: 연체 도장 찍힌 도서, 책갈피 낙엽, 먼지 입자; 흔적: 쓰러진 책 위치와 포털의 빛, 멈춘 먼지와 책장 배치 유지.",
-      "creative_fingerprint": {
-        "location_ko": "거실 책장 앞 작은 독서 공간",
-        "core_prop_ko": "연체 도장 책과 낙엽 책갈피",
-        "twist_ko": "삽화 시점에서 낙엽 다리가 놓이며 통로 완성",
-        "camera_setups": [
-          "24mm shelf-level wide reveal",
-          "85mm page-level emotional close-up",
-          "50mm inside-illustration POV frame-within-frame"
-        ]
-      },
-      "images": [
-        {
-          "role": "HOOK",
-          "camera_strategy": "Environmental wide at shelf level, 24mm lens, vertical 4:5; low angle through book spines to reveal a glowing slit.",
-          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Cozy living-room bookshelf under a warm reading lamp. One hardcover has toppled, and between staggered book spines a razor-slim glowing gap like a hidden hallway is visible. A pressed ocher leaf lies on the rug. The attractive adult Korean Shorthair cheese-tabby cat—natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; distinctive congenital orange cheese-tabby mouth marking (not food or dirt); round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face; identical anatomy and proportions to all images—stands central, one white paw resting on the fallen book, ears perked toward the glow. Dust motes sparkle in the lamp beam. Realistic wood grain, paper texture, accurate reflections/shadows, correct perspective. Subtle sensor grain, soft highlight roll-off, restrained cinematic grade. High-end editorial realism. Safety: stable indoor scene. Exclude: plastic fur, excessive HDR, cartoon/3D feel, fake bokeh, floating items, duplicates, human hands, text/logos."
-        },
-        {
-          "role": "ESCALATION",
-          "camera_strategy": "Emotional close-up at page level, 85mm lens, vertical 4:5; shallow DOF; the cat noses open an overdue library book; dust frozen midair.",
-          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Page-level 85mm close-up: the attractive adult Korean Shorthair cheese-tabby cat (exact identical features and proportions: bright orange tabby with darker stripes, white muzzle-to-belly and four white paws, congenital orange mouth marking, amber-brown eyes, pink nose, short dense fur, whiskers, rounded cheeks) noses open a stamped-overdue library book. As the page turns, dust motes in the lamp beam hang unnaturally still—time visually paused. On the newly revealed illustration, a drawn cat character turns its gaze outward, meeting the real cat’s eyes. The pressed leaf is tucked halfway as a bookmark, its edge trembling. Realistic paper fibers, ink stipple, cloth-bound cover texture; accurate shallow DOF; lifelike fur guard hairs catching warm light; correct shadows. Subtle sensor grain, soft highlight roll-off, restrained cinematic grade. Safety: calm indoor setup. Exclude: overprocessed HDR, fake bokeh, cartoonish surfaces, wrong reflections, duplicate limbs, human hands, text/logos."
-        },
-        {
-          "role": "PAYOFF",
-          "camera_strategy": "Unusual viewpoint: from inside the illustration looking out, 50mm lens, vertical 4:5; page margins frame the real scene; portal glow beyond.",
-          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. Frame-within-frame from inside the illustration POV: the textured paper margin and deckled edge softly vignette the scene. Beyond the page, the bookshelf gap glows steadily. The attractive adult Korean Shorthair cheese-tabby cat (identical identity and appearance as specified: orange tabby with darker stripes, white muzzle-to-belly, four white paws, congenital orange mouth marking, amber-brown eyes, pink nose, natural whiskers, short dense fur, slightly rounded cheeks) reaches gently with a white paw, laying the pressed leaf across two protruding book spines, forming a small natural bridge that now clearly spans to the glowing slit. The earlier fallen book and frozen dust remain in place for continuity, while a few dust motes just begin to move—time restarting. Realistic paper, leaf veins, wood grain, soft lamp glow, accurate perspective and shadows. Subtle sensor grain, highlight roll-off, restrained cinematic grade. High-end editorial realism. Safety: stable indoor scene. Exclude: plastic fur, HDR halos, fake bokeh, floating objects, duplicate cats/limbs, human hands, logos/text."
-        }
-      ],
-      "story_id": "20260817072443-04-55c31952"
-    },
-    {
       "title_ko": "옥상 반딧불 길",
       "hook": "Fireflies draw a path across rooftops",
       "caption_explanation_en": "Under humid city night, a tent-lit rooftop becomes a star map as a tiny lighthouse beam rallies fireflies into a secret paw-shaped route.",

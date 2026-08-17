@@ -65,6 +65,28 @@
         ]
       },
       "published_key": "2026-08-17:03"
+    },
+    {
+      "story_id": "20260817072443-04-55c31952",
+      "title_ko": "책장 시간의 문",
+      "hook": "A slim portal opens behind books",
+      "source_ids": [
+        "008",
+        "069",
+        "427",
+        "328"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "거실 책장 앞 작은 독서 공간",
+        "core_prop_ko": "연체 도장 책과 낙엽 책갈피",
+        "twist_ko": "삽화 시점에서 낙엽 다리가 놓이며 통로 완성",
+        "camera_setups": [
+          "24mm shelf-level wide reveal",
+          "85mm page-level emotional close-up",
+          "50mm inside-illustration POV frame-within-frame"
+        ]
+      },
+      "published_key": "2026-08-17:04"
     }
   ]
 }
