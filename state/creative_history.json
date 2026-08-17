@@ -1,3 +1,26 @@
 {
-  "stories": []
+  "stories": [
+    {
+      "story_id": "20260817072443-01-fefacaa5",
+      "title_ko": "야시장 웅덩이 택시",
+      "hook": "Toy taxi, real cab in the puddle!",
+      "source_ids": [
+        "098",
+        "423",
+        "180",
+        "304"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "비 온 뒤의 서울 야시장 골목",
+        "core_prop_ko": "노란 장난감 택시와 큰 웅덩이",
+        "twist_ko": "마지막 반사 장면에서만 택시를 탄 모습이 완성",
+        "camera_setups": [
+          "24mm low wide over puddle, reflection-dominant",
+          "35mm sidewalk eye-level medium with motion",
+          "50mm top-down reflection POV aligning billboard interior"
+        ]
+      },
+      "published_key": "2026-08-17:01"
+    }
+  ]
 }
