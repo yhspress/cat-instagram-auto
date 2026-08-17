@@ -87,6 +87,28 @@
         ]
       },
       "published_key": "2026-08-17:04"
+    },
+    {
+      "story_id": "20260817072443-05-5f8a91dd",
+      "title_ko": "옥상 반딧불 길",
+      "hook": "Fireflies draw a path across rooftops",
+      "source_ids": [
+        "179",
+        "310",
+        "036",
+        "431"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "도심 옥상 캠핑장",
+        "core_prop_ko": "작은 랜턴과 반딧불 무리",
+        "twist_ko": "드론 시점에서 발바닥 모양 경로가 완성",
+        "camera_setups": [
+          "24mm roof-level environmental with skyline",
+          "50mm semi-low kinetic lantern sweep",
+          "35mm overhead drone POV mapping shape"
+        ]
+      },
+      "published_key": "2026-08-17:05"
     }
   ]
 }
