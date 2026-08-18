@@ -1,7 +1,7 @@
 {
-  "publication_key": "2026-08-18:03",
-  "prepared_at": "2026-08-18T13:55:10.520007+09:00",
-  "slot": 3,
+  "publication_key": "2026-08-18:01",
+  "prepared_at": "2026-08-18T19:40:21.216715+09:00",
+  "slot": 1,
   "story_id": "20260818135934-01-2b38fc6c",
   "story": {
     "title_ko": "정오 달배달",
@@ -72,9 +72,9 @@
   },
   "caption": "Moon slips from the mailbox\nA stern porch courier finds a glowing mistake at noon, and every clue points to a delivery far stranger than the address.\n#NoonMystery #MailboxMoon #CatCourier",
   "media_paths": [
-    "public/posts/2026-08-18/slot_03/20260818135934-01-2b38fc6c/01_hook.jpg",
-    "public/posts/2026-08-18/slot_03/20260818135934-01-2b38fc6c/02_escalation.jpg",
-    "public/posts/2026-08-18/slot_03/20260818135934-01-2b38fc6c/03_payoff.jpg"
+    "public/posts/2026-08-18/slot_01/20260818135934-01-2b38fc6c/01_hook.jpg",
+    "public/posts/2026-08-18/slot_01/20260818135934-01-2b38fc6c/02_escalation.jpg",
+    "public/posts/2026-08-18/slot_01/20260818135934-01-2b38fc6c/03_payoff.jpg"
   ],
-  "public_dir": "public/posts/2026-08-18/slot_03/20260818135934-01-2b38fc6c"
+  "public_dir": "public/posts/2026-08-18/slot_01/20260818135934-01-2b38fc6c"
 }
