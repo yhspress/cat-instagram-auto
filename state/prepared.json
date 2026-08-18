@@ -1,1 +1,80 @@
-{}
+{
+  "publication_key": "2026-08-19:01",
+  "prepared_at": "2026-08-19T07:42:17.888428+09:00",
+  "slot": 1,
+  "story_id": "20260818135934-03-a696f178",
+  "story": {
+    "title_ko": "사계절 횡단보도",
+    "hook": "The crosswalk changes season by step",
+    "caption_explanation_en": "A flower courier steps off the curb, and each white stripe becomes a different world before the delivery can finish.",
+    "hashtags": [
+      "#SeasonCrosswalk",
+      "#FlowerRun",
+      "#CityMagic"
+    ],
+    "source_concepts": [
+      {
+        "id": "181",
+        "name_ko": "횡단보도 꽃배달",
+        "category_ko": "여행과 도시"
+      },
+      {
+        "id": "350",
+        "name_ko": "사계절 횡단보도",
+        "category_ko": "계절·시간·날씨"
+      },
+      {
+        "id": "407",
+        "name_ko": "차량 블랙박스 꽃배달",
+        "category_ko": "촬영 시점과 화면 장치"
+      },
+      {
+        "id": "057",
+        "name_ko": "꽃집 배달원",
+        "category_ko": "직업과 출근"
+      },
+      {
+        "id": "104",
+        "name_ko": "엇갈린 횡단보도",
+        "category_ko": "로맨스와 관계"
+      }
+    ],
+    "overview_ko": "꽃다발을 문 고양이가 횡단보도를 건너자 줄마다 계절이 바뀌고 마지막에는 맞은편 창가의 또 다른 자신과 배달이 연결된다.",
+    "continuity_ko": "해 질 녘 도심 교차로, 흰 횡단보도 줄무늬, 작은 노란 꽃다발, 신호 대기 차량 한 대의 낮은 전면 시점, 바람에 흩날리는 꽃잎, 줄마다 봄·여름·가을·겨울 흔적이 누적되며 유지, 빛은 석양 왼쪽 뒤에서 들어옴.",
+    "creative_fingerprint": {
+      "location_ko": "해질녘 도심 횡단보도",
+      "core_prop_ko": "작은 노란 꽃다발",
+      "twist_ko": "배달 상대가 맞은편의 다른 고양이가 아니라 유리 반사 속 또 다른 자신처럼 보이는 존재",
+      "camera_setups": [
+        "16mm dashboard POV at curb",
+        "50mm side medium tracking at stripe level",
+        "85mm telephoto across street with reflective window reveal"
+      ]
+    },
+    "images": [
+      {
+        "role": "HOOK",
+        "camera_strategy": "Object POV from inside parked car dashboard, low frontal angle, 16mm lens, wide distortion, crosswalk centered vertically",
+        "image_prompt": "The crosswalk changes season by step. Ultra-photorealistic live-action photography, vertical 4:5, seen from a safe parked-car dashboard viewpoint at curb height. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat strides into a city crosswalk at sunset carrying a small yellow flower bouquet gently in its mouth, central and unmistakable. The first white stripe shows spring petals, the next stripe ahead glows with summer heat shimmer, farther stripes hint at autumn leaves and a dusting of winter frost. A few petals blow backward toward the car windshield, and the cat’s serious courier posture makes the absurd event instantly readable. Urban intersection, no visible text, one waiting car framing the scene, warm light from back-left. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike asphalt, painted stripes, glass and bouquet textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in drifting petals only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+      },
+      {
+        "role": "ESCALATION",
+        "camera_strategy": "Natural perspective medium shot, low side tracking angle at stripe level, 50mm lens, moderate depth of field, motion through layered seasonal bands",
+        "image_prompt": "Direct continuation on the same sunset city crosswalk, same bouquet, same intersection, same parked cars and light from back-left. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Side-on stripe-level view as the cat moves across the crosswalk with the small yellow bouquet in its mouth; each paw lands in a different season in direct sequence: one white paw on petal-strewn spring paint, one on sunlit summer asphalt, one stepping through crisp autumn leaves, and the trailing path behind already carries a thin winter frost edge. Flower petals, a few leaves, and a breath of cool mist mix in one physically plausible transitional scene. The cat’s body language is determined but puzzled, preserving continuity and showing progression. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike road paint, flowers, leaves and thin frost textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in legs, petals and leaves. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+      },
+      {
+        "role": "PAYOFF",
+        "camera_strategy": "Compressed telephoto, eye-level across street, 85mm lens, reflective storefront window composition with cat and reflection aligned but not identical",
+        "image_prompt": "The same sunset crosswalk sequence reaches the far curb, preserving the same small yellow bouquet, mixed petals, leaves, and faint frost traces across the stripes. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. At the opposite sidewalk, the cat pauses before a reflective shop window and lowers the bouquet toward the glass. In the window reflection, instead of a normal mirror image, another version of the same cat stands inside a different season-lit interior reaching toward the flowers from the opposite direction, echoing an almost-missed crosswalk meeting without breaking anatomy or safety. Recover earlier clues: the four seasonal crosswalk bands remain visible behind the cat, and a few yellow petals from the bouquet stick to the coldest stripe. The payoff is a quiet, uncanny delivery to a reflected counterpart. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike glass, asphalt, bouquet, leaves and frost textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur minimal. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+      }
+    ],
+    "story_id": "20260818135934-03-a696f178"
+  },
+  "caption": "The crosswalk changes season by step\nA flower courier steps off the curb, and each white stripe becomes a different world before the delivery can finish.\n#SeasonCrosswalk #FlowerRun #CityMagic",
+  "media_paths": [
+    "public/posts/2026-08-19/slot_01/20260818135934-03-a696f178/01_hook.jpg",
+    "public/posts/2026-08-19/slot_01/20260818135934-03-a696f178/02_escalation.jpg",
+    "public/posts/2026-08-19/slot_01/20260818135934-03-a696f178/03_payoff.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-19/slot_01/20260818135934-03-a696f178"
+}
