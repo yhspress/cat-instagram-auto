@@ -132,6 +132,29 @@
         ]
       },
       "published_key": "2026-08-18:01"
+    },
+    {
+      "story_id": "20260818135934-02-0fe0b8d7",
+      "title_ko": "분수 속 동전도시",
+      "hook": "A coin wakes a city underwater",
+      "source_ids": [
+        "189",
+        "049",
+        "280",
+        "411",
+        "342"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "비 온 뒤 도심 광장 분수",
+        "core_prop_ko": "투명한 별무늬 동전",
+        "twist_ko": "고양이가 도시를 구하는 줄 알았는데 물속 도시가 고양이에게 구조 신호를 보낸다",
+        "camera_setups": [
+          "35mm rain-wet plaza wide",
+          "100mm macro paw-and-coin detail",
+          "24mm underwater upward POV through fountain water"
+        ]
+      },
+      "published_key": "2026-08-18:05"
     }
   ]
 }
