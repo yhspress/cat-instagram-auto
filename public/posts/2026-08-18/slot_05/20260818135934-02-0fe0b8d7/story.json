@@ -1,0 +1,67 @@
+{
+  "title_ko": "분수 속 동전도시",
+  "hook": "A coin wakes a city underwater",
+  "caption_explanation_en": "One careful paw reaches into a fountain, and the ripples reveal a secret metropolis that may be reacting back.",
+  "hashtags": [
+    "#FountainMystery",
+    "#CoinCity",
+    "#UrbanFantasy"
+  ],
+  "source_concepts": [
+    {
+      "id": "189",
+      "name_ko": "도심 분수 탐험가",
+      "category_ko": "여행과 도시"
+    },
+    {
+      "id": "049",
+      "name_ko": "발바닥 예술가",
+      "category_ko": "일상 속 우연"
+    },
+    {
+      "id": "280",
+      "name_ko": "미니어처 재난 구조대",
+      "category_ko": "영화·잠입·패러디"
+    },
+    {
+      "id": "411",
+      "name_ko": "어항 내부 시점",
+      "category_ko": "촬영 시점과 화면 장치"
+    },
+    {
+      "id": "342",
+      "name_ko": "우박 수집가",
+      "category_ko": "계절·시간·날씨"
+    }
+  ],
+  "overview_ko": "광장 분수에 빠진 투명 구슬 같은 동전을 건지려던 고양이가 물속의 미니어처 도시를 깨우고 마지막에는 스스로 구조 신호를 받는다.",
+  "continuity_ko": "늦은 오후 소나기 직후의 도심 광장, 둥근 석재 분수, 맑은 물결, 투명한 별무늬 동전 하나, 분수 가장자리 젖은 흰 발자국, 같은 빛 방향의 흐린 황금빛 하늘, 물속에 켜지는 작은 도시 불빛과 빨간 장난감 구조보트 흔적 유지.",
+  "creative_fingerprint": {
+    "location_ko": "비 온 뒤 도심 광장 분수",
+    "core_prop_ko": "투명한 별무늬 동전",
+    "twist_ko": "고양이가 도시를 구하는 줄 알았는데 물속 도시가 고양이에게 구조 신호를 보낸다",
+    "camera_setups": [
+      "35mm rain-wet plaza wide",
+      "100mm macro paw-and-coin detail",
+      "24mm underwater upward POV through fountain water"
+    ]
+  },
+  "images": [
+    {
+      "role": "HOOK",
+      "camera_strategy": "Environmental wide, slightly high angle, 35mm lens, medium-deep focus, circular fountain framing the cat",
+      "image_prompt": "A coin wakes a city underwater in a rain-wet urban fountain. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is central on the wet stone rim of a circular city plaza fountain just after a brief summer shower, one white paw stretched toward the water where a transparent coin-like token with a tiny star pattern gleams under the surface. Through the rippled water below, faint miniature city lights seem to switch on. Wet paw prints decorate the stone rim in a flower-like pattern. Background shows soft gray-gold sky after rain, blurred office buildings, and puddles. Extraordinary event in an ordinary place, serious expression in an absurd situation, clear visual clue in the glowing token. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike stone, water and coin textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in fountain ripples only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    },
+    {
+      "role": "ESCALATION",
+      "camera_strategy": "Extreme close-up, low side angle at rim level, 100mm macro lens, very shallow depth of field, focus on paw contact and coin",
+      "image_prompt": "Direct continuation at the same circular stone fountain in the same rain-cleared late afternoon light. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Macro detail of one clean white paw just touching the transparent star-pattern coin in the fountain water; concentric ripples spread and beneath them a tiny submerged city becomes clearer, with miniature streetlights, a tiny red rescue boat leaving a wake, and tiny reflections shimmering realistically. The cat’s focused face appears softly compressed in the background, eyes intent, whiskers sharp where they catch the post-rain light. Preserve wet stone rim, earlier paw-print pattern, same weather, same water clarity, same coin design and same light direction. Motion and discovery are central. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike water, stone, metal-like coin and miniature painted boat textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur on the spreading ripple and tiny boat wake. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    },
+    {
+      "role": "PAYOFF",
+      "camera_strategy": "Unusual underwater POV, 24mm lens, up-angle from inside fountain toward cat above, wide perspective with city foreground",
+      "image_prompt": "Moments later in the same post-shower city fountain, seen from underwater looking upward. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In the foreground under the clear fountain water, the miniature city is now fully revealed and physically plausible as a tiny decorative underwater metropolis built around the same transparent star coin; tiny building lights glow, and the same tiny red rescue boat points upward with a pinpoint signal lamp aimed at the cat. Above the wavering water surface, the cat leans over the rim, eyes widened with compassionate surprise, one white paw lifted back after touching the coin. Recover earlier clues: the same wet paw prints on the stone rim are visible from below through refraction, and the ripples from the touch still shape the water. The twist is that the underwater city seems to be calling to the cat, reversing who is rescuing whom. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike water caustics, stone, miniature painted structures, glassy token, and metal details. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in water distortion only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    }
+  ],
+  "story_id": "20260818135934-02-0fe0b8d7"
+}
