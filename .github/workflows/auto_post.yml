@@ -22,15 +22,15 @@ on:
         type: boolean
 
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '17 7 * * *'
       timezone: 'Asia/Seoul'
-    - cron: '0 10 * * *'
+    - cron: '17 10 * * *'
       timezone: 'Asia/Seoul'
-    - cron: '0 13 * * *'
+    - cron: '17 13 * * *'
       timezone: 'Asia/Seoul'
-    - cron: '0 16 * * *'
+    - cron: '17 16 * * *'
       timezone: 'Asia/Seoul'
-    - cron: '0 19 * * *'
+    - cron: '17 19 * * *'
       timezone: 'Asia/Seoul'
 
 permissions:
@@ -84,16 +84,17 @@ jobs:
             FORCE="$MANUAL_FORCE"
           else
             case "$SCHEDULE_EXPR" in
-              "0 7 * * *") SLOT=1 ;;
-              "0 10 * * *") SLOT=2 ;;
-              "0 13 * * *") SLOT=3 ;;
-              "0 16 * * *") SLOT=4 ;;
-              "0 19 * * *") SLOT=5 ;;
+              "17 7 * * *") SLOT=1 ;;
+              "17 10 * * *") SLOT=2 ;;
+              "17 13 * * *") SLOT=3 ;;
+              "17 16 * * *") SLOT=4 ;;
+              "17 19 * * *") SLOT=5 ;;
               *) echo "Unknown schedule: $SCHEDULE_EXPR"; exit 1 ;;
             esac
             MODE="publish"
             FORCE="false"
           fi
+
           echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "force=$FORCE" >> "$GITHUB_OUTPUT"
@@ -103,16 +104,26 @@ jobs:
         shell: bash
         run: |
           FORCE_ARG=""
-          if [ "${{ steps.vars.outputs.force }}" = "true" ]; then FORCE_ARG="--force"; fi
-          python scripts/run_pipeline_entry.py --phase dry-run --slot "${{ steps.vars.outputs.slot }}" $FORCE_ARG
+          if [ "${{ steps.vars.outputs.force }}" = "true" ]; then
+            FORCE_ARG="--force"
+          fi
+          python scripts/run_pipeline_entry.py \
+            --phase dry-run \
+            --slot "${{ steps.vars.outputs.slot }}" \
+            $FORCE_ARG
 
       - name: Prepare story and three images
         if: ${{ steps.vars.outputs.mode == 'publish' }}
         shell: bash
         run: |
           FORCE_ARG=""
-          if [ "${{ steps.vars.outputs.force }}" = "true" ]; then FORCE_ARG="--force"; fi
-          python scripts/run_pipeline_entry.py --phase prepare --slot "${{ steps.vars.outputs.slot }}" $FORCE_ARG
+          if [ "${{ steps.vars.outputs.force }}" = "true" ]; then
+            FORCE_ARG="--force"
+          fi
+          python scripts/run_pipeline_entry.py \
+            --phase prepare \
+            --slot "${{ steps.vars.outputs.slot }}" \
+            $FORCE_ARG
 
       - name: Commit prepared media to GitHub
         if: ${{ steps.vars.outputs.mode == 'publish' }}
@@ -120,7 +131,9 @@ jobs:
         run: |
           git config user.name "cat-instagram-auto-bot"
           git config user.email "actions@users.noreply.github.com"
+
           git add public/posts state/story_queue.json state/prepared.json
+
           if ! git diff --cached --quiet; then
             git commit -m "content: prepare Instagram carousel [skip ci]"
             git push
@@ -131,7 +144,9 @@ jobs:
         env:
           MEDIA_BRANCH: ${{ github.ref_name }}
         run: |
-          python scripts/run_pipeline.py --phase publish --slot "${{ steps.vars.outputs.slot }}"
+          python scripts/run_pipeline.py \
+            --phase publish \
+            --slot "${{ steps.vars.outputs.slot }}"
 
       - name: Commit publish state and creative history
         if: ${{ steps.vars.outputs.mode == 'publish' }}
@@ -139,7 +154,13 @@ jobs:
         run: |
           git config user.name "cat-instagram-auto-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state/published.json state/story_queue.json state/creative_history.json state/prepared.json
+
+          git add \
+            state/published.json \
+            state/story_queue.json \
+            state/creative_history.json \
+            state/prepared.json
+
           if ! git diff --cached --quiet; then
             git commit -m "chore: record Instagram publish state [skip ci]"
             git push
