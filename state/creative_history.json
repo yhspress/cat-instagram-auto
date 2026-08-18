@@ -155,6 +155,29 @@
         ]
       },
       "published_key": "2026-08-18:05"
+    },
+    {
+      "story_id": "20260818135934-03-a696f178",
+      "title_ko": "사계절 횡단보도",
+      "hook": "The crosswalk changes season by step",
+      "source_ids": [
+        "181",
+        "350",
+        "407",
+        "057",
+        "104"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "해질녘 도심 횡단보도",
+        "core_prop_ko": "작은 노란 꽃다발",
+        "twist_ko": "배달 상대가 맞은편의 다른 고양이가 아니라 유리 반사 속 또 다른 자신처럼 보이는 존재",
+        "camera_setups": [
+          "16mm dashboard POV at curb",
+          "50mm side medium tracking at stripe level",
+          "85mm telephoto across street with reflective window reveal"
+        ]
+      },
+      "published_key": "2026-08-19:01"
     }
   ]
 }
