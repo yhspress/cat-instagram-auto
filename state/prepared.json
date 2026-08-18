@@ -1,1 +1,80 @@
-{}
+{
+  "publication_key": "2026-08-18:03",
+  "prepared_at": "2026-08-18T13:55:10.520007+09:00",
+  "slot": 3,
+  "story_id": "20260818135934-01-2b38fc6c",
+  "story": {
+    "title_ko": "정오 달배달",
+    "hook": "Moon slips from the mailbox",
+    "caption_explanation_en": "A stern porch courier finds a glowing mistake at noon, and every clue points to a delivery far stranger than the address.",
+    "hashtags": [
+      "#NoonMystery",
+      "#MailboxMoon",
+      "#CatCourier"
+    ],
+    "source_concepts": [
+      {
+        "id": "063",
+        "name_ko": "우체국 집배원",
+        "category_ko": "직업과 출근"
+      },
+      {
+        "id": "314",
+        "name_ko": "정오의 달 관측자",
+        "category_ko": "계절·시간·날씨"
+      },
+      {
+        "id": "425",
+        "name_ko": "구슬 렌즈",
+        "category_ko": "촬영 시점과 화면 장치"
+      },
+      {
+        "id": "168",
+        "name_ko": "섬마을 우편배달",
+        "category_ko": "여행과 도시"
+      },
+      {
+        "id": "029",
+        "name_ko": "창틀 우체부",
+        "category_ko": "일상 속 우연"
+      }
+    ],
+    "overview_ko": "정오의 골목 우편함에서 떨어진 작은 달구슬을 따라간 고양이가 마지막에 옥상 비둘기 우편함으로 달빛 배달을 완성한다.",
+    "continuity_ko": "맑은 정오 햇빛, 오래된 주택 골목 현관과 이어진 낮은 옥상, 파란 테두리의 크림색 봉투, 은빛으로 빛나는 구슬 같은 작은 달, 회색 비둘기 한 마리, 우편함 아래 떨어진 흰 깃털과 고양이의 흰 발자국, 빛 방향은 오른쪽 위에서 유지.",
+    "creative_fingerprint": {
+      "location_ko": "오래된 주택 골목 현관과 옥상",
+      "core_prop_ko": "은빛 작은 달구슬과 크림색 봉투",
+      "twist_ko": "배달 대상이 사람이 아니라 옥상의 비둘기 우편함이라는 반전",
+      "camera_setups": [
+        "24mm low porch-wide with fallen moon",
+        "85mm intimate close-up through crystal orb",
+        "50mm rooftop side view with pigeon mailbox payoff"
+      ]
+    },
+    "images": [
+      {
+        "role": "HOOK",
+        "camera_strategy": "Environmental wide, low angle near doorstep, 24mm lens, cat-central vertical composition, deep focus, mailbox looming above",
+        "image_prompt": "Moon slips from a residential mailbox onto the porch at bright noon. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is central and immediately visible, standing alert on a sunlit old-house porch beneath a wall mailbox as a silver glowing marble-like miniature moon has just slipped out and rests by one white paw beside a cream envelope with blue edge trim, a single gray pigeon feather near the mailbox slot. The cat wears no clothing or accessories, but is staged like a serious postal courier by the envelope placement and direct body language. Old Seoul residential alley entrance, stone threshold, peeling paint, warm noon shadows falling from upper right, physically plausible scale. Include the cream envelope, tiny silver moon, mailbox, feather, and first white paw prints in dust. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike paper, metal, wood and stone textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur only on the just-fallen moon’s tiny roll. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+      },
+      {
+        "role": "ESCALATION",
+        "camera_strategy": "Emotional close-up, eye-level, 85mm lens, shallow depth of field, crystal-orb foreground reflection framing the face",
+        "image_prompt": "The same bright clear noon continues at the same old-house alley porch. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Tight emotional close-up of the cat crouched beside the same porch threshold, one white paw holding the same silver moon-like marble while the cat studies it with a serious courier expression. In the foreground, the spherical moon acts like a crystal orb lens and shows a tiny reflected rooftop pigeon mailbox and gray pigeon silhouette, hinting at the destination; the same cream envelope with blue trim lies partly open behind the paw, the same feather still visible, same sunlight from upper right. Preserve continuity of location structure, dust, paw prints, mailbox, and prop positions as a direct result of the fallen object. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike paper, metal, wood, fur and glasslike orb textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur absent except a faint wing blur from a distant passing pigeon. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+      },
+      {
+        "role": "PAYOFF",
+        "camera_strategy": "Natural perspective medium-wide, side rooftop view, 50mm lens, chest-height, layered composition with pigeon in background and recovered clue in foreground",
+        "image_prompt": "Direct continuation moments later under the same clear noon sunlight, now on the connected low rooftop above the same old residential alley. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat stands decisively beside a small rooftop pigeon mailbox, placing the same silver moon-like marble into the open compartment while a real gray pigeon waits on the lid like the rightful recipient; the same cream envelope with blue trim lies delivered at the base, and the same feather clue is caught on the mailbox edge. Recover earlier visual clues: the rooftop scene matches the orb reflection from the previous image, and faint white paw prints trace across dusty roof tiles from the porch side. Side angle shows roofline, alley depth, and distant sky where the full-size pale daytime moon is still faintly visible, creating a comic reversal that the tiny fallen moon was just a special delivery. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike paper, metal, tile and feather textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur only on the pigeon’s slight head movement. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+      }
+    ],
+    "story_id": "20260818135934-01-2b38fc6c"
+  },
+  "caption": "Moon slips from the mailbox\nA stern porch courier finds a glowing mistake at noon, and every clue points to a delivery far stranger than the address.\n#NoonMystery #MailboxMoon #CatCourier",
+  "media_paths": [
+    "public/posts/2026-08-18/slot_03/20260818135934-01-2b38fc6c/01_hook.jpg",
+    "public/posts/2026-08-18/slot_03/20260818135934-01-2b38fc6c/02_escalation.jpg",
+    "public/posts/2026-08-18/slot_03/20260818135934-01-2b38fc6c/03_payoff.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-18/slot_03/20260818135934-01-2b38fc6c"
+}

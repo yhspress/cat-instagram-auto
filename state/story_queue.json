@@ -1,3 +1,339 @@
 {
-  "stories": []
+  "stories": [
+    {
+      "title_ko": "정오 달배달",
+      "hook": "Moon slips from the mailbox",
+      "caption_explanation_en": "A stern porch courier finds a glowing mistake at noon, and every clue points to a delivery far stranger than the address.",
+      "hashtags": [
+        "#NoonMystery",
+        "#MailboxMoon",
+        "#CatCourier"
+      ],
+      "source_concepts": [
+        {
+          "id": "063",
+          "name_ko": "우체국 집배원",
+          "category_ko": "직업과 출근"
+        },
+        {
+          "id": "314",
+          "name_ko": "정오의 달 관측자",
+          "category_ko": "계절·시간·날씨"
+        },
+        {
+          "id": "425",
+          "name_ko": "구슬 렌즈",
+          "category_ko": "촬영 시점과 화면 장치"
+        },
+        {
+          "id": "168",
+          "name_ko": "섬마을 우편배달",
+          "category_ko": "여행과 도시"
+        },
+        {
+          "id": "029",
+          "name_ko": "창틀 우체부",
+          "category_ko": "일상 속 우연"
+        }
+      ],
+      "overview_ko": "정오의 골목 우편함에서 떨어진 작은 달구슬을 따라간 고양이가 마지막에 옥상 비둘기 우편함으로 달빛 배달을 완성한다.",
+      "continuity_ko": "맑은 정오 햇빛, 오래된 주택 골목 현관과 이어진 낮은 옥상, 파란 테두리의 크림색 봉투, 은빛으로 빛나는 구슬 같은 작은 달, 회색 비둘기 한 마리, 우편함 아래 떨어진 흰 깃털과 고양이의 흰 발자국, 빛 방향은 오른쪽 위에서 유지.",
+      "creative_fingerprint": {
+        "location_ko": "오래된 주택 골목 현관과 옥상",
+        "core_prop_ko": "은빛 작은 달구슬과 크림색 봉투",
+        "twist_ko": "배달 대상이 사람이 아니라 옥상의 비둘기 우편함이라는 반전",
+        "camera_setups": [
+          "24mm low porch-wide with fallen moon",
+          "85mm intimate close-up through crystal orb",
+          "50mm rooftop side view with pigeon mailbox payoff"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Environmental wide, low angle near doorstep, 24mm lens, cat-central vertical composition, deep focus, mailbox looming above",
+          "image_prompt": "Moon slips from a residential mailbox onto the porch at bright noon. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is central and immediately visible, standing alert on a sunlit old-house porch beneath a wall mailbox as a silver glowing marble-like miniature moon has just slipped out and rests by one white paw beside a cream envelope with blue edge trim, a single gray pigeon feather near the mailbox slot. The cat wears no clothing or accessories, but is staged like a serious postal courier by the envelope placement and direct body language. Old Seoul residential alley entrance, stone threshold, peeling paint, warm noon shadows falling from upper right, physically plausible scale. Include the cream envelope, tiny silver moon, mailbox, feather, and first white paw prints in dust. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike paper, metal, wood and stone textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur only on the just-fallen moon’s tiny roll. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Emotional close-up, eye-level, 85mm lens, shallow depth of field, crystal-orb foreground reflection framing the face",
+          "image_prompt": "The same bright clear noon continues at the same old-house alley porch. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Tight emotional close-up of the cat crouched beside the same porch threshold, one white paw holding the same silver moon-like marble while the cat studies it with a serious courier expression. In the foreground, the spherical moon acts like a crystal orb lens and shows a tiny reflected rooftop pigeon mailbox and gray pigeon silhouette, hinting at the destination; the same cream envelope with blue trim lies partly open behind the paw, the same feather still visible, same sunlight from upper right. Preserve continuity of location structure, dust, paw prints, mailbox, and prop positions as a direct result of the fallen object. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike paper, metal, wood, fur and glasslike orb textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur absent except a faint wing blur from a distant passing pigeon. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Natural perspective medium-wide, side rooftop view, 50mm lens, chest-height, layered composition with pigeon in background and recovered clue in foreground",
+          "image_prompt": "Direct continuation moments later under the same clear noon sunlight, now on the connected low rooftop above the same old residential alley. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat stands decisively beside a small rooftop pigeon mailbox, placing the same silver moon-like marble into the open compartment while a real gray pigeon waits on the lid like the rightful recipient; the same cream envelope with blue trim lies delivered at the base, and the same feather clue is caught on the mailbox edge. Recover earlier visual clues: the rooftop scene matches the orb reflection from the previous image, and faint white paw prints trace across dusty roof tiles from the porch side. Side angle shows roofline, alley depth, and distant sky where the full-size pale daytime moon is still faintly visible, creating a comic reversal that the tiny fallen moon was just a special delivery. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike paper, metal, tile and feather textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur only on the pigeon’s slight head movement. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        }
+      ],
+      "story_id": "20260818135934-01-2b38fc6c"
+    },
+    {
+      "title_ko": "분수 속 동전도시",
+      "hook": "A coin wakes a city underwater",
+      "caption_explanation_en": "One careful paw reaches into a fountain, and the ripples reveal a secret metropolis that may be reacting back.",
+      "hashtags": [
+        "#FountainMystery",
+        "#CoinCity",
+        "#UrbanFantasy"
+      ],
+      "source_concepts": [
+        {
+          "id": "189",
+          "name_ko": "도심 분수 탐험가",
+          "category_ko": "여행과 도시"
+        },
+        {
+          "id": "049",
+          "name_ko": "발바닥 예술가",
+          "category_ko": "일상 속 우연"
+        },
+        {
+          "id": "280",
+          "name_ko": "미니어처 재난 구조대",
+          "category_ko": "영화·잠입·패러디"
+        },
+        {
+          "id": "411",
+          "name_ko": "어항 내부 시점",
+          "category_ko": "촬영 시점과 화면 장치"
+        },
+        {
+          "id": "342",
+          "name_ko": "우박 수집가",
+          "category_ko": "계절·시간·날씨"
+        }
+      ],
+      "overview_ko": "광장 분수에 빠진 투명 구슬 같은 동전을 건지려던 고양이가 물속의 미니어처 도시를 깨우고 마지막에는 스스로 구조 신호를 받는다.",
+      "continuity_ko": "늦은 오후 소나기 직후의 도심 광장, 둥근 석재 분수, 맑은 물결, 투명한 별무늬 동전 하나, 분수 가장자리 젖은 흰 발자국, 같은 빛 방향의 흐린 황금빛 하늘, 물속에 켜지는 작은 도시 불빛과 빨간 장난감 구조보트 흔적 유지.",
+      "creative_fingerprint": {
+        "location_ko": "비 온 뒤 도심 광장 분수",
+        "core_prop_ko": "투명한 별무늬 동전",
+        "twist_ko": "고양이가 도시를 구하는 줄 알았는데 물속 도시가 고양이에게 구조 신호를 보낸다",
+        "camera_setups": [
+          "35mm rain-wet plaza wide",
+          "100mm macro paw-and-coin detail",
+          "24mm underwater upward POV through fountain water"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Environmental wide, slightly high angle, 35mm lens, medium-deep focus, circular fountain framing the cat",
+          "image_prompt": "A coin wakes a city underwater in a rain-wet urban fountain. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is central on the wet stone rim of a circular city plaza fountain just after a brief summer shower, one white paw stretched toward the water where a transparent coin-like token with a tiny star pattern gleams under the surface. Through the rippled water below, faint miniature city lights seem to switch on. Wet paw prints decorate the stone rim in a flower-like pattern. Background shows soft gray-gold sky after rain, blurred office buildings, and puddles. Extraordinary event in an ordinary place, serious expression in an absurd situation, clear visual clue in the glowing token. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike stone, water and coin textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in fountain ripples only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Extreme close-up, low side angle at rim level, 100mm macro lens, very shallow depth of field, focus on paw contact and coin",
+          "image_prompt": "Direct continuation at the same circular stone fountain in the same rain-cleared late afternoon light. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Macro detail of one clean white paw just touching the transparent star-pattern coin in the fountain water; concentric ripples spread and beneath them a tiny submerged city becomes clearer, with miniature streetlights, a tiny red rescue boat leaving a wake, and tiny reflections shimmering realistically. The cat’s focused face appears softly compressed in the background, eyes intent, whiskers sharp where they catch the post-rain light. Preserve wet stone rim, earlier paw-print pattern, same weather, same water clarity, same coin design and same light direction. Motion and discovery are central. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike water, stone, metal-like coin and miniature painted boat textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur on the spreading ripple and tiny boat wake. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Unusual underwater POV, 24mm lens, up-angle from inside fountain toward cat above, wide perspective with city foreground",
+          "image_prompt": "Moments later in the same post-shower city fountain, seen from underwater looking upward. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In the foreground under the clear fountain water, the miniature city is now fully revealed and physically plausible as a tiny decorative underwater metropolis built around the same transparent star coin; tiny building lights glow, and the same tiny red rescue boat points upward with a pinpoint signal lamp aimed at the cat. Above the wavering water surface, the cat leans over the rim, eyes widened with compassionate surprise, one white paw lifted back after touching the coin. Recover earlier clues: the same wet paw prints on the stone rim are visible from below through refraction, and the ripples from the touch still shape the water. The twist is that the underwater city seems to be calling to the cat, reversing who is rescuing whom. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike water caustics, stone, miniature painted structures, glassy token, and metal details. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in water distortion only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        }
+      ],
+      "story_id": "20260818135934-02-0fe0b8d7"
+    },
+    {
+      "title_ko": "사계절 횡단보도",
+      "hook": "The crosswalk changes season by step",
+      "caption_explanation_en": "A flower courier steps off the curb, and each white stripe becomes a different world before the delivery can finish.",
+      "hashtags": [
+        "#SeasonCrosswalk",
+        "#FlowerRun",
+        "#CityMagic"
+      ],
+      "source_concepts": [
+        {
+          "id": "181",
+          "name_ko": "횡단보도 꽃배달",
+          "category_ko": "여행과 도시"
+        },
+        {
+          "id": "350",
+          "name_ko": "사계절 횡단보도",
+          "category_ko": "계절·시간·날씨"
+        },
+        {
+          "id": "407",
+          "name_ko": "차량 블랙박스 꽃배달",
+          "category_ko": "촬영 시점과 화면 장치"
+        },
+        {
+          "id": "057",
+          "name_ko": "꽃집 배달원",
+          "category_ko": "직업과 출근"
+        },
+        {
+          "id": "104",
+          "name_ko": "엇갈린 횡단보도",
+          "category_ko": "로맨스와 관계"
+        }
+      ],
+      "overview_ko": "꽃다발을 문 고양이가 횡단보도를 건너자 줄마다 계절이 바뀌고 마지막에는 맞은편 창가의 또 다른 자신과 배달이 연결된다.",
+      "continuity_ko": "해 질 녘 도심 교차로, 흰 횡단보도 줄무늬, 작은 노란 꽃다발, 신호 대기 차량 한 대의 낮은 전면 시점, 바람에 흩날리는 꽃잎, 줄마다 봄·여름·가을·겨울 흔적이 누적되며 유지, 빛은 석양 왼쪽 뒤에서 들어옴.",
+      "creative_fingerprint": {
+        "location_ko": "해질녘 도심 횡단보도",
+        "core_prop_ko": "작은 노란 꽃다발",
+        "twist_ko": "배달 상대가 맞은편의 다른 고양이가 아니라 유리 반사 속 또 다른 자신처럼 보이는 존재",
+        "camera_setups": [
+          "16mm dashboard POV at curb",
+          "50mm side medium tracking at stripe level",
+          "85mm telephoto across street with reflective window reveal"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Object POV from inside parked car dashboard, low frontal angle, 16mm lens, wide distortion, crosswalk centered vertically",
+          "image_prompt": "The crosswalk changes season by step. Ultra-photorealistic live-action photography, vertical 4:5, seen from a safe parked-car dashboard viewpoint at curb height. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat strides into a city crosswalk at sunset carrying a small yellow flower bouquet gently in its mouth, central and unmistakable. The first white stripe shows spring petals, the next stripe ahead glows with summer heat shimmer, farther stripes hint at autumn leaves and a dusting of winter frost. A few petals blow backward toward the car windshield, and the cat’s serious courier posture makes the absurd event instantly readable. Urban intersection, no visible text, one waiting car framing the scene, warm light from back-left. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike asphalt, painted stripes, glass and bouquet textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in drifting petals only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Natural perspective medium shot, low side tracking angle at stripe level, 50mm lens, moderate depth of field, motion through layered seasonal bands",
+          "image_prompt": "Direct continuation on the same sunset city crosswalk, same bouquet, same intersection, same parked cars and light from back-left. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Side-on stripe-level view as the cat moves across the crosswalk with the small yellow bouquet in its mouth; each paw lands in a different season in direct sequence: one white paw on petal-strewn spring paint, one on sunlit summer asphalt, one stepping through crisp autumn leaves, and the trailing path behind already carries a thin winter frost edge. Flower petals, a few leaves, and a breath of cool mist mix in one physically plausible transitional scene. The cat’s body language is determined but puzzled, preserving continuity and showing progression. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike road paint, flowers, leaves and thin frost textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in legs, petals and leaves. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Compressed telephoto, eye-level across street, 85mm lens, reflective storefront window composition with cat and reflection aligned but not identical",
+          "image_prompt": "The same sunset crosswalk sequence reaches the far curb, preserving the same small yellow bouquet, mixed petals, leaves, and faint frost traces across the stripes. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. At the opposite sidewalk, the cat pauses before a reflective shop window and lowers the bouquet toward the glass. In the window reflection, instead of a normal mirror image, another version of the same cat stands inside a different season-lit interior reaching toward the flowers from the opposite direction, echoing an almost-missed crosswalk meeting without breaking anatomy or safety. Recover earlier clues: the four seasonal crosswalk bands remain visible behind the cat, and a few yellow petals from the bouquet stick to the coldest stripe. The payoff is a quiet, uncanny delivery to a reflected counterpart. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike glass, asphalt, bouquet, leaves and frost textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur minimal. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        }
+      ],
+      "story_id": "20260818135934-03-a696f178"
+    },
+    {
+      "title_ko": "기차역 낙엽열차",
+      "hook": "Leaves board a train before anyone",
+      "caption_explanation_en": "A platform cat raises a tiny whistle, and the first passengers arrive as a wind-built train made only of autumn leaves.",
+      "hashtags": [
+        "#LeafTrain",
+        "#PlatformMagic",
+        "#StationCat"
+      ],
+      "source_concepts": [
+        {
+          "id": "174",
+          "name_ko": "기차역 플랫폼 사서",
+          "category_ko": "여행과 도시"
+        },
+        {
+          "id": "305",
+          "name_ko": "가을 낙엽 열차",
+          "category_ko": "계절·시간·날씨"
+        },
+        {
+          "id": "067",
+          "name_ko": "기차역 역무원",
+          "category_ko": "직업과 출근"
+        },
+        {
+          "id": "448",
+          "name_ko": "기차 앞 유리 시점",
+          "category_ko": "촬영 시점과 화면 장치"
+        },
+        {
+          "id": "143",
+          "name_ko": "책갈피의 꽃잎",
+          "category_ko": "로맨스와 관계"
+        }
+      ],
+      "overview_ko": "한산한 시골 플랫폼에서 낙엽으로 된 열차를 본 고양이가 책갈피 꽃잎이 꽂힌 작은 책을 들고 기다리다 마지막에 목적지 승객이 바람 속에서 드러난다.",
+      "continuity_ko": "늦가을 황금빛 오후, 작은 시골 기차역 플랫폼, 벤치 위 작은 짙은 녹색 책 한 권과 안에 꽂힌 붉은 꽃잎 책갈피, 노란 낙엽 소용돌이, 짧은 역무원 호루라기, 오래된 레일과 흰 안전선, 바람 방향은 플랫폼 끝에서 카메라 쪽으로 유지.",
+      "creative_fingerprint": {
+        "location_ko": "늦가을 시골 기차역 플랫폼",
+        "core_prop_ko": "붉은 꽃잎 책갈피가 꽂힌 녹색 책",
+        "twist_ko": "기다린 승객이 실체가 아니라 책갈피 꽃잎을 따라 만들어진 낙엽 고양이 실루엣",
+        "camera_setups": [
+          "24mm platform-wide with leaf train forming",
+          "85mm close-up on whistle and bookmarked book",
+          "35mm front-window POV through leaf train arrival"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Environmental wide, platform-end low angle, 24mm lens, deep focus, rails leading upward through vertical frame",
+          "image_prompt": "Leaves board a train before anyone. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. On a quiet rural train platform in late autumn golden afternoon light, the cat stands centrally beside the white safety line with a tiny station whistle on the ground near one white paw and a small dark green book resting on the bench behind, a red petal bookmark protruding. Down the tracks, a swirling gust of yellow leaves has begun forming the shape of a train entering before any real passengers. Rails lead into the distance; wind pushes leaves toward camera; the cat’s serious station-master stance makes the absurdity instantly readable. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike steel rail, concrete platform, weathered bench, paper book, dry leaf and whistle textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in the leaf train only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Intimate close-up, seated-bench height, 85mm lens, shallow depth of field, foreground whistle and cat face with book detail",
+          "image_prompt": "Same late-autumn rural station platform, same golden afternoon, same wind direction from track end toward camera, same dark green book with red petal bookmark and same small whistle. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Emotional close-up of the cat at bench height, one white paw resting beside the whistle while the cat turns toward the dark green book, where the protruding red petal bookmark flutters in the wind and a stream of yellow leaves now curves from the page edge toward the tracks, directly linking the book to the leaf train outside frame. The cat’s eyes show dawning recognition. Preserve rails, safety line, scattered leaves, and platform textures. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike paper fibers, petal veins, metal whistle and fur textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in fluttering leaves and bookmark tip. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Unusual viewpoint from front window of incoming leaf train, 35mm lens, forward-facing POV with cat on platform framed by swirling leaves",
+          "image_prompt": "Final moment at the same late-autumn rural station, viewed from the front-window perspective of the arriving leaf-formed train, preserving the same platform, same bench, same dark green book with red petal bookmark, same whistle, same wind and golden afternoon light. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Through a transparent front pane made of tightly swirling autumn leaves, the cat stands on the platform just beyond the white line, looking up with surprise and tenderness as the red petal bookmark has lifted from the green book and now anchors a passenger-shaped silhouette made entirely of leaves beside the cat, like someone has finally arrived from the story inside the book. Recover earlier clues: the leaf stream from the book leads into the train shape, the whistle lies by the paw, and the bench remains in place. The payoff is a visually satisfying reveal that the waiting passenger was hidden in the bookmark all along. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike leaf layers, glasslike airflow surface, paper book, rail steel and platform concrete textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur on the rotating leaf structure. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        }
+      ],
+      "story_id": "20260818135934-04-8876c7cb"
+    },
+    {
+      "title_ko": "냉장고 설원 구조",
+      "hook": "Cold light opens a tiny ski rescue",
+      "caption_explanation_en": "A midnight fridge explorer sees a stranded rider in the frost, and the harmless rescue keeps getting bigger than the shelf.",
+      "hashtags": [
+        "#FridgeSnow",
+        "#MiniRescue",
+        "#ToyGondola"
+      ],
+      "source_concepts": [
+        {
+          "id": "022",
+          "name_ko": "냉동실 스키 선수",
+          "category_ko": "일상 속 우연"
+        },
+        {
+          "id": "088",
+          "name_ko": "산악 구조대",
+          "category_ko": "직업과 출근"
+        },
+        {
+          "id": "319",
+          "name_ko": "무더위 냉장고 스키장",
+          "category_ko": "계절·시간·날씨"
+        },
+        {
+          "id": "409",
+          "name_ko": "냉장고 내부 카메라",
+          "category_ko": "촬영 시점과 화면 장치"
+        },
+        {
+          "id": "465",
+          "name_ko": "스키 고양이",
+          "category_ko": "스포츠와 이벤트"
+        }
+      ],
+      "overview_ko": "냉장고 문이 열리자 선반의 성에 설원에서 장난감 스키어가 고립되고 고양이가 안전한 구조를 시도한 끝에 얼음 곤돌라가 구조 완료를 보여준다.",
+      "continuity_ko": "한밤중 부엌의 차가운 냉장고 내부 조명, 윗선반 성에 설원, 파란 장난감 스키어 하나, 각얼음으로 만든 작은 곤돌라, 문 가장자리의 겨울 김, 선반 위 하얀 발자국과 살짝 흩어진 성에, 빛은 냉장고 안 왼쪽에서 일정.",
+      "creative_fingerprint": {
+        "location_ko": "한밤중 냉장고 내부",
+        "core_prop_ko": "파란 장난감 스키어와 얼음 곤돌라",
+        "twist_ko": "위험한 조난처럼 보였지만 마지막에 고양이가 냉장고 선반 자체를 안전한 스키 구조장으로 완성",
+        "camera_setups": [
+          "14mm fridge-interior POV reveal",
+          "85mm close-up on frost rescue action",
+          "35mm top-down shelf view with ice gondola completion"
+        ]
+      },
+      "images": [
+        {
+          "role": "HOOK",
+          "camera_strategy": "Object POV from inside refrigerator, 14mm lens, low shelf angle, deep focus, cat entering frame central through open door",
+          "image_prompt": "Cold light opens a tiny ski rescue. Ultra-photorealistic live-action photography, vertical 4:5, viewpoint from inside a household refrigerator looking outward and upward across a frosty shelf. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The refrigerator door has just opened at midnight in a dark kitchen, and the cat appears central in the cold interior light, one white paw on the edge of a frost-covered top shelf that looks like a snowy slope. On that harmless miniature slope, a tiny blue toy skier is tilted and stranded near a drop to a lower shelf, while a small ice-cube gondola hangs improvised from the shelf lip. White paw prints already mark the frost. The cat’s expression is serious like a mountain rescuer. Safe staged miniature illusion only, no real danger. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike frost, plastic toy, clear ice, metal rack and refrigerator interior textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in cold vapor only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "ESCALATION",
+          "camera_strategy": "Intimate close-up, shelf-level side angle, 85mm lens, shallow depth of field, focused on paw and toy skier with frosty texture",
+          "image_prompt": "Same midnight kitchen, same open refrigerator, same cold interior light from the left, same frosty upper shelf, same tiny blue toy skier and same ice-cube gondola. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Emotional close-up of the cat leaning into the fridge, whiskers frosted at the tips, one white paw carefully nudging the tiny blue toy skier toward the waiting ice-cube gondola while loose frost scatters like powder snow. The cat’s amber-brown eyes are concentrated and compassionate; the miniature rescue is clearly a staged harmless toy scene on the shelf. Preserve prior white paw prints, cold vapor, shelf geometry and toy placement. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike frost crystals, toy paint wear, clear ice and refrigerator plastic textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in falling frost specks. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        },
+        {
+          "role": "PAYOFF",
+          "camera_strategy": "Top-down overhead from shelf opening, 35mm lens, medium-wide, graphic composition of tracks, paw prints, and gondola route",
+          "image_prompt": "Final image in the same open refrigerator at midnight, same left-side fridge light, same frosty top shelf transformed by the rescue action. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Overhead view reveals the full shelf as a safe miniature ski-rescue tableau: the cat stands proudly at the top edge, all four white paws visible, while the tiny blue toy skier now rides securely inside the same ice-cube gondola gliding across a shallow track between frost banks to a stable lower shelf platform. Earlier clues are recovered: the cat’s white paw prints form a rescue path in the frost, scattered powder remains where the skier was nudged, and cold vapor still curls from the open door. The twist is satisfying and comic: what looked like an emergency is now a neatly organized ski lift the cat has effectively completed. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike frost, ice, toy plastic, metal rack and refrigerator textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur minimal except faint gondola motion. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+        }
+      ],
+      "story_id": "20260818135934-05-afb9a3d0"
+    }
+  ]
 }
