@@ -109,6 +109,29 @@
         ]
       },
       "published_key": "2026-08-17:05"
+    },
+    {
+      "story_id": "20260818135934-01-2b38fc6c",
+      "title_ko": "정오 달배달",
+      "hook": "Moon slips from the mailbox",
+      "source_ids": [
+        "063",
+        "314",
+        "425",
+        "168",
+        "029"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "오래된 주택 골목 현관과 옥상",
+        "core_prop_ko": "은빛 작은 달구슬과 크림색 봉투",
+        "twist_ko": "배달 대상이 사람이 아니라 옥상의 비둘기 우편함이라는 반전",
+        "camera_setups": [
+          "24mm low porch-wide with fallen moon",
+          "85mm intimate close-up through crystal orb",
+          "50mm rooftop side view with pigeon mailbox payoff"
+        ]
+      },
+      "published_key": "2026-08-18:01"
     }
   ]
 }
