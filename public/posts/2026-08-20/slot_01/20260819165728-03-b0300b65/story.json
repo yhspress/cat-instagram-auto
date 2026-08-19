@@ -1,0 +1,62 @@
+{
+  "title_ko": "시리얼 구조의 진실",
+  "hook": "Toy town spills from the cereal box",
+  "caption_explanation_en": "Breakfast turns urgent when a whole tiny disaster pours out at his feet and one survivor starts waving back.",
+  "hashtags": [
+    "#MiniRescue",
+    "#CerealSpill",
+    "#ActionComedy"
+  ],
+  "source_concepts": [
+    {
+      "id": "280",
+      "name_ko": "미니어처 재난 구조대",
+      "category_ko": "영화·잠입·패러디"
+    },
+    {
+      "id": "093",
+      "name_ko": "슈퍼마켓 시식 직원",
+      "category_ko": "직업과 출근"
+    },
+    {
+      "id": "411",
+      "name_ko": "어항 내부 시점",
+      "category_ko": "촬영 시점과 화면 장치"
+    },
+    {
+      "id": "038",
+      "name_ko": "주방 매트 섬 주민",
+      "category_ko": "일상 속 우연"
+    }
+  ],
+  "overview_ko": "아침 주방에서 시리얼 상자가 쏟아지자 고양이는 장난감 주민을 구하는 구조대처럼 반응하지만, 마지막에는 시리얼 우유 반사 속 작은 도시가 오히려 고양이에게 신호를 보냈다는 반전이 드러난다.",
+  "continuity_ko": "햇살 드는 아침 주방, 민트색 주방 매트, 엎어진 무지 시리얼 상자, 쏟아진 시리얼 고리와 우유 자국, 빨간 작은 장난감 소방차와 파란 미니 주민 한 개체, 스테인리스 그릇의 우유 반사, 빛 방향 동일",
+  "creative_fingerprint": {
+    "location_ko": "아침 주방 바닥",
+    "core_prop_ko": "엎어진 시리얼 상자와 작은 장난감 주민",
+    "twist_ko": "구조 대상처럼 보인 미니 주민이 사실 고양이에게 신호를 보낸 발신자",
+    "camera_setups": [
+      "24mm low kinetic spill close-wide",
+      "50mm overhead rescue geometry",
+      "100mm reflective bowl detail POV"
+    ]
+  },
+  "images": [
+    {
+      "role": "HOOK",
+      "camera_strategy": "Low kinetic close-wide at floor level, 24mm lens, strong foreground spill, cat dominant in frame, deep enough DOF for readable miniature event",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. On a sunlit morning kitchen floor, the cat recoils with wide-eyed astonishment and one white front paw lifted as a plain cereal box has just tipped over beside a mint-green kitchen mat, spilling ring-shaped cereal pieces and a few tiny toy-town objects into the foreground. A miniature red toy fire truck and one tiny blue resident figure are instantly readable among the cereal. A shallow streak of spilled milk glistens near a stainless steel bowl, making the mat look like a tiny island. The cat remains central and dominant, face clear at thumbnail size, ears forward, whiskers spread. Warm morning window light comes from upper left. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, natural weight distribution on dry tile floor, motion-appropriate blur only in a few falling cereal loops. Direction, density and individual guard hairs of real short fur with subtle color variation; realistic reflections and shadows; accurate scale and perspective; lifelike cardboard, cereal, milk, stainless steel, tile, fabric mat and toy textures. High-end documentary or editorial photography, restrained cinematic color grade, soft highlight roll-off, subtle sensor grain, natural atmospheric perspective, realistic depth of field, individual whiskers and facial fur resolved, realistic nose leather and eye reflections. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+    },
+    {
+      "role": "ESCALATION",
+      "camera_strategy": "Top-down medium from slightly high angle, 50mm lens, organized rescue geometry, moderate depth of field, cat and tiny elements clearly placed",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Same morning kitchen with the mint-green mat, tipped plain cereal box, ring-shaped cereal scatter, spilled milk streak, stainless steel bowl, miniature red toy fire truck, and tiny blue resident figure preserved. Seen from a slightly elevated top-down angle, the cat is now intensely focused and carefully extends one white paw between the cereal pieces without crushing anything, as if performing a precise rescue. The tiny blue figure appears to be signaling beside the red fire truck, and the spilled milk has formed a narrow reflective channel leading toward the stainless steel bowl. The cat's expression is concentrated and cautious, tail balanced behind, all limbs anatomically correct and naturally supported on tile. Warm morning sunlight from upper left remains consistent and creates crisp shadows of cereal loops and whiskers. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, secure footing, natural weight distribution and contact, breathable safe open scene. Direction, density and individual guard hairs of real short fur with subtle color variation; realistic reflections and shadows; accurate scale and perspective; lifelike tile, cereal, cardboard, milk, steel, fabric and toy textures. High-end documentary or editorial photography, restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections, subtle sensor grain, realistic depth of field. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+    },
+    {
+      "role": "PAYOFF",
+      "camera_strategy": "Reflective detail close-up from bowl rim height, object-influenced POV, 100mm macro lens, shallow but realistic depth of field, reflection-led composition",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In the same morning kitchen, a stainless steel bowl with a little milk is now the key foreground element, seen from rim height in close detail. The cat's face hovers just beyond the bowl with astonished understanding, nose low and whiskers forward, while the physically correct reflection in the milk and curved steel reveals that the spilled cereal loops and toy pieces align into a tiny city-like signal pattern pointing toward the cat. The miniature red toy fire truck and tiny blue resident figure remain beside the tipped plain cereal box and mint-green mat, but now the blue figure is clearly facing the cat as if it called for help. The earlier milk streak still links the floor to the bowl. Warm morning sunlight from upper left remains unchanged and creates realistic gleam on the steel and milk surface. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, secure natural stance on tile floor, natural weight distribution. Direction, density and individual guard hairs of real short fur with subtle color variation; realistic reflections and shadows; accurate scale and perspective; lifelike steel, milk, cereal, cardboard, tile, fabric and toy textures; subtle sensor grain; motion-appropriate stillness. High-end documentary or editorial photography, restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections, realistic depth of field, whiskers and facial fur cleanly resolved, biologically realistic nose leather and eye reflections. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+    }
+  ],
+  "story_id": "20260819165728-03-b0300b65"
+}
