@@ -201,6 +201,29 @@
         ]
       },
       "published_key": "2026-08-19:02"
+    },
+    {
+      "story_id": "20260818135934-05-afb9a3d0",
+      "title_ko": "냉장고 설원 구조",
+      "hook": "Cold light opens a tiny ski rescue",
+      "source_ids": [
+        "022",
+        "088",
+        "319",
+        "409",
+        "465"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "한밤중 냉장고 내부",
+        "core_prop_ko": "파란 장난감 스키어와 얼음 곤돌라",
+        "twist_ko": "위험한 조난처럼 보였지만 마지막에 고양이가 냉장고 선반 자체를 안전한 스키 구조장으로 완성",
+        "camera_setups": [
+          "14mm fridge-interior POV reveal",
+          "85mm close-up on frost rescue action",
+          "35mm top-down shelf view with ice gondola completion"
+        ]
+      },
+      "published_key": "2026-08-19:03"
     }
   ]
 }
