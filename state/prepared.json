@@ -1,1 +1,75 @@
-{}
+{
+  "publication_key": "2026-08-19:04",
+  "prepared_at": "2026-08-19T16:53:55.994432+09:00",
+  "slot": 4,
+  "story_id": "20260819165728-01-a82cf30d",
+  "story": {
+    "title_ko": "유리문 속 봄눈",
+    "hook": "Snow taps the glass at noon",
+    "caption_explanation_en": "A warm shop window turns into a tiny weather mystery when one drifting flake stops right at his paws.",
+    "hashtags": [
+      "#GlassPaws",
+      "#SpringSnow",
+      "#VisualMystery"
+    ],
+    "source_concepts": [
+      {
+        "id": "312",
+        "name_ko": "겨울 창문 화가",
+        "category_ko": "계절·시간·날씨"
+      },
+      {
+        "id": "057",
+        "name_ko": "꽃집 배달원",
+        "category_ko": "직업과 출근"
+      },
+      {
+        "id": "422",
+        "name_ko": "유리문 반사",
+        "category_ko": "촬영 시점과 화면 장치"
+      },
+      {
+        "id": "010",
+        "name_ko": "베란다 예보관",
+        "category_ko": "일상 속 우연"
+      }
+    ],
+    "overview_ko": "꽃집 유리문에 앞발을 댄 치즈태비 고양이 앞에 한낮의 봄거리에서 작은 눈 구역이 생기고, 반사 속 계절 차이가 단서가 되어 마지막에 꽃 배달이 만든 미세한 냉기 장치가 드러난다.",
+    "continuity_ko": "따뜻한 정오 햇빛의 꽃집 입구, 깨끗한 유리문, 안쪽은 노란 꽃과 흰 꽃이 든 양동이, 바깥은 맑은 봄 거리와 파란 하늘, 문 아래 크림색 봉투와 작은 꽃다발, 고양이 앞발 자국 자국, 유리 반사 속 계절 차이, 눈송이는 고양이 머리 위 작은 구역에만 지속",
+    "creative_fingerprint": {
+      "location_ko": "동네 꽃집 유리문 앞",
+      "core_prop_ko": "크림색 봉투와 작은 꽃다발",
+      "twist_ko": "반사 속 계절 차이가 사실 문 안쪽 냉기와 꽃 배달의 흔적에서 비롯된 국소적 봄눈",
+      "camera_setups": [
+        "85mm intimate glass close-up with paws",
+        "24mm side environmental doorway wide",
+        "50mm oblique reflection reveal at threshold"
+      ]
+    },
+    "images": [
+      {
+        "role": "HOOK",
+        "camera_strategy": "Intimate close-up, straight-on from outside the glass at cat face height, 85mm lens, shallow but realistic depth of field, both front paws dominant on glass, simple background separation",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat stands safely just inside a flower shop entrance and presses both front paws naturally against a clean clear glass door, large realistic paw pads visible in the foreground, face clearly visible behind the glass with wide-eyed curious surprise. Outside is a bright spring noon street with blue sky, but a tiny cluster of realistic snowflakes is falling only in front of the glass near the cat's paws. A small cream envelope and a compact hand-tied bouquet of yellow and white flowers rest at the base of the door inside, continuity-critical. Behind the cat, simple metal buckets hold yellow flowers and white blossoms. Warm sunlight comes from camera left, physically correct reflections show the outdoor street on the glass, and a faint mismatch in reflected season is visible but subtle. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, secure footing on indoor stone floor, natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation, realistic reflections and shadows, accurate scale and perspective, lifelike glass, paper, flower stems, petals, plaster and stone textures. High-end documentary or editorial photography, restrained cinematic color grade, soft highlight roll-off, subtle sensor grain, realistic depth of field, individual whiskers and facial fur cleanly resolved, biologically realistic paw pads, nose leather and eye reflections. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+      },
+      {
+        "role": "ESCALATION",
+        "camera_strategy": "Environmental medium-wide from outside and slightly right of doorway, low side angle, 24mm lens, deeper depth of field, doorframe and sidewalk included",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat remains at the same flower shop glass door at warm noon, now seen from outside in a wider side view, body angled toward the threshold with one front paw lifted from the glass and a suspicious focused expression. The clean clear glass door still shows fresh paw prints and realistic reflections. The compact bouquet of yellow and white flowers and the cream envelope remain on the inner floor by the threshold. Outside, the spring sidewalk is dry and sunlit, yet a narrow ribbon of tiny snowflakes drifts only along the door seam and the cat's face follows them. Through the glass, metal buckets of flowers line the interior. The reflection in the glass now more clearly shows a winter-looking version of the same street while the real background remains spring, physically plausible as mixed reflection plus cold condensation. Warm sunlight still comes from camera left, matching the first image. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, secure natural paw contact on flat shop floor and threshold. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, accurate scale and perspective, lifelike glass, paper, flower petals, stems, stone pavement and plaster textures, natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in drifting flakes only. High-end documentary or editorial photography with restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections, realistic depth of field. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+      },
+      {
+        "role": "PAYOFF",
+        "camera_strategy": "Natural perspective close medium from inside threshold, oblique angle using reflection layers, 50mm lens, moderate depth of field, frame-within-door composition",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Inside the same flower shop doorway at warm noon, the cat sits safely at the threshold with proud relieved curiosity, nose close to a small chilled metal floral water can hidden behind the compact bouquet of yellow and white flowers and the cream envelope on the floor. The can emits a faint visible cool mist that drifts upward at the door seam, explaining the tiny local snow. The clean glass door still carries the cat's earlier paw prints and now shows a physically correct layered reflection where the outdoor spring street and a frosty-looking reflected patch overlap. A few tiny snow crystals cling near the lower edge of the glass and melt into droplets. Buckets of yellow flowers and white blossoms remain in the background. Warm sunlight still comes from camera left and glows through the glass, while the cool mist catches the light. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, natural weight distribution on stone threshold, safe breathable open space. Direction, density and individual guard hairs of real short fur with subtle color variation; realistic reflections and shadows; accurate scale and perspective; lifelike glass, metal, paper, flower, water droplet, stone and plaster textures. High-end documentary or editorial photography, restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections, subtle sensor grain, realistic depth of field, whiskers and facial fur cleanly resolved, biologically realistic nose leather and eye reflections. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+      }
+    ],
+    "story_id": "20260819165728-01-a82cf30d"
+  },
+  "caption": "Snow taps the glass at noon\nA warm shop window turns into a tiny weather mystery when one drifting flake stops right at his paws.\n#GlassPaws #SpringSnow #VisualMystery",
+  "media_paths": [
+    "public/posts/2026-08-19/slot_04/20260819165728-01-a82cf30d/01_hook.jpg",
+    "public/posts/2026-08-19/slot_04/20260819165728-01-a82cf30d/02_escalation.jpg",
+    "public/posts/2026-08-19/slot_04/20260819165728-01-a82cf30d/03_payoff.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-19/slot_04/20260819165728-01-a82cf30d"
+}
