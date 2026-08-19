@@ -1,1 +1,75 @@
-{}
+{
+  "publication_key": "2026-08-19:05",
+  "prepared_at": "2026-08-19T19:46:48.650742+09:00",
+  "slot": 5,
+  "story_id": "20260819165728-02-fbb1575c",
+  "story": {
+    "title_ko": "우편함의 조개 답장",
+    "hook": "A shell drops from the mailbox",
+    "caption_explanation_en": "He reaches into an old mailbox for a letter, and something impossible answers from the sea instead.",
+    "hashtags": [
+      "#MailboxMystery",
+      "#ShellReply",
+      "#SeasideStory"
+    ],
+    "source_concepts": [
+      {
+        "id": "130",
+        "name_ko": "비밀 우체통",
+        "category_ko": "로맨스와 관계"
+      },
+      {
+        "id": "168",
+        "name_ko": "섬마을 우편배달",
+        "category_ko": "여행과 도시"
+      },
+      {
+        "id": "446",
+        "name_ko": "문구멍 시점 방문객",
+        "category_ko": "촬영 시점과 화면 장치"
+      },
+      {
+        "id": "028",
+        "name_ko": "현관 신발 검사관",
+        "category_ko": "일상 속 우연"
+      }
+    ],
+    "overview_ko": "바닷가 집의 오래된 우편함을 들여다보던 고양이가 편지 대신 조개를 받고, 현관의 모래 흔적을 따라가며 마지막에 옆집 창문과 우편함이 서로 답장을 주고받았음을 알게 된다.",
+    "continuity_ko": "햇빛 강한 오후의 섬마을 파란 문 현관, 녹슨 크림색 우편함, 문 아래 마른 모래와 작은 조개, 바닷바람, 파란 셔터 창문, 크림색 봉투, 조개 하나가 계속 핵심 소품, 모래 발자국이 현관에서 옆 창문까지 이어짐",
+    "creative_fingerprint": {
+      "location_ko": "섬마을 주택 현관",
+      "core_prop_ko": "녹슨 크림색 우편함과 조개",
+      "twist_ko": "답장의 발신자는 먼 바다가 아니라 바로 옆집 창문 속 이웃",
+      "camera_setups": [
+        "100mm peephole-style mailbox interior POV",
+        "35mm porch-level tracking with sand trail",
+        "85mm compressed across-window reveal"
+      ]
+    },
+    "images": [
+      {
+        "role": "HOOK",
+        "camera_strategy": "Object POV from inside mailbox toward the cat, tight close-up, 100mm macro equivalent, shallow realistic depth of field, strong frame-within-frame",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Viewpoint from inside a rusty cream-colored wall-mounted mailbox on a seaside house porch, looking outward as the cat curiously peers in with one white front paw reaching toward camera. A small seashell is dropping out of the dark upper slot toward the cat instead of a letter, immediately readable. The cat's expression is startled and intent, ears forward. Beyond the mailbox opening are a weathered blue door, pale stucco wall, and a few grains of dry sand on the threshold in strong afternoon sun. A cream envelope is tucked at the lower edge inside the mailbox but partly hidden. Light sea breeze is implied by a slightly lifted envelope corner. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, safe open breathable space, natural weight distribution as the cat stands securely on the porch. Direction, density and individual guard hairs of real short fur with subtle color variation; realistic rust, chipped paint, shell texture, paper fibers, stucco, wood and sand. High-end documentary or editorial photography, realistic reflections and shadows, accurate scale and perspective, restrained cinematic color grade, soft highlight roll-off, subtle sensor grain, realistic depth of field, clean whisker detail and realistic nose leather and eye reflections. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+      },
+      {
+        "role": "ESCALATION",
+        "camera_strategy": "Porch-level medium-wide from low side angle following sand trail, 35mm lens, deeper depth of field, cat in motion with environment context",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. On the same seaside house porch in strong afternoon sunlight, the cat has stepped back from the rusty cream mailbox with focused determination, head low and one paw lifted mid-step as it follows a trail of dry sand grains and tiny shell fragments across the threshold toward a neighboring blue shuttered window. The dropped seashell now lies near the cat's front paws, and the cream envelope has slipped partly out of the mailbox onto the porch. The weathered blue door and pale stucco wall remain unchanged. Sea breeze gently stirs a corner of the envelope and a few loose grains of sand. The cat's body language shows discovery and cautious curiosity. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, secure footing on stone porch, natural weight distribution and motion-appropriate blur only on the lifted paw and drifting sand. Direction, density and individual guard hairs of real short fur with subtle color variation; realistic reflections and shadows; accurate scale and perspective; lifelike shell, paper, stucco, painted wood and sand textures. High-end documentary or editorial photography, restrained cinematic color grade, soft highlight roll-off, natural atmospheric perspective, subtle sensor grain, realistic depth of field. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+      },
+      {
+        "role": "PAYOFF",
+        "camera_strategy": "Compressed telephoto medium from across porch toward blue window, 85mm lens, layered foreground with mailbox edge, moderate depth of field",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. At the same seaside porch in bright afternoon sun, the cat stands proudly on the sand-dusted threshold and looks up at a neighboring blue shuttered window where a second open mailbox is visible just inside the frame and a small breeze has pushed the cream envelope toward the sill. The original seashell sits by the cat's white paws, and the trail of dry sand grains leads clearly from the rusty cream mailbox to the window, revealing the playful exchange path. Through the open window, only a subtle clue of another home interior and hanging white curtain is visible; no extra cat dominates the frame. The cat's expression is satisfied and mildly smug, as if it has solved the mystery. The rusty cream mailbox edge appears in the near foreground to recover the opening clue. Pale stucco wall, blue door, shell fragments, and sunlight direction remain continuous. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, secure natural paw contact, safe breathable open space. Direction, density and individual guard hairs of real short fur with subtle color variation, realistic shadows and reflections, accurate scale and perspective, lifelike shell, paper, curtain, wood, stucco and stone textures, subtle sea-air atmosphere. High-end documentary or editorial photography, restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections, subtle sensor grain, realistic depth of field, clean whisker detail and realistic eye reflections. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles, unwanted costume elements, reference-cat coat colors, reference-cat breed traits, reference-cat eye colors."
+      }
+    ],
+    "story_id": "20260819165728-02-fbb1575c"
+  },
+  "caption": "A shell drops from the mailbox\nHe reaches into an old mailbox for a letter, and something impossible answers from the sea instead.\n#MailboxMystery #ShellReply #SeasideStory",
+  "media_paths": [
+    "public/posts/2026-08-19/slot_05/20260819165728-02-fbb1575c/01_hook.jpg",
+    "public/posts/2026-08-19/slot_05/20260819165728-02-fbb1575c/02_escalation.jpg",
+    "public/posts/2026-08-19/slot_05/20260819165728-02-fbb1575c/03_payoff.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-19/slot_05/20260819165728-02-fbb1575c"
+}
