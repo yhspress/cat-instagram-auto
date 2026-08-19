@@ -1,0 +1,67 @@
+{
+  "title_ko": "냉장고 설원 구조",
+  "hook": "Cold light opens a tiny ski rescue",
+  "caption_explanation_en": "A midnight fridge explorer sees a stranded rider in the frost, and the harmless rescue keeps getting bigger than the shelf.",
+  "hashtags": [
+    "#FridgeSnow",
+    "#MiniRescue",
+    "#ToyGondola"
+  ],
+  "source_concepts": [
+    {
+      "id": "022",
+      "name_ko": "냉동실 스키 선수",
+      "category_ko": "일상 속 우연"
+    },
+    {
+      "id": "088",
+      "name_ko": "산악 구조대",
+      "category_ko": "직업과 출근"
+    },
+    {
+      "id": "319",
+      "name_ko": "무더위 냉장고 스키장",
+      "category_ko": "계절·시간·날씨"
+    },
+    {
+      "id": "409",
+      "name_ko": "냉장고 내부 카메라",
+      "category_ko": "촬영 시점과 화면 장치"
+    },
+    {
+      "id": "465",
+      "name_ko": "스키 고양이",
+      "category_ko": "스포츠와 이벤트"
+    }
+  ],
+  "overview_ko": "냉장고 문이 열리자 선반의 성에 설원에서 장난감 스키어가 고립되고 고양이가 안전한 구조를 시도한 끝에 얼음 곤돌라가 구조 완료를 보여준다.",
+  "continuity_ko": "한밤중 부엌의 차가운 냉장고 내부 조명, 윗선반 성에 설원, 파란 장난감 스키어 하나, 각얼음으로 만든 작은 곤돌라, 문 가장자리의 겨울 김, 선반 위 하얀 발자국과 살짝 흩어진 성에, 빛은 냉장고 안 왼쪽에서 일정.",
+  "creative_fingerprint": {
+    "location_ko": "한밤중 냉장고 내부",
+    "core_prop_ko": "파란 장난감 스키어와 얼음 곤돌라",
+    "twist_ko": "위험한 조난처럼 보였지만 마지막에 고양이가 냉장고 선반 자체를 안전한 스키 구조장으로 완성",
+    "camera_setups": [
+      "14mm fridge-interior POV reveal",
+      "85mm close-up on frost rescue action",
+      "35mm top-down shelf view with ice gondola completion"
+    ]
+  },
+  "images": [
+    {
+      "role": "HOOK",
+      "camera_strategy": "Object POV from inside refrigerator, 14mm lens, low shelf angle, deep focus, cat entering frame central through open door",
+      "image_prompt": "Cold light opens a tiny ski rescue. Ultra-photorealistic live-action photography, vertical 4:5, viewpoint from inside a household refrigerator looking outward and upward across a frosty shelf. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The refrigerator door has just opened at midnight in a dark kitchen, and the cat appears central in the cold interior light, one white paw on the edge of a frost-covered top shelf that looks like a snowy slope. On that harmless miniature slope, a tiny blue toy skier is tilted and stranded near a drop to a lower shelf, while a small ice-cube gondola hangs improvised from the shelf lip. White paw prints already mark the frost. The cat’s expression is serious like a mountain rescuer. Safe staged miniature illusion only, no real danger. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike frost, plastic toy, clear ice, metal rack and refrigerator interior textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in cold vapor only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    },
+    {
+      "role": "ESCALATION",
+      "camera_strategy": "Intimate close-up, shelf-level side angle, 85mm lens, shallow depth of field, focused on paw and toy skier with frosty texture",
+      "image_prompt": "Same midnight kitchen, same open refrigerator, same cold interior light from the left, same frosty upper shelf, same tiny blue toy skier and same ice-cube gondola. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Emotional close-up of the cat leaning into the fridge, whiskers frosted at the tips, one white paw carefully nudging the tiny blue toy skier toward the waiting ice-cube gondola while loose frost scatters like powder snow. The cat’s amber-brown eyes are concentrated and compassionate; the miniature rescue is clearly a staged harmless toy scene on the shelf. Preserve prior white paw prints, cold vapor, shelf geometry and toy placement. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike frost crystals, toy paint wear, clear ice and refrigerator plastic textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in falling frost specks. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    },
+    {
+      "role": "PAYOFF",
+      "camera_strategy": "Top-down overhead from shelf opening, 35mm lens, medium-wide, graphic composition of tracks, paw prints, and gondola route",
+      "image_prompt": "Final image in the same open refrigerator at midnight, same left-side fridge light, same frosty top shelf transformed by the rescue action. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Overhead view reveals the full shelf as a safe miniature ski-rescue tableau: the cat stands proudly at the top edge, all four white paws visible, while the tiny blue toy skier now rides securely inside the same ice-cube gondola gliding across a shallow track between frost banks to a stable lower shelf platform. Earlier clues are recovered: the cat’s white paw prints form a rescue path in the frost, scattered powder remains where the skier was nudged, and cold vapor still curls from the open door. The twist is satisfying and comic: what looked like an emergency is now a neatly organized ski lift the cat has effectively completed. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike frost, ice, toy plastic, metal rack and refrigerator textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur minimal except faint gondola motion. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    }
+  ],
+  "story_id": "20260818135934-05-afb9a3d0"
+}
