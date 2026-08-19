@@ -1,0 +1,67 @@
+{
+  "title_ko": "기차역 낙엽열차",
+  "hook": "Leaves board a train before anyone",
+  "caption_explanation_en": "A platform cat raises a tiny whistle, and the first passengers arrive as a wind-built train made only of autumn leaves.",
+  "hashtags": [
+    "#LeafTrain",
+    "#PlatformMagic",
+    "#StationCat"
+  ],
+  "source_concepts": [
+    {
+      "id": "174",
+      "name_ko": "기차역 플랫폼 사서",
+      "category_ko": "여행과 도시"
+    },
+    {
+      "id": "305",
+      "name_ko": "가을 낙엽 열차",
+      "category_ko": "계절·시간·날씨"
+    },
+    {
+      "id": "067",
+      "name_ko": "기차역 역무원",
+      "category_ko": "직업과 출근"
+    },
+    {
+      "id": "448",
+      "name_ko": "기차 앞 유리 시점",
+      "category_ko": "촬영 시점과 화면 장치"
+    },
+    {
+      "id": "143",
+      "name_ko": "책갈피의 꽃잎",
+      "category_ko": "로맨스와 관계"
+    }
+  ],
+  "overview_ko": "한산한 시골 플랫폼에서 낙엽으로 된 열차를 본 고양이가 책갈피 꽃잎이 꽂힌 작은 책을 들고 기다리다 마지막에 목적지 승객이 바람 속에서 드러난다.",
+  "continuity_ko": "늦가을 황금빛 오후, 작은 시골 기차역 플랫폼, 벤치 위 작은 짙은 녹색 책 한 권과 안에 꽂힌 붉은 꽃잎 책갈피, 노란 낙엽 소용돌이, 짧은 역무원 호루라기, 오래된 레일과 흰 안전선, 바람 방향은 플랫폼 끝에서 카메라 쪽으로 유지.",
+  "creative_fingerprint": {
+    "location_ko": "늦가을 시골 기차역 플랫폼",
+    "core_prop_ko": "붉은 꽃잎 책갈피가 꽂힌 녹색 책",
+    "twist_ko": "기다린 승객이 실체가 아니라 책갈피 꽃잎을 따라 만들어진 낙엽 고양이 실루엣",
+    "camera_setups": [
+      "24mm platform-wide with leaf train forming",
+      "85mm close-up on whistle and bookmarked book",
+      "35mm front-window POV through leaf train arrival"
+    ]
+  },
+  "images": [
+    {
+      "role": "HOOK",
+      "camera_strategy": "Environmental wide, platform-end low angle, 24mm lens, deep focus, rails leading upward through vertical frame",
+      "image_prompt": "Leaves board a train before anyone. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. On a quiet rural train platform in late autumn golden afternoon light, the cat stands centrally beside the white safety line with a tiny station whistle on the ground near one white paw and a small dark green book resting on the bench behind, a red petal bookmark protruding. Down the tracks, a swirling gust of yellow leaves has begun forming the shape of a train entering before any real passengers. Rails lead into the distance; wind pushes leaves toward camera; the cat’s serious station-master stance makes the absurdity instantly readable. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike steel rail, concrete platform, weathered bench, paper book, dry leaf and whistle textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in the leaf train only. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    },
+    {
+      "role": "ESCALATION",
+      "camera_strategy": "Intimate close-up, seated-bench height, 85mm lens, shallow depth of field, foreground whistle and cat face with book detail",
+      "image_prompt": "Same late-autumn rural station platform, same golden afternoon, same wind direction from track end toward camera, same dark green book with red petal bookmark and same small whistle. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Emotional close-up of the cat at bench height, one white paw resting beside the whistle while the cat turns toward the dark green book, where the protruding red petal bookmark flutters in the wind and a stream of yellow leaves now curves from the page edge toward the tracks, directly linking the book to the leaf train outside frame. The cat’s eyes show dawning recognition. Preserve rails, safety line, scattered leaves, and platform textures. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike paper fibers, petal veins, metal whistle and fur textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur in fluttering leaves and bookmark tip. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    },
+    {
+      "role": "PAYOFF",
+      "camera_strategy": "Unusual viewpoint from front window of incoming leaf train, 35mm lens, forward-facing POV with cat on platform framed by swirling leaves",
+      "image_prompt": "Final moment at the same late-autumn rural station, viewed from the front-window perspective of the arriving leaf-formed train, preserving the same platform, same bench, same dark green book with red petal bookmark, same whistle, same wind and golden afternoon light. Ultra-photorealistic live-action photography, vertical 4:5. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Through a transparent front pane made of tightly swirling autumn leaves, the cat stands on the platform just beyond the white line, looking up with surprise and tenderness as the red petal bookmark has lifted from the green book and now anchors a passenger-shaped silhouette made entirely of leaves beside the cat, like someone has finally arrived from the story inside the book. Recover earlier clues: the leaf stream from the book leads into the train shape, the whistle lies by the paw, and the bench remains in place. The payoff is a visually satisfying reveal that the waiting passenger was hidden in the bookmark all along. Realistic physical laws and accurate cat anatomy. Normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail. Natural weight distribution and surface contact. Direction, density and individual guard hairs of real short fur with subtle color variation. Realistic reflections and shadows, physically plausible lighting, accurate scale and perspective. Lifelike leaf layers, glasslike airflow surface, paper book, rail steel and platform concrete textures. Natural atmospheric perspective, subtle sensor grain, motion-appropriate blur on the rotating leaf structure. Restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections. High-end documentary or editorial photography, as if a professional camera captured a real extraordinary event. Exclude plastic/over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections/shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra toes, missing whiskers, distorted faces, human hands, human-like cat paws, pointless accessories, recognizable text, brand logos, watermarks, app UI, image captions."
+    }
+  ],
+  "story_id": "20260818135934-04-8876c7cb"
+}
