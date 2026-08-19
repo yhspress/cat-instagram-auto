@@ -224,6 +224,28 @@
         ]
       },
       "published_key": "2026-08-19:03"
+    },
+    {
+      "story_id": "20260819165728-01-a82cf30d",
+      "title_ko": "유리문 속 봄눈",
+      "hook": "Snow taps the glass at noon",
+      "source_ids": [
+        "312",
+        "057",
+        "422",
+        "010"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "동네 꽃집 유리문 앞",
+        "core_prop_ko": "크림색 봉투와 작은 꽃다발",
+        "twist_ko": "반사 속 계절 차이가 사실 문 안쪽 냉기와 꽃 배달의 흔적에서 비롯된 국소적 봄눈",
+        "camera_setups": [
+          "85mm intimate glass close-up with paws",
+          "24mm side environmental doorway wide",
+          "50mm oblique reflection reveal at threshold"
+        ]
+      },
+      "published_key": "2026-08-19:04"
     }
   ]
 }
