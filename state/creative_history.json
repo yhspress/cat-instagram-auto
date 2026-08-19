@@ -268,6 +268,28 @@
         ]
       },
       "published_key": "2026-08-19:05"
+    },
+    {
+      "story_id": "20260819165728-03-b0300b65",
+      "title_ko": "시리얼 구조의 진실",
+      "hook": "Toy town spills from the cereal box",
+      "source_ids": [
+        "280",
+        "093",
+        "411",
+        "038"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "아침 주방 바닥",
+        "core_prop_ko": "엎어진 시리얼 상자와 작은 장난감 주민",
+        "twist_ko": "구조 대상처럼 보인 미니 주민이 사실 고양이에게 신호를 보낸 발신자",
+        "camera_setups": [
+          "24mm low kinetic spill close-wide",
+          "50mm overhead rescue geometry",
+          "100mm reflective bowl detail POV"
+        ]
+      },
+      "published_key": "2026-08-20:01"
     }
   ]
 }
