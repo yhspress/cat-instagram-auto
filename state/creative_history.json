@@ -178,6 +178,29 @@
         ]
       },
       "published_key": "2026-08-19:01"
+    },
+    {
+      "story_id": "20260818135934-04-8876c7cb",
+      "title_ko": "기차역 낙엽열차",
+      "hook": "Leaves board a train before anyone",
+      "source_ids": [
+        "174",
+        "305",
+        "067",
+        "448",
+        "143"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "늦가을 시골 기차역 플랫폼",
+        "core_prop_ko": "붉은 꽃잎 책갈피가 꽂힌 녹색 책",
+        "twist_ko": "기다린 승객이 실체가 아니라 책갈피 꽃잎을 따라 만들어진 낙엽 고양이 실루엣",
+        "camera_setups": [
+          "24mm platform-wide with leaf train forming",
+          "85mm close-up on whistle and bookmarked book",
+          "35mm front-window POV through leaf train arrival"
+        ]
+      },
+      "published_key": "2026-08-19:02"
     }
   ]
 }
