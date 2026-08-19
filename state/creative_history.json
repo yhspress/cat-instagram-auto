@@ -246,6 +246,28 @@
         ]
       },
       "published_key": "2026-08-19:04"
+    },
+    {
+      "story_id": "20260819165728-02-fbb1575c",
+      "title_ko": "우편함의 조개 답장",
+      "hook": "A shell drops from the mailbox",
+      "source_ids": [
+        "130",
+        "168",
+        "446",
+        "028"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "섬마을 주택 현관",
+        "core_prop_ko": "녹슨 크림색 우편함과 조개",
+        "twist_ko": "답장의 발신자는 먼 바다가 아니라 바로 옆집 창문 속 이웃",
+        "camera_setups": [
+          "100mm peephole-style mailbox interior POV",
+          "35mm porch-level tracking with sand trail",
+          "85mm compressed across-window reveal"
+        ]
+      },
+      "published_key": "2026-08-19:05"
     }
   ]
 }
