@@ -378,6 +378,28 @@
         ]
       },
       "published_key": "2026-08-20:05"
+    },
+    {
+      "story_id": "20260820165752-03-93cb43d0",
+      "title_ko": "시계 속 쥐 악단",
+      "hook": "Tiny band bursts from the clock",
+      "source_ids": [
+        "037",
+        "074",
+        "315",
+        "435"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "정오의 거실 벽시계 아래",
+        "core_prop_ko": "둥근 나무 벽시계와 작은 라디오",
+        "twist_ko": "침입자로 보였던 소리가 사실 고양이를 위해 시작된 정각 공연이었다",
+        "camera_setups": [
+          "85mm low emotional close-up toward clock",
+          "35mm side medium with kinetic mouse emergence",
+          "24mm interior clock POV toward cat conductor"
+        ]
+      },
+      "published_key": "2026-08-21:01"
     }
   ]
 }
