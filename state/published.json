@@ -15,7 +15,8 @@
     "2026-08-20:01",
     "2026-08-20:02",
     "2026-08-20:03",
-    "2026-08-20:04"
+    "2026-08-20:04",
+    "2026-08-20:05"
   ],
   "posts": [
     {
@@ -192,6 +193,17 @@
         "https://raw.githubusercontent.com/yhspress/cat-instagram-auto/main/public/posts/2026-08-20/slot_04/20260820165752-01-4b8c2723/01_hook.jpg",
         "https://raw.githubusercontent.com/yhspress/cat-instagram-auto/main/public/posts/2026-08-20/slot_04/20260820165752-01-4b8c2723/02_escalation.jpg",
         "https://raw.githubusercontent.com/yhspress/cat-instagram-auto/main/public/posts/2026-08-20/slot_04/20260820165752-01-4b8c2723/03_payoff.jpg"
+      ]
+    },
+    {
+      "publication_key": "2026-08-20:05",
+      "story_id": "20260820165752-02-6dfca59e",
+      "media_id": "18172207585435903",
+      "published_at": "2026-08-20T10:49:41.053727+00:00",
+      "media_urls": [
+        "https://raw.githubusercontent.com/yhspress/cat-instagram-auto/main/public/posts/2026-08-20/slot_05/20260820165752-02-6dfca59e/01_hook.jpg",
+        "https://raw.githubusercontent.com/yhspress/cat-instagram-auto/main/public/posts/2026-08-20/slot_05/20260820165752-02-6dfca59e/02_escalation.jpg",
+        "https://raw.githubusercontent.com/yhspress/cat-instagram-auto/main/public/posts/2026-08-20/slot_05/20260820165752-02-6dfca59e/03_payoff.jpg"
       ]
     }
   ]
