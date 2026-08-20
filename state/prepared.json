@@ -1,1 +1,75 @@
-{}
+{
+  "publication_key": "2026-08-21:01",
+  "prepared_at": "2026-08-21T07:46:07.664050+09:00",
+  "slot": 1,
+  "story_id": "20260820165752-03-93cb43d0",
+  "story": {
+    "title_ko": "시계 속 쥐 악단",
+    "hook": "Tiny band bursts from the clock",
+    "caption_explanation_en": "One suspicious stare at noon turns into a full living-room concert hidden inside the wall clock.",
+    "hashtags": [
+      "#TinyBand",
+      "#ClockMystery",
+      "#CatReaction"
+    ],
+    "source_concepts": [
+      {
+        "id": "037",
+        "name_ko": "벽시계 파수꾼",
+        "category_ko": "일상 속 우연"
+      },
+      {
+        "id": "074",
+        "name_ko": "라디오 진행자",
+        "category_ko": "직업과 출근"
+      },
+      {
+        "id": "315",
+        "name_ko": "자정의 해바라기",
+        "category_ko": "계절·시간·날씨"
+      },
+      {
+        "id": "435",
+        "name_ko": "초고속 촬영 꽃잎",
+        "category_ko": "촬영 시점과 화면 장치"
+      }
+    ],
+    "overview_ko": "거실 벽시계 아래에서 수상한 소리를 듣던 고양이가 정각에 튀어나온 생쥐 악단과 해바라기 관객을 마주하고, 결국 자신이 공연의 엄숙한 지휘자처럼 서게 된다.",
+    "continuity_ko": "장소는 햇빛 드는 거실의 연베이지 벽과 둥근 나무 벽시계 아래 선반, 정오의 밝은 빛이 오른쪽 창에서 들어온다; 소품은 둥근 오크 벽시계, 작은 빈티지 라디오, 노란 해바라기 화병, 공중에 흩날린 꽃가루와 노란 꽃잎, 시계문 안의 아주 작은 생쥐 악단; 모든 장면에서 유지된다.",
+    "creative_fingerprint": {
+      "location_ko": "정오의 거실 벽시계 아래",
+      "core_prop_ko": "둥근 나무 벽시계와 작은 라디오",
+      "twist_ko": "침입자로 보였던 소리가 사실 고양이를 위해 시작된 정각 공연이었다",
+      "camera_setups": [
+        "85mm low emotional close-up toward clock",
+        "35mm side medium with kinetic mouse emergence",
+        "24mm interior clock POV toward cat conductor"
+      ]
+    },
+    "images": [
+      {
+        "role": "HOOK",
+        "camera_strategy": "Emotional close-up, low-angle from shelf height toward clock and cat, 85mm lens, shallow realistic depth of field, vertical 4:5",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. In a sunlit living room at exact noon, against a pale beige wall with a round oak wall clock above a simple wooden shelf, an attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is central on the shelf with both front paws braced near the edge, suspicious side-eye aimed upward at the clock, ears sharply forward, whiskers tense, as the clock door cracks open and a sliver of brass instrument glints inside. Beside the cat sits a small vintage radio and a vase of bright yellow sunflowers catching the same right-side sunlight. A few yellow petals hang in midair near the flowers, hinting at vibration from an unseen sound. Strong thumbnail readability, one obvious mystery, clean background. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, natural weight distribution and surface contact, direction, density and individual guard hairs of real short fur with subtle color variation, realistic reflections and shadows, physically plausible lighting, accurate scale and perspective, lifelike wood, brass, radio plastic and fabric, ceramic vase, petals and sunflower textures, natural atmospheric perspective, subtle sensor grain, restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections, high-end documentary or editorial photography, realistic depth of field, individual whiskers and facial fur remain cleanly resolved. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles."
+      },
+      {
+        "role": "ESCALATION",
+        "camera_strategy": "Side medium action shot at shelf level, 35mm lens, moderate depth of field, vertical 4:5, movement from clock toward cat",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. In the same noon-lit living room with the pale beige wall, round oak wall clock, small vintage radio, and vase of yellow sunflowers on the wooden shelf, lit from the right by strong natural sunlight, the identical protagonist appears: an attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The clock door is now fully open and a tiny mouse band in miniature formal black jackets bursts from the clockworks with tiny brass horn, drum and baton, physically small and clearly toy-like staging rather than threatening animals. The cat recoils one step with wide-eyed astonishment, shoulders slightly raised, one white paw lifted midair, but remains safe and balanced on the shelf. The radio dial glows softly and the sunflower heads have subtly turned toward the music, with more yellow petals shaken loose into the air. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, natural weight distribution and surface contact, direction, density and individual guard hairs of real short fur with subtle color variation, realistic reflections and shadows, accurate scale and perspective, lifelike wood, metal, cloth, ceramic, petals and dust textures, natural atmospheric perspective, subtle sensor grain, motion-appropriate blur on petals and tiny band movement, restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections, high-end documentary or editorial photography, realistic depth of field, individual whiskers and facial fur cleanly resolved, teeth not exaggerated. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles."
+      },
+      {
+        "role": "PAYOFF",
+        "camera_strategy": "Unusual clock interior POV looking outward, 24mm lens, deep focus, vertical 4:5, architectural circular frame",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5. View from inside the open round oak wall clock looking outward through the circular clock housing as a natural frame-within-a-frame, in the same noon-bright living room with pale beige wall, right-side sunlight, small vintage radio on the wooden shelf, and yellow sunflowers shedding a few petals. The protagonist remains identical: an attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat now stands proudly and calmly on the shelf directly outside the clock, one white paw slightly raised like a conductor cue, expression changed to smug satisfaction and focused curiosity. In the foreground inside the clock, the tiny mouse band faces outward toward the cat as if performing for it, while the small radio and sunflower vase remain visible beyond, tying all clues together. A few suspended yellow petals and dust motes catch the light, making the performance feel alive. Realistic physical laws and accurate cat anatomy, normal paws, claws, legs, ears, eyes, nose, muzzle, whiskers and tail, natural weight distribution and surface contact, direction, density and individual guard hairs of real short fur with subtle color variation, realistic reflections and shadows, physically plausible lighting, accurate scale and perspective, lifelike clock gears, wood grain, brass instruments, radio materials, ceramic vase and flower textures, natural atmospheric perspective, subtle sensor grain, restrained cinematic color grade, soft highlight roll-off, realistic micro-imperfections, high-end documentary or editorial photography, realistic depth of field rather than fake blur, individual whiskers and facial fur remain cleanly resolved, eye reflections biologically realistic. Exclude plastic or over-smooth fur, waxy texture, excessive HDR, artificial outlines, overprocessed color, glowing edges, cartoon, illustration, painting, 3D render, sterile surfaces, fake bokeh, wrong reflections, wrong shadows, unexplained floating objects, unintended duplicate cats, duplicate limbs, fused paws, extra paws, extra toes, missing whiskers, distorted faces, asymmetrical malformed eyes, human eyebrows, human smiles, human hands, human-like cat paws, recognizable text, brand logos, watermarks, app UI, image captions, meme text, speech bubbles."
+      }
+    ],
+    "story_id": "20260820165752-03-93cb43d0"
+  },
+  "caption": "Tiny band bursts from the clock\nOne suspicious stare at noon turns into a full living-room concert hidden inside the wall clock.\n#TinyBand #ClockMystery #CatReaction",
+  "media_paths": [
+    "public/posts/2026-08-21/slot_01/20260820165752-03-93cb43d0/01_hook.jpg",
+    "public/posts/2026-08-21/slot_01/20260820165752-03-93cb43d0/02_escalation.jpg",
+    "public/posts/2026-08-21/slot_01/20260820165752-03-93cb43d0/03_payoff.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-21/slot_01/20260820165752-03-93cb43d0"
+}
