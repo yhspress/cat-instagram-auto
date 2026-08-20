@@ -334,6 +334,28 @@
         ]
       },
       "published_key": "2026-08-20:03"
+    },
+    {
+      "story_id": "20260820165752-01-4b8c2723",
+      "title_ko": "창가의 조개 전보",
+      "hook": "A shell taps the florist glass",
+      "source_ids": [
+        "057",
+        "168",
+        "312",
+        "422"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "도심 꽃집 유리문 앞",
+        "core_prop_ko": "젖은 조개와 작은 흰 꽃다발",
+        "twist_ko": "바다의 답장처럼 보인 조개가 사실 문 안쪽 작은 해수 어항에서 튄 물과 연결되어 있었다",
+        "camera_setups": [
+          "85mm intimate glass-close at cat eye level",
+          "35mm side medium tracking across threshold",
+          "24mm interior wide through shop framing doorway and nano aquarium"
+        ]
+      },
+      "published_key": "2026-08-20:04"
     }
   ]
 }
