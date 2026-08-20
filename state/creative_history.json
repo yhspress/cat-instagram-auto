@@ -312,6 +312,28 @@
         ]
       },
       "published_key": "2026-08-20:02"
+    },
+    {
+      "story_id": "20260819165728-05-950e733f",
+      "title_ko": "낮 그림자의 별문",
+      "hook": "Stars flicker inside his shadow",
+      "source_ids": [
+        "303",
+        "196",
+        "042",
+        "439"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "정오의 스투코 골목",
+        "core_prop_ko": "별이 박힌 그림자",
+        "twist_ko": "자기 그림자가 골목 지도로 변해 숨은 아치 통로를 연다",
+        "camera_setups": [
+          "85mm emotional low close on shadow and paw",
+          "24mm overhead-leaning alley route wide",
+          "35mm arch-gap reveal with foreground leaves"
+        ]
+      },
+      "published_key": "2026-08-20:03"
     }
   ]
 }
