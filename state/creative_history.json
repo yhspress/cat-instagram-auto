@@ -290,6 +290,28 @@
         ]
       },
       "published_key": "2026-08-20:01"
+    },
+    {
+      "story_id": "20260819165728-04-d34d5c8f",
+      "title_ko": "장난감 배의 항로",
+      "hook": "Toy boats obey his flashlight",
+      "source_ids": [
+        "036",
+        "383",
+        "430",
+        "341"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "저녁 거실 캣타워 주변",
+        "core_prop_ko": "작은 손전등과 장난감 배",
+        "twist_ko": "신비한 항로의 목적지가 모험의 섬이 아니라 숨겨진 밥그릇",
+        "camera_setups": [
+          "35mm semi-low tower portrait",
+          "24mm floor-level boat-route wide",
+          "50mm hidden-bowl reveal through reflected tray"
+        ]
+      },
+      "published_key": "2026-08-20:02"
     }
   ]
 }
