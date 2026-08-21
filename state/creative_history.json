@@ -400,6 +400,28 @@
         ]
       },
       "published_key": "2026-08-21:01"
+    },
+    {
+      "story_id": "20260820165752-04-51b449c9",
+      "title_ko": "문구멍의 꽃배달",
+      "hook": "Bouquet blocks the peephole",
+      "source_ids": [
+        "128",
+        "251",
+        "446",
+        "313"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "새벽 안개 낀 아파트 현관 복도",
+        "core_prop_ko": "분홍 장미 꽃다발과 황동 문구멍",
+        "twist_ko": "수상한 복면 일행은 침입자가 아니라 잘못 온 꽃배달의 실제 수신인을 찾는 조용한 동행이었다",
+        "camera_setups": [
+          "100mm peephole distortion POV",
+          "50mm corridor medium frontal at paw height",
+          "35mm reverse wide from recipient doorway reveal"
+        ]
+      },
+      "published_key": "2026-08-21:02"
     }
   ]
 }
