@@ -3,7 +3,7 @@
   "timezone": "Asia/Seoul",
   "concepts_file": "data/cat_concepts_500.txt",
   "story_prompt_file": "prompts/story_generator_prompt.txt",
-  "batch_size": 5,
+  "batch_size": 10,
   "queue_refill_threshold": 1,
   "images_per_story": 1,
   "image_generate_size": "1024x1536",

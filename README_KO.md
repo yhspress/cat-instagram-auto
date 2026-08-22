@@ -1,6 +1,6 @@
 # 인스타 고양이 대환장극 — 1장 HERO GitHub-only 자동화
 
-이 저장소는 첨부된 **고양이 연출 콘셉트 500개**를 소스로 사용해 OpenAI API가 5개 스토리를 생성하고, 각 스토리의 원인·절정·반전이 한눈에 읽히는 강력한 HERO 이미지 1장을 만든 뒤 Instagram 단일 이미지 게시물로 자동 게시합니다. Instagram 설명문은 각 스토리의 짧은 영어 Hook 1문장 + 영어 후킹 설명문 1문장 + 해시태그 3개로 구성됩니다.
+이 저장소는 첨부된 **고양이 연출 콘셉트 500개**를 소스로 사용해 OpenAI API가 10개 스토리를 생성하고, 각 스토리의 원인·절정·반전이 한눈에 읽히는 강력한 HERO 이미지 1장을 만든 뒤 Instagram 단일 이미지 게시물로 자동 게시합니다. Instagram 설명문은 각 스토리의 짧은 영어 Hook 1문장 + 영어 후킹 설명문 1문장 + 해시태그 3개로 구성됩니다.
 
 Cloudinary는 완전히 제거했습니다. **GitHub Actions가 실행을 담당하고, 생성 이미지와 큐/이력도 GitHub 저장소에 저장하며, Instagram이 가져갈 공개 이미지 URL도 GitHub `raw.githubusercontent.com`을 사용합니다.**
 
@@ -11,7 +11,7 @@ Cloudinary는 완전히 제거했습니다. **GitHub Actions가 실행을 담당
   ↓
 Python이 스토리별 장소·상황·소품·반전·표정·몸짓 6개를 결정적으로 사전 배정
   ↓
-스토리 큐가 비면 GPT가 5개 스토리 생성
+스토리 큐가 비면 GPT가 10개 스토리 생성
   ↓
 가장 오래된 스토리 1개 선택
   ↓
@@ -50,7 +50,7 @@ Instagram Content Publishing API는 이미지 URL에 Meta 서버가 직접 접�
 .github/workflows/auto_post.yml   예약/수동 GitHub Actions
 config/project.json               자동화 설정
 data/cat_concepts_500.txt         고양이 콘셉트 500개 원본
-prompts/story_generator_prompt.txt 5개 스토리/5개 HERO 프롬프트 생성 규칙
+prompts/story_generator_prompt.txt 설정 기반 스토리/HERO 프롬프트 생성 규칙
 public/posts/                     게시용 4:5 이미지와 story.json/caption.txt
 scripts/run_pipeline.py           생성·큐·GitHub URL·Instagram 단일 이미지 파이프라인
 scripts/check_template.py         구조 검증
@@ -62,18 +62,18 @@ state/published.json              실제 게시 이력/슬롯 중복 방지
 
 ## 생성 규격
 
-- 한 번의 스토리 리필: 정확히 5개
+- 한 번의 스토리 리필: `batch_size` 기준, 현재 정확히 10개
 - 스토리당 이미지: 정확히 1개(`HERO`)
 - 구조: 원인 + 절정 행동 + 강한 고양이 표정 + 결과/반전 단서를 한 프레임에 표현
 - 각 스토리 소스: Python이 사전 배정한 정확히 6개(장소·상황·소품·반전·표정·몸짓 각 1개), 배치 내 ID 중복 없음
-- 모델에는 500개 전체 목록 대신 5개 스토리에 배정된 30개만 전달해 입력 토큰과 소스 선택 오류 재시도를 줄임
+- 모델에는 500개 전체 목록 대신 10개 스토리에 배정된 60개만 전달해 입력 토큰과 소스 선택 오류 재시도를 줄임
 - Hook: 영어 50자 이하
 - Caption explanation: 영어 후킹 설명문 1문장, 160자 이하
 - Hashtags: 영어 정확히 3개
 - 각 image prompt: 영어, 고정 글자 수 제한 없음(필수 시각 정보는 생략하지 않음)
 - 고정 주인공 외형을 모든 이미지 프롬프트에 반복
 - 이미지 생성 요청은 세로형으로 하고 최종 게시 파일은 1024×1280, 정확한 4:5
-- 5장 HERO 이미지에서 강한 표정과 결정적 몸짓을 각각 최소 4종 사용하고, 표정·몸짓·카메라 조합 중복 억제 및 최근 창작 이력 반영
+- 10장 HERO 이미지에서 dominant expression과 dominant gesture를 각각 최소 7종 사용하고, 표정·몸짓·카메라 조합 중복 억제 및 최근 창작 이력 반영
 
 ## 필요한 GitHub Secret
 
@@ -156,13 +156,14 @@ Instagram 단계에서 실패해도 `state/prepared.json`과 `public/posts`가 G
 - 반전
 - 카메라 구성
 
-새 5개 스토리 생성 시 이 이력을 다시 GPT에 전달해 장기 반복을 줄입니다.
+새 10개 스토리 생성 시 이 이력을 다시 GPT에 전달해 장기 반복을 줄입니다.
 
 ## 설정 변경
 
 `config/project.json`에서 다음을 조절할 수 있습니다.
 
-- `queue_refill_threshold`: 새 5개 스토리를 생성할 큐 기준
+- `batch_size`: 한 번에 생성해 큐에 넣을 스토리 수(현재 10)
+- `queue_refill_threshold`: 새 batch를 생성할 큐 기준
 - `image_quality`: 이미지 품질
 - `recent_history_limit`: GPT에 제공할 최근 게시 이력 수
 - `image_publish_width` / `image_publish_height`: 기본 1024×1280 유지 권장

@@ -34,7 +34,7 @@ if len(ids) != 500:
     raise SystemExit(f"[ERROR] source concepts: expected 500, found {len(ids)}")
 
 prompt = (ROOT / config["story_prompt_file"]).read_text(encoding="utf-8")
-for marker in ["{creative_history}", "{assigned_source_concepts}", "ASSIGNED_SOURCE_CONCEPTS", "Ultra-photorealistic live-action photography", "caption_explanation_en", "hero_expression_en", "hero_body_language_en", '"role": "HERO"']:
+for marker in ["{batch_size}", "{minimum_hero_variety}", "{creative_history}", "{assigned_source_concepts}", "ASSIGNED_SOURCE_CONCEPTS", "Ultra-photorealistic live-action photography", "caption_explanation_en", "hero_expression_en", "hero_body_language_en", '"role": "HERO"']:
     if marker not in prompt:
         raise SystemExit(f"[ERROR] story prompt missing marker: {marker}")
 if "{concepts}" in prompt or "SOURCE_LIBRARY_500" in prompt:
@@ -60,6 +60,9 @@ print("[PASS] GitHub-hosted media logic")
 print("[PASS] single-image publishing logic")
 print("[PASS] deterministic six-role source assignment")
 print("[PASS] compact assigned-source prompt")
+if config.get("batch_size") != 10:
+    raise SystemExit(f"[ERROR] batch_size must be 10, found {config.get('batch_size')}")
+print("[PASS] configured 10-story batch")
 print("[PROJECT]", config.get("project_name"))
 print("[TIMEZONE]", config.get("timezone"))
 print("[BATCH SIZE]", config.get("batch_size"))

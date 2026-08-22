@@ -42,6 +42,11 @@ class StoryBatchValidationTests(unittest.TestCase):
             "intense suspicious side-eye with tense whisker pads",
             "triumphant relief with relaxed whiskers and upright tail",
             "deeply offended stare with narrowed eyes and a tail flick",
+            "startled open-mouthed gasp with round alert eyes",
+            "mischievous nose-lick with bright focused eyes",
+            "sleepy contentment with heavy relaxed eyelids",
+            "smug satisfaction with a subtle one-sided squint",
+            "focused determination with eyes locked forward",
         ]
         body_languages = [
             "one white paw frozen mid-reach with the tail held rigid",
@@ -49,6 +54,11 @@ class StoryBatchValidationTests(unittest.TestCase):
             "low cautious crouch with ears sideways and tail tucked close",
             "upright proud stance with relaxed whiskers and tail raised",
             "forward lean with one paw planted and the tail snapping sideways",
+            "sudden backward hop with both front paws lifted safely",
+            "playful low bow with hindquarters raised and tail curled",
+            "loose sleepy drape with chin and paws over a low ledge",
+            "balanced seated pose with chest high and tail wrapped aside",
+            "purposeful stride with one paw extended and ears aimed forward",
         ]
         stories = []
         assignments = []
@@ -88,14 +98,14 @@ class StoryBatchValidationTests(unittest.TestCase):
             assignments.append(assigned_sources)
         return {"stories": stories}, assignments
 
-    def test_accepts_five_single_image_stories_with_distinct_expressions(self) -> None:
+    def test_accepts_configured_ten_single_image_stories(self) -> None:
         batch, assignments = self.make_batch()
-        self.assertEqual(rp.validate_story_batch(batch, assignments), [])
+        self.assertEqual(rp.validate_story_batch(batch, assignments, {"batch_size": 10}), [])
 
     def test_rejects_legacy_three_image_story(self) -> None:
         batch, assignments = self.make_batch()
         batch["stories"][0]["images"] *= 3
-        errors = rp.validate_story_batch(batch, assignments)
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
         self.assertIn("story 1: images must contain exactly 1 item", errors)
 
     def test_requires_expression_phrase_inside_prompt(self) -> None:
@@ -103,7 +113,7 @@ class StoryBatchValidationTests(unittest.TestCase):
         batch["stories"][0]["images"][0]["image_prompt"] = (
             "Ultra-photorealistic live-action photography, vertical 4:5, Korean Shorthair."
         )
-        errors = rp.validate_story_batch(batch, assignments)
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
         self.assertIn("story 1 image 1: prompt must include hero_expression_en verbatim", errors)
 
     def test_requires_body_language_phrase_inside_prompt(self) -> None:
@@ -111,54 +121,84 @@ class StoryBatchValidationTests(unittest.TestCase):
         body_language = batch["stories"][0]["hero_body_language_en"]
         prompt = batch["stories"][0]["images"][0]["image_prompt"]
         batch["stories"][0]["images"][0]["image_prompt"] = prompt.replace(body_language, "neutral pose")
-        errors = rp.validate_story_batch(batch, assignments)
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
         self.assertIn("story 1 image 1: prompt must include hero_body_language_en verbatim", errors)
 
     def test_rejects_any_source_id_not_exactly_assigned(self) -> None:
         batch, assignments = self.make_batch()
         batch["stories"][0]["source_concepts"][2]["id"] = "999"
-        errors = rp.validate_story_batch(batch, assignments)
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
         self.assertTrue(any("source_concepts ids must exactly match assigned ids" in error for error in errors))
 
     def test_accepts_assigned_ids_in_a_different_order(self) -> None:
         batch, assignments = self.make_batch()
         batch["stories"][0]["source_concepts"].reverse()
-        self.assertEqual(rp.validate_story_batch(batch, assignments), [])
+        self.assertEqual(rp.validate_story_batch(batch, assignments, {"batch_size": 10}), [])
 
     def test_rejects_duplicate_assigned_id(self) -> None:
         batch, assignments = self.make_batch()
         batch["stories"][0]["source_concepts"][1]["id"] = batch["stories"][0]["source_concepts"][0]["id"]
-        errors = rp.validate_story_batch(batch, assignments)
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
         self.assertTrue(any("source_concepts ids must exactly match assigned ids" in error for error in errors))
+
+    def test_requires_seven_distinct_expressions_and_gestures(self) -> None:
+        batch, assignments = self.make_batch()
+        first_expression = batch["stories"][0]["hero_expression_en"]
+        first_gesture = batch["stories"][0]["hero_body_language_en"]
+        for story in batch["stories"][6:]:
+            prompt = story["images"][0]["image_prompt"]
+            prompt = prompt.replace(story["hero_expression_en"], first_expression)
+            prompt = prompt.replace(story["hero_body_language_en"], first_gesture)
+            story["hero_expression_en"] = first_expression
+            story["hero_body_language_en"] = first_gesture
+            story["images"][0]["image_prompt"] = prompt
+
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
+        self.assertIn("stories must use at least 7 distinct hero_expression_en values", errors)
+        self.assertIn("stories must use at least 7 distinct hero_body_language_en values", errors)
 
 
 class SourceAssignmentTests(unittest.TestCase):
     def test_assigns_six_roles_per_story_without_batch_id_reuse(self) -> None:
         concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
         with patch.object(rp, "recent_source_ids", return_value=(set(), 0)):
-            first = rp.assign_source_concepts(concepts, {}, story_count=5)
-            second = rp.assign_source_concepts(concepts, {}, story_count=5)
+            first = rp.assign_source_concepts(concepts, {"batch_size": 10})
+            second = rp.assign_source_concepts(concepts, {"batch_size": 10})
 
         expected_roles = [role for role, _role_ko, _categories in rp.SOURCE_ROLE_CATEGORY_POOLS]
         self.assertEqual(len(rp.parse_concepts(concepts)), 500)
         self.assertEqual(first, second)
-        self.assertEqual(len(first), 5)
+        self.assertEqual(len(first), 10)
         self.assertTrue(all([item["role"] for item in story] == expected_roles for story in first))
         for story in first:
             for item, (_role, _role_ko, categories) in zip(story, rp.SOURCE_ROLE_CATEGORY_POOLS):
                 self.assertIn(item["category_ko"], categories)
         ids = [item["id"] for story in first for item in story]
-        self.assertEqual(len(ids), 30)
-        self.assertEqual(len(set(ids)), 30)
+        self.assertEqual(len(ids), 60)
+        self.assertEqual(len(set(ids)), 60)
+
+    def test_assignment_avoids_recent_ids_when_each_pool_has_capacity(self) -> None:
+        concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
+        records = rp.parse_concepts(concepts)
+        recent_ids = set()
+        for _role, _role_ko, categories in rp.SOURCE_ROLE_CATEGORY_POOLS:
+            pool = [record for record in records if record["category_ko"] in categories]
+            recent_ids.update(record["id"] for record in pool[:10])
+
+        with patch.object(rp, "recent_source_ids", return_value=(recent_ids, 0)):
+            assignments = rp.assign_source_concepts(concepts, {"batch_size": 10})
+
+        assigned_ids = {item["id"] for story in assignments for item in story}
+        self.assertTrue(assigned_ids.isdisjoint(recent_ids))
 
     def test_compact_assignment_prompt_contains_only_assigned_concepts(self) -> None:
         concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
         with patch.object(rp, "recent_source_ids", return_value=(set(), 0)):
-            assignments = rp.assign_source_concepts(concepts, {}, story_count=5)
+            assignments = rp.assign_source_concepts(concepts, {"batch_size": 10})
         compact = rp.assigned_source_prompt(assignments)
 
-        self.assertEqual(compact.count('"story_index"'), 5)
-        self.assertEqual(compact.count('"id"'), 30)
+        self.assertEqual(compact.count('"story_index"'), 10)
+        self.assertEqual(compact.count('"id"'), 60)
         self.assertNotIn("500. ", compact)
 
     def test_generation_injects_assignments_instead_of_full_library(self) -> None:
@@ -166,7 +206,7 @@ class SourceAssignmentTests(unittest.TestCase):
         response = Mock(output_text=json.dumps(batch, ensure_ascii=False))
         client = Mock()
         client.responses.create.return_value = response
-        config = {"story_prompt_file": "prompts/story_generator_prompt.txt"}
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10}
 
         with (
             patch.object(rp, "assign_source_concepts", return_value=assignments),
@@ -177,10 +217,61 @@ class SourceAssignmentTests(unittest.TestCase):
             stories = rp.generate_story_batch(client, config, "FULL_LIBRARY_SENTINEL")
 
         sent_prompt = client.responses.create.call_args.kwargs["input"]
-        self.assertEqual(len(stories), 5)
+        self.assertEqual(len(stories), 10)
         self.assertIn("ASSIGNED_SOURCE_CONCEPTS", sent_prompt)
+        self.assertIn("create exactly 10 original", sent_prompt)
+        self.assertIn("at least 7 clearly different", sent_prompt)
+        self.assertNotIn("{batch_size}", sent_prompt)
+        self.assertNotIn("{minimum_hero_variety}", sent_prompt)
         self.assertNotIn("{assigned_source_concepts}", sent_prompt)
         self.assertNotIn("FULL_LIBRARY_SENTINEL", sent_prompt)
+
+
+class QueueBatchTests(unittest.TestCase):
+    def test_empty_queue_refills_with_configured_ten_stories(self) -> None:
+        generated = [{"story_id": f"story-{index}"} for index in range(10)]
+        with (
+            patch.object(rp, "queue_data", return_value={"stories": []}),
+            patch.object(rp, "generate_story_batch", return_value=generated),
+            patch.object(rp, "save_json") as save_json,
+        ):
+            queue = rp.ensure_queue(Mock(), {"batch_size": 10, "queue_refill_threshold": 1}, "concepts")
+
+        self.assertEqual(len(queue["stories"]), 10)
+        save_json.assert_called_once_with(rp.QUEUE_PATH, queue)
+
+    def test_successful_publish_consumes_only_one_story(self) -> None:
+        queue = {"stories": [{"story_id": f"story-{index}"} for index in range(10)]}
+        prepared = {
+            "publication_key": "2026-08-22:01",
+            "story_id": "story-0",
+            "story": {
+                "story_id": "story-0",
+                "title_ko": "제목",
+                "hook": "Hook",
+                "source_concepts": [],
+                "creative_fingerprint": {},
+            },
+        }
+
+        def load_state(path: Path, default: dict) -> dict:
+            if path == rp.PUBLISHED_PATH:
+                return {"published": [], "posts": []}
+            if path == rp.QUEUE_PATH:
+                return queue
+            if path == rp.HISTORY_PATH:
+                return {"stories": []}
+            return default
+
+        with (
+            patch.object(rp, "load_json", side_effect=load_state),
+            patch.object(rp, "save_json") as save_json,
+        ):
+            rp.finalize_success(prepared, "media-1", ["https://example.com/hero.jpg"])
+
+        saved_queue = next(call.args[1] for call in save_json.call_args_list if call.args[0] == rp.QUEUE_PATH)
+        self.assertEqual(len(saved_queue["stories"]), 9)
+        self.assertEqual(saved_queue["stories"][0]["story_id"], "story-1")
 
 
 class SingleImagePublishingTests(unittest.TestCase):

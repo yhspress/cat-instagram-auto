@@ -68,6 +68,17 @@ def load_config() -> dict:
     return load_json(CONFIG_PATH, {})
 
 
+def configured_batch_size(config: dict) -> int:
+    value = int(config.get("batch_size", 10))
+    if value < 1:
+        raise SystemExit("[ERROR] batch_size must be at least 1")
+    return value
+
+
+def minimum_hero_variety(batch_size: int) -> int:
+    return max(1, (batch_size * 7 + 9) // 10)
+
+
 def get_now(config: dict) -> datetime:
     return datetime.now(ZoneInfo(config.get("timezone", "Asia/Seoul")))
 
@@ -123,8 +134,8 @@ def recent_source_ids(config: dict) -> tuple[set[str], int]:
 def assign_source_concepts(
     concepts: str,
     config: dict,
-    story_count: int = 5,
 ) -> list[list[dict[str, str]]]:
+    story_count = configured_batch_size(config)
     records = parse_concepts(concepts)
     recent_ids, history_count = recent_source_ids(config)
     used_in_batch: set[str] = set()
@@ -183,13 +194,16 @@ def extract_json(text: str) -> dict:
 def validate_story_batch(
     batch: dict,
     assigned_sources: list[list[dict[str, str]]],
+    config: dict,
 ) -> list[str]:
     errors: list[str] = []
+    batch_size = configured_batch_size(config)
+    minimum_variety = minimum_hero_variety(batch_size)
     stories = batch.get("stories")
-    if not isinstance(stories, list) or len(stories) != 5:
-        return ["stories must contain exactly 5 items"]
-    if len(assigned_sources) != 5 or any(len(sources) != 6 for sources in assigned_sources):
-        return ["assigned_sources must contain exactly 5 stories with 6 items each"]
+    if not isinstance(stories, list) or len(stories) != batch_size:
+        return [f"stories must contain exactly {batch_size} items"]
+    if len(assigned_sources) != batch_size or any(len(sources) != 6 for sources in assigned_sources):
+        return [f"assigned_sources must contain exactly {batch_size} stories with 6 items each"]
 
     roles = ["HERO"]
     fingerprints: set[tuple[str, str, str]] = set()
@@ -285,10 +299,10 @@ def validate_story_batch(
                     errors.append(f"story {si}: repeated creative fingerprint")
                 fingerprints.add(key)
 
-    if len(set(hero_expressions)) < 4:
-        errors.append("stories must use at least 4 distinct hero_expression_en values")
-    if len(set(hero_body_languages)) < 4:
-        errors.append("stories must use at least 4 distinct hero_body_language_en values")
+    if len(set(hero_expressions)) < minimum_variety:
+        errors.append(f"stories must use at least {minimum_variety} distinct hero_expression_en values")
+    if len(set(hero_body_languages)) < minimum_variety:
+        errors.append(f"stories must use at least {minimum_variety} distinct hero_body_language_en values")
 
     return errors
 
@@ -302,9 +316,14 @@ def history_for_prompt(config: dict) -> str:
 
 def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[dict]:
     template = (ROOT / config["story_prompt_file"]).read_text(encoding="utf-8")
+    batch_size = configured_batch_size(config)
     assignments = assign_source_concepts(concepts, config)
-    base_prompt = template.replace("{creative_history}", history_for_prompt(config)).replace(
-        "{assigned_source_concepts}", assigned_source_prompt(assignments)
+    base_prompt = (
+        template
+        .replace("{batch_size}", str(batch_size))
+        .replace("{minimum_hero_variety}", str(minimum_hero_variety(batch_size)))
+        .replace("{creative_history}", history_for_prompt(config))
+        .replace("{assigned_source_concepts}", assigned_source_prompt(assignments))
     )
     model = required_env("OPENAI_TEXT_MODEL")
     last_errors: list[str] = []
@@ -322,7 +341,7 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
         except Exception as exc:
             last_errors = [f"invalid JSON: {exc}"]
             continue
-        last_errors = validate_story_batch(batch, assignments)
+        last_errors = validate_story_batch(batch, assignments, config)
         if not last_errors:
             now = get_now(config)
             stories = batch["stories"]
@@ -331,7 +350,7 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
                     (story["title_ko"] + story["hook"] + now.isoformat() + str(index)).encode("utf-8")
                 ).hexdigest()[:8]
                 story["story_id"] = f"{now.strftime('%Y%m%d%H%M%S')}-{index:02d}-{digest}"
-            print("[PASS] valid 5-story batch")
+            print(f"[PASS] valid {batch_size}-story batch")
             return stories
         print("[WARN] story batch validation failed:")
         for err in last_errors[:25]:
