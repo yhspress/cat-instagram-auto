@@ -42,6 +42,13 @@ class StoryBatchValidationTests(unittest.TestCase):
             "triumphant relief with relaxed whiskers and upright tail",
             "deeply offended stare with narrowed eyes and a tail flick",
         ]
+        body_languages = [
+            "one white paw frozen mid-reach with the tail held rigid",
+            "balanced retreat with arched back and both front paws grounded",
+            "low cautious crouch with ears sideways and tail tucked close",
+            "upright proud stance with relaxed whiskers and tail raised",
+            "forward lean with one paw planted and the tail snapping sideways",
+        ]
         stories = []
         for index, expression in enumerate(expressions):
             sources = []
@@ -53,7 +60,7 @@ class StoryBatchValidationTests(unittest.TestCase):
             prompt = (
                 "Ultra-photorealistic live-action photography, vertical 4:5. "
                 "An adult Korean Shorthair cat reacts at the peak of an extraordinary event with "
-                f"{expression}."
+                f"{expression}; {body_languages[index]}."
             )
             stories.append({
                 "title_ko": f"제목 {index}",
@@ -61,6 +68,7 @@ class StoryBatchValidationTests(unittest.TestCase):
                 "caption_explanation_en": "One impossible moment stops the cat in its tracks.",
                 "hashtags": ["#Cat", "#Story", "#Surprise"],
                 "hero_expression_en": expression,
+                "hero_body_language_en": body_languages[index],
                 "source_concepts": sources,
                 "creative_fingerprint": {
                     "location_ko": f"장소 {index}",
@@ -92,6 +100,14 @@ class StoryBatchValidationTests(unittest.TestCase):
         )
         errors = rp.validate_story_batch(batch, category_map)
         self.assertIn("story 1 image 1: prompt must include hero_expression_en verbatim", errors)
+
+    def test_requires_body_language_phrase_inside_prompt(self) -> None:
+        batch, category_map = self.make_batch()
+        body_language = batch["stories"][0]["hero_body_language_en"]
+        prompt = batch["stories"][0]["images"][0]["image_prompt"]
+        batch["stories"][0]["images"][0]["image_prompt"] = prompt.replace(body_language, "neutral pose")
+        errors = rp.validate_story_batch(batch, category_map)
+        self.assertIn("story 1 image 1: prompt must include hero_body_language_en verbatim", errors)
 
 
 class SingleImagePublishingTests(unittest.TestCase):

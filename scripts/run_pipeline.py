@@ -118,6 +118,7 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
     fingerprints: set[tuple[str, str, str]] = set()
     camera_setups: set[str] = set()
     hero_expressions: list[str] = []
+    hero_body_languages: list[str] = []
 
     for si, story in enumerate(stories, 1):
         if not isinstance(story, dict):
@@ -142,6 +143,12 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
             errors.append(f"story {si}: hero_expression_en must not be empty")
         else:
             hero_expressions.append(hero_expression.lower())
+
+        hero_body_language = str(story.get("hero_body_language_en", "")).strip()
+        if not hero_body_language:
+            errors.append(f"story {si}: hero_body_language_en must not be empty")
+        else:
+            hero_body_languages.append(hero_body_language.lower())
 
         sources = story.get("source_concepts")
         if not isinstance(sources, list) or not (3 <= len(sources) <= 6):
@@ -177,6 +184,8 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
                     errors.append(f"story {si} image {ii}: prompt must not be empty")
                 elif hero_expression and hero_expression.lower() not in prompt.lower():
                     errors.append(f"story {si} image {ii}: prompt must include hero_expression_en verbatim")
+                if prompt and hero_body_language and hero_body_language.lower() not in prompt.lower():
+                    errors.append(f"story {si} image {ii}: prompt must include hero_body_language_en verbatim")
                 required_fragments = [
                     "Ultra-photorealistic live-action photography",
                     "Korean Shorthair",
@@ -207,6 +216,8 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
 
     if len(set(hero_expressions)) < 4:
         errors.append("stories must use at least 4 distinct hero_expression_en values")
+    if len(set(hero_body_languages)) < 4:
+        errors.append("stories must use at least 4 distinct hero_body_language_en values")
 
     return errors
 

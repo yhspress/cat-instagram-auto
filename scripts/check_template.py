@@ -34,7 +34,7 @@ if len(ids) != 500:
     raise SystemExit(f"[ERROR] source concepts: expected 500, found {len(ids)}")
 
 prompt = (ROOT / config["story_prompt_file"]).read_text(encoding="utf-8")
-for marker in ["{creative_history}", "{concepts}", "Ultra-photorealistic live-action photography", "caption_explanation_en", '"role": "HERO"']:
+for marker in ["{creative_history}", "{concepts}", "Ultra-photorealistic live-action photography", "caption_explanation_en", "hero_expression_en", "hero_body_language_en", '"role": "HERO"']:
     if marker not in prompt:
         raise SystemExit(f"[ERROR] story prompt missing marker: {marker}")
 

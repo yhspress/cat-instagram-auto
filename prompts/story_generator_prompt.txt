@@ -308,7 +308,8 @@ TEXT LIMITS
 - hook: English, maximum 50 characters including spaces and punctuation, event-first, curiosity/emotion, do not reveal payoff.
 - caption_explanation_en: exactly 1 English sentence, maximum 160 characters including spaces and punctuation, vivid and hooky, caption-friendly, and must not spoil the payoff.
 - hashtags: exactly 3 English hashtags, focused on event, genre, or key prop.
-- hero_expression_en: a concise English phrase describing the strong, physically plausible feline facial expression and body-language cue. This exact phrase must appear verbatim inside that story's image_prompt.
+- hero_expression_en: a concise English phrase describing the strong, physically plausible feline facial expression. This exact phrase must appear verbatim inside that story's image_prompt.
+- hero_body_language_en: a concise English phrase describing the decisive, physically plausible feline pose, ears, whiskers, paws, and/or tail cue that reinforces the emotion. This exact phrase must appear verbatim inside that story's image_prompt.
 - image_prompt: English, no fixed character cap. Include every required identity, scene, continuity, camera/lens, realism, safety, expression, and exclusion detail needed for an independently executable prompt. Prefer concise, information-dense wording, but never remove important facts merely to shorten the prompt.
 
 IMAGE PROMPT WRITING RULES
@@ -345,7 +346,8 @@ Return valid JSON only. No markdown fences. No commentary.
       "hook": "English <= 50 chars",
       "caption_explanation_en": "Exactly 1 English sentence <= 160 chars",
       "hashtags": ["#TagOne", "#TagTwo", "#TagThree"],
-      "hero_expression_en": "concise strong feline expression and body-language phrase copied verbatim into image_prompt",
+      "hero_expression_en": "concise strong feline facial-expression phrase copied verbatim into image_prompt",
+      "hero_body_language_en": "concise decisive feline body-language phrase copied verbatim into image_prompt",
       "source_concepts": [
         {
           "id": "001",
@@ -389,6 +391,7 @@ FINAL INTERNAL CHECK BEFORE RETURNING JSON
 - Strong expressions such as yawn, hiss, grumpy face, tongue-out, nose-lick, wink-like face, surprise, suspicion, or sleepy contentment must be selected only when narratively appropriate.
 - Do not repeat the same facial-expression gimmick across every story.
 - At least four of the five HERO images must have clearly distinct strong emotional expressions.
+- At least four of the five HERO images must have clearly distinct decisive body-language cues.
 - Reference-inspired flowers, walls, gaps, glass, containers, ledges, openings, paws, and framing devices should add visual variety but must not dominate every story.
 - Keep all physical interactions safe.
 - Maintain ultra-photorealistic live-action photography.
