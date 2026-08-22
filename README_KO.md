@@ -1,6 +1,6 @@
-# 인스타 고양이 대환장극 — GitHub-only 자동화
+# 인스타 고양이 대환장극 — 1장 HERO GitHub-only 자동화
 
-이 저장소는 첨부된 **고양이 연출 콘셉트 500개**를 소스로 사용해 OpenAI API가 5개 스토리를 생성하고, 각 스토리의 HOOK / ESCALATION / PAYOFF 이미지 3장을 만든 뒤 Instagram 캐러셀로 자동 게시합니다. Instagram 설명문은 각 스토리의 짧은 영어 Hook 1문장 + 영어 후킹 설명문 1문장 + 해시태그 3개로 구성됩니다.
+이 저장소는 첨부된 **고양이 연출 콘셉트 500개**를 소스로 사용해 OpenAI API가 5개 스토리를 생성하고, 각 스토리의 원인·절정·반전이 한눈에 읽히는 강력한 HERO 이미지 1장을 만든 뒤 Instagram 단일 이미지 게시물로 자동 게시합니다. Instagram 설명문은 각 스토리의 짧은 영어 Hook 1문장 + 영어 후킹 설명문 1문장 + 해시태그 3개로 구성됩니다.
 
 Cloudinary는 완전히 제거했습니다. **GitHub Actions가 실행을 담당하고, 생성 이미지와 큐/이력도 GitHub 저장소에 저장하며, Instagram이 가져갈 공개 이미지 URL도 GitHub `raw.githubusercontent.com`을 사용합니다.**
 
@@ -13,7 +13,7 @@ Cloudinary는 완전히 제거했습니다. **GitHub Actions가 실행을 담당
   ↓
 가장 오래된 스토리 1개 선택
   ↓
-HOOK / ESCALATION / PAYOFF 3장 생성
+강한 표정과 사건·결과가 함께 보이는 HERO 1장 생성
   ↓
 1024×1280(4:5) JPG로 정규화
   ↓
@@ -23,9 +23,7 @@ GitHub에 먼저 commit + push
   ↓
 raw.githubusercontent.com 공개 URL 확인
   ↓
-Instagram child container × 3
-  ↓
-CAROUSEL container
+Instagram image container
   ↓
 Instagram publish
   ↓
@@ -36,7 +34,7 @@ published / queue / creative_history 갱신 후 commit + push
 
 Instagram Content Publishing API는 이미지 URL에 Meta 서버가 직접 접근할 수 있어야 합니다. 따라서 이미지 생성 직후 바로 Instagram에 보내지 않고, **먼저 GitHub에 커밋해서 공개 URL을 만든 후 게시**합니다.
 
-게시 실패 시 `state/prepared.json`이 남기 때문에 다음 실행에서는 새 이미지를 다시 만들지 않고 준비된 3장을 우선 재사용합니다.
+게시 실패 시 `state/prepared.json`이 남기 때문에 다음 실행에서는 새 이미지를 다시 만들지 않고 준비된 HERO 이미지 1장을 우선 재사용합니다.
 
 ## 저장소 공개 설정 — 중요
 
@@ -50,9 +48,9 @@ Instagram Content Publishing API는 이미지 URL에 Meta 서버가 직접 접�
 .github/workflows/auto_post.yml   예약/수동 GitHub Actions
 config/project.json               자동화 설정
 data/cat_concepts_500.txt         고양이 콘셉트 500개 원본
-prompts/story_generator_prompt.txt 5개 스토리/15개 프롬프트 생성 규칙
+prompts/story_generator_prompt.txt 5개 스토리/5개 HERO 프롬프트 생성 규칙
 public/posts/                     게시용 4:5 이미지와 story.json/caption.txt
-scripts/run_pipeline.py           생성·큐·GitHub URL·Instagram 캐러셀 파이프라인
+scripts/run_pipeline.py           생성·큐·GitHub URL·Instagram 단일 이미지 파이프라인
 scripts/check_template.py         구조 검증
 state/story_queue.json            대기 스토리
 state/prepared.json               GitHub 업로드 완료/게시 대기 스토리
@@ -63,16 +61,16 @@ state/published.json              실제 게시 이력/슬롯 중복 방지
 ## 생성 규격
 
 - 한 번의 스토리 리필: 정확히 5개
-- 스토리당 이미지: 정확히 3개
-- 구조: HOOK → ESCALATION → PAYOFF
+- 스토리당 이미지: 정확히 1개(`HERO`)
+- 구조: 원인 + 절정 행동 + 강한 고양이 표정 + 결과/반전 단서를 한 프레임에 표현
 - 각 스토리 소스: 3~6개, 최소 3개 서로 다른 원본 범주
 - Hook: 영어 50자 이하
 - Caption explanation: 영어 후킹 설명문 1문장, 160자 이하
 - Hashtags: 영어 정확히 3개
-- 각 image prompt: 영어 1,000자 이하
+- 각 image prompt: 영어, 고정 글자 수 제한 없음(필수 시각 정보는 생략하지 않음)
 - 고정 주인공 외형을 모든 이미지 프롬프트에 반복
 - 이미지 생성 요청은 세로형으로 하고 최종 게시 파일은 1024×1280, 정확한 4:5
-- 15장 카메라 조합 중복 억제 및 최근 창작 이력 반영
+- 5장 HERO 이미지의 표정·카메라 조합 중복 억제 및 최근 창작 이력 반영
 
 ## 필요한 GitHub Secret
 
@@ -100,15 +98,17 @@ INSTAGRAM_ACCESS_TOKEN=...
 
 ## Instagram 쪽 조건
 
-Instagram Content Publishing API를 사용할 수 있는 계정/앱 설정과 유효한 `INSTAGRAM_USER_ID`, `INSTAGRAM_ACCESS_TOKEN`이 필요합니다. 이 파이프라인은 3개 image child container를 만든 뒤 `media_type=CAROUSEL` 부모 컨테이너를 생성하여 게시합니다.
+Instagram Content Publishing API를 사용할 수 있는 계정/앱 설정과 유효한 `INSTAGRAM_USER_ID`, `INSTAGRAM_ACCESS_TOKEN`이 필요합니다. 이 파이프라인은 공개 HERO 이미지 URL과 설명문으로 단일 image container를 만든 뒤 게시합니다.
 
 ## 스케줄
 
 기본 한국시간:
 
-- 07:00 — slot 1
-- 13:00 — slot 2
-- 19:00 — slot 3
+- 07:17 — slot 1
+- 10:17 — slot 2
+- 13:17 — slot 3
+- 16:17 — slot 4
+- 19:17 — slot 5
 
 GitHub Actions의 timezone-aware schedule을 사용합니다.
 
@@ -118,10 +118,10 @@ GitHub Actions의 timezone-aware schedule을 사용합니다.
 2. 저장소 `Actions`가 활성화되어 있는지 확인합니다.
 3. `AUTOPOST_ENV` Secret을 등록합니다.
 4. 로컬 또는 Actions에서 `python scripts/check_template.py`를 실행합니다.
-5. `Actions → Cat Instagram Carousel Auto Post → Run workflow`에서 `dry-run`을 실행합니다.
-6. 실행 Artifact의 `metadata.json`과 생성 이미지 3장을 확인합니다.
+5. `Actions → Cat Instagram Single Image Auto Post → Run workflow`에서 `dry-run`을 실행합니다.
+6. 실행 Artifact의 `metadata.json`과 생성 HERO 이미지 1장을 확인합니다.
 7. 다음에는 `publish`로 1건 실제 테스트합니다.
-8. 성공하면 07:00 / 13:00 / 19:00 예약 게시가 자동으로 이어집니다.
+8. 성공하면 07:17 / 10:17 / 13:17 / 16:17 / 19:17 예약 게시가 자동으로 이어집니다.
 
 ## dry-run과 publish 차이
 
@@ -132,7 +132,7 @@ GitHub Actions의 timezone-aware schedule을 사용합니다.
 1. 스토리/이미지 준비
 2. `public/posts`와 준비 상태 GitHub 커밋
 3. GitHub 공개 이미지 접근 확인
-4. Instagram 캐러셀 게시
+4. Instagram 단일 이미지 게시
 5. 성공 상태/큐/창작 이력 GitHub 커밋
 
 ## 실패 복구

@@ -1,13 +1,13 @@
 You are a cinematic visual storyteller, advertising concept director, and ultra-photorealistic AI image prompt architect.
 
 TASK
-Using the supplied Korean source library of exactly 500 cat concepts, create exactly 5 original visual stories. Each story must contain exactly 3 independently executable English image prompts: HOOK, ESCALATION, PAYOFF. The result is machine-consumed JSON only.
+Using the supplied Korean source library of exactly 500 cat concepts, create exactly 5 original single-image visual stories. Each story must contain exactly 1 independently executable English HERO image prompt. The result is machine-consumed JSON only.
 
 SOURCE COMBINATION RULES
 - For each story choose 3 to 6 source concepts from different source categories. Do not select merely by source-number order.
 - Each story must combine at least one location, situation, prop, visual coincidence, and unexpected change or encounter.
 - Do not copy one concept as the entire story and do not place unrelated ideas side by side.
-- The 3 images must form a clear cause -> progression -> result.
+- Each single HERO image must compress cause, peak action, and a readable consequence or twist into one decisive frame.
 - Across the five stories, avoid repeating the central situation, location, key prop, twist, or camera composition.
 - Prefer physical plausibility, visual distinctiveness, and narrative coherence.
 - Avoid source concepts recently used in CREATIVE_HISTORY when possible; also avoid close repetition of locations, props, twists, and camera setups found there.
@@ -15,13 +15,13 @@ SOURCE COMBINATION RULES
 - All source_concepts entries must still refer only to valid concepts from SOURCE_LIBRARY_500.
 
 FIXED PROTAGONIST — REPEAT THE FULL APPEARANCE INSIDE EVERY IMAGE PROMPT
-An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Keep facial bone structure, fur placement, mouth marking, bright cheese-tabby color, four white paws, eye color, body proportions, age and size identical across all 15 images. Never abbreviate with "same cat" or "previous cat".
+An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Keep facial bone structure, fur placement, mouth marking, bright cheese-tabby color, four white paws, eye color, body proportions, age and size identical across all 5 images. Never abbreviate the appearance.
 
 REFERENCE APPEARANCE LOCK
 The supplied reference images are visual-situation, composition, pose, expression, and atmosphere references only.
 Never copy the breed, age, size, coat color, coat pattern, fur length, eye color, heterochromia, face shape, facial markings, or accessories of any reference cat.
 Always use only the FIXED PROTAGONIST defined above.
-The adult Korean Shorthair bright cheese-tabby appearance must remain identical in all generated images regardless of which reference-inspired situation is used.
+The adult Korean Shorthair bright cheese-tabby appearance must remain identical in all 5 generated images regardless of which reference-inspired situation is used.
 
 REFERENCE-INSPIRED SITUATION LIBRARY
 When narratively useful, combine one or two of the following visual situations with the selected concepts from SOURCE_LIBRARY_500.
@@ -81,30 +81,27 @@ These are optional visual motifs, not a required universal aesthetic.
 Do not turn all five stories into flower or garden scenes.
 The original 500 concepts remain the primary creative source.
 
-THREE-IMAGE STORY
-1. HOOK: extraordinary situation understandable in under one second; protagonist immediately visible and central; powerful viral-thumbnail composition; no ordinary sitting, standing, sleeping, or staring without a visually meaningful event.
-2. ESCALATION: direct result of image 1; include motion, discovery, encounter, problem, transformation, emotional reaction, or an unexpected new clue; preserve location, time, weather, prop, light direction, and physical traces; clearly different distance and angle.
-3. PAYOFF: visual twist, emotional reward, comic reversal, or satisfying discovery; understandable without text; recover at least one earlier prop, reflection, shadow, weather detail, footprint, flower, opening, object, or background clue; third clearly different angle; decisive ending.
+SINGLE-IMAGE HERO STORY
+The one HERO frame must tell the whole micro-story at a glance. Show the protagonist at the peak instant when an extraordinary event triggers a strong feline reaction and the visual clue to the result, twist, or comic reversal is already visible in the same frame. Do not depend on a before/after sequence, off-frame explanation, caption, or a second image. No ordinary sitting, standing, sleeping, or staring without a visually meaningful event.
 
-VIRAL HOOK OVERRIDE — IMAGE 1
-Every HOOK must function as a powerful Instagram thumbnail on a small mobile screen.
+VIRAL HERO OVERRIDE
+Every HERO image must function as a powerful Instagram thumbnail on a small mobile screen.
 
 - Make the protagonist immediately dominant and readable.
 - The cat's face, paws, gesture, or emotional state must be understandable at thumbnail size.
 - Prefer close-up, intimate close-up, medium-close, or strong foreground perspective when appropriate.
-- Use environmental wide shots as HOOK only when the extraordinary event or scale contrast remains instantly readable and the protagonist still dominates attention.
+- Use environmental wide shots for a HERO image only when the extraordinary event or scale contrast remains instantly readable and the protagonist still dominates attention.
 - Prefer one dominant action, one dominant emotional question, and one obvious visual surprise.
 - Keep background hierarchy simple enough to understand in under one second.
 - Use strong foreground/background separation.
 - Use clean silhouettes and obvious eye direction.
 - Avoid tiny distant cats, cluttered multi-event frames, weak neutral poses, flat catalog compositions, or visually confusing backgrounds.
-- The first image should resemble the peak frame someone would stop scrolling to inspect.
-- Strong HOOK devices include: face peeking over an edge, both paws on glass, face framed by flowers, paw reaching toward lens, circular-opening reveal, wall-gap reveal, container pop-out, comic rear-view reveal, extremely expressive face, mysterious reflection, dramatic scale contrast, or an unexpected visitor.
-- Do not repeat the same HOOK formula across all five stories.
+- The image should resemble the peak frame someone would stop scrolling to inspect.
+- Strong HERO devices include: face peeking over an edge, both paws on glass, face framed by flowers, paw reaching toward lens, circular-opening reveal, wall-gap reveal, container pop-out, comic rear-view reveal, extremely expressive face, mysterious reflection, dramatic scale contrast, or an unexpected visitor.
+- Do not repeat the same HERO formula across all five stories.
 
 FACIAL EXPRESSION AND BODY-LANGUAGE RULES
-The protagonist's emotional state must be clear, realistic, scene-appropriate, and visually readable.
-Do not force an exaggerated expression when a subtler expression is more logical.
+The protagonist's emotional state must be unusually strong, instantly readable, realistic, and driven by the scene. Favor the most expressive physically plausible instant: widened or narrowed eyes, clearly directed ears and whiskers, a tense or open muzzle when appropriate, and decisive whole-body posture. The emotion must remain feline rather than becoming a human or cartoon face.
 
 Depending on the situation, allowed realistic feline expressions include:
 
@@ -154,11 +151,12 @@ Use natural feline body language to reinforce emotion:
 
 Across the five stories:
 - vary facial expressions and emotional beats,
-- do not use the same strong expression for every HOOK,
-- preferably use at least three clearly different emotional expressions across the five HOOK images,
-- expression must always support the story rather than exist only as decoration.
+- do not use the same strong expression for every HERO image,
+- use at least four clearly different strong emotional expressions across the five HERO images,
+- make every HERO expression clearly readable at thumbnail size,
+- expression must always be caused by the visible event rather than exist only as decoration.
 
-HOOKING
+HERO HOOKING DEVICES
 Each story should use at least 3 of:
 dramatic scale contrast,
 extraordinary event disrupting an ordinary place,
@@ -185,8 +183,8 @@ unusual viewpoint.
 
 CAMERA
 - All images vertical 4:5 and optimized for mobile/full-screen thumbnails.
-- Across all 15 images, do not repeat the same combination of angle, lens, distance, viewpoint and composition.
-- Each story needs at least one environmental wide, one emotional close-up, and one unusual viewpoint, reflection, foreground frame, architectural frame, or object POV.
+- Across all 5 images, do not repeat the same combination of angle, lens, distance, viewpoint and composition.
+- For each story, choose the single camera setup that makes the event, strong expression, and twist most legible together. Across the batch, vary emotional close-ups, strong foreground perspectives, environmental scale shots, reflections, architectural frames, and object POVs.
 - Use purposeful full-frame camera/lens choices:
   24mm for environmental exaggeration,
   35mm for documentary realism,
@@ -203,7 +201,7 @@ CAMERA
 - Use foreground flowers, ledges, openings, doorframes, containers, or architectural gaps as framing devices when narratively useful.
 - Avoid arbitrary lens selection.
 - Maintain correct relative scale and perspective.
-- Do not use unrealistic extreme wide-angle distortion of the cat's face unless mild forced perspective is intentionally required for a paw-reaching HOOK.
+- Do not use unrealistic extreme wide-angle distortion of the cat's face unless mild forced perspective is intentionally required for a paw-reaching HERO image.
 
 ULTRA-PHOTOREALISM — EVERY IMAGE PROMPT MUST EXPLICITLY INCLUDE
 - "Ultra-photorealistic live-action photography".
@@ -282,10 +280,10 @@ REFERENCE-INSPIRED SCENE SAFETY
 - Stairs and platforms must provide normal footing.
 - Hissing, angry, startled, or wide-eyed expressions must occur without actual danger.
 
-CONTINUITY
-Within each story preserve:
+SINGLE-FRAME VISUAL INTEGRITY
+Within each story make the following mutually consistent in the one frame:
 - the protagonist's fixed appearance,
-- time and weather progression,
+- the single visible time and weather state,
 - location structure,
 - architecture,
 - wall or opening shape when relevant,
@@ -301,17 +299,16 @@ Within each story preserve:
 - petals,
 - scattered objects,
 - reflections,
-- emotional progression,
-- cause and effect.
+- emotional cause and reaction,
+- cause, peak action, and visible consequence.
 
-Repeat all continuity-critical facts inside each independent image prompt.
-
-If a wall, opening, flower cluster, glass surface, container, ribbon, bag, reflection, weather condition, or supporting character appears in image 1 and remains relevant, explicitly repeat its identifying details in images 2 and 3.
+Include every identity-, scene-, and story-critical fact inside the independent HERO image prompt.
 
 TEXT LIMITS
 - hook: English, maximum 50 characters including spaces and punctuation, event-first, curiosity/emotion, do not reveal payoff.
 - caption_explanation_en: exactly 1 English sentence, maximum 160 characters including spaces and punctuation, vivid and hooky, caption-friendly, and must not spoil the payoff.
 - hashtags: exactly 3 English hashtags, focused on event, genre, or key prop.
+- hero_expression_en: a concise English phrase describing the strong, physically plausible feline facial expression and body-language cue. This exact phrase must appear verbatim inside that story's image_prompt.
 - image_prompt: English, no fixed character cap. Include every required identity, scene, continuity, camera/lens, realism, safety, expression, and exclusion detail needed for an independently executable prompt. Prefer concise, information-dense wording, but never remove important facts merely to shorten the prompt.
 
 IMAGE PROMPT WRITING RULES
@@ -334,13 +331,7 @@ Every image_prompt must:
 - explicitly include the required ultra-photorealistic conditions,
 - explicitly include relevant anatomy and AI-error exclusions.
 
-Never use:
-"same cat",
-"previous cat",
-"as before",
-"same scene",
-"continue from image 1",
-or any wording that assumes another image is visible.
+Never use wording that assumes another image is visible or that omits required facts by referring to a different image.
 
 The image generator must be able to execute each prompt completely independently.
 
@@ -354,6 +345,7 @@ Return valid JSON only. No markdown fences. No commentary.
       "hook": "English <= 50 chars",
       "caption_explanation_en": "Exactly 1 English sentence <= 160 chars",
       "hashtags": ["#TagOne", "#TagTwo", "#TagThree"],
+      "hero_expression_en": "concise strong feline expression and body-language phrase copied verbatim into image_prompt",
       "source_concepts": [
         {
           "id": "001",
@@ -361,32 +353,20 @@ Return valid JSON only. No markdown fences. No commentary.
           "category_ko": "source category name"
         }
       ],
-      "overview_ko": "one concise Korean sentence describing the three-image story",
-      "continuity_ko": "Korean continuity lock: place, lighting, weather, props, supporting characters, visual traces",
+      "overview_ko": "one concise Korean sentence describing the complete single-frame micro-story",
+      "continuity_ko": "Korean visual lock: place, lighting, weather, props, supporting characters, visible cause and consequence",
       "creative_fingerprint": {
         "location_ko": "central location",
         "core_prop_ko": "key prop",
         "twist_ko": "payoff/twist concept",
         "camera_setups": [
-          "short English setup 1",
-          "short English setup 2",
-          "short English setup 3"
+          "short English HERO setup"
         ]
       },
       "images": [
         {
-          "role": "HOOK",
+          "role": "HERO",
           "camera_strategy": "English shot size, angle, viewpoint, height, lens, depth of field, composition",
-          "image_prompt": "English standalone image prompt; no fixed character cap"
-        },
-        {
-          "role": "ESCALATION",
-          "camera_strategy": "clearly different English camera setup",
-          "image_prompt": "English standalone image prompt; no fixed character cap"
-        },
-        {
-          "role": "PAYOFF",
-          "camera_strategy": "third clearly different English camera setup",
           "image_prompt": "English standalone image prompt; no fixed character cap"
         }
       ]
@@ -396,19 +376,19 @@ Return valid JSON only. No markdown fences. No commentary.
 
 FINAL INTERNAL CHECK BEFORE RETURNING JSON
 - Exactly 5 stories.
-- Exactly 3 images per story.
-- Exactly 15 image prompts.
+- Exactly 1 HERO image per story.
+- Exactly 5 image prompts.
 - Every story contains 3 to 6 valid concepts from SOURCE_LIBRARY_500.
 - Never place supplementary reference-inspired situation names inside source_concepts.
 - Each story combines multiple concepts rather than copying one concept directly.
-- HOOK, ESCALATION, PAYOFF must form a clear cause -> progression -> result.
-- The protagonist appearance must remain completely identical across all 15 prompts.
+- Each HERO frame must show a readable cause, peak action, strong reaction, and visible consequence or twist together.
+- The protagonist appearance must remain completely identical across all 5 prompts.
 - Every independent image prompt must repeat the full protagonist appearance.
-- Every HOOK must have immediate thumbnail readability.
-- Every HOOK must contain a meaningful event or emotionally compelling visual interruption.
+- Every HERO image must have immediate thumbnail readability.
+- Every HERO image must contain a meaningful event and an unusually strong, physically plausible feline expression.
 - Strong expressions such as yawn, hiss, grumpy face, tongue-out, nose-lick, wink-like face, surprise, suspicion, or sleepy contentment must be selected only when narratively appropriate.
 - Do not repeat the same facial-expression gimmick across every story.
-- At least three of the five HOOK images should have clearly distinct emotional expressions.
+- At least four of the five HERO images must have clearly distinct strong emotional expressions.
 - Reference-inspired flowers, walls, gaps, glass, containers, ledges, openings, paws, and framing devices should add visual variety but must not dominate every story.
 - Keep all physical interactions safe.
 - Maintain ultra-photorealistic live-action photography.

@@ -34,15 +34,17 @@ if len(ids) != 500:
     raise SystemExit(f"[ERROR] source concepts: expected 500, found {len(ids)}")
 
 prompt = (ROOT / config["story_prompt_file"]).read_text(encoding="utf-8")
-for marker in ["{creative_history}", "{concepts}", "Ultra-photorealistic live-action photography", "caption_explanation_en", "1000"]:
+for marker in ["{creative_history}", "{concepts}", "Ultra-photorealistic live-action photography", "caption_explanation_en", '"role": "HERO"']:
     if marker not in prompt:
         raise SystemExit(f"[ERROR] story prompt missing marker: {marker}")
 
 source = (ROOT / "scripts/run_pipeline.py").read_text(encoding="utf-8")
 if "cloudinary" in source.lower():
     raise SystemExit("[ERROR] Cloudinary reference still exists in pipeline")
-if "CAROUSEL" not in source or "is_carousel_item" not in source:
-    raise SystemExit("[ERROR] Instagram carousel logic missing")
+if "publish_single_image" not in source or '"image_url": urls[0]' not in source:
+    raise SystemExit("[ERROR] Instagram single-image logic missing")
+if "CAROUSEL" in source or "is_carousel_item" in source:
+    raise SystemExit("[ERROR] legacy Instagram carousel logic still exists")
 if "raw.githubusercontent.com" not in source:
     raise SystemExit("[ERROR] GitHub public media URL logic missing")
 
@@ -50,7 +52,7 @@ print("[PASS] required files")
 print("[PASS] source concepts:", len(ids))
 print("[PASS] Cloudinary removed")
 print("[PASS] GitHub-hosted media logic")
-print("[PASS] 3-image carousel logic")
+print("[PASS] single-image publishing logic")
 print("[PROJECT]", config.get("project_name"))
 print("[TIMEZONE]", config.get("timezone"))
 print("[BATCH SIZE]", config.get("batch_size"))

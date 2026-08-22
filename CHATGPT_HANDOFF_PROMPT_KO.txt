@@ -3,10 +3,10 @@
 수정할 때 다음 구조를 유지해 줘.
 - data/cat_concepts_500.txt의 500개 콘셉트를 직접 읽어 활용
 - 스토리 큐 리필은 정확히 5개
-- 각 스토리는 HOOK/ESCALATION/PAYOFF 3장
-- 각 이미지 prompt는 영어 1,000자 이하, 고정 치즈태비 전체 외형 반복
+- 각 스토리는 원인·절정 행동·강한 표정·결과/반전 단서를 한 프레임에 담은 HERO 이미지 1장
+- 각 이미지 prompt는 영어로 독립 실행 가능하게 작성하고 고정 글자 수 제한 없이 필수 정보를 모두 포함하며, 고정 치즈태비 전체 외형 반복
 - 최종 이미지 4:5(1024×1280)
-- Instagram 게시물 하나는 이미지 3장 carousel
+- Instagram 게시물 하나는 HERO 이미지 1장 단일 이미지 게시물
 - Cloudinary 등 외부 이미지 호스팅 금지
 - 생성 이미지는 public/posts에 두고 GitHub에 먼저 commit/push한 뒤 raw.githubusercontent.com 공개 URL로 Instagram에 전달
 - 게시 성공 후에만 queue에서 해당 story를 제거하고 creative_history/published를 갱신

@@ -5,7 +5,7 @@
   "story_prompt_file": "prompts/story_generator_prompt.txt",
   "batch_size": 5,
   "queue_refill_threshold": 1,
-  "images_per_story": 3,
+  "images_per_story": 1,
   "image_generate_size": "1024x1536",
   "image_publish_width": 1024,
   "image_publish_height": 1280,

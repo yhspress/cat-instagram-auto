@@ -114,9 +114,10 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
     if not isinstance(stories, list) or len(stories) != 5:
         return ["stories must contain exactly 5 items"]
 
-    roles = ["HOOK", "ESCALATION", "PAYOFF"]
+    roles = ["HERO"]
     fingerprints: set[tuple[str, str, str]] = set()
     camera_setups: set[str] = set()
+    hero_expressions: list[str] = []
 
     for si, story in enumerate(stories, 1):
         if not isinstance(story, dict):
@@ -135,6 +136,12 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
         tags = story.get("hashtags")
         if not isinstance(tags, list) or len(tags) != 3 or any(not isinstance(t, str) or not t.startswith("#") for t in tags):
             errors.append(f"story {si}: hashtags must be exactly 3 #tags")
+
+        hero_expression = str(story.get("hero_expression_en", "")).strip()
+        if not hero_expression:
+            errors.append(f"story {si}: hero_expression_en must not be empty")
+        else:
+            hero_expressions.append(hero_expression.lower())
 
         sources = story.get("source_concepts")
         if not isinstance(sources, list) or not (3 <= len(sources) <= 6):
@@ -155,8 +162,8 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
                 errors.append(f"story {si}: every source concept must come from a different category")
 
         images = story.get("images")
-        if not isinstance(images, list) or len(images) != 3:
-            errors.append(f"story {si}: images must contain exactly 3 items")
+        if not isinstance(images, list) or len(images) != 1:
+            errors.append(f"story {si}: images must contain exactly 1 item")
         else:
             found_roles = [str(img.get("role", "")) for img in images if isinstance(img, dict)]
             if found_roles != roles:
@@ -166,8 +173,10 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
                     continue
                 prompt = str(img.get("image_prompt", ""))
                 strategy = str(img.get("camera_strategy", ""))
-                if not prompt or len(prompt) > 1000:
-                    errors.append(f"story {si} image {ii}: prompt length {len(prompt)} (must be 1..1000)")
+                if not prompt:
+                    errors.append(f"story {si} image {ii}: prompt must not be empty")
+                elif hero_expression and hero_expression.lower() not in prompt.lower():
+                    errors.append(f"story {si} image {ii}: prompt must include hero_expression_en verbatim")
                 required_fragments = [
                     "Ultra-photorealistic live-action photography",
                     "Korean Shorthair",
@@ -177,7 +186,9 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
                     if frag.lower() not in prompt.lower():
                         errors.append(f"story {si} image {ii}: missing {frag!r}")
                 sig = strategy.strip().lower()
-                if sig:
+                if not sig:
+                    errors.append(f"story {si} image {ii}: camera_strategy must not be empty")
+                else:
                     if sig in camera_setups:
                         errors.append(f"story {si} image {ii}: repeated camera strategy")
                     camera_setups.add(sig)
@@ -193,6 +204,9 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
                 if key in fingerprints:
                     errors.append(f"story {si}: repeated creative fingerprint")
                 fingerprints.add(key)
+
+    if len(set(hero_expressions)) < 4:
+        errors.append("stories must use at least 4 distinct hero_expression_en values")
 
     return errors
 
@@ -298,7 +312,7 @@ def generate_story_images(client: OpenAI, config: dict, story: dict, public_dir:
     width = int(config.get("image_publish_width", 1024))
     height = int(config.get("image_publish_height", 1280))
     public_dir.mkdir(parents=True, exist_ok=True)
-    role_names = {"HOOK": "01_hook", "ESCALATION": "02_escalation", "PAYOFF": "03_payoff"}
+    role_names = {"HERO": "01_hero"}
     paths: list[str] = []
 
     for img in story["images"]:
@@ -446,46 +460,35 @@ def wait_container(config: dict, container_id: str, token: str) -> None:
     raise SystemExit(f"[ERROR] Instagram container {container_id} did not finish in time")
 
 
-def publish_carousel(config: dict, urls: list[str], caption: str) -> str:
+def publish_single_image(config: dict, urls: list[str], caption: str) -> str:
+    if len(urls) != 1:
+        raise SystemExit(f"[ERROR] single-image post requires exactly 1 media URL, found {len(urls)}")
+
     user_id = required_env("INSTAGRAM_USER_ID")
     token = required_env("INSTAGRAM_ACCESS_TOKEN")
-    children: list[str] = []
-    for url in urls:
-        data = ig_post(config, f"/{user_id}/media", {
-            "image_url": url,
-            "is_carousel_item": "true",
-            "access_token": token,
-        })
-        cid = str(data.get("id", ""))
-        if not cid:
-            raise SystemExit("[ERROR] missing Instagram child container id")
-        wait_container(config, cid, token)
-        children.append(cid)
-        print("[PASS] child container:", cid)
-
-    parent = ig_post(config, f"/{user_id}/media", {
-        "media_type": "CAROUSEL",
-        "children": ",".join(children),
+    container = ig_post(config, f"/{user_id}/media", {
+        "image_url": urls[0],
         "caption": caption,
         "access_token": token,
     })
-    parent_id = str(parent.get("id", ""))
-    if not parent_id:
-        raise SystemExit("[ERROR] missing Instagram carousel container id")
-    wait_container(config, parent_id, token)
+    container_id = str(container.get("id", ""))
+    if not container_id:
+        raise SystemExit("[ERROR] missing Instagram image container id")
+    wait_container(config, container_id, token)
+    print("[PASS] image container:", container_id)
 
     for attempt in range(1, 7):
         base = config.get("instagram_api_base", "https://graph.instagram.com").rstrip("/")
         response = requests.post(
             f"{base}/{user_id}/media_publish",
-            data={"creation_id": parent_id, "access_token": token},
+            data={"creation_id": container_id, "access_token": token},
             timeout=90,
         )
         if response.ok:
             media_id = str(response.json().get("id", ""))
             if not media_id:
                 raise SystemExit("[ERROR] Instagram publish response missing media id")
-            print("[PASS] Instagram carousel published:", media_id)
+            print("[PASS] Instagram image published:", media_id)
             return media_id
         if attempt < 6:
             time.sleep(5)
@@ -541,7 +544,7 @@ def publish(config: dict, dry_run: bool = False) -> dict:
             print("[DRY RUN] media:", url)
         return prepared
     assert_public_media(urls)
-    media_id = publish_carousel(config, urls, prepared["caption"])
+    media_id = publish_single_image(config, urls, prepared["caption"])
     finalize_success(prepared, media_id, urls)
     return prepared
 

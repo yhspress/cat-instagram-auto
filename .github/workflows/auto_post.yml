@@ -1,4 +1,4 @@
-name: Cat Instagram Carousel Auto Post
+name: Cat Instagram Single Image Auto Post
 
 on:
   workflow_dispatch:
@@ -62,6 +62,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Validate single-image pipeline
+        run: |
+          python scripts/check_template.py
+          python -m unittest discover -s tests -v
+
       - name: Restore secrets
         env:
           AUTOPOST_ENV: ${{ secrets.AUTOPOST_ENV }}
@@ -112,7 +117,7 @@ jobs:
             --slot "${{ steps.vars.outputs.slot }}" \
             $FORCE_ARG
 
-      - name: Prepare story and three images
+      - name: Prepare story and hero image
         if: ${{ steps.vars.outputs.mode == 'publish' }}
         shell: bash
         run: |
@@ -135,11 +140,11 @@ jobs:
           git add public/posts state/story_queue.json state/prepared.json
 
           if ! git diff --cached --quiet; then
-            git commit -m "content: prepare Instagram carousel [skip ci]"
+            git commit -m "content: prepare Instagram hero image [skip ci]"
             git push
           fi
 
-      - name: Publish three-image carousel to Instagram
+      - name: Publish single image to Instagram
         if: ${{ steps.vars.outputs.mode == 'publish' }}
         env:
           MEDIA_BRANCH: ${{ github.ref_name }}
