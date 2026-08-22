@@ -518,6 +518,30 @@
         ]
       },
       "published_key": "2026-08-22:05"
+    },
+    {
+      "story_id": "20260822124350-05-60c1cb2d",
+      "title_ko": "궤도 도시의 풍선 신호",
+      "hook": "The miniature city needs one giant paw",
+      "source_ids": [
+        "HCW004",
+        "HCE015",
+        "HCR006",
+        "207",
+        "321",
+        "HCX004",
+        "HCG015",
+        "HCV011"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "무중력 궤도 정거장의 폐쇄 관제실",
+        "core_prop_ko": "시대별 털색이 바뀌는 책갈피 고양이",
+        "twist_ko": "태풍 전날 풍선들이 모두 안전한 방향을 가리킴",
+        "camera_setups": [
+          "45mm centered eye-level orbiting dolly, miniature city beneath raised paws and debris halo arranged as radial graphic"
+        ]
+      },
+      "published_key": "2026-08-23:01"
     }
   ]
 }
