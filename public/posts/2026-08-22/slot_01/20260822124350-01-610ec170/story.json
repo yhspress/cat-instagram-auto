@@ -1,0 +1,97 @@
+{
+  "title_ko": "구름항의 역광 금고",
+  "hook": "The vault opens above the clouds",
+  "caption_explanation_en": "A rooftop guardian reaches through harmless laser beams as an impossible skyport reveals its secret.",
+  "hashtags": [
+    "#SkyportCat",
+    "#LaserVault",
+    "#CinematicCats"
+  ],
+  "hero_expression_en": "astonished silent gasp",
+  "hero_body_language_en": "hugging a giant prop",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW020",
+      "name_en": "Aviation adventure skyport",
+      "concept_en": "a cloud-level skyport with airships and safe composited scale",
+      "category_ko": "HIGH_CONCEPT/worlds"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE011",
+      "name_en": "Secret laser vault",
+      "concept_en": "the hero reaches through harmless projected security beams toward a vault",
+      "category_ko": "HIGH_CONCEPT/events"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR002",
+      "name_en": "dark bat-themed rooftop vigilante",
+      "concept_en": "an original nocturnal guardian with no trademark emblem",
+      "category_ko": "HIGH_CONCEPT/roles"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "203",
+      "name_ko": "찻잔 잠수부",
+      "category_ko": "판타지와 미니어처",
+      "concept_ko": "각설탕이 떨어지며 잔 속에 하얀 빙산이 만들어진다."
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "316",
+      "name_ko": "비가 거꾸로 오는 날",
+      "category_ko": "계절·시간·날씨",
+      "concept_ko": "웅덩이의 물방울이 하늘로 올라가 구름을 만든다."
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX015",
+      "name_en": "astonished silent gasp",
+      "concept_en": "large eyes, parted mouth, and ears sharply forward",
+      "category_ko": "HIGH_CONCEPT/expressions"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG011",
+      "name_en": "hugging a giant prop",
+      "concept_en": "front paws wrapped around a harmless oversized practical prop",
+      "category_ko": "HIGH_CONCEPT/gestures"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV007",
+      "name_en": "portal behind the hero",
+      "concept_en": "a luminous geometric portal frames the protagonist",
+      "category_ko": "HIGH_CONCEPT/visual_hooks"
+    }
+  ],
+  "overview_ko": "구름 위 항구에서 고양이 수호자가 거꾸로 흐르는 비 속 비밀 금고를 연다.",
+  "continuity_ko": "주인공의 동일한 치즈태비 얼굴과 흰 발을 유지하고 푸른 야간 조명을 고정한다.",
+  "creative_fingerprint": {
+    "location_ko": "구름층 위의 유리 비행선 정박장",
+    "core_prop_ko": "거대한 투명 찻잔과 각설탕 빙산",
+    "twist_ko": "웅덩이 빗방울이 역류해 포털 뒤 구름으로 변함",
+    "camera_setups": [
+      "28mm crane-down three-quarter wide from airship mast, portal centered behind cat, crisp foreground and layered cloud depth"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "28mm crane-down three-quarter wide from airship mast",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5 blockbuster poster micro-story at a cloud-level aviation skyport at blue hour. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is a dark bat-themed rooftop vigilante in an original charcoal cape and practical harness with no emblem, showing astonished silent gasp and hugging a giant prop, front paws wrapped around an oversized transparent porcelain teacup. Inside the cup, a tiny diver stands beside a white sugar-cube iceberg while projected red security laser beams form a harmless vault grid; the cat reaches toward a glowing geometric vault portal behind the hero. Airships, docking towers, and a recognizable cloudport silhouette establish scale. Rain droplets visibly rise from a puddle into the clouds, creating the twist, with safe compositing and forced perspective. Three-quarter front viewpoint, camera distance eight meters, slightly elevated crane angle, 28mm lens, deep focus on cat and portal with gentle atmospheric falloff, cool moonlight mixed with warm amber dock lamps, realistic fur, paws, whiskers, porcelain reflections, cloud shadows, and physically coherent contact. Dominant clean silhouette, one decisive action, safe staged photography, no danger. Correct feline anatomy, no duplicate cats, no extra limbs, no human features, no cartoon, illustration, 3D render, plastic fur, logos, text, watermark, UI, captions, or readable title."
+    }
+  ],
+  "story_id": "20260822124350-01-610ec170",
+  "text_model_used": "gpt-5.6-luna"
+}
