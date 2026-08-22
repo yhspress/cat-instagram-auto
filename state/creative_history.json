@@ -422,6 +422,30 @@
         ]
       },
       "published_key": "2026-08-21:02"
+    },
+    {
+      "story_id": "20260822124350-01-610ec170",
+      "title_ko": "구름항의 역광 금고",
+      "hook": "The vault opens above the clouds",
+      "source_ids": [
+        "HCW020",
+        "HCE011",
+        "HCR002",
+        "203",
+        "316",
+        "HCX015",
+        "HCG011",
+        "HCV007"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "구름층 위의 유리 비행선 정박장",
+        "core_prop_ko": "거대한 투명 찻잔과 각설탕 빙산",
+        "twist_ko": "웅덩이 빗방울이 역류해 포털 뒤 구름으로 변함",
+        "camera_setups": [
+          "28mm crane-down three-quarter wide from airship mast, portal centered behind cat, crisp foreground and layered cloud depth"
+        ]
+      },
+      "published_key": "2026-08-22:01"
     }
   ]
 }
