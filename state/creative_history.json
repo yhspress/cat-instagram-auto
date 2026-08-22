@@ -446,6 +446,30 @@
         ]
       },
       "published_key": "2026-08-22:01"
+    },
+    {
+      "story_id": "20260822124350-02-ea4158f6",
+      "title_ko": "토성 고리의 졸음 경보",
+      "hook": "A rescue beacon cuts through Saturn",
+      "source_ids": [
+        "HCW001",
+        "HCE012",
+        "HCR003",
+        "204",
+        "317",
+        "HCX001",
+        "HCG012",
+        "HCV008"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "토성 고리 위 폐쇄형 관측 플랫폼",
+        "core_prop_ko": "창문 달린 성냥갑 호텔",
+        "twist_ko": "우주 눈이 얼음 모래 위에서 조개로 변함",
+        "camera_setups": [
+          "14mm extreme low-angle from ring dust level, cat looming over ledge with Saturn dominating background"
+        ]
+      },
+      "published_key": "2026-08-22:03"
     }
   ]
 }
