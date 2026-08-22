@@ -494,6 +494,30 @@
         ]
       },
       "published_key": "2026-08-22:04"
+    },
+    {
+      "story_id": "20260822124350-04-410f33ad",
+      "title_ko": "화성의 폭풍문",
+      "hook": "The storm turns toward the buried city",
+      "source_ids": [
+        "HCW003",
+        "HCE014",
+        "HCR005",
+        "206",
+        "320",
+        "HCX003",
+        "HCG014",
+        "HCV010"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "거대한 화성 지하문명 발굴 계곡",
+        "core_prop_ko": "파도가 갇힌 유리병과 종이배",
+        "twist_ko": "종이배가 포털을 지나 과거의 장마 골목으로 향함",
+        "camera_setups": [
+          "18mm forced-perspective push-in from portal threshold, elongated cat foreground and projected eye high behind ruins"
+        ]
+      },
+      "published_key": "2026-08-22:05"
     }
   ]
 }
