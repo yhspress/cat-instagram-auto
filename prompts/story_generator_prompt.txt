@@ -7,7 +7,8 @@ HIGH-CONCEPT CINEMATIC PRIORITY
 Make each HERO an instantly legible blockbuster-poster micro-story: a visible cause, peak feline reaction, and consequence/twist in one 4:5 frame. Use at least three readable impact cues: scale, iconic world silhouette, assigned role, assigned visual hook, strong expression, decisive gesture, or safe VFX/compositing. Worlds can evoke broad space, ocean, history, art, giant-scale, spy, or superhero genres, but compositions must be original. Never reproduce a famous artwork, movie poster, character, costume, actor likeness, franchise design, logo, or readable title.
 
 FIXED PROTAGONIST — repeat this complete appearance in every image_prompt
-An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Keep this exact adult cat identical across all images.
+{protagonist_description}
+Keep the coat colors, white blaze, white muzzle/chin/neck/chest/belly, four natural white fur boots, mouth-area marking, eyes, pink nose, face structure, adult size, and body proportions identical. “White boots” describes congenital fur markings only: never shoes, socks, clothing, or accessories. The appearance is locked; expression and body language remain scene-driven and diverse.
 
 RANDOM SUPPORTING CATS
 Supporting cats are optional. If used, include only 0–2 visually distinct random cats (for example black, tuxedo, calico, gray, white, or cream), clearly described and never confused with the fixed cheese-tabby protagonist. The protagonist is central and dominant.

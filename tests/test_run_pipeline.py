@@ -77,8 +77,7 @@ class StoryBatchValidationTests(unittest.TestCase):
                 })
             prompt = (
                 "Ultra-photorealistic live-action photography, vertical 4:5. "
-                "An attractive adult Korean Shorthair cheese-tabby cat with all four paws clean white, "
-                "a distinctive curry stain marking around the mouth, and round amber-brown eyes reacts "
+                + rp.CANONICAL_PROTAGONIST_DESCRIPTION + " The protagonist reacts "
                 "at the peak of an extraordinary event with "
                 f"{expression}; {body_languages[index]}."
             )
@@ -132,11 +131,28 @@ class StoryBatchValidationTests(unittest.TestCase):
 
     def test_requires_full_fixed_protagonist_appearance_inside_prompt(self) -> None:
         batch, assignments = self.make_batch()
-        batch["stories"][0]["images"][0]["image_prompt"] = batch["stories"][0]["images"][0]["image_prompt"].replace(
-            "round amber-brown eyes", "bright eyes"
-        )
+        batch["stories"][0]["images"][0]["image_prompt"] = batch["stories"][0]["images"][0]["image_prompt"].replace("amber-brown eyes", "bright eyes")
         errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
-        self.assertIn("story 1 image 1: missing 'round amber-brown eyes'", errors)
+        self.assertIn("story 1 image 1: missing protagonist identity meaning 'amber-brown eyes'", errors)
+
+    def test_canonical_protagonist_locks_white_fur_and_congenital_mouth_marking(self) -> None:
+        canonical = rp.CANONICAL_PROTAGONIST_DESCRIPTION.lower()
+        for phrase in (
+            "white fur around the mouth and muzzle", "on the chin", "entire neck, chest and belly",
+            "four neat white boots", "congenital orange cheese-tabby fur marking", "permanent fur pattern",
+            "never food, dirt or staining", "amber-brown eyes", "pink nose",
+        ):
+            self.assertIn(phrase, canonical)
+
+    def test_validator_rejects_white_boots_as_clothing_or_missing_white_distribution(self) -> None:
+        batch, assignments = self.make_batch()
+        prompt = batch["stories"][0]["images"][0]["image_prompt"]
+        prompt = prompt.replace("clean white fur like four neat white boots", "four white boots as clothing")
+        prompt = prompt.replace("entire neck, chest and belly", "orange neck, chest and belly")
+        batch["stories"][0]["images"][0]["image_prompt"] = prompt
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
+        self.assertIn("story 1 image 1: missing protagonist identity meaning 'white neck'", errors)
+        self.assertIn("story 1 image 1: missing protagonist identity meaning 'white boots are fur, not clothing'", errors)
 
     def test_rejects_any_source_id_not_exactly_assigned(self) -> None:
         batch, assignments = self.make_batch()
@@ -261,6 +277,8 @@ class SourceAssignmentTests(unittest.TestCase):
         self.assertNotIn("{batch_size}", sent_prompt)
         self.assertNotIn("{minimum_hero_variety}", sent_prompt)
         self.assertNotIn("{assigned_source_concepts}", sent_prompt)
+        self.assertNotIn("{protagonist_description}", sent_prompt)
+        self.assertIn(rp.CANONICAL_PROTAGONIST_DESCRIPTION, sent_prompt)
         self.assertNotIn("FULL_LIBRARY_SENTINEL", sent_prompt)
 
     def test_default_text_models_are_luna_then_mini(self) -> None:

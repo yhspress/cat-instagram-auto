@@ -36,12 +36,32 @@ SOURCE_ROLE_SPECS = (
     ("visual_hook", "시각 훅", "high_concept", "visual_hooks"),
 )
 
-PROTAGONIST_REQUIRED_FRAGMENTS = (
-    "An attractive adult Korean Shorthair cheese-tabby cat",
-    "all four paws clean white",
-    "curry stain",
-    "round amber-brown eyes",
+CANONICAL_PROTAGONIST_DESCRIPTION = (
+    "An attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; "
+    "bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; "
+    "a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur "
+    "around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws "
+    "and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes "
+    "and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around "
+    "parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and "
+    "never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly "
+    "rounded cheeks; realistic memorable face."
 )
+
+PROTAGONIST_REQUIRED_MEANINGS = {
+    "Korean Shorthair": ("korean shorthair",),
+    "orange-and-white cheese-tabby": ("orange-and-white cheese-tabby", "orange cheese-tabby"),
+    "white muzzle": ("white muzzle", "white fur around the mouth and muzzle"),
+    "white chin": ("white chin", "on the chin"),
+    "white neck": ("white neck", "entire neck"),
+    "white chest": ("white chest", "chest and belly"),
+    "white belly": ("white belly", "chest and belly"),
+    "four natural white fur boots": ("four neat white boots", "four clearly recognizable natural white boots"),
+    "white boots are fur, not clothing": ("congenital coat markings", "clean white fur like four neat white boots"),
+    "amber-brown eyes": ("amber-brown eyes",),
+    "pink nose": ("pink nose",),
+    "permanent congenital orange mouth marking": ("permanent fur pattern", "congenital orange cheese-tabby fur marking"),
+}
 
 DEFAULT_TEXT_MODEL_PRIMARY = "gpt-5.6-luna"
 DEFAULT_TEXT_MODEL_FALLBACK = "gpt-5.4-mini"
@@ -358,13 +378,15 @@ def validate_story_batch(
                     errors.append(f"story {si} image {ii}: prompt must include hero_body_language_en verbatim")
                 required_fragments = [
                     "Ultra-photorealistic live-action photography",
-                    "Korean Shorthair",
                     "4:5",
-                    *PROTAGONIST_REQUIRED_FRAGMENTS,
                 ]
                 for frag in required_fragments:
                     if frag.lower() not in prompt.lower():
                         errors.append(f"story {si} image {ii}: missing {frag!r}")
+                prompt_lower = prompt.lower()
+                for meaning, alternatives in PROTAGONIST_REQUIRED_MEANINGS.items():
+                    if not any(alternative in prompt_lower for alternative in alternatives):
+                        errors.append(f"story {si} image {ii}: missing protagonist identity meaning {meaning!r}")
                 sig = strategy.strip().lower()
                 if not sig:
                     errors.append(f"story {si} image {ii}: camera_strategy must not be empty")
@@ -408,6 +430,7 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
         template
         .replace("{batch_size}", str(batch_size))
         .replace("{minimum_hero_variety}", str(minimum_hero_variety(batch_size)))
+        .replace("{protagonist_description}", CANONICAL_PROTAGONIST_DESCRIPTION)
         .replace("{creative_history}", history_for_prompt(config))
         .replace("{assigned_source_concepts}", assigned_source_prompt(assignments))
     )
