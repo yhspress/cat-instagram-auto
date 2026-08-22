@@ -62,18 +62,24 @@ class StoryBatchValidationTests(unittest.TestCase):
         ]
         stories = []
         assignments = []
-        role_names = [role for role, _role_ko, _categories in rp.SOURCE_ROLE_CATEGORY_POOLS]
+        role_names = [role for role, _role_ko, _source_type, _selector in rp.SOURCE_ROLE_SPECS]
         for index, expression in enumerate(expressions):
             sources = []
             assigned_sources = []
             for offset, role in enumerate(role_names):
-                source_id = f"{index * 6 + offset + 1:03d}"
+                source_id = f"TEST-{index * len(role_names) + offset + 1:03d}"
                 category = f"category-{index}-{offset}"
-                sources.append({"id": source_id, "name_ko": "소스", "category_ko": category})
-                assigned_sources.append({"id": source_id, "role": role})
+                sources.append({"id": source_id, "role": role, "name_ko": "소스", "category_ko": category})
+                assigned_sources.append({
+                    "id": source_id,
+                    "role": role,
+                    "name_en": expression if role == "expression" else body_languages[index] if role == "gesture" else "assigned source",
+                })
             prompt = (
                 "Ultra-photorealistic live-action photography, vertical 4:5. "
-                "An adult Korean Shorthair cat reacts at the peak of an extraordinary event with "
+                "An attractive adult Korean Shorthair cheese-tabby cat with all four paws clean white, "
+                "a distinctive curry stain marking around the mouth, and round amber-brown eyes reacts "
+                "at the peak of an extraordinary event with "
                 f"{expression}; {body_languages[index]}."
             )
             stories.append({
@@ -124,6 +130,14 @@ class StoryBatchValidationTests(unittest.TestCase):
         errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
         self.assertIn("story 1 image 1: prompt must include hero_body_language_en verbatim", errors)
 
+    def test_requires_full_fixed_protagonist_appearance_inside_prompt(self) -> None:
+        batch, assignments = self.make_batch()
+        batch["stories"][0]["images"][0]["image_prompt"] = batch["stories"][0]["images"][0]["image_prompt"].replace(
+            "round amber-brown eyes", "bright eyes"
+        )
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
+        self.assertIn("story 1 image 1: missing 'round amber-brown eyes'", errors)
+
     def test_rejects_any_source_id_not_exactly_assigned(self) -> None:
         batch, assignments = self.make_batch()
         batch["stories"][0]["source_concepts"][2]["id"] = "999"
@@ -140,6 +154,14 @@ class StoryBatchValidationTests(unittest.TestCase):
         batch["stories"][0]["source_concepts"][1]["id"] = batch["stories"][0]["source_concepts"][0]["id"]
         errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
         self.assertTrue(any("source_concepts ids must exactly match assigned ids" in error for error in errors))
+
+    def test_requires_assigned_expression_and_gesture_names(self) -> None:
+        batch, assignments = self.make_batch()
+        batch["stories"][0]["hero_expression_en"] = "another expression"
+        batch["stories"][0]["hero_body_language_en"] = "another gesture"
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
+        self.assertIn("story 1: hero_expression_en must match assigned expression name_en", errors)
+        self.assertIn("story 1: hero_body_language_en must match assigned gesture name_en", errors)
 
     def test_requires_seven_distinct_expressions_and_gestures(self) -> None:
         batch, assignments = self.make_batch()
@@ -159,34 +181,50 @@ class StoryBatchValidationTests(unittest.TestCase):
 
 
 class SourceAssignmentTests(unittest.TestCase):
-    def test_assigns_six_roles_per_story_without_batch_id_reuse(self) -> None:
+    def test_assigns_high_concept_roles_per_story_without_batch_id_reuse(self) -> None:
         concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
         with patch.object(rp, "recent_source_ids", return_value=(set(), 0)):
             first = rp.assign_source_concepts(concepts, {"batch_size": 10})
             second = rp.assign_source_concepts(concepts, {"batch_size": 10})
 
-        expected_roles = [role for role, _role_ko, _categories in rp.SOURCE_ROLE_CATEGORY_POOLS]
+        expected_roles = [role for role, _role_ko, _source_type, _selector in rp.SOURCE_ROLE_SPECS]
         self.assertEqual(len(rp.parse_concepts(concepts)), 500)
         self.assertEqual(first, second)
         self.assertEqual(len(first), 10)
         self.assertTrue(all([item["role"] for item in story] == expected_roles for story in first))
         for story in first:
-            for item, (_role, _role_ko, categories) in zip(story, rp.SOURCE_ROLE_CATEGORY_POOLS):
-                self.assertIn(item["category_ko"], categories)
+            for item, (_role, _role_ko, source_type, selector) in zip(story, rp.SOURCE_ROLE_SPECS):
+                if source_type == "high_concept":
+                    self.assertEqual(item["category_ko"], f"HIGH_CONCEPT/{selector}")
+                else:
+                    self.assertIn(item["category_ko"], selector)
         ids = [item["id"] for story in first for item in story]
-        self.assertEqual(len(ids), 60)
-        self.assertEqual(len(set(ids)), 60)
+        self.assertEqual(len(ids), 80)
+        self.assertEqual(len(set(ids)), 80)
+
+    def test_high_concept_pool_is_well_formed_and_assigns_all_eight_axes(self) -> None:
+        pool = rp.load_high_concept_pool(rp.load_config())
+        self.assertEqual(set(pool), {"worlds", "events", "roles", "expressions", "gestures", "visual_hooks"})
+        self.assertTrue(all(len(entries) >= 10 for entries in pool.values()))
+        concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
+        with patch.object(rp, "recent_source_ids", return_value=(set(), 0)):
+            assignments = rp.assign_source_concepts(concepts, rp.load_config())
+        self.assertTrue(all(len(story) == len(rp.SOURCE_ROLE_SPECS) for story in assignments))
+        self.assertEqual([item["role"] for item in assignments[0]], [spec[0] for spec in rp.SOURCE_ROLE_SPECS])
 
     def test_assignment_avoids_recent_ids_when_each_pool_has_capacity(self) -> None:
         concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
-        records = rp.parse_concepts(concepts)
         recent_ids = set()
-        for _role, _role_ko, categories in rp.SOURCE_ROLE_CATEGORY_POOLS:
-            pool = [record for record in records if record["category_ko"] in categories]
-            recent_ids.update(record["id"] for record in pool[:10])
+        for entries in rp.load_high_concept_pool(rp.load_config()).values():
+            recent_ids.update(record["id"] for record in entries[:5])
+        records = rp.parse_concepts(concepts)
+        for _role, _role_ko, source_type, selector in rp.SOURCE_ROLE_SPECS:
+            if source_type == "concept_library":
+                pool = [record for record in records if record["category_ko"] in selector]
+                recent_ids.update(record["id"] for record in pool[:10])
 
         with patch.object(rp, "recent_source_ids", return_value=(recent_ids, 0)):
-            assignments = rp.assign_source_concepts(concepts, {"batch_size": 10})
+            assignments = rp.assign_source_concepts(concepts, rp.load_config())
 
         assigned_ids = {item["id"] for story in assignments for item in story}
         self.assertTrue(assigned_ids.isdisjoint(recent_ids))
@@ -194,11 +232,11 @@ class SourceAssignmentTests(unittest.TestCase):
     def test_compact_assignment_prompt_contains_only_assigned_concepts(self) -> None:
         concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
         with patch.object(rp, "recent_source_ids", return_value=(set(), 0)):
-            assignments = rp.assign_source_concepts(concepts, {"batch_size": 10})
+            assignments = rp.assign_source_concepts(concepts, rp.load_config())
         compact = rp.assigned_source_prompt(assignments)
 
         self.assertEqual(compact.count('"story_index"'), 10)
-        self.assertEqual(compact.count('"id"'), 60)
+        self.assertEqual(compact.count('"id"'), 80)
         self.assertNotIn("500. ", compact)
 
     def test_generation_injects_assignments_instead_of_full_library(self) -> None:
@@ -225,6 +263,12 @@ class SourceAssignmentTests(unittest.TestCase):
         self.assertNotIn("{minimum_hero_variety}", sent_prompt)
         self.assertNotIn("{assigned_source_concepts}", sent_prompt)
         self.assertNotIn("FULL_LIBRARY_SENTINEL", sent_prompt)
+
+    def test_prompt_requires_random_supporting_cats_and_safe_original_homages(self) -> None:
+        prompt = (ROOT / "prompts" / "story_generator_prompt.txt").read_text(encoding="utf-8")
+        self.assertIn("RANDOM SUPPORTING CATS", prompt)
+        self.assertIn("Never duplicate or visually confuse them with the fixed cheese-tabby protagonist", prompt)
+        self.assertIn("Never reproduce a famous artwork, movie poster, character, costume", prompt)
 
 
 class QueueBatchTests(unittest.TestCase):

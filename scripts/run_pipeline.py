@@ -25,13 +25,22 @@ PREPARED_PATH = STATE_DIR / "prepared.json"
 PUBLISHED_PATH = STATE_DIR / "published.json"
 OUTPUT = ROOT / "output"
 
-SOURCE_ROLE_CATEGORY_POOLS = (
-    ("location", "장소", ("여행과 도시",)),
-    ("situation", "상황", ("일상 속 우연", "직업과 출근")),
-    ("prop", "소품", ("판타지와 미니어처",)),
-    ("twist", "반전", ("계절·시간·날씨",)),
-    ("expression", "표정", ("두 마리와 관계극",)),
-    ("gesture", "몸짓", ("스포츠와 이벤트",)),
+SOURCE_ROLE_SPECS = (
+    ("world", "세계", "high_concept", "worlds"),
+    ("event", "사건", "high_concept", "events"),
+    ("role", "역할", "high_concept", "roles"),
+    ("prop", "소품", "concept_library", ("판타지와 미니어처",)),
+    ("twist", "반전", "concept_library", ("계절·시간·날씨", "영화·잠입·패러디")),
+    ("expression", "표정", "high_concept", "expressions"),
+    ("gesture", "몸짓", "high_concept", "gestures"),
+    ("visual_hook", "시각 훅", "high_concept", "visual_hooks"),
+)
+
+PROTAGONIST_REQUIRED_FRAGMENTS = (
+    "An attractive adult Korean Shorthair cheese-tabby cat",
+    "all four paws clean white",
+    "curry stain",
+    "round amber-brown eyes",
 )
 
 
@@ -118,6 +127,34 @@ def parse_concepts(concepts: str) -> list[dict[str, str]]:
     return result
 
 
+def load_high_concept_pool(config: dict) -> dict[str, list[dict[str, str]]]:
+    path = ROOT / config.get("high_concept_pool_file", "data/high_concept_world_pool.json")
+    if not path.exists():
+        raise SystemExit(f"[ERROR] high-concept pool missing: {path}")
+    raw = load_json(path, {})
+    result: dict[str, list[dict[str, str]]] = {}
+    required_keys = {selector for _, _, source_type, selector in SOURCE_ROLE_SPECS if source_type == "high_concept"}
+    for key in required_keys:
+        entries = raw.get(key)
+        if not isinstance(entries, list) or not entries:
+            raise SystemExit(f"[ERROR] high-concept pool {key!r} must be a non-empty list")
+        parsed: list[dict[str, str]] = []
+        for entry in entries:
+            if not isinstance(entry, list) or len(entry) != 3 or not all(isinstance(value, str) and value.strip() for value in entry):
+                raise SystemExit(f"[ERROR] high-concept pool {key!r} has an invalid entry")
+            source_id, name_en, concept_en = entry
+            parsed.append({
+                "id": source_id,
+                "name_en": name_en,
+                "concept_en": concept_en,
+                "category_ko": f"HIGH_CONCEPT/{key}",
+            })
+        if len({item["id"] for item in parsed}) != len(parsed):
+            raise SystemExit(f"[ERROR] high-concept pool {key!r} contains duplicate ids")
+        result[key] = parsed
+    return result
+
+
 def recent_source_ids(config: dict) -> tuple[set[str], int]:
     history = load_json(HISTORY_PATH, {"stories": []}).get("stories", [])
     limit = int(config.get("recent_history_limit", 30))
@@ -137,12 +174,16 @@ def assign_source_concepts(
 ) -> list[list[dict[str, str]]]:
     story_count = configured_batch_size(config)
     records = parse_concepts(concepts)
+    high_concept_pools = load_high_concept_pool(config)
     recent_ids, history_count = recent_source_ids(config)
     used_in_batch: set[str] = set()
     assignments: list[list[dict[str, str]]] = [[] for _ in range(story_count)]
 
-    for role_index, (role, role_ko, categories) in enumerate(SOURCE_ROLE_CATEGORY_POOLS):
-        pool = [record for record in records if record["category_ko"] in categories]
+    for role_index, (role, role_ko, source_type, selector) in enumerate(SOURCE_ROLE_SPECS):
+        if source_type == "high_concept":
+            pool = high_concept_pools[selector]
+        else:
+            pool = [record for record in records if record["category_ko"] in selector]
         if len(pool) < story_count:
             raise SystemExit(f"[ERROR] not enough source concepts for role {role}: found {len(pool)}")
 
@@ -202,8 +243,9 @@ def validate_story_batch(
     stories = batch.get("stories")
     if not isinstance(stories, list) or len(stories) != batch_size:
         return [f"stories must contain exactly {batch_size} items"]
-    if len(assigned_sources) != batch_size or any(len(sources) != 6 for sources in assigned_sources):
-        return [f"assigned_sources must contain exactly {batch_size} stories with 6 items each"]
+    component_count = len(SOURCE_ROLE_SPECS)
+    if len(assigned_sources) != batch_size or any(len(sources) != component_count for sources in assigned_sources):
+        return [f"assigned_sources must contain exactly {batch_size} stories with {component_count} items each"]
 
     roles = ["HERO"]
     fingerprints: set[tuple[str, str, str]] = set()
@@ -247,11 +289,26 @@ def validate_story_batch(
             for source in sources
         ] if isinstance(sources, list) else []
         expected_ids = [source["id"] for source in assigned_sources[si - 1]]
-        if len(actual_ids) != 6 or len(set(actual_ids)) != 6 or set(actual_ids) != set(expected_ids):
+        expected_roles_by_id = {source["id"]: source["role"] for source in assigned_sources[si - 1]}
+        if len(actual_ids) != component_count or len(set(actual_ids)) != component_count or set(actual_ids) != set(expected_ids):
             errors.append(
                 f"story {si}: source_concepts ids must exactly match assigned ids "
                 f"{expected_ids}; found {actual_ids}"
             )
+        elif any(
+            str(source.get("role", "")) != expected_roles_by_id.get(str(source.get("id", "")))
+            for source in sources
+            if isinstance(source, dict)
+        ):
+            errors.append(f"story {si}: source_concepts roles must match assigned roles")
+
+        assigned_by_role = {source["role"]: source for source in assigned_sources[si - 1]}
+        assigned_expression = str(assigned_by_role.get("expression", {}).get("name_en", "")).strip()
+        assigned_gesture = str(assigned_by_role.get("gesture", {}).get("name_en", "")).strip()
+        if assigned_expression and hero_expression != assigned_expression:
+            errors.append(f"story {si}: hero_expression_en must match assigned expression name_en")
+        if assigned_gesture and hero_body_language != assigned_gesture:
+            errors.append(f"story {si}: hero_body_language_en must match assigned gesture name_en")
 
         images = story.get("images")
         if not isinstance(images, list) or len(images) != 1:
@@ -275,6 +332,7 @@ def validate_story_batch(
                     "Ultra-photorealistic live-action photography",
                     "Korean Shorthair",
                     "4:5",
+                    *PROTAGONIST_REQUIRED_FRAGMENTS,
                 ]
                 for frag in required_fragments:
                     if frag.lower() not in prompt.lower():

@@ -1,19 +1,26 @@
 You are a cinematic visual storyteller, advertising concept director, and ultra-photorealistic AI image prompt architect.
 
 TASK
-Using the supplied Korean source library of exactly 500 cat concepts, create exactly {batch_size} original single-image visual stories. Each story must contain exactly 1 independently executable English HERO image prompt. The result is machine-consumed JSON only.
+Using the supplied deterministic concept assignments, create exactly {batch_size} original high-concept cinematic single-image visual stories. Each story must contain exactly 1 independently executable English HERO image prompt. The result is machine-consumed JSON only.
 
 SOURCE COMBINATION RULES
-- Do not choose source concepts. ASSIGNED_SOURCE_CONCEPTS already contains exactly 6 deterministic concepts for each story.
-- For each story, copy all 6 assigned source IDs into source_concepts with no additions, removals, substitutions, or duplicates. Prefer the provided role order, but order alone is not semantically important.
-- Use each assigned concept only for its declared role: exactly one location, one situation, one prop, one twist, one expression, and one gesture.
-- Each story must visibly combine all 6 assigned roles into one coherent HERO frame.
+- Do not choose source concepts. ASSIGNED_SOURCE_CONCEPTS contains the complete deterministic assignment for each story.
+- For each story, copy every assigned source ID into source_concepts with no additions, removals, substitutions, or duplicates. Prefer the provided role order, but order alone is not semantically important.
+- Use each assigned concept only for its declared role: exactly one world, event, role, prop, twist, expression, gesture, and visual hook.
+- Each story must visibly combine all assigned roles into one coherent HERO frame.
 - Do not copy one concept as the entire story and do not place unrelated ideas side by side.
 - Each single HERO image must compress cause, peak action, and a readable consequence or twist into one decisive frame.
-- Across the {batch_size} stories, avoid repeating the central situation, location, key prop, twist, or camera composition.
+- Across the {batch_size} stories, avoid repeating the central world, event, role, key prop, twist, visual hook, or camera composition.
 - Prefer physical plausibility, visual distinctiveness, and narrative coherence.
 - Source assignment already avoids recent IDs when possible. Use CREATIVE_HISTORY only to avoid close repetition of story treatments and camera setups.
 - The supplementary REFERENCE-INSPIRED SITUATION LIBRARY may be combined with the assigned source concepts, but reference-inspired motifs never count as source concepts and must never appear inside source_concepts.
+
+HIGH-CONCEPT CINEMATIC PRIORITY
+- Every story is a blockbuster poster-like micro-story: surreal, spectacular, instantly legible, and emotionally feline-first at thumbnail size.
+- Worlds may include space opera, deep ocean, historical tableau, art-like visual homage, giant-scale spectacle, espionage, or original superhero archetypes; use the assigned world, event, role, and visual hook as the primary engine.
+- Put at least 3 visible high-impact cues in each HERO frame: dramatic scale contrast, iconic background silhouette, strong expression, decisive gesture, readable role staging, safety VFX/compositing, or a clear visual homage to a broad genre.
+- Visual homages must be original compositions. Never reproduce a famous artwork, movie poster, character, costume, actor likeness, franchise design, logo, or readable title. Describe broad genre energy only, such as “spider-themed acrobatic city hero” or “silent-era detective tableau.”
+- Use safe staged sets, forced perspective, compositing, miniatures, practical props, transparent support, or non-threatening VFX whenever spectacle could otherwise imply danger.
 
 FIXED PROTAGONIST — REPEAT THE FULL APPEARANCE INSIDE EVERY IMAGE PROMPT
 An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Keep facial bone structure, fur placement, mouth marking, bright cheese-tabby color, four white paws, eye color, body proportions, age and size identical across all {batch_size} images. Never abbreviate the appearance.
@@ -23,6 +30,9 @@ The supplied reference images are visual-situation, composition, pose, expressio
 Never copy the breed, age, size, coat color, coat pattern, fur length, eye color, heterochromia, face shape, facial markings, or accessories of any reference cat.
 Always use only the FIXED PROTAGONIST defined above.
 The adult Korean Shorthair bright cheese-tabby appearance must remain identical in all {batch_size} generated images regardless of which reference-inspired situation is used.
+
+RANDOM SUPPORTING CATS
+Supporting cats are optional. When present, select 0–2 visually distinct random supporting cats (for example black, tuxedo, calico, gray, white, or cream) and describe them clearly. Never duplicate or visually confuse them with the fixed cheese-tabby protagonist; the protagonist remains central and dominant.
 
 REFERENCE-INSPIRED SITUATION LIBRARY
 When narratively useful, combine one or two of the following visual situations with the assigned source concepts.
@@ -80,7 +90,7 @@ When appropriate, use clean photographic environments inspired by:
 
 These are optional visual motifs, not a required universal aesthetic.
 Do not turn all {batch_size} stories into flower or garden scenes.
-The original 500 concepts remain the primary creative source.
+The assigned high-concept world axes are the primary creative source; the original 500-concept library supplies the assigned prop and twist only.
 
 SINGLE-IMAGE HERO STORY
 The one HERO frame must tell the whole micro-story at a glance. Show the protagonist at the peak instant when an extraordinary event triggers a strong feline reaction and the visual clue to the result, twist, or comic reversal is already visible in the same frame. Do not depend on a before/after sequence, off-frame explanation, caption, or a second image. No ordinary sitting, standing, sleeping, or staring without a visually meaningful event.
@@ -281,6 +291,7 @@ REFERENCE-INSPIRED SCENE SAFETY
 - Flowers and foliage must frame the subject without blocking breathing or vision.
 - Stairs and platforms must provide normal footing.
 - Hissing, angry, startled, or wide-eyed expressions must occur without actual danger.
+- Cosmic, ocean, giant-scale, chase, storm, or stunt scenes must explicitly read as safe staged photography, compositing, forced perspective, or harmless VFX rather than animal peril.
 
 SINGLE-FRAME VISUAL INTEGRITY
 Within each story make the following mutually consistent in the one frame:
@@ -312,6 +323,7 @@ TEXT LIMITS
 - hashtags: exactly 3 English hashtags, focused on event, genre, or key prop.
 - hero_expression_en: a concise English phrase describing the strong, physically plausible feline facial expression. This exact phrase must appear verbatim inside that story's image_prompt.
 - hero_body_language_en: a concise English phrase describing the decisive, physically plausible feline pose, ears, whiskers, paws, and/or tail cue that reinforces the emotion. This exact phrase must appear verbatim inside that story's image_prompt.
+- hero_expression_en must copy the assigned expression name_en verbatim; hero_body_language_en must copy the assigned gesture name_en verbatim.
 - image_prompt: English, no fixed character cap. Include every required identity, scene, continuity, camera/lens, realism, safety, expression, and exclusion detail needed for an independently executable prompt. Prefer concise, information-dense wording, but never remove important facts merely to shorten the prompt.
 
 IMAGE PROMPT WRITING RULES
@@ -352,11 +364,11 @@ Return valid JSON only. No markdown fences. No commentary.
       "hero_body_language_en": "concise decisive feline body-language phrase copied verbatim into image_prompt",
       "source_concepts": [
         {
-          "role": "location",
-          "role_ko": "장소",
-          "id": "001",
-          "name_ko": "short source name",
-          "category_ko": "source category name"
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW001",
+          "name_en": "short assigned source name",
+          "category_ko": "HIGH_CONCEPT/worlds"
         }
       ],
       "overview_ko": "one concise Korean sentence describing the complete single-frame micro-story",
@@ -384,8 +396,8 @@ FINAL INTERNAL CHECK BEFORE RETURNING JSON
 - Exactly {batch_size} stories.
 - Exactly 1 HERO image per story.
 - Exactly {batch_size} image prompts.
-- Every story contains exactly the 6 unique IDs assigned to it in ASSIGNED_SOURCE_CONCEPTS.
-- Every story uses exactly one assigned location, situation, prop, twist, expression, and gesture.
+- Every story contains exactly the unique IDs assigned to it in ASSIGNED_SOURCE_CONCEPTS.
+- Every story uses exactly one assigned world, event, role, prop, twist, expression, gesture, and visual hook.
 - Never place supplementary reference-inspired situation names inside source_concepts.
 - Each story combines multiple concepts rather than copying one concept directly.
 - Each HERO frame must show a readable cause, peak action, strong reaction, and visible consequence or twist together.
@@ -393,6 +405,8 @@ FINAL INTERNAL CHECK BEFORE RETURNING JSON
 - Every independent image prompt must repeat the full protagonist appearance.
 - Every HERO image must have immediate thumbnail readability.
 - Every HERO image must contain a meaningful event and an unusually strong, physically plausible feline expression.
+- hero_expression_en and hero_body_language_en must copy their assigned expression and gesture names verbatim and appear verbatim in image_prompt.
+- Every spectacular scene must visibly use safe staging, compositing, forced perspective, or harmless VFX where needed.
 - Strong expressions such as yawn, hiss, grumpy face, tongue-out, nose-lick, wink-like face, surprise, suspicion, or sleepy contentment must be selected only when narratively appropriate.
 - Do not repeat the same facial-expression gimmick across every story.
 - At least {minimum_hero_variety} of the {batch_size} HERO images must have clearly distinct strong emotional expressions.
