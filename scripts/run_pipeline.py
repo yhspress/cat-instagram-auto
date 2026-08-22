@@ -25,6 +25,15 @@ PREPARED_PATH = STATE_DIR / "prepared.json"
 PUBLISHED_PATH = STATE_DIR / "published.json"
 OUTPUT = ROOT / "output"
 
+SOURCE_ROLE_CATEGORY_POOLS = (
+    ("location", "장소", ("여행과 도시",)),
+    ("situation", "상황", ("일상 속 우연", "직업과 출근")),
+    ("prop", "소품", ("판타지와 미니어처",)),
+    ("twist", "반전", ("계절·시간·날씨",)),
+    ("expression", "표정", ("두 마리와 관계극",)),
+    ("gesture", "몸짓", ("스포츠와 이벤트",)),
+)
+
 
 def load_env_file(path: Path) -> None:
     if not path.exists():
@@ -78,19 +87,82 @@ def load_concepts(config: dict) -> str:
     return text
 
 
-def concept_category_map(concepts: str) -> dict[str, str]:
+def parse_concepts(concepts: str) -> list[dict[str, str]]:
     current = ""
-    result: dict[str, str] = {}
+    result: list[dict[str, str]] = []
     for raw in concepts.splitlines():
         line = raw.strip()
         m_cat = re.match(r"^\d{2}\.\s+(.+)$", line)
         if m_cat:
             current = m_cat.group(1).strip()
             continue
-        m = re.match(r"^(\d{3})\.\s+", line)
+        m = re.match(r"^(\d{3})\.\s+(.+?)(?:\s+—\s+(.+))?$", line)
         if m:
-            result[m.group(1)] = current
+            result.append({
+                "id": m.group(1),
+                "name_ko": m.group(2).strip(),
+                "category_ko": current,
+                "concept_ko": (m.group(3) or m.group(2)).strip(),
+            })
     return result
+
+
+def recent_source_ids(config: dict) -> tuple[set[str], int]:
+    history = load_json(HISTORY_PATH, {"stories": []}).get("stories", [])
+    limit = int(config.get("recent_history_limit", 30))
+    recent = history[-limit:]
+    used = {
+        str(source_id)
+        for story in recent
+        for source_id in story.get("source_ids", [])
+        if source_id
+    }
+    return used, len(history)
+
+
+def assign_source_concepts(
+    concepts: str,
+    config: dict,
+    story_count: int = 5,
+) -> list[list[dict[str, str]]]:
+    records = parse_concepts(concepts)
+    recent_ids, history_count = recent_source_ids(config)
+    used_in_batch: set[str] = set()
+    assignments: list[list[dict[str, str]]] = [[] for _ in range(story_count)]
+
+    for role_index, (role, role_ko, categories) in enumerate(SOURCE_ROLE_CATEGORY_POOLS):
+        pool = [record for record in records if record["category_ko"] in categories]
+        if len(pool) < story_count:
+            raise SystemExit(f"[ERROR] not enough source concepts for role {role}: found {len(pool)}")
+
+        start = (history_count + role_index * 11) % len(pool)
+        ordered = pool[start:] + pool[:start]
+        available = [item for item in ordered if item["id"] not in recent_ids]
+        available.extend(item for item in ordered if item["id"] in recent_ids)
+
+        for story_index in range(story_count):
+            selected = next((item for item in available if item["id"] not in used_in_batch), None)
+            if selected is None:
+                raise SystemExit(f"[ERROR] no unique source concept available for role {role}")
+            used_in_batch.add(selected["id"])
+            assignments[story_index].append({
+                "role": role,
+                "role_ko": role_ko,
+                **selected,
+            })
+            available.remove(selected)
+
+    return assignments
+
+
+def assigned_source_prompt(assignments: list[list[dict[str, str]]]) -> str:
+    payload = {
+        "stories": [
+            {"story_index": index, "source_concepts": sources}
+            for index, sources in enumerate(assignments, 1)
+        ]
+    }
+    return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
 
 
 def extract_json(text: str) -> dict:
@@ -108,11 +180,16 @@ def extract_json(text: str) -> dict:
         raise
 
 
-def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]:
+def validate_story_batch(
+    batch: dict,
+    assigned_sources: list[list[dict[str, str]]],
+) -> list[str]:
     errors: list[str] = []
     stories = batch.get("stories")
     if not isinstance(stories, list) or len(stories) != 5:
         return ["stories must contain exactly 5 items"]
+    if len(assigned_sources) != 5 or any(len(sources) != 6 for sources in assigned_sources):
+        return ["assigned_sources must contain exactly 5 stories with 6 items each"]
 
     roles = ["HERO"]
     fingerprints: set[tuple[str, str, str]] = set()
@@ -151,22 +228,16 @@ def validate_story_batch(batch: dict, category_map: dict[str, str]) -> list[str]
             hero_body_languages.append(hero_body_language.lower())
 
         sources = story.get("source_concepts")
-        if not isinstance(sources, list) or not (3 <= len(sources) <= 6):
-            errors.append(f"story {si}: source_concepts must have 3..6 items")
-        else:
-            ids = []
-            cats = set()
-            for src in sources:
-                sid = str(src.get("id", "")) if isinstance(src, dict) else ""
-                ids.append(sid)
-                if sid not in category_map:
-                    errors.append(f"story {si}: unknown source id {sid!r}")
-                else:
-                    cats.add(category_map[sid])
-            if len(set(ids)) != len(ids):
-                errors.append(f"story {si}: duplicate source ids")
-            if len(cats) != len(ids):
-                errors.append(f"story {si}: every source concept must come from a different category")
+        actual_ids = [
+            str(source.get("id", "")) if isinstance(source, dict) else ""
+            for source in sources
+        ] if isinstance(sources, list) else []
+        expected_ids = [source["id"] for source in assigned_sources[si - 1]]
+        if len(actual_ids) != 6 or len(set(actual_ids)) != 6 or set(actual_ids) != set(expected_ids):
+            errors.append(
+                f"story {si}: source_concepts ids must exactly match assigned ids "
+                f"{expected_ids}; found {actual_ids}"
+            )
 
         images = story.get("images")
         if not isinstance(images, list) or len(images) != 1:
@@ -231,9 +302,11 @@ def history_for_prompt(config: dict) -> str:
 
 def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[dict]:
     template = (ROOT / config["story_prompt_file"]).read_text(encoding="utf-8")
-    base_prompt = template.replace("{creative_history}", history_for_prompt(config)).replace("{concepts}", concepts)
+    assignments = assign_source_concepts(concepts, config)
+    base_prompt = template.replace("{creative_history}", history_for_prompt(config)).replace(
+        "{assigned_source_concepts}", assigned_source_prompt(assignments)
+    )
     model = required_env("OPENAI_TEXT_MODEL")
-    category_map = concept_category_map(concepts)
     last_errors: list[str] = []
 
     for attempt in range(1, 4):
@@ -249,7 +322,7 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
         except Exception as exc:
             last_errors = [f"invalid JSON: {exc}"]
             continue
-        last_errors = validate_story_batch(batch, category_map)
+        last_errors = validate_story_batch(batch, assignments)
         if not last_errors:
             now = get_now(config)
             stories = batch["stories"]

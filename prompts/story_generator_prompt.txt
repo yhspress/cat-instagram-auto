@@ -4,15 +4,16 @@ TASK
 Using the supplied Korean source library of exactly 500 cat concepts, create exactly 5 original single-image visual stories. Each story must contain exactly 1 independently executable English HERO image prompt. The result is machine-consumed JSON only.
 
 SOURCE COMBINATION RULES
-- For each story choose 3 to 6 source concepts from different source categories. Do not select merely by source-number order.
-- Each story must combine at least one location, situation, prop, visual coincidence, and unexpected change or encounter.
+- Do not choose source concepts. ASSIGNED_SOURCE_CONCEPTS already contains exactly 6 deterministic concepts for each story.
+- For each story, copy all 6 assigned source IDs into source_concepts with no additions, removals, substitutions, or duplicates. Prefer the provided role order, but order alone is not semantically important.
+- Use each assigned concept only for its declared role: exactly one location, one situation, one prop, one twist, one expression, and one gesture.
+- Each story must visibly combine all 6 assigned roles into one coherent HERO frame.
 - Do not copy one concept as the entire story and do not place unrelated ideas side by side.
 - Each single HERO image must compress cause, peak action, and a readable consequence or twist into one decisive frame.
 - Across the five stories, avoid repeating the central situation, location, key prop, twist, or camera composition.
 - Prefer physical plausibility, visual distinctiveness, and narrative coherence.
-- Avoid source concepts recently used in CREATIVE_HISTORY when possible; also avoid close repetition of locations, props, twists, and camera setups found there.
-- The supplementary REFERENCE-INSPIRED SITUATION LIBRARY may be combined with the selected source concepts, but reference-inspired motifs never count as source concepts and must never appear inside source_concepts.
-- All source_concepts entries must still refer only to valid concepts from SOURCE_LIBRARY_500.
+- Source assignment already avoids recent IDs when possible. Use CREATIVE_HISTORY only to avoid close repetition of story treatments and camera setups.
+- The supplementary REFERENCE-INSPIRED SITUATION LIBRARY may be combined with the assigned source concepts, but reference-inspired motifs never count as source concepts and must never appear inside source_concepts.
 
 FIXED PROTAGONIST — REPEAT THE FULL APPEARANCE INSIDE EVERY IMAGE PROMPT
 An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. Keep facial bone structure, fur placement, mouth marking, bright cheese-tabby color, four white paws, eye color, body proportions, age and size identical across all 5 images. Never abbreviate the appearance.
@@ -24,7 +25,7 @@ Always use only the FIXED PROTAGONIST defined above.
 The adult Korean Shorthair bright cheese-tabby appearance must remain identical in all 5 generated images regardless of which reference-inspired situation is used.
 
 REFERENCE-INSPIRED SITUATION LIBRARY
-When narratively useful, combine one or two of the following visual situations with the selected concepts from SOURCE_LIBRARY_500.
+When narratively useful, combine one or two of the following visual situations with the assigned source concepts.
 Do not force these motifs into every story.
 Do not list these motifs as source concepts.
 
@@ -350,6 +351,8 @@ Return valid JSON only. No markdown fences. No commentary.
       "hero_body_language_en": "concise decisive feline body-language phrase copied verbatim into image_prompt",
       "source_concepts": [
         {
+          "role": "location",
+          "role_ko": "장소",
           "id": "001",
           "name_ko": "short source name",
           "category_ko": "source category name"
@@ -380,7 +383,8 @@ FINAL INTERNAL CHECK BEFORE RETURNING JSON
 - Exactly 5 stories.
 - Exactly 1 HERO image per story.
 - Exactly 5 image prompts.
-- Every story contains 3 to 6 valid concepts from SOURCE_LIBRARY_500.
+- Every story contains exactly the 6 unique IDs assigned to it in ASSIGNED_SOURCE_CONCEPTS.
+- Every story uses exactly one assigned location, situation, prop, twist, expression, and gesture.
 - Never place supplementary reference-inspired situation names inside source_concepts.
 - Each story combines multiple concepts rather than copying one concept directly.
 - Each HERO frame must show a readable cause, peak action, strong reaction, and visible consequence or twist together.
@@ -405,5 +409,5 @@ FINAL INTERNAL CHECK BEFORE RETURNING JSON
 CREATIVE_HISTORY
 {creative_history}
 
-SOURCE_LIBRARY_500
-{concepts}
+ASSIGNED_SOURCE_CONCEPTS
+{assigned_source_concepts}
