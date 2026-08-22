@@ -43,6 +43,17 @@ PROTAGONIST_REQUIRED_FRAGMENTS = (
     "round amber-brown eyes",
 )
 
+DEFAULT_TEXT_MODEL_PRIMARY = "gpt-5.6-luna"
+DEFAULT_TEXT_MODEL_FALLBACK = "gpt-5.4-mini"
+ACCOUNT_OR_AUTH_ERROR_MARKERS = (
+    "insufficient_quota",
+    "credit_balance_exhausted",
+    "authentication",
+    "invalid api key",
+    "incorrect api key",
+    "unauthorized",
+)
+
 
 def load_env_file(path: Path) -> None:
     if not path.exists():
@@ -82,6 +93,23 @@ def configured_batch_size(config: dict) -> int:
     if value < 1:
         raise SystemExit("[ERROR] batch_size must be at least 1")
     return value
+
+
+def text_models(config: dict) -> tuple[str, str]:
+    primary = os.environ.get("OPENAI_TEXT_MODEL_PRIMARY", "").strip() or config.get(
+        "text_model_primary", DEFAULT_TEXT_MODEL_PRIMARY
+    )
+    fallback = os.environ.get("OPENAI_TEXT_MODEL_FALLBACK", "").strip() or config.get(
+        "text_model_fallback", DEFAULT_TEXT_MODEL_FALLBACK
+    )
+    if os.environ.get("OPENAI_TEXT_MODEL", "").strip():
+        print("[WARN] OPENAI_TEXT_MODEL is legacy-only and ignored for text model selection")
+    return str(primary), str(fallback)
+
+
+def is_account_or_auth_error(exc: Exception) -> bool:
+    message = str(exc).lower()
+    return any(marker in message for marker in ACCOUNT_OR_AUTH_ERROR_MARKERS)
 
 
 def minimum_hero_variety(batch_size: int) -> int:
@@ -383,38 +411,53 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
         .replace("{creative_history}", history_for_prompt(config))
         .replace("{assigned_source_concepts}", assigned_source_prompt(assignments))
     )
-    model = required_env("OPENAI_TEXT_MODEL")
-    last_errors: list[str] = []
+    primary_model, fallback_model = text_models(config)
+    print(f"[TEXT MODEL] primary={primary_model} fallback={fallback_model}")
 
-    for attempt in range(1, 4):
-        prompt = base_prompt
-        if last_errors:
-            prompt += "\n\nVALIDATION_ERRORS_FROM_PREVIOUS_ATTEMPT\n" + "\n".join(f"- {e}" for e in last_errors)
-            prompt += "\nRegenerate the entire JSON batch and fix every error."
-        print(f"[GENERATE] story batch attempt {attempt}")
-        response = client.responses.create(model=model, input=prompt)
-        text = (response.output_text or "").strip()
+    def generate_once(model: str) -> tuple[list[dict] | None, list[str]]:
+        response = client.responses.create(model=model, input=base_prompt)
         try:
-            batch = extract_json(text)
+            batch = extract_json((response.output_text or "").strip())
         except Exception as exc:
-            last_errors = [f"invalid JSON: {exc}"]
-            continue
-        last_errors = validate_story_batch(batch, assignments, config)
-        if not last_errors:
-            now = get_now(config)
-            stories = batch["stories"]
-            for index, story in enumerate(stories, 1):
-                digest = hashlib.sha1(
-                    (story["title_ko"] + story["hook"] + now.isoformat() + str(index)).encode("utf-8")
-                ).hexdigest()[:8]
-                story["story_id"] = f"{now.strftime('%Y%m%d%H%M%S')}-{index:02d}-{digest}"
-            print(f"[PASS] valid {batch_size}-story batch")
-            return stories
-        print("[WARN] story batch validation failed:")
-        for err in last_errors[:25]:
-            print(" -", err)
+            return None, [f"invalid JSON: {exc}"]
+        errors = validate_story_batch(batch, assignments, config)
+        return (batch["stories"] if not errors else None), errors
 
-    raise SystemExit("[ERROR] story generation failed validation after 3 attempts\n" + "\n".join(last_errors))
+    print(f"[GENERATE] using primary model {primary_model}")
+    try:
+        stories, errors = generate_once(primary_model)
+    except Exception as exc:
+        if is_account_or_auth_error(exc):
+            raise SystemExit(f"[ERROR] primary text model account/auth failure: {exc}") from exc
+        stories, errors = None, [f"primary API request failed: {exc}"]
+
+    model_used = primary_model
+    if stories is None:
+        print("[WARN] primary model validation failed; switching to", fallback_model)
+        for error in errors[:10]:
+            print(" -", error)
+        try:
+            stories, errors = generate_once(fallback_model)
+        except Exception as exc:
+            if is_account_or_auth_error(exc):
+                raise SystemExit(f"[ERROR] fallback text model account/auth failure: {exc}") from exc
+            raise SystemExit(f"[ERROR] fallback text model request failed: {exc}") from exc
+        model_used = fallback_model
+        if stories is None:
+            raise SystemExit("[ERROR] fallback story generation failed validation\n" + "\n".join(errors))
+
+    now = get_now(config)
+    for index, story in enumerate(stories, 1):
+        digest = hashlib.sha1(
+            (story["title_ko"] + story["hook"] + now.isoformat() + str(index)).encode("utf-8")
+        ).hexdigest()[:8]
+        story["story_id"] = f"{now.strftime('%Y%m%d%H%M%S')}-{index:02d}-{digest}"
+        story["text_model_used"] = model_used
+    if model_used == primary_model:
+        print(f"[PASS] story batch generated with {model_used}")
+    else:
+        print(f"[PASS] story batch generated with fallback {model_used}")
+    return stories
 
 
 def queue_data() -> dict:

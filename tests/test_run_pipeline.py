@@ -244,12 +244,11 @@ class SourceAssignmentTests(unittest.TestCase):
         response = Mock(output_text=json.dumps(batch, ensure_ascii=False))
         client = Mock()
         client.responses.create.return_value = response
-        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10}
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10, "text_model_primary": "gpt-5.6-luna", "text_model_fallback": "gpt-5.4-mini"}
 
         with (
             patch.object(rp, "assign_source_concepts", return_value=assignments),
             patch.object(rp, "history_for_prompt", return_value="[]"),
-            patch.object(rp, "required_env", return_value="text-model"),
             patch.object(rp, "get_now", return_value=datetime(2026, 1, 2, 3, 4, 5)),
         ):
             stories = rp.generate_story_batch(client, config, "FULL_LIBRARY_SENTINEL")
@@ -257,17 +256,86 @@ class SourceAssignmentTests(unittest.TestCase):
         sent_prompt = client.responses.create.call_args.kwargs["input"]
         self.assertEqual(len(stories), 10)
         self.assertIn("ASSIGNED_SOURCE_CONCEPTS", sent_prompt)
-        self.assertIn("create exactly 10 original", sent_prompt)
-        self.assertIn("at least 7 clearly different", sent_prompt)
+        self.assertIn("Create exactly 10 original", sent_prompt)
+        self.assertIn("at least 7 distinct", sent_prompt)
         self.assertNotIn("{batch_size}", sent_prompt)
         self.assertNotIn("{minimum_hero_variety}", sent_prompt)
         self.assertNotIn("{assigned_source_concepts}", sent_prompt)
         self.assertNotIn("FULL_LIBRARY_SENTINEL", sent_prompt)
 
+    def test_default_text_models_are_luna_then_mini(self) -> None:
+        with patch.dict(os.environ, {}, clear=True):
+            self.assertEqual(rp.text_models({}), ("gpt-5.6-luna", "gpt-5.4-mini"))
+
+    def test_primary_success_does_not_call_fallback(self) -> None:
+        batch, assignments = StoryBatchValidationTests().make_batch()
+        client = Mock()
+        client.responses.create.return_value = Mock(output_text=json.dumps(batch, ensure_ascii=False))
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10, "text_model_primary": "gpt-5.6-luna", "text_model_fallback": "gpt-5.4-mini"}
+        with (
+            patch.object(rp, "assign_source_concepts", return_value=assignments),
+            patch.object(rp, "history_for_prompt", return_value="[]"),
+            patch.object(rp, "get_now", return_value=datetime(2026, 1, 2, 3, 4, 5)),
+        ):
+            stories = rp.generate_story_batch(client, config, "concepts")
+        self.assertEqual(client.responses.create.call_count, 1)
+        self.assertEqual(client.responses.create.call_args.kwargs["model"], "gpt-5.6-luna")
+        self.assertTrue(all(story["text_model_used"] == "gpt-5.6-luna" for story in stories))
+
+    def test_primary_invalid_json_calls_fallback_once(self) -> None:
+        batch, assignments = StoryBatchValidationTests().make_batch()
+        client = Mock()
+        client.responses.create.side_effect = [Mock(output_text="not json"), Mock(output_text=json.dumps(batch, ensure_ascii=False))]
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10, "text_model_primary": "gpt-5.6-luna", "text_model_fallback": "gpt-5.4-mini"}
+        with (
+            patch.object(rp, "assign_source_concepts", return_value=assignments),
+            patch.object(rp, "history_for_prompt", return_value="[]"),
+            patch.object(rp, "get_now", return_value=datetime(2026, 1, 2, 3, 4, 5)),
+        ):
+            stories = rp.generate_story_batch(client, config, "concepts")
+        self.assertEqual([call.kwargs["model"] for call in client.responses.create.call_args_list], ["gpt-5.6-luna", "gpt-5.4-mini"])
+        self.assertTrue(all(story["text_model_used"] == "gpt-5.4-mini" for story in stories))
+
+    def test_primary_validation_failure_calls_fallback_once(self) -> None:
+        batch, assignments = StoryBatchValidationTests().make_batch()
+        invalid = json.loads(json.dumps(batch))
+        invalid["stories"] = invalid["stories"][:-1]
+        client = Mock()
+        client.responses.create.side_effect = [Mock(output_text=json.dumps(invalid)), Mock(output_text=json.dumps(batch))]
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10, "text_model_primary": "gpt-5.6-luna", "text_model_fallback": "gpt-5.4-mini"}
+        with (
+            patch.object(rp, "assign_source_concepts", return_value=assignments),
+            patch.object(rp, "history_for_prompt", return_value="[]"),
+            patch.object(rp, "get_now", return_value=datetime(2026, 1, 2, 3, 4, 5)),
+        ):
+            rp.generate_story_batch(client, config, "concepts")
+        self.assertEqual(client.responses.create.call_count, 2)
+
+    def test_account_and_auth_errors_do_not_call_fallback(self) -> None:
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10, "text_model_primary": "gpt-5.6-luna", "text_model_fallback": "gpt-5.4-mini"}
+        for message in ("credit_balance_exhausted", "authentication failed"):
+            client = Mock()
+            client.responses.create.side_effect = Exception(message)
+            with (
+                patch.object(rp, "assign_source_concepts", return_value=[]),
+                patch.object(rp, "history_for_prompt", return_value="[]"),
+                self.assertRaisesRegex(SystemExit, "account/auth failure"),
+            ):
+                rp.generate_story_batch(client, config, "concepts")
+            self.assertEqual(client.responses.create.call_count, 1)
+
+    def test_image_model_configuration_remains_environment_driven(self) -> None:
+        config = rp.load_config()
+        self.assertEqual(config["image_generate_size"], "1024x1536")
+        self.assertEqual(config["image_quality"], "medium")
+        source = (ROOT / "scripts" / "run_pipeline.py").read_text(encoding="utf-8")
+        self.assertIn('required_env("OPENAI_IMAGE_MODEL")', source)
+        self.assertIn("client.images.generate(model=model", source)
+
     def test_prompt_requires_random_supporting_cats_and_safe_original_homages(self) -> None:
         prompt = (ROOT / "prompts" / "story_generator_prompt.txt").read_text(encoding="utf-8")
         self.assertIn("RANDOM SUPPORTING CATS", prompt)
-        self.assertIn("Never duplicate or visually confuse them with the fixed cheese-tabby protagonist", prompt)
+        self.assertIn("never confused with the fixed cheese-tabby protagonist", prompt)
         self.assertIn("Never reproduce a famous artwork, movie poster, character, costume", prompt)
 
 

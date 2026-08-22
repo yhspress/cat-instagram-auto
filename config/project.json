@@ -4,6 +4,8 @@
   "concepts_file": "data/cat_concepts_500.txt",
   "high_concept_pool_file": "data/high_concept_world_pool.json",
   "story_prompt_file": "prompts/story_generator_prompt.txt",
+  "text_model_primary": "gpt-5.6-luna",
+  "text_model_fallback": "gpt-5.4-mini",
   "batch_size": 10,
   "queue_refill_threshold": 1,
   "images_per_story": 1,

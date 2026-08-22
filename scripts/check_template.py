@@ -43,7 +43,7 @@ for key in ("worlds", "events", "roles", "expressions", "gestures", "visual_hook
         raise SystemExit(f"[ERROR] high-concept pool {key!r} contains an invalid entry")
 
 prompt = (ROOT / config["story_prompt_file"]).read_text(encoding="utf-8")
-for marker in ["{batch_size}", "{minimum_hero_variety}", "{creative_history}", "{assigned_source_concepts}", "ASSIGNED_SOURCE_CONCEPTS", "HIGH-CONCEPT CINEMATIC PRIORITY", "RANDOM SUPPORTING CATS", "Ultra-photorealistic live-action photography", "caption_explanation_en", "hero_expression_en", "hero_body_language_en", '"role": "HERO"']:
+for marker in ["{batch_size}", "{minimum_hero_variety}", "{creative_history}", "{assigned_source_concepts}", "ASSIGNED_SOURCE_CONCEPTS", "HIGH-CONCEPT CINEMATIC PRIORITY", "RANDOM SUPPORTING CATS", "Ultra-photorealistic live-action photography", "caption_explanation_en", "hero_expression_en", "hero_body_language_en", '"role":"HERO"']:
     if marker not in prompt:
         raise SystemExit(f"[ERROR] story prompt missing marker: {marker}")
 if "{concepts}" in prompt or "SOURCE_LIBRARY_500" in prompt:
