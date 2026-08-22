@@ -470,6 +470,30 @@
         ]
       },
       "published_key": "2026-08-22:03"
+    },
+    {
+      "story_id": "20260822124350-03-3dd30c94",
+      "title_ko": "달 표면의 꽃열차",
+      "hook": "The pocket train opens on the Moon",
+      "source_ids": [
+        "HCW002",
+        "HCE013",
+        "HCR004",
+        "205",
+        "318",
+        "HCX002",
+        "HCG013",
+        "HCV009"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "지구가 떠오르는 달의 분화구 착륙장",
+        "core_prop_ko": "우주복 주머니 속 미니어처 열차",
+        "twist_ko": "열차 문에서 벚꽃 꽃잎 파도가 쏟아짐",
+        "camera_setups": [
+          "32mm ground-level diagonal dolly freeze, cat sprawled across lunar dust with pocket train and wire silhouette aligned"
+        ]
+      },
+      "published_key": "2026-08-22:04"
     }
   ]
 }
