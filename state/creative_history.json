@@ -542,6 +542,30 @@
         ]
       },
       "published_key": "2026-08-23:01"
+    },
+    {
+      "story_id": "20260822124350-06-2d344696",
+      "title_ko": "오로라 탐정의 수중 신호",
+      "hook": "The plateau opens beneath the dome",
+      "source_ids": [
+        "HCW005",
+        "HCE016",
+        "HCR007",
+        "208",
+        "322",
+        "HCX005",
+        "HCG001",
+        "HCV012"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "바람에 깎인 외계 고원의 투명 관측 돔",
+        "core_prop_ko": "병아리가 돌보는 달걀 고양이 미니어처",
+        "twist_ko": "일식 순간 주변 고양이들의 눈이 동시에 가늘어짐",
+        "camera_setups": [
+          "20mm close foreground reach from inside observation dome, low lens axis through projected map lines toward rising temple"
+        ]
+      },
+      "published_key": "2026-08-23:02"
     }
   ]
 }
