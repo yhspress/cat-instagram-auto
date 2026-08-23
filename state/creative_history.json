@@ -566,6 +566,30 @@
         ]
       },
       "published_key": "2026-08-23:02"
+    },
+    {
+      "story_id": "20260822124350-07-92a9faf2",
+      "title_ko": "심해 동굴의 시간고래",
+      "hook": "The clock reverses the falling sea",
+      "source_ids": [
+        "HCW006",
+        "HCE017",
+        "HCR008",
+        "209",
+        "323",
+        "HCX006",
+        "HCG002",
+        "HCV013"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "푸른 생명광이 흐르는 심해 동굴 관측실",
+        "core_prop_ko": "날개 달린 매미고양이 미니어처와 톱니 시간장치",
+        "twist_ko": "월식이 진행될수록 가면이 투명해져 숨은 표정이 드러남",
+        "camera_setups": [
+          "70mm underwater side profile through thick curved glass, reversed bubbles and whale shadow layered behind cat"
+        ]
+      },
+      "published_key": "2026-08-23:03"
     }
   ]
 }
