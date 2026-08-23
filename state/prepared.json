@@ -1,1 +1,108 @@
-{}
+{
+  "publication_key": "2026-08-24:01",
+  "prepared_at": "2026-08-24T07:38:47.283671+09:00",
+  "slot": 1,
+  "story_id": "20260822124350-10-1c2cdfeb",
+  "story": {
+    "title_ko": "네온 옥상의 시계 승객",
+    "hook": "The statue wakes above the rooftop",
+    "caption_explanation_en": "A pirate cartographer hangs safely upside down as a clockwork train restarts spring one tunnel at a time.",
+    "hashtags": [
+      "#NeonRooftop",
+      "#ClockworkTrain",
+      "#SpringAwakening"
+    ],
+    "hero_expression_en": "guilty caught-in-the-act expression",
+    "hero_body_language_en": "upside-down hang",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW009",
+        "name_en": "Neon megacity rooftop",
+        "concept_en": "a rain-soaked future megacity of towering neon architecture",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE020",
+        "name_en": "Colossal statue awakening",
+        "concept_en": "a statue's projected eyes open behind the hero",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR011",
+        "name_en": "pirate cartographer captain",
+        "concept_en": "an adventurous ship leader with an original map",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "212",
+        "name_ko": "시계 속 기관사",
+        "category_ko": "판타지와 미니어처",
+        "concept_ko": "초침 열차를 운전하며 멈춘 시간을 다시 출발시킨다."
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "326",
+        "name_ko": "봄날 지하철 승객",
+        "category_ko": "계절·시간·날씨",
+        "concept_ko": "터널을 나올 때마다 벚꽃이 한 단계 더 만개한다."
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX009",
+        "name_en": "guilty caught-in-the-act expression",
+        "concept_en": "wide alert eyes and a tense little muzzle",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG005",
+        "name_en": "upside-down hang",
+        "concept_en": "a playful supported film-set pose without strain",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV001",
+        "name_en": "colossal landmark scale",
+        "concept_en": "the hero is huge beside a famous-looking but original landmark",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "네온 대도시 옥상에서 지도 선장 고양이가 멈춘 시간을 다시 출발시키자 거대한 석상이 눈을 뜬다.",
+    "continuity_ko": "동일한 주인공과 해양 지도 선장 모자, 빗물 네온, 보랏빛 석상 눈을 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "비에 젖은 미래 대도시의 송신탑 옥상",
+      "core_prop_ko": "초침 선로를 달리는 시계 속 기관차",
+      "twist_ko": "지하철이 터널을 나올 때마다 벚꽃이 더 만개함",
+      "camera_setups": [
+        "24mm inverted rooftop crane shot, supported upside-down cat foreground with colossal original landmark and statue eyes behind"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "24mm inverted rooftop crane shot",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5 blockbuster frame on a rain-soaked neon megacity rooftop with towering original architecture. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. As an adventurous pirate cartographer captain in an original weatherproof captain coat with a hand-drawn map, the cat shows guilty caught-in-the-act expression and upside-down hang in a playful, securely supported film-set pose. A giant clock prop beside the cat contains a tiny engineer driving a second-hand train, restarting stopped time. Each tunnel opening behind it reveals progressively fuller cherry blossoms. A colossal original landmark statue behind the hero has projected eyes opening, creating a dramatic consequence. Camera distance five meters, inverted crane viewpoint, 24mm lens, deep focus across cat, clock, neon skyline, and statue, hard cyan-magenta rim lighting, rain droplets, wet reflections, realistic fur weight, paws, harness concealment, and clock metal. Safe supported pose and harmless projection, no strain or danger. Correct feline anatomy, no duplicate cats, no extra limbs, no human features, no cartoon, illustration, 3D render, plastic fur, logos, text, watermark, UI, captions, or readable title."
+      }
+    ],
+    "story_id": "20260822124350-10-1c2cdfeb",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The statue wakes above the rooftop\nA pirate cartographer hangs safely upside down as a clockwork train restarts spring one tunnel at a time.\n#NeonRooftop #ClockworkTrain #SpringAwakening",
+  "media_paths": [
+    "public/posts/2026-08-24/slot_01/20260822124350-10-1c2cdfeb/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-24/slot_01/20260822124350-10-1c2cdfeb"
+}
