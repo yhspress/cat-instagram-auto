@@ -638,6 +638,30 @@
         ]
       },
       "published_key": "2026-08-23:05"
+    },
+    {
+      "story_id": "20260822124350-10-1c2cdfeb",
+      "title_ko": "네온 옥상의 시계 승객",
+      "hook": "The statue wakes above the rooftop",
+      "source_ids": [
+        "HCW009",
+        "HCE020",
+        "HCR011",
+        "212",
+        "326",
+        "HCX009",
+        "HCG005",
+        "HCV001"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "비에 젖은 미래 대도시의 송신탑 옥상",
+        "core_prop_ko": "초침 선로를 달리는 시계 속 기관차",
+        "twist_ko": "지하철이 터널을 나올 때마다 벚꽃이 더 만개함",
+        "camera_setups": [
+          "24mm inverted rooftop crane shot, supported upside-down cat foreground with colossal original landmark and statue eyes behind"
+        ]
+      },
+      "published_key": "2026-08-24:01"
     }
   ]
 }
