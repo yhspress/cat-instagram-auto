@@ -590,6 +590,30 @@
         ]
       },
       "published_key": "2026-08-23:03"
+    },
+    {
+      "story_id": "20260822124350-08-6c148824",
+      "title_ko": "신전 위 구름 재봉사",
+      "hook": "A falling star needs a delivery box",
+      "source_ids": [
+        "HCW007",
+        "HCE018",
+        "HCR009",
+        "210",
+        "324",
+        "HCX007",
+        "HCG003",
+        "HCV014"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "사막 아래 드러난 침수 고대 신전",
+        "core_prop_ko": "무지개가 새어 나오는 구름 바느질 도구",
+        "twist_ko": "유성 조각이 주소 상자에 담겨 배달됨",
+        "camera_setups": [
+          "40mm vertical tilt-up from miniature street canyon, towering cat braced between original skyscraper-like ruins"
+        ]
+      },
+      "published_key": "2026-08-23:04"
     }
   ]
 }
