@@ -614,6 +614,30 @@
         ]
       },
       "published_key": "2026-08-23:04"
+    },
+    {
+      "story_id": "20260822124350-09-57d08fd2",
+      "title_ko": "빙원 박물관의 벽붙이",
+      "hook": "The museum wall reveals a hidden route",
+      "source_ids": [
+        "HCW008",
+        "HCE019",
+        "HCR010",
+        "211",
+        "325",
+        "HCX008",
+        "HCG004",
+        "HCV015"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "빙원 탐험관과 얼어붙은 미술관 전시장",
+        "core_prop_ko": "연필 부스러기 광산의 미니어처 광부",
+        "twist_ko": "붕어빵 김 속 물고기 그림자가 실제 길을 가리킴",
+        "camera_setups": [
+          "60mm lateral slider at wall height, shallow gallery perspective split with cat gripping foreground frame"
+        ]
+      },
+      "published_key": "2026-08-23:05"
     }
   ]
 }
