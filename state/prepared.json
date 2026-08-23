@@ -1,1 +1,108 @@
-{}
+{
+  "publication_key": "2026-08-23:02",
+  "prepared_at": "2026-08-23T11:37:49.075552+09:00",
+  "slot": 2,
+  "story_id": "20260822124350-06-2d344696",
+  "story": {
+    "title_ko": "오로라 탐정의 수중 신호",
+    "hook": "The plateau opens beneath the dome",
+    "caption_explanation_en": "A noir detective reaches toward an ancient map as a submerged temple rises under an alien observation dome.",
+    "hashtags": [
+      "#AlienDetective",
+      "#UnderwaterRuin",
+      "#AuroraMystery"
+    ],
+    "hero_expression_en": "huge shocked round eyes",
+    "hero_body_language_en": "both front paws thrust toward lens",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW005",
+        "name_en": "Alien first-contact plateau",
+        "concept_en": "a wind-carved alien plateau beneath impossible aurorae",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE016",
+        "name_en": "Underwater ruin ascent",
+        "concept_en": "a temple floor rises into view beneath an observation dome",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR007",
+        "name_en": "noir master detective",
+        "concept_en": "a focused detective in a rain-lit mystery",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "208",
+        "name_ko": "달걀 고양이",
+        "category_ko": "판타지와 미니어처",
+        "concept_ko": "껍데기에서 태어난 새끼 고양이를 병아리가 돌본다."
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "322",
+        "name_ko": "일식 관측 고양이",
+        "category_ko": "계절·시간·날씨",
+        "concept_ko": "해와 달이 겹칠 때 주변 고양이들의 눈도 가늘어진다."
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX005",
+        "name_en": "huge shocked round eyes",
+        "concept_en": "wide round eyes and forward ears",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG001",
+        "name_en": "both front paws thrust toward lens",
+        "concept_en": "strong foreground reach with normal feline anatomy",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV012",
+        "name_en": "ancient map light",
+        "concept_en": "glowing map lines form a dramatic foreground pattern",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "오로라 아래 외계 고원에서 탐정 고양이가 수중 신전의 상승과 일식 신호를 동시에 포착한다.",
+    "continuity_ko": "동일한 치즈태비 얼굴과 흰 발, 젖은 트렌치코트, 청록 오로라를 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "바람에 깎인 외계 고원의 투명 관측 돔",
+      "core_prop_ko": "병아리가 돌보는 달걀 고양이 미니어처",
+      "twist_ko": "일식 순간 주변 고양이들의 눈이 동시에 가늘어짐",
+      "camera_setups": [
+        "20mm close foreground reach from inside observation dome, low lens axis through projected map lines toward rising temple"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "20mm close foreground reach from inside observation dome",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5 noir science-fiction mystery on a wind-carved alien first-contact plateau beneath impossible aurorae. An attractive adult Korean Shorthair cheese-tabby cat; natural balanced sturdy build; bright warm orange short coat with realistic darker tabby stripes; clean white fur on muzzle and chin continuing naturally through neck, chest and belly; all four paws clean white from toes upward; a distinctive congenital orange cheese-tabby fur marking around the mouth resembling a curry stain, explicitly not food or dirt; round amber-brown eyes; pink nose; short dense fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is a noir master detective in a rain-lit original trench coat, showing huge shocked round eyes and both front paws thrust toward lens with normal feline anatomy. Glowing ancient map lines form a foreground pattern beneath the paws. Under the transparent dome, a submerged temple floor rises into view; a tiny egg-shaped cat hatches while a chick cares for it. A simultaneous eclipse makes distant observing cats narrow their eyes, creating the visible twist. Camera distance two meters, low intimate viewpoint, 20mm lens, shallow-to-medium depth of field with paws, face, map, and temple readable, cyan aurora backlight, silver rain reflections, realistic dome refraction and wet coat. Harmless observation-dome staging, no danger. Correct feline anatomy, no duplicate protagonist, no extra limbs, no human features, no cartoon, illustration, 3D render, plastic fur, logos, text, watermark, UI, captions, or readable title."
+      }
+    ],
+    "story_id": "20260822124350-06-2d344696",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The plateau opens beneath the dome\nA noir detective reaches toward an ancient map as a submerged temple rises under an alien observation dome.\n#AlienDetective #UnderwaterRuin #AuroraMystery",
+  "media_paths": [
+    "public/posts/2026-08-23/slot_02/20260822124350-06-2d344696/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-23/slot_02/20260822124350-06-2d344696"
+}
