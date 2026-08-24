@@ -662,6 +662,30 @@
         ]
       },
       "published_key": "2026-08-24:01"
+    },
+    {
+      "story_id": "20260825074732-01-c1b39553",
+      "title_ko": "시계탑 균열의 수호자",
+      "hook": "The tower starts to lean",
+      "source_ids": [
+        "HCW010",
+        "HCE001",
+        "HCR012",
+        "213",
+        "327",
+        "HCX010",
+        "HCG006",
+        "HCV002"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "브라스 유리 실험실 앞",
+        "core_prop_ko": "화분 숲과 모래시계 렌치",
+        "twist_ko": "사진 프레임 안에서만 소나리가 멈추며 무지개가 뜸",
+        "camera_setups": [
+          "28mm low forced-perspective tower rescue, live-action scale set, crisp foreground city miniatures and rim light"
+        ]
+      },
+      "published_key": "2026-08-25:01"
     }
   ]
 }
