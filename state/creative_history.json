@@ -710,6 +710,30 @@
         ]
       },
       "published_key": "2026-08-25:02"
+    },
+    {
+      "story_id": "20260825074732-03-f3a52560",
+      "title_ko": "벽화 파도 방패",
+      "hook": "The water-wall hits the temple",
+      "source_ids": [
+        "HCW012",
+        "HCE003",
+        "HCR014",
+        "215",
+        "330",
+        "HCX012",
+        "HCG008",
+        "HCV004"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "토치 불빛 사원 방",
+        "core_prop_ko": "신발 속 캠핑 텐트와 젖은 횃불 반사",
+        "twist_ko": "서리가 발자국 주변에서 작은 고양이 조각으로 솟아오름",
+        "camera_setups": [
+          "24mm temple-wide with water-wall scale, freeze-motion splash, dramatic rim light and near-touching paw composition"
+        ]
+      },
+      "published_key": "2026-08-25:03"
     }
   ]
 }
