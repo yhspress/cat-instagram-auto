@@ -758,6 +758,30 @@
         ]
       },
       "published_key": "2026-08-25:04"
+    },
+    {
+      "story_id": "20260825074732-05-dbd4aada",
+      "title_ko": "구름성 금고문",
+      "hook": "The vault opens above the clouds",
+      "source_ids": [
+        "HCW014",
+        "HCE005",
+        "HCR016",
+        "217",
+        "333",
+        "HCX014",
+        "HCG010",
+        "HCV006"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "구름성 내측 안뜰",
+        "core_prop_ko": "종이비행기와 천문 금고 손잡이",
+        "twist_ko": "아침 햇살이 실제로 목도리처럼 고양이 주변을 두름",
+        "camera_setups": [
+          "24mm sky-castle wide, towering storm wall background, brass vault glow and sun-scarf rim light"
+        ]
+      },
+      "published_key": "2026-08-25:05"
     }
   ]
 }
