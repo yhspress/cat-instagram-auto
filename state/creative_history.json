@@ -782,6 +782,30 @@
         ]
       },
       "published_key": "2026-08-25:05"
+    },
+    {
+      "story_id": "20260825074732-06-8ad7542e",
+      "title_ko": "폭풍문 항해",
+      "hook": "A portal tears behind the ship",
+      "source_ids": [
+        "HCW015",
+        "HCE006",
+        "HCR017",
+        "218",
+        "334",
+        "HCX015",
+        "HCG011",
+        "HCV007"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "돛대 옆 갑판",
+        "core_prop_ko": "주전자 온천 마을 모형",
+        "twist_ko": "오후 그림자가 길게 모여 밤의 항로를 지도처럼 만듦",
+        "camera_setups": [
+          "40mm dusk ship deck, portal behind hero, warm steam, reflective wet planks, heroic composited scale"
+        ]
+      },
+      "published_key": "2026-08-26:01"
     }
   ]
 }
