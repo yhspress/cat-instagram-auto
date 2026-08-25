@@ -734,6 +734,30 @@
         ]
       },
       "published_key": "2026-08-25:03"
+    },
+    {
+      "story_id": "20260825074732-04-e9ead4f7",
+      "title_ko": "활짝 열린 전망 금고",
+      "hook": "A telescope opens the sky",
+      "source_ids": [
+        "HCW013",
+        "HCE004",
+        "HCR015",
+        "216",
+        "331",
+        "HCX013",
+        "HCG009",
+        "HCV005"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "원형 경기장 상부 관측대",
+        "core_prop_ko": "케이크 산과 꽃배달 상자",
+        "twist_ko": "반사면에만 꽃이 별빛으로 바뀌는 황혼 배달이 보임",
+        "camera_setups": [
+          "18mm wide arena spectacle, telescope aperture glow, heroic scale contrast, reflective brass surfaces and safe compositing"
+        ]
+      },
+      "published_key": "2026-08-25:04"
     }
   ]
 }
