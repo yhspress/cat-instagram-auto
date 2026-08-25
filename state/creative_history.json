@@ -686,6 +686,30 @@
         ]
       },
       "published_key": "2026-08-25:01"
+    },
+    {
+      "story_id": "20260825074732-02-c37f2797",
+      "title_ko": "갤러리 질주선 차단",
+      "hook": "A toy train bolts from the mural",
+      "source_ids": [
+        "HCW011",
+        "HCE002",
+        "HCR013",
+        "214",
+        "329",
+        "HCX011",
+        "HCG007",
+        "HCV003"
+      ],
+      "creative_fingerprint": {
+        "location_ko": "대리석 갤러리 포털 홀",
+        "core_prop_ko": "키보드 도시에 실린 작은 메시지 열차",
+        "twist_ko": "증기 안쪽에 겨울 온천 관광객의 펭귄 관객이 보임",
+        "camera_setups": [
+          "35mm gallery-wide central hero silhouette, practical portal glow, motion-frozen toy train and cool marble reflections"
+        ]
+      },
+      "published_key": "2026-08-25:02"
     }
   ]
 }
