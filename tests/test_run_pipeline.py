@@ -228,6 +228,17 @@ class StoryBatchValidationTests(unittest.TestCase):
         self.assertIn("skyscraper", enriched)
         self.assertIn("no official logo", enriched)
 
+    def test_missing_images_are_normalized_to_one_valid_hero(self) -> None:
+        batch, assignments = self.make_batch()
+        for story in batch["stories"]:
+            story.pop("images")
+
+        rp.normalize_single_hero_images(batch, assignments)
+        rp.enforce_assigned_prompt_requirements(batch, assignments)
+
+        self.assertEqual(rp.validate_story_batch(batch, assignments, {"batch_size": 10}), [])
+        self.assertTrue(all(len(story["images"]) == 1 for story in batch["stories"]))
+
     def test_rejects_identical_event_and_outcome_axes(self) -> None:
         batch, assignments = self.make_batch()
         event = next(source for source in assignments[0] if source["role"] == "event")

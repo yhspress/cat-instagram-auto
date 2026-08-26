@@ -420,6 +420,45 @@ def enforce_assigned_prompt_requirements(
             image["image_prompt"] = prompt + "\nRequired assigned visual details: " + "; ".join(additions) + "."
 
 
+def normalize_single_hero_images(
+    batch: dict,
+    assigned_sources: list[list[dict[str, str]]],
+) -> None:
+    stories = batch.get("stories")
+    if not isinstance(stories, list) or len(stories) != len(assigned_sources):
+        return
+    for index, (story, sources) in enumerate(zip(stories, assigned_sources), 1):
+        if not isinstance(story, dict):
+            continue
+        images = story.get("images")
+        if isinstance(images, dict):
+            story["images"] = [images]
+            continue
+        if isinstance(images, list) and len(images) == 1 and isinstance(images[0], dict):
+            continue
+
+        expression = str(story.get("hero_expression_en", "")).strip()
+        gesture = str(story.get("hero_body_language_en", "")).strip()
+        hook = str(story.get("hook", "")).strip()
+        assigned_names = "; ".join(
+            str(source.get("name_en", "")).strip()
+            for source in sources
+            if str(source.get("name_en", "")).strip()
+        )
+        prompt = (
+            "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, "
+            "dominant protagonist, one decisive action. "
+            + CANONICAL_PROTAGONIST_DESCRIPTION
+            + f" Story moment: {hook}. The cat shows {expression}; {gesture}. "
+            + "Required assigned visual details: " + assigned_names + "."
+        )
+        story["images"] = [{
+            "role": "HERO",
+            "camera_strategy": f"deterministic single-HERO composition {index}",
+            "image_prompt": prompt,
+        }]
+
+
 def validate_story_batch(
     batch: dict,
     assigned_sources: list[list[dict[str, str]]],
@@ -629,6 +668,7 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
             batch = extract_json((response.output_text or "").strip())
         except Exception as exc:
             return None, [f"invalid JSON: {exc}"]
+        normalize_single_hero_images(batch, assignments)
         enforce_assigned_prompt_requirements(batch, assignments)
         errors = validate_story_batch(batch, assignments, config)
         return (batch["stories"] if not errors else None), errors
