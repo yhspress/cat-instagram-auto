@@ -806,6 +806,34 @@
         ]
       },
       "published_key": "2026-08-26:01"
+    },
+    {
+      "story_id": "20260826172734-01-4d7f687a",
+      "title_ko": "심해 벽붙이 구조",
+      "hook": "The bridge breaks beneath the beacon",
+      "source_ids": [
+        "HCW016",
+        "HCE007",
+        "HCO013",
+        "HCR018",
+        "HCL005",
+        "HCP001",
+        "HCT012",
+        "HCX008",
+        "HCG004",
+        "HCV015"
+      ],
+      "axis_signature": "world:HCW016|event:HCE007|outcome:HCO013|role:HCR018|location:HCL005|prop:HCP001|twist:HCT012|expression:HCX008|gesture:HCG004|visual_hook:HCV015",
+      "creative_fingerprint": {
+        "location_ko": "심해 돔과 빗물 누아르 육교 세트",
+        "core_prop_ko": "금이 간 발광 구조 신호기",
+        "twist_ko": "한쪽 흰 발만 통과하는 초소형 포털",
+        "outcome_ko": "신호기 안 약품 꾸러미가 돔 속 환자에게 도착",
+        "camera_setups": [
+          "28mm split-set low angle with dome glass foreground and rain city reflection"
+        ]
+      },
+      "published_key": "2026-08-26:04"
     }
   ]
 }
