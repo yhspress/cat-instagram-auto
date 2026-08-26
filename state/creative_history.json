@@ -834,6 +834,34 @@
         ]
       },
       "published_key": "2026-08-26:04"
+    },
+    {
+      "story_id": "20260826195318-01-729e5a4a",
+      "title_ko": "고래가 고개 숙인 계곡",
+      "hook": "A whale rises beside the bridge",
+      "source_ids": [
+        "HCW017",
+        "HCE008",
+        "HCO014",
+        "HCR019",
+        "HCL006",
+        "HCP002",
+        "HCT013",
+        "HCX009",
+        "HCG005",
+        "HCV001"
+      ],
+      "axis_signature": "world:HCW017|event:HCE008|outcome:HCO014|role:HCR019|location:HCL006|prop:HCP002|twist:HCT013|expression:HCX009|gesture:HCG005|visual_hook:HCV001",
+      "creative_fingerprint": {
+        "location_ko": "선사 계곡 모형 위의 흔들리는 현수교 주탑",
+        "core_prop_ko": "무문양 공기역학 영웅 방패",
+        "twist_ko": "겁먹은 관중이 사실 서로 다른 고양이들",
+        "outcome_ko": "고래 실루엣이 고개를 숙여 동맹이 됨",
+        "camera_setups": [
+          "24mm inverted crane view beneath the bridge tower, whale projection filling the sky"
+        ]
+      },
+      "published_key": "2026-08-26:05"
     }
   ]
 }
