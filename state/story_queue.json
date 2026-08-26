@@ -1,16 +1,16 @@
 {
   "stories": [
     {
-      "title_ko": "비 내리는 추격교",
-      "hook": "The bridge starts to fall",
-      "caption_explanation_en": "He leans over the edge to hold a collapsing bridge in a rainy neon city.",
+      "title_ko": "심해 벽붙이 구조",
+      "hook": "The bridge breaks beneath the beacon",
+      "caption_explanation_en": "A quest champion catches a collapsing bridge while a tiny portal delivers medicine to the true rescue target.",
       "hashtags": [
-        "#NoirCat",
-        "#BridgeRescue",
-        "#Cinematic"
+        "#CatCinema",
+        "#RescueQuest",
+        "#OceanNoir"
       ],
-      "hero_expression_en": "enormous open-mouth yawn",
-      "hero_body_language_en": "leaning far over a ledge",
+      "hero_expression_en": "wink-like one-eye squint",
+      "hero_body_language_en": "dramatic wall cling",
       "source_concepts": [
         {
           "role": "world",
@@ -27,6 +27,13 @@
           "category_ko": "HIGH_CONCEPT/events"
         },
         {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO013",
+          "name_en": "the pursued hero was carrying emergency medicine",
+          "category_ko": "HIGH_CONCEPT/outcomes"
+        },
+        {
           "role": "role",
           "role_ko": "역할",
           "id": "HCR018",
@@ -34,328 +41,68 @@
           "category_ko": "HIGH_CONCEPT/roles"
         },
         {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL005",
+          "name_en": "bioluminescent trench observation dome",
+          "category_ko": "HIGH_CONCEPT/locations"
+        },
+        {
           "role": "prop",
           "role_ko": "소품",
-          "id": "219",
-          "name_ko": "손목시계 여행자",
-          "category_ko": "판타지와 미니어처"
+          "id": "HCP001",
+          "name_en": "cracked glowing rescue beacon",
+          "category_ko": "HIGH_CONCEPT/props"
         },
         {
           "role": "twist",
           "role_ko": "반전",
-          "id": "335",
-          "name_ko": "저녁 노을 요리사",
-          "category_ko": "계절·시간·날씨"
+          "id": "HCT012",
+          "name_en": "the portal is no larger than one white paw",
+          "category_ko": "HIGH_CONCEPT/twists"
         },
         {
           "role": "expression",
           "role_ko": "표정",
-          "id": "HCX001",
-          "name_en": "enormous open-mouth yawn",
+          "id": "HCX008",
+          "name_en": "wink-like one-eye squint",
           "category_ko": "HIGH_CONCEPT/expressions"
         },
         {
           "role": "gesture",
           "role_ko": "몸짓",
-          "id": "HCG012",
-          "name_en": "leaning far over a ledge",
+          "id": "HCG004",
+          "name_en": "dramatic wall cling",
           "category_ko": "HIGH_CONCEPT/gestures"
         },
         {
           "role": "visual_hook",
           "role_ko": "시각 훅",
-          "id": "HCV008",
-          "name_en": "extreme low-angle heroic frame",
+          "id": "HCV015",
+          "name_en": "museum world split",
           "category_ko": "HIGH_CONCEPT/visual_hooks"
         }
       ],
-      "overview_ko": "네온 비가 내리는 도시에서 다리가 무너지기 직전 고양이가 가장 아래에서 버텨낸다.",
-      "continuity_ko": "치즈탭비 외형은 동일해야 하며 흰 블레이즈와 흰 목, 흰 부츠 네 발, 흰 배가 잘 보이도록 설계한다.",
+      "overview_ko": "젖은 누아르 도시와 심해 돔이 갈라진 프레임에서 고양이가 무너지는 다리를 붙든다.",
+      "continuity_ko": "주인공의 고정된 털 무늬와 흰 발을 유지하고 투명 지지대가 보이는 안전한 영화 세트로 연출한다.",
       "creative_fingerprint": {
-        "location_ko": "젖은 도시 교량 난간",
-        "core_prop_ko": "손목시계 여행자와 석양 수프 트레이",
-        "twist_ko": "길어진 그림자가 접히며 저녁 노을 수프처럼 보임",
+        "location_ko": "심해 돔과 빗물 누아르 육교 세트",
+        "core_prop_ko": "금이 간 발광 구조 신호기",
+        "twist_ko": "한쪽 흰 발만 통과하는 초소형 포털",
+        "outcome_ko": "신호기 안 약품 꾸러미가 돔 속 환자에게 도착",
         "camera_setups": [
-          "16mm extreme low-angle under bridge, neon rain, heroic ledge lean, safe composite collapse and reflective asphalt"
+          "28mm split-set low angle with dome glass foreground and rain city reflection"
         ]
       },
       "images": [
         {
           "role": "HERO",
-          "camera_strategy": "16mm extreme low-angle under-bridge rescue",
-          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. enormous open-mouth yawn, leaning far over a ledge, in a wet midnight noir detective city with rain, fog, and neon reflections, the cat leans dangerously far but safely supported to brace a collapsing bridge made as a controlled miniature set, a wristwatch traveler prop glows on the railing like a time key, the sunset chef twist appears as orange cloud-light forming soup-like steam in the background, extreme low-angle heroic frame, 16mm lens, dramatic perspective, shallow depth of field, rain bokeh, safe VFX, no text, no logos, no watermark, no extra limbs, no clothing, no shoes"
+          "camera_strategy": "28mm low three-quarter split-world composition",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable blockbuster micro-story, dominant protagonist, one decisive action. world: Noir detective city, a wet midnight city of rain, fog, and dramatic streetlight visibly split by a gallery-like frame into a bioluminescent trench observation dome. event: Bridge support rescue, a controlled miniature bridge buckles beside the transparent chamber as the cat braces it. outcome: the pursued hero was carrying emergency medicine, visibly shown when the cracked beacon opens and a tiny medicine capsule crosses the safe one-paw portal toward an illuminated medical pod, a different consequence from the bridge collapse. role: fantasy quest champion, wearing original mythic travel armor accents but no franchise design. location: bioluminescent trench observation dome. prop: cracked glowing rescue beacon. twist: the portal is no larger than one white paw. expression: wink-like one-eye squint. gesture: dramatic wall cling. visual_hook: museum world split. An attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is central and large, claws gently gripping a low safe wall with invisible support, one hind white paw aligned to the tiny portal, believable weight, whisker detail, wet fur highlights, bridge fragments frozen safely by cables, glowing beacon, medicine capsule, two tiny blurred city witnesses, strong expression and gesture, readable rain streaks, scale contrast, iconic dome silhouette, volumetric streetlight and blue trench light, physically accurate reflections and shadows, 35mm-depth-of-field look from a close low viewpoint, sharp cat and beacon with layered background bokeh, safe staged photography, forced perspective, harmless VFX compositing, no danger or suffering, no official logo, no readable text, no watermark, no UI, no captions, no famous artwork or franchise likeness, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate limbs or malformed anatomy."
         }
       ],
-      "story_id": "20260825074732-07-b89a6506",
-      "text_model_used": "gpt-5.4-mini"
-    },
-    {
-      "title_ko": "분화구의 절규",
-      "hook": "The crystal falls from orbit",
-      "caption_explanation_en": "He catches a falling meteor crystal while the giant eye in back watches the scene.",
-      "hashtags": [
-        "#MoonCat",
-        "#VFXStory",
-        "#HeroShot"
-      ],
-      "hero_expression_en": "dramatic hiss with visible tiny fangs",
-      "hero_body_language_en": "dramatic exhausted flop",
-      "source_concepts": [
-        {
-          "role": "world",
-          "role_ko": "세계",
-          "id": "HCW017",
-          "name_en": "Prehistoric valley",
-          "category_ko": "HIGH_CONCEPT/worlds"
-        },
-        {
-          "role": "event",
-          "role_ko": "사건",
-          "id": "HCE008",
-          "name_en": "Whale-scale encounter",
-          "category_ko": "HIGH_CONCEPT/events"
-        },
-        {
-          "role": "role",
-          "role_ko": "역할",
-          "id": "HCR019",
-          "name_en": "disaster-film first responder",
-          "category_ko": "HIGH_CONCEPT/roles"
-        },
-        {
-          "role": "prop",
-          "role_ko": "소품",
-          "id": "220",
-          "name_ko": "지갑 속 은행원",
-          "category_ko": "판타지와 미니어처"
-        },
-        {
-          "role": "twist",
-          "role_ko": "반전",
-          "id": "336",
-          "name_ko": "밤비 속 재즈 연주자",
-          "category_ko": "계절·시간·날씨"
-        },
-        {
-          "role": "expression",
-          "role_ko": "표정",
-          "id": "HCX002",
-          "name_en": "dramatic hiss with visible tiny fangs",
-          "category_ko": "HIGH_CONCEPT/expressions"
-        },
-        {
-          "role": "gesture",
-          "role_ko": "몸짓",
-          "id": "HCG013",
-          "name_en": "dramatic exhausted flop",
-          "category_ko": "HIGH_CONCEPT/gestures"
-        },
-        {
-          "role": "visual_hook",
-          "role_ko": "시각 훅",
-          "id": "HCV009",
-          "name_en": "safe wire silhouette",
-          "category_ko": "HIGH_CONCEPT/visual_hooks"
-        }
-      ],
-      "overview_ko": "원시 계곡 풍경과 고래급 스케일의 등장, 그리고 유성 수정 포획이 한 화면에 겹친다.",
-      "continuity_ko": "치즈탭비 고정 외형을 유지하며 흰 부츠 네 발, 흰 블레이즈, 흰 주둥이와 흰 가슴·배를 또렷하게 보여야 한다.",
-      "creative_fingerprint": {
-        "location_ko": "안개 낀 분화구 가장자리",
-        "core_prop_ko": "지갑 속 은행원 미니어처와 유성 수정",
-        "twist_ko": "비 속 재즈 리듬이 배경 방울과 합쳐져 보임",
-        "camera_setups": [
-          "70mm telephoto crater-edge freeze, giant eye projection, safe wire silhouette, high-detail dust and moonlit bounce"
-        ]
-      },
-      "images": [
-        {
-          "role": "HERO",
-          "camera_strategy": "70mm telephoto crater-edge dramatic freeze",
-          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. dramatic hiss with visible tiny fangs, dramatic exhausted flop, on the rim of a prehistoric valley crater with a huge whale-scale projection rising beside an observation window, the cat catches a falling glowing meteor crystal in a controlled VFX moment while collapsing safely into a flop of relief, a tiny bank-clerk-in-wallet prop sits open beside the paw as a miniature city clue, rainy bossa-nova twist shown by raindrops tapping the glass in drum-like rhythm, a giant eye projected in the background creates suspense, safe wire silhouette visible as a thin support, 70mm telephoto, compressed perspective, shallow depth of field, cool blue rim light, no text, no logos, no watermark, no extra limbs, no clothing, no shoes"
-        }
-      ],
-      "story_id": "20260825074732-08-4b401fb0",
-      "text_model_used": "gpt-5.4-mini"
-    },
-    {
-      "title_ko": "미술관 탈출 그림",
-      "hook": "The painted world spills out",
-      "caption_explanation_en": "He stretches into frame as the painted world breaks out of the museum wall.",
-      "hashtags": [
-        "#MuseumCat",
-        "#ActionFrame",
-        "#UltraReal"
-      ],
-      "hero_expression_en": "furious internet-meme glare",
-      "hero_body_language_en": "body stretched toward camera",
-      "source_concepts": [
-        {
-          "role": "world",
-          "role_ko": "세계",
-          "id": "HCW018",
-          "name_en": "Classical sculpture museum",
-          "category_ko": "HIGH_CONCEPT/worlds"
-        },
-        {
-          "role": "event",
-          "role_ko": "사건",
-          "id": "HCE009",
-          "name_en": "Meteor crystal catch",
-          "category_ko": "HIGH_CONCEPT/events"
-        },
-        {
-          "role": "role",
-          "role_ko": "역할",
-          "id": "HCR020",
-          "name_en": "eccentric comic antihero",
-          "category_ko": "HIGH_CONCEPT/roles"
-        },
-        {
-          "role": "prop",
-          "role_ko": "소품",
-          "id": "221",
-          "name_ko": "카메라 렌즈 탐험가",
-          "category_ko": "판타지와 미니어처"
-        },
-        {
-          "role": "twist",
-          "role_ko": "반전",
-          "id": "337",
-          "name_ko": "서리 낀 버스 정류장",
-          "category_ko": "계절·시간·날씨"
-        },
-        {
-          "role": "expression",
-          "role_ko": "표정",
-          "id": "HCX003",
-          "name_en": "furious internet-meme glare",
-          "category_ko": "HIGH_CONCEPT/expressions"
-        },
-        {
-          "role": "gesture",
-          "role_ko": "몸짓",
-          "id": "HCG014",
-          "name_en": "body stretched toward camera",
-          "category_ko": "HIGH_CONCEPT/gestures"
-        },
-        {
-          "role": "visual_hook",
-          "role_ko": "시각 훅",
-          "id": "HCV010",
-          "name_en": "giant eye in the background",
-          "category_ko": "HIGH_CONCEPT/visual_hooks"
-        }
-      ],
-      "overview_ko": "고전 조각 미술관에서 그림 같은 세계가 벽을 뚫고 튀어나오는 코믹 액션이다.",
-      "continuity_ko": "치즈탭비 고정 외형은 그대로, 흰 부츠와 흰 블레이즈, 흰 목·가슴·배를 명확히 유지한다.",
-      "creative_fingerprint": {
-        "location_ko": "대리석 복도와 그림 벽면",
-        "core_prop_ko": "카메라 렌즈 탐험가와 미니 버스정류장",
-        "twist_ko": "서리 낀 정류장 문이 그림 속 따뜻한 방으로 이어짐",
-        "camera_setups": [
-          "50mm compressed museum corridor, body stretch toward lens, giant background eye projection and practical wall-break composite"
-        ]
-      },
-      "images": [
-        {
-          "role": "HERO",
-          "camera_strategy": "50mm compressed corridor stretch toward lens",
-          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. furious internet-meme glare, body stretched toward camera, in a classical sculpture museum where a painted world spills through the wall, the cat lunges forward in a safe forced-perspective stretch as if catching a meteor crystal mid-flight, a camera-lens explorer prop and a frost-covered bus-stop model anchor the foreground, the twist reveals the wall opening into a warm room only through the painted seam, a giant projected eye looms in the background, strong museum spotlight, 50mm lens, shallow depth of field, crisp marble textures, no text, no logos, no watermark, no extra limbs, no clothing, no shoes"
-        }
-      ],
-      "story_id": "20260825074732-09-fbb4367b",
-      "text_model_used": "gpt-5.4-mini"
-    },
-    {
-      "title_ko": "카펫 위 서부 결투",
-      "hook": "The scarf turns into butterflies",
-      "caption_explanation_en": "He stands tall as a painted canyon breaks loose and the scarf opens into spring.",
-      "hashtags": [
-        "#WesternCat",
-        "#PosterFrame",
-        "#CatArt"
-      ],
-      "hero_expression_en": "offended open-mouth protest",
-      "hero_body_language_en": "standing tall with forepaws elevated",
-      "source_concepts": [
-        {
-          "role": "world",
-          "role_ko": "세계",
-          "id": "HCW019",
-          "name_en": "Western canyon showdown",
-          "category_ko": "HIGH_CONCEPT/worlds"
-        },
-        {
-          "role": "event",
-          "role_ko": "사건",
-          "id": "HCE010",
-          "name_en": "Museum painting escape",
-          "category_ko": "HIGH_CONCEPT/events"
-        },
-        {
-          "role": "role",
-          "role_ko": "역할",
-          "id": "HCR001",
-          "name_en": "spider-themed acrobatic city hero",
-          "category_ko": "HIGH_CONCEPT/roles"
-        },
-        {
-          "role": "prop",
-          "role_ko": "소품",
-          "id": "222",
-          "name_ko": "우표 위 선장",
-          "category_ko": "판타지와 미니어처"
-        },
-        {
-          "role": "twist",
-          "role_ko": "반전",
-          "id": "338",
-          "name_ko": "꽃샘추위 여행자",
-          "category_ko": "계절·시간·날씨"
-        },
-        {
-          "role": "expression",
-          "role_ko": "표정",
-          "id": "HCX004",
-          "name_en": "offended open-mouth protest",
-          "category_ko": "HIGH_CONCEPT/expressions"
-        },
-        {
-          "role": "gesture",
-          "role_ko": "몸짓",
-          "id": "HCG015",
-          "name_en": "standing tall with forepaws elevated",
-          "category_ko": "HIGH_CONCEPT/gestures"
-        },
-        {
-          "role": "visual_hook",
-          "role_ko": "시각 훅",
-          "id": "HCV011",
-          "name_en": "frozen debris halo",
-          "concept_en": "safe VFX objects hover in a circular halo around the hero",
-          "category_ko": "HIGH_CONCEPT/visual_hooks"
-        }
-      ],
-      "overview_ko": "서부 협곡 배경화가 폭주하듯 튀어나오고 고양이는 우뚝 서서 반전을 받아낸다.",
-      "continuity_ko": "치즈탭비의 외형은 동일하게 고정하고 흰 네 발과 흰 블레이즈, 흰 목과 가슴, 흰 배가 잘 보여야 한다.",
-      "creative_fingerprint": {
-        "location_ko": "붉은 협곡 갤러리 바닥",
-        "core_prop_ko": "우표 위 선장과 작은 편지 상자",
-        "twist_ko": "목도리를 풀자 봄나비가 실제로 날아남",
-        "camera_setups": [
-          "32mm poster-like frontal canyon break, elevated forepaws, floating debris halo, bright composited western sunset"
-        ]
-      },
-      "images": [
-        {
-          "role": "HERO",
-          "camera_strategy": "32mm frontal poster frame with debris halo",
-          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. offended open-mouth protest, standing tall with forepaws elevated, in a Western canyon showdown setting where a painted world escapes from a museum canvas into the gallery floor, the cat stands like a comic antihero while safe VFX debris floats in a halo around the body, a stamp-captain prop rides atop a tiny letter box in the foreground, the flower-scarf twist opens and releases spring butterflies, strong frontal silhouette, 32mm lens, eye-level to slightly low viewpoint, crisp sunset backlight, shallow depth of field, no text, no logos, no watermark, no extra limbs, no clothing, no shoes"
-        }
-      ],
-      "story_id": "20260825074732-10-a881dc44",
-      "text_model_used": "gpt-5.4-mini"
+      "story_id": "20260826172734-01-4d7f687a",
+      "text_model_used": "gpt-5.6-luna"
     }
   ]
 }
