@@ -668,9 +668,20 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
             batch = extract_json((response.output_text or "").strip())
         except Exception as exc:
             return None, [f"invalid JSON: {exc}"]
-        normalize_single_hero_images(batch, assignments)
-        enforce_assigned_prompt_requirements(batch, assignments)
-        errors = validate_story_batch(batch, assignments, config)
+        stories = batch.get("stories") if isinstance(batch, dict) else None
+        if isinstance(stories, list) and 0 < len(stories) < batch_size:
+            effective_assignments = assignments[:len(stories)]
+            effective_config = {**config, "batch_size": len(stories)}
+            print(
+                f"[WARN] {model} returned a partial batch "
+                f"({len(stories)}/{batch_size}); validating the usable stories"
+            )
+        else:
+            effective_assignments = assignments
+            effective_config = config
+        normalize_single_hero_images(batch, effective_assignments)
+        enforce_assigned_prompt_requirements(batch, effective_assignments)
+        errors = validate_story_batch(batch, effective_assignments, effective_config)
         return (batch["stories"] if not errors else None), errors
 
     print(f"[GENERATE] using primary model {primary_model}")
