@@ -9,7 +9,7 @@ Cloudinary는 완전히 제거했습니다. **GitHub Actions가 실행을 담당
 ```text
 500개 콘셉트
   ↓
-Python이 스토리별 장소·상황·소품·반전·표정·몸짓 6개를 결정적으로 사전 배정
+Python이 world/event/outcome/role/location/prop/twist/expression/gesture/visual_hook 10개 축을 결정적으로 사전 배정
   ↓
 스토리 큐가 비면 GPT가 10개 스토리 생성
   ↓
@@ -65,8 +65,9 @@ state/published.json              실제 게시 이력/슬롯 중복 방지
 - 한 번의 스토리 리필: `batch_size` 기준, 현재 정확히 10개
 - 스토리당 이미지: 정확히 1개(`HERO`)
 - 구조: 원인 + 절정 행동 + 강한 고양이 표정 + 결과/반전 단서를 한 프레임에 표현
-- 각 스토리 소스: Python이 사전 배정한 정확히 6개(장소·상황·소품·반전·표정·몸짓 각 1개), 배치 내 ID 중복 없음
-- 모델에는 500개 전체 목록 대신 10개 스토리에 배정된 60개만 전달해 입력 토큰과 소스 선택 오류 재시도를 줄임
+- 각 스토리 소스: Python이 사전 배정한 정확히 10개 축, 배치 내 ID 중복 없음
+- 사건(event)과 결말(outcome)은 독립 축이며 최근 source ID와 전체 축 조합을 우선 회피
+- 모델에는 500개 전체 목록 대신 이번 배치에 배정된 100개 축 항목만 전달해 입력 토큰과 소스 선택 오류 재시도를 줄임
 - Hook: 영어 50자 이하
 - Caption explanation: 영어 후킹 설명문 1문장, 160자 이하
 - Hashtags: 영어 정확히 3개
@@ -89,10 +90,11 @@ AUTOPOST_ENV
 
 ```text
 OPENAI_API_KEY=...
-OPENAI_TEXT_MODEL=gpt-5.4
+OPENAI_TEXT_MODEL_PRIMARY=gpt-5.6-luna
+OPENAI_TEXT_MODEL_FALLBACK=gpt-5.4-mini
 OPENAI_IMAGE_MODEL=gpt-image-2
 OPENAI_IMAGE_SIZE=1024x1536
-OPENAI_IMAGE_QUALITY=medium
+OPENAI_IMAGE_QUALITY=low
 INSTAGRAM_USER_ID=...
 INSTAGRAM_ACCESS_TOKEN=...
 ```
@@ -155,6 +157,7 @@ Instagram 단계에서 실패해도 `state/prepared.json`과 `public/posts`가 G
 - 핵심 소품
 - 반전
 - 카메라 구성
+- 사건과 별도인 결말 축 및 전체 축 조합 서명
 
 새 10개 스토리 생성 시 이 이력을 다시 GPT에 전달해 장기 반복을 줄입니다.
 
@@ -164,7 +167,7 @@ Instagram 단계에서 실패해도 `state/prepared.json`과 `public/posts`가 G
 
 - `batch_size`: 한 번에 생성해 큐에 넣을 스토리 수(현재 10)
 - `queue_refill_threshold`: 새 batch를 생성할 큐 기준
-- `image_quality`: 이미지 품질
+- `image_model` / `image_quality`: 저비용 정책상 `gpt-image-2` / `low` 고정
 - `recent_history_limit`: GPT에 제공할 최근 게시 이력 수
 - `image_publish_width` / `image_publish_height`: 기본 1024×1280 유지 권장
 - `instagram_api_base`: Instagram API base URL

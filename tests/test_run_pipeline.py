@@ -66,20 +66,25 @@ class StoryBatchValidationTests(unittest.TestCase):
         for index, expression in enumerate(expressions):
             sources = []
             assigned_sources = []
+            assigned_names = []
             for offset, role in enumerate(role_names):
                 source_id = f"TEST-{index * len(role_names) + offset + 1:03d}"
                 category = f"category-{index}-{offset}"
                 sources.append({"id": source_id, "role": role, "name_ko": "소스", "category_ko": category})
+                assigned_name = expression if role == "expression" else body_languages[index] if role == "gesture" else f"assigned {role} {index}"
                 assigned_sources.append({
                     "id": source_id,
                     "role": role,
-                    "name_en": expression if role == "expression" else body_languages[index] if role == "gesture" else "assigned source",
+                    "name_en": assigned_name,
                 })
+                assigned_names.append(assigned_name)
             prompt = (
-                "Ultra-photorealistic live-action photography, vertical 4:5. "
+                "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, "
+                "dominant protagonist, one decisive action. "
                 + rp.CANONICAL_PROTAGONIST_DESCRIPTION + " The protagonist reacts "
                 "at the peak of an extraordinary event with "
-                f"{expression}; {body_languages[index]}."
+                f"{expression}; {body_languages[index]}. "
+                + "; ".join(assigned_names)
             )
             stories.append({
                 "title_ko": f"제목 {index}",
@@ -195,6 +200,43 @@ class StoryBatchValidationTests(unittest.TestCase):
         self.assertIn("stories must use at least 7 distinct hero_expression_en values", errors)
         self.assertIn("stories must use at least 7 distinct hero_body_language_en values", errors)
 
+    def test_requires_every_assigned_axis_in_hero_prompt(self) -> None:
+        batch, assignments = self.make_batch()
+        outcome_name = next(source["name_en"] for source in assignments[0] if source["role"] == "outcome")
+        batch["stories"][0]["images"][0]["image_prompt"] = batch["stories"][0]["images"][0]["image_prompt"].replace(outcome_name, "missing payoff")
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
+        self.assertIn("story 1 image 1: prompt must include assigned outcome name_en verbatim", errors)
+
+    def test_rejects_identical_event_and_outcome_axes(self) -> None:
+        batch, assignments = self.make_batch()
+        event = next(source for source in assignments[0] if source["role"] == "event")
+        outcome = next(source for source in assignments[0] if source["role"] == "outcome")
+        old_outcome = outcome["name_en"]
+        outcome["name_en"] = event["name_en"]
+        batch["stories"][0]["images"][0]["image_prompt"] = batch["stories"][0]["images"][0]["image_prompt"].replace(old_outcome, event["name_en"])
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
+        self.assertIn("story 1: assigned event and outcome must be meaningfully different", errors)
+
+    def test_rejects_weak_thumbnail_direction(self) -> None:
+        batch, assignments = self.make_batch()
+        batch["stories"][0]["images"][0]["image_prompt"] += " ordinary front-facing shot"
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
+        self.assertIn("story 1 image 1: weak thumbnail direction 'ordinary front-facing shot' is forbidden", errors)
+
+    def test_superhero_archetype_requires_costume_style_scene_and_ip_language(self) -> None:
+        batch, assignments = self.make_batch()
+        role = next(source for source in assignments[0] if source["role"] == "role")
+        role["id"] = "HCR001"
+        role["name_en"] = rp.SUPERHERO_ARCHETYPE_RULES["HCR001"]["name"]
+        story_role = next(source for source in batch["stories"][0]["source_concepts"] if source["role"] == "role")
+        story_role["id"] = "HCR001"
+        prompt = batch["stories"][0]["images"][0]["image_prompt"].replace("assigned role 0", role["name_en"])
+        batch["stories"][0]["images"][0]["image_prompt"] = prompt
+        errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
+        self.assertIn("story 1 image 1: superhero mode style language is missing", errors)
+        self.assertIn("story 1 image 1: superhero scene does not match assigned archetype", errors)
+        self.assertIn("story 1 image 1: superhero IP-safety language is missing", errors)
+
 
 class SourceAssignmentTests(unittest.TestCase):
     def test_assigns_high_concept_roles_per_story_without_batch_id_reuse(self) -> None:
@@ -215,18 +257,37 @@ class SourceAssignmentTests(unittest.TestCase):
                 else:
                     self.assertIn(item["category_ko"], selector)
         ids = [item["id"] for story in first for item in story]
-        self.assertEqual(len(ids), 80)
-        self.assertEqual(len(set(ids)), 80)
+        self.assertEqual(len(ids), 100)
+        self.assertEqual(len(set(ids)), 100)
 
-    def test_high_concept_pool_is_well_formed_and_assigns_all_eight_axes(self) -> None:
+    def test_high_concept_pool_is_well_formed_and_assigns_all_ten_axes(self) -> None:
         pool = rp.load_high_concept_pool(rp.load_config())
-        self.assertEqual(set(pool), {"worlds", "events", "roles", "expressions", "gestures", "visual_hooks"})
+        self.assertEqual(set(pool), {"worlds", "events", "outcomes", "roles", "locations", "props", "twists", "expressions", "gestures", "visual_hooks"})
         self.assertTrue(all(len(entries) >= 10 for entries in pool.values()))
         concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
         with patch.object(rp, "recent_source_ids", return_value=(set(), 0)):
             assignments = rp.assign_source_concepts(concepts, rp.load_config())
         self.assertTrue(all(len(story) == len(rp.SOURCE_ROLE_SPECS) for story in assignments))
         self.assertEqual([item["role"] for item in assignments[0]], [spec[0] for spec in rp.SOURCE_ROLE_SPECS])
+
+    def test_assignment_rotates_outcome_to_avoid_recent_axis_combination(self) -> None:
+        concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
+        with (
+            patch.object(rp, "recent_source_ids", return_value=(set(), 0)),
+            patch.object(rp, "recent_axis_signatures", return_value=set()),
+        ):
+            first = rp.assign_source_concepts(concepts, rp.load_config())
+        recent = {rp.assignment_signature(first[0])}
+        with (
+            patch.object(rp, "recent_source_ids", return_value=(set(), 0)),
+            patch.object(rp, "recent_axis_signatures", return_value=recent),
+        ):
+            second = rp.assign_source_concepts(concepts, rp.load_config())
+        self.assertNotIn(rp.assignment_signature(second[0]), recent)
+        first_by_role = {source["role"]: source["id"] for source in first[0]}
+        second_by_role = {source["role"]: source["id"] for source in second[0]}
+        self.assertEqual(first_by_role["event"], second_by_role["event"])
+        self.assertNotEqual(first_by_role["outcome"], second_by_role["outcome"])
 
     def test_assignment_avoids_recent_ids_when_each_pool_has_capacity(self) -> None:
         concepts = (ROOT / "data" / "cat_concepts_500.txt").read_text(encoding="utf-8-sig")
@@ -252,7 +313,7 @@ class SourceAssignmentTests(unittest.TestCase):
         compact = rp.assigned_source_prompt(assignments)
 
         self.assertEqual(compact.count('"story_index"'), 10)
-        self.assertEqual(compact.count('"id"'), 80)
+        self.assertEqual(compact.count('"id"'), 100)
         self.assertNotIn("500. ", compact)
 
     def test_generation_injects_assignments_instead_of_full_library(self) -> None:
@@ -342,19 +403,47 @@ class SourceAssignmentTests(unittest.TestCase):
                 rp.generate_story_batch(client, config, "concepts")
             self.assertEqual(client.responses.create.call_count, 1)
 
-    def test_image_model_configuration_remains_environment_driven(self) -> None:
+    def test_non_retryable_api_error_does_not_call_fallback(self) -> None:
+        client = Mock()
+        client.responses.create.side_effect = Exception("bad request: unsupported parameter")
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10}
+        with (
+            patch.object(rp, "assign_source_concepts", return_value=[]),
+            patch.object(rp, "history_for_prompt", return_value="[]"),
+            self.assertRaisesRegex(SystemExit, "non-retryable failure"),
+        ):
+            rp.generate_story_batch(client, config, "concepts")
+        self.assertEqual(client.responses.create.call_count, 1)
+
+    def test_retryable_api_error_calls_fallback_once(self) -> None:
+        batch, assignments = StoryBatchValidationTests().make_batch()
+        client = Mock()
+        client.responses.create.side_effect = [Exception("temporary server error"), Mock(output_text=json.dumps(batch))]
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10}
+        with (
+            patch.object(rp, "assign_source_concepts", return_value=assignments),
+            patch.object(rp, "history_for_prompt", return_value="[]"),
+            patch.object(rp, "get_now", return_value=datetime(2026, 1, 2, 3, 4, 5)),
+        ):
+            stories = rp.generate_story_batch(client, config, "concepts")
+        self.assertEqual(client.responses.create.call_count, 2)
+        self.assertTrue(all(story["text_model_used"] == "gpt-5.4-mini" for story in stories))
+
+    def test_image_generation_is_locked_to_low_cost_policy(self) -> None:
         config = rp.load_config()
+        self.assertEqual(config["image_model"], "gpt-image-2")
         self.assertEqual(config["image_generate_size"], "1024x1536")
-        self.assertEqual(config["image_quality"], "medium")
+        self.assertEqual(config["image_quality"], "low")
         source = (ROOT / "scripts" / "run_pipeline.py").read_text(encoding="utf-8")
-        self.assertIn('required_env("OPENAI_IMAGE_MODEL")', source)
+        self.assertIn('model != "gpt-image-2"', source)
+        self.assertIn('quality != "low"', source)
         self.assertIn("client.images.generate(model=model", source)
 
     def test_prompt_requires_random_supporting_cats_and_safe_original_homages(self) -> None:
         prompt = (ROOT / "prompts" / "story_generator_prompt.txt").read_text(encoding="utf-8")
         self.assertIn("RANDOM SUPPORTING CATS", prompt)
         self.assertIn("never confused with the fixed cheese-tabby protagonist", prompt)
-        self.assertIn("Never reproduce a famous artwork, movie poster, character, costume", prompt)
+        self.assertIn("Never reproduce a famous artwork, exact poster, character", prompt)
 
 
 class QueueBatchTests(unittest.TestCase):
@@ -368,6 +457,18 @@ class QueueBatchTests(unittest.TestCase):
             queue = rp.ensure_queue(Mock(), {"batch_size": 10, "queue_refill_threshold": 1}, "concepts")
 
         self.assertEqual(len(queue["stories"]), 10)
+        save_json.assert_called_once_with(rp.QUEUE_PATH, queue)
+
+    def test_legacy_eight_axis_queue_is_discarded_before_refill(self) -> None:
+        legacy = {"story_id": "legacy", "source_concepts": [{"role": "world"}], "images": [{"role": "HERO", "image_prompt": "old"}]}
+        generated = [{"story_id": f"new-{index}"} for index in range(10)]
+        with (
+            patch.object(rp, "queue_data", return_value={"stories": [legacy]}),
+            patch.object(rp, "generate_story_batch", return_value=generated),
+            patch.object(rp, "save_json") as save_json,
+        ):
+            queue = rp.ensure_queue(Mock(), {"batch_size": 10, "queue_refill_threshold": 1}, "concepts")
+        self.assertEqual([story["story_id"] for story in queue["stories"]], [f"new-{index}" for index in range(10)])
         save_json.assert_called_once_with(rp.QUEUE_PATH, queue)
 
     def test_successful_publish_consumes_only_one_story(self) -> None:

@@ -35,7 +35,7 @@ if len(ids) != 500:
     raise SystemExit(f"[ERROR] source concepts: expected 500, found {len(ids)}")
 
 high_concept_pool = json.loads((ROOT / config["high_concept_pool_file"]).read_text(encoding="utf-8"))
-for key in ("worlds", "events", "roles", "expressions", "gestures", "visual_hooks"):
+for key in ("worlds", "events", "outcomes", "roles", "locations", "props", "twists", "expressions", "gestures", "visual_hooks"):
     entries = high_concept_pool.get(key)
     if not isinstance(entries, list) or len(entries) < 10:
         raise SystemExit(f"[ERROR] high-concept pool {key!r} must contain at least 10 entries")
@@ -43,7 +43,7 @@ for key in ("worlds", "events", "roles", "expressions", "gestures", "visual_hook
         raise SystemExit(f"[ERROR] high-concept pool {key!r} contains an invalid entry")
 
 prompt = (ROOT / config["story_prompt_file"]).read_text(encoding="utf-8")
-for marker in ["{batch_size}", "{minimum_hero_variety}", "{creative_history}", "{assigned_source_concepts}", "ASSIGNED_SOURCE_CONCEPTS", "HIGH-CONCEPT CINEMATIC PRIORITY", "RANDOM SUPPORTING CATS", "Ultra-photorealistic live-action photography", "caption_explanation_en", "hero_expression_en", "hero_body_language_en", '"role":"HERO"']:
+for marker in ["{batch_size}", "{minimum_hero_variety}", "{creative_history}", "{assigned_source_concepts}", "ASSIGNED_SOURCE_CONCEPTS", "HIGH-CONCEPT CINEMATIC PRIORITY", "RANDOM SUPPORTING CATS", "SUPERHERO BLOCKBUSTER MODE", "outcome", "mobile-thumbnail-readable", "Ultra-photorealistic live-action photography", "caption_explanation_en", "hero_expression_en", "hero_body_language_en", '"role":"HERO"']:
     if marker not in prompt:
         raise SystemExit(f"[ERROR] story prompt missing marker: {marker}")
 if "{concepts}" in prompt or "SOURCE_LIBRARY_500" in prompt:
@@ -61,6 +61,10 @@ if "raw.githubusercontent.com" not in source:
 for marker in ["SOURCE_ROLE_SPECS", "load_high_concept_pool", "assign_source_concepts", "assigned_source_prompt", "source_concepts ids must exactly match assigned ids"]:
     if marker not in source:
         raise SystemExit(f"[ERROR] deterministic source assignment logic missing: {marker}")
+if config.get("image_model") != "gpt-image-2" or config.get("image_quality") != "low":
+    raise SystemExit("[ERROR] low-cost image policy must be gpt-image-2 with quality=low")
+if config.get("text_model_primary") != "gpt-5.6-luna" or config.get("text_model_fallback") != "gpt-5.4-mini":
+    raise SystemExit("[ERROR] low-cost text model routing is misconfigured")
 
 print("[PASS] required files")
 print("[PASS] source concepts:", len(ids))
@@ -70,6 +74,7 @@ print("[PASS] GitHub-hosted media logic")
 print("[PASS] single-image publishing logic")
 print("[PASS] deterministic high-concept source assignment")
 print("[PASS] compact assigned-source prompt")
+print("[PASS] gpt-image-2 low-quality cost policy")
 batch_size = int(config.get("batch_size", 0))
 if batch_size < 1:
     raise SystemExit(f"[ERROR] batch_size must be at least 1, found {config.get('batch_size')}")

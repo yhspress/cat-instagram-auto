@@ -28,12 +28,63 @@ OUTPUT = ROOT / "output"
 SOURCE_ROLE_SPECS = (
     ("world", "세계", "high_concept", "worlds"),
     ("event", "사건", "high_concept", "events"),
+    ("outcome", "결말", "high_concept", "outcomes"),
     ("role", "역할", "high_concept", "roles"),
-    ("prop", "소품", "concept_library", ("판타지와 미니어처",)),
-    ("twist", "반전", "concept_library", ("계절·시간·날씨", "영화·잠입·패러디")),
+    ("location", "장소", "high_concept", "locations"),
+    ("prop", "소품", "high_concept", "props"),
+    ("twist", "반전", "high_concept", "twists"),
     ("expression", "표정", "high_concept", "expressions"),
     ("gesture", "몸짓", "high_concept", "gestures"),
     ("visual_hook", "시각 훅", "high_concept", "visual_hooks"),
+)
+
+SUPERHERO_ARCHETYPE_RULES = {
+    "HCR001": {
+        "name": "red-blue agile wall-crawling urban acrobat hero",
+        "style": "bright, clearly separated suit colors",
+        "scene_terms": ("skyscraper", "rooftop", "vertical city", "building exterior"),
+    },
+    "HCR002": {
+        "name": "dark caped nocturnal vigilante detective hero",
+        "style": "rain-soaked, dark, weighty cinematic tone",
+        "scene_terms": ("rainy rooftop", "gothic city", "shadow ambush", "criminal", "interrogation"),
+    },
+    "HCR003": {
+        "name": "armored billionaire-tech defender hero",
+        "style": "bright, clearly separated suit colors",
+        "scene_terms": ("flight", "blast pose", "laboratory", "lab", "skyline combat"),
+    },
+    "HCR004": {
+        "name": "thunder-god cosmic warrior hero",
+        "style": "bright, clearly separated suit colors",
+        "scene_terms": ("lightning storm", "shattered ruins", "thunder", "lightning"),
+    },
+    "HCR005": {
+        "name": "speedster in aerodynamic bodysuit",
+        "style": "bright, clearly separated suit colors",
+        "scene_terms": ("motion streak", "near-frozen rescue", "high-speed rescue"),
+    },
+    "HCR006": {
+        "name": "mystical sorcerer protector with cloak and glowing power accents",
+        "style": "bright, clearly separated suit colors",
+        "scene_terms": ("portal", "glowing circle", "dimensional threat"),
+    },
+    "HCR007": {
+        "name": "patriotic shield-bearing symbol hero",
+        "style": "bright, clearly separated suit colors",
+        "scene_terms": ("shield", "deflect", "rescue formation"),
+    },
+    "HCR008": {
+        "name": "Amazonian warrior protector hero",
+        "style": "rain-soaked, dark, weighty cinematic tone",
+        "scene_terms": ("battlefield rescue", "warrior guard", "defensive brace", "gothic city"),
+    },
+}
+
+THUMBNAIL_REQUIRED_FRAGMENTS = (
+    "mobile-thumbnail-readable",
+    "dominant protagonist",
+    "one decisive action",
 )
 
 CANONICAL_PROTAGONIST_DESCRIPTION = (
@@ -68,10 +119,21 @@ DEFAULT_TEXT_MODEL_FALLBACK = "gpt-5.4-mini"
 ACCOUNT_OR_AUTH_ERROR_MARKERS = (
     "insufficient_quota",
     "credit_balance_exhausted",
+    "billing",
+    "balance",
     "authentication",
     "invalid api key",
     "incorrect api key",
     "unauthorized",
+)
+RETRYABLE_API_ERROR_MARKERS = (
+    "timeout",
+    "timed out",
+    "connection",
+    "temporarily unavailable",
+    "server error",
+    "rate limit",
+    "rate_limit",
 )
 
 
@@ -130,6 +192,14 @@ def text_models(config: dict) -> tuple[str, str]:
 def is_account_or_auth_error(exc: Exception) -> bool:
     message = str(exc).lower()
     return any(marker in message for marker in ACCOUNT_OR_AUTH_ERROR_MARKERS)
+
+
+def is_retryable_generation_error(exc: Exception) -> bool:
+    status_code = getattr(exc, "status_code", None)
+    if status_code in {408, 409, 429} or isinstance(status_code, int) and status_code >= 500:
+        return True
+    message = str(exc).lower()
+    return any(marker in message for marker in RETRYABLE_API_ERROR_MARKERS)
 
 
 def minimum_hero_variety(batch_size: int) -> int:
@@ -216,6 +286,21 @@ def recent_source_ids(config: dict) -> tuple[set[str], int]:
     return used, len(history)
 
 
+def assignment_signature(sources: list[dict[str, str]]) -> str:
+    by_role = {str(source.get("role", "")): str(source.get("id", "")) for source in sources}
+    return "|".join(f"{role}:{by_role.get(role, '')}" for role, *_rest in SOURCE_ROLE_SPECS)
+
+
+def recent_axis_signatures(config: dict) -> set[str]:
+    history = load_json(HISTORY_PATH, {"stories": []}).get("stories", [])
+    limit = int(config.get("recent_history_limit", 30))
+    return {
+        str(story.get("axis_signature", ""))
+        for story in history[-limit:]
+        if story.get("axis_signature")
+    }
+
+
 def assign_source_concepts(
     concepts: str,
     config: dict,
@@ -251,6 +336,18 @@ def assign_source_concepts(
                 **selected,
             })
             available.remove(selected)
+
+    recent_signatures = recent_axis_signatures(config)
+    outcome_index = next(index for index, spec in enumerate(SOURCE_ROLE_SPECS) if spec[0] == "outcome")
+    for _ in range(story_count):
+        if all(assignment_signature(sources) not in recent_signatures for sources in assignments):
+            break
+        outcomes = [sources[outcome_index] for sources in assignments]
+        outcomes = outcomes[1:] + outcomes[:1]
+        for sources, outcome in zip(assignments, outcomes):
+            sources[outcome_index] = outcome
+    else:
+        raise SystemExit("[ERROR] unable to avoid recent axis combinations")
 
     return assignments
 
@@ -294,6 +391,16 @@ def validate_story_batch(
     component_count = len(SOURCE_ROLE_SPECS)
     if len(assigned_sources) != batch_size or any(len(sources) != component_count for sources in assigned_sources):
         return [f"assigned_sources must contain exactly {batch_size} stories with {component_count} items each"]
+
+    for role, *_rest in SOURCE_ROLE_SPECS:
+        role_ids: list[str] = []
+        for sources in assigned_sources:
+            matches = [source for source in sources if source.get("role") == role]
+            if len(matches) != 1:
+                return [f"assigned_sources must contain each role exactly once; invalid role {role!r}"]
+            role_ids.append(str(matches[0].get("id", "")))
+        if len(set(role_ids)) < minimum_variety:
+            errors.append(f"assigned {role} axis must use at least {minimum_variety} distinct values")
 
     roles = ["HERO"]
     fingerprints: set[tuple[str, str, str]] = set()
@@ -353,10 +460,14 @@ def validate_story_batch(
         assigned_by_role = {source["role"]: source for source in assigned_sources[si - 1]}
         assigned_expression = str(assigned_by_role.get("expression", {}).get("name_en", "")).strip()
         assigned_gesture = str(assigned_by_role.get("gesture", {}).get("name_en", "")).strip()
+        assigned_event = str(assigned_by_role.get("event", {}).get("name_en", "")).strip()
+        assigned_outcome = str(assigned_by_role.get("outcome", {}).get("name_en", "")).strip()
         if assigned_expression and hero_expression != assigned_expression:
             errors.append(f"story {si}: hero_expression_en must match assigned expression name_en")
         if assigned_gesture and hero_body_language != assigned_gesture:
             errors.append(f"story {si}: hero_body_language_en must match assigned gesture name_en")
+        if assigned_event and assigned_outcome and assigned_event.casefold() == assigned_outcome.casefold():
+            errors.append(f"story {si}: assigned event and outcome must be meaningfully different")
 
         images = story.get("images")
         if not isinstance(images, list) or len(images) != 1:
@@ -387,6 +498,38 @@ def validate_story_batch(
                 for meaning, alternatives in PROTAGONIST_REQUIRED_MEANINGS.items():
                     if not any(alternative in prompt_lower for alternative in alternatives):
                         errors.append(f"story {si} image {ii}: missing protagonist identity meaning {meaning!r}")
+                for fragment in THUMBNAIL_REQUIRED_FRAGMENTS:
+                    if fragment not in prompt_lower:
+                        errors.append(f"story {si} image {ii}: missing thumbnail direction {fragment!r}")
+                for weak_direction in (
+                    "small distant subject",
+                    "ordinary front-facing shot",
+                    "static front-facing portrait",
+                    "blank expression",
+                    "neutral pose",
+                ):
+                    if weak_direction in prompt_lower:
+                        errors.append(f"story {si} image {ii}: weak thumbnail direction {weak_direction!r} is forbidden")
+                for axis_role, assigned in assigned_by_role.items():
+                    assigned_name = str(assigned.get("name_en", "")).strip()
+                    if assigned_name and assigned_name.lower() not in prompt_lower:
+                        errors.append(
+                            f"story {si} image {ii}: prompt must include assigned {axis_role} name_en verbatim"
+                        )
+                role_source = assigned_by_role.get("role", {})
+                archetype_rule = SUPERHERO_ARCHETYPE_RULES.get(str(role_source.get("id", "")))
+                if archetype_rule:
+                    if archetype_rule["name"].lower() not in prompt_lower:
+                        errors.append(f"story {si} image {ii}: superhero costume-language drift from assigned archetype")
+                    if archetype_rule["style"].lower() not in prompt_lower:
+                        errors.append(f"story {si} image {ii}: superhero mode style language is missing")
+                    if not any(term in prompt_lower for term in archetype_rule["scene_terms"]):
+                        errors.append(f"story {si} image {ii}: superhero scene does not match assigned archetype")
+                    if not any(
+                        phrase in prompt_lower
+                        for phrase in ("no official logo", "no exact emblem", "no exact costume copy")
+                    ):
+                        errors.append(f"story {si} image {ii}: superhero IP-safety language is missing")
                 sig = strategy.strip().lower()
                 if not sig:
                     errors.append(f"story {si} image {ii}: camera_strategy must not be empty")
@@ -452,6 +595,8 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
     except Exception as exc:
         if is_account_or_auth_error(exc):
             raise SystemExit(f"[ERROR] primary text model account/auth failure: {exc}") from exc
+        if not is_retryable_generation_error(exc):
+            raise SystemExit(f"[ERROR] primary text model non-retryable failure: {exc}") from exc
         stories, errors = None, [f"primary API request failed: {exc}"]
 
     model_used = primary_model
@@ -487,10 +632,35 @@ def queue_data() -> dict:
     return load_json(QUEUE_PATH, {"stories": []})
 
 
+def queue_story_matches_active_policy(story: dict) -> bool:
+    if not isinstance(story, dict):
+        return False
+    sources = story.get("source_concepts")
+    expected_roles = {role for role, *_rest in SOURCE_ROLE_SPECS}
+    if not isinstance(sources, list) or len(sources) != len(expected_roles):
+        return False
+    if {str(source.get("role", "")) for source in sources if isinstance(source, dict)} != expected_roles:
+        return False
+    images = story.get("images")
+    if not isinstance(images, list) or len(images) != 1 or not isinstance(images[0], dict) or images[0].get("role") != "HERO":
+        return False
+    prompt = str(images[0].get("image_prompt", "")).lower()
+    if not all(fragment in prompt for fragment in THUMBNAIL_REQUIRED_FRAGMENTS):
+        return False
+    return all(any(alternative in prompt for alternative in alternatives) for alternatives in PROTAGONIST_REQUIRED_MEANINGS.values())
+
+
 def ensure_queue(client: OpenAI, config: dict, concepts: str) -> dict:
     queue = queue_data()
+    existing_stories = queue.get("stories", [])
+    compatible_stories = [story for story in existing_stories if queue_story_matches_active_policy(story)]
+    if len(compatible_stories) != len(existing_stories):
+        print(f"[QUEUE] discarded {len(existing_stories) - len(compatible_stories)} legacy-policy stories")
+        queue["stories"] = compatible_stories
     threshold = int(config.get("queue_refill_threshold", 1))
     if len(queue.get("stories", [])) >= threshold:
+        if len(compatible_stories) != len(existing_stories):
+            save_json(QUEUE_PATH, queue)
         return queue
     new_stories = generate_story_batch(client, config, concepts)
     queue.setdefault("stories", []).extend(new_stories)
@@ -533,9 +703,13 @@ def crop_to_publish_ratio(source: Path, target: Path, width: int, height: int) -
 
 
 def generate_story_images(client: OpenAI, config: dict, story: dict, public_dir: Path) -> list[str]:
-    model = required_env("OPENAI_IMAGE_MODEL")
+    model = os.environ.get("OPENAI_IMAGE_MODEL", "").strip() or str(config.get("image_model", "gpt-image-2"))
+    if model != "gpt-image-2":
+        raise SystemExit(f"[ERROR] low-cost image policy requires gpt-image-2, found {model}")
     size = os.environ.get("OPENAI_IMAGE_SIZE", config.get("image_generate_size", "1024x1536"))
-    quality = os.environ.get("OPENAI_IMAGE_QUALITY", config.get("image_quality", "medium"))
+    quality = os.environ.get("OPENAI_IMAGE_QUALITY", config.get("image_quality", "low"))
+    if quality != "low":
+        raise SystemExit(f"[ERROR] low-cost image policy requires quality=low, found {quality}")
     width = int(config.get("image_publish_width", 1024))
     height = int(config.get("image_publish_height", 1280))
     public_dir.mkdir(parents=True, exist_ok=True)
@@ -751,6 +925,7 @@ def finalize_success(prepared: dict, media_id: str, urls: list[str]) -> None:
         "title_ko": story.get("title_ko"),
         "hook": story.get("hook"),
         "source_ids": [x.get("id") for x in story.get("source_concepts", [])],
+        "axis_signature": assignment_signature(story.get("source_concepts", [])),
         "creative_fingerprint": story.get("creative_fingerprint", {}),
         "published_key": key,
     })
