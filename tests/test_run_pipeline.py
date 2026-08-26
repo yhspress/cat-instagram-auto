@@ -375,6 +375,22 @@ class SourceAssignmentTests(unittest.TestCase):
         self.assertEqual([call.kwargs["model"] for call in client.responses.create.call_args_list], ["gpt-5.6-luna", "gpt-5.4-mini"])
         self.assertTrue(all(story["text_model_used"] == "gpt-5.4-mini" for story in stories))
 
+    def test_primary_json_with_trailing_comment_is_accepted(self) -> None:
+        batch, assignments = StoryBatchValidationTests().make_batch()
+        client = Mock()
+        client.responses.create.return_value = Mock(
+            output_text=json.dumps(batch, ensure_ascii=False) + "\nGenerated as requested."
+        )
+        config = {"story_prompt_file": "prompts/story_generator_prompt.txt", "batch_size": 10, "text_model_primary": "gpt-5.6-luna", "text_model_fallback": "gpt-5.4-mini"}
+        with (
+            patch.object(rp, "assign_source_concepts", return_value=assignments),
+            patch.object(rp, "history_for_prompt", return_value="[]"),
+            patch.object(rp, "get_now", return_value=datetime(2026, 1, 2, 3, 4, 5)),
+        ):
+            stories = rp.generate_story_batch(client, config, "concepts")
+        self.assertEqual(client.responses.create.call_count, 1)
+        self.assertTrue(all(story["text_model_used"] == "gpt-5.6-luna" for story in stories))
+
     def test_primary_validation_failure_calls_fallback_once(self) -> None:
         batch, assignments = StoryBatchValidationTests().make_batch()
         invalid = json.loads(json.dumps(batch))

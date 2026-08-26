@@ -369,12 +369,17 @@ def extract_json(text: str) -> dict:
         text = re.sub(r"\s*```$", "", text)
     try:
         return json.loads(text)
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as original_error:
         start = text.find("{")
-        end = text.rfind("}")
-        if start >= 0 and end > start:
-            return json.loads(text[start:end + 1])
-        raise
+        if start < 0:
+            raise original_error
+        try:
+            value, _end = json.JSONDecoder().raw_decode(text, start)
+        except json.JSONDecodeError:
+            raise original_error
+        if not isinstance(value, dict):
+            raise original_error
+        return value
 
 
 def validate_story_batch(
