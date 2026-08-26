@@ -207,6 +207,27 @@ class StoryBatchValidationTests(unittest.TestCase):
         errors = rp.validate_story_batch(batch, assignments, {"batch_size": 10})
         self.assertIn("story 1 image 1: prompt must include assigned outcome name_en verbatim", errors)
 
+    def test_prompt_enrichment_adds_missing_axes_and_superhero_rules(self) -> None:
+        batch, assignments = self.make_batch()
+        role = next(source for source in assignments[0] if source["role"] == "role")
+        role["id"] = "HCR001"
+        role["name_en"] = rp.SUPERHERO_ARCHETYPE_RULES["HCR001"]["name"]
+        story_role = next(source for source in batch["stories"][0]["source_concepts"] if source["role"] == "role")
+        story_role["id"] = "HCR001"
+        prompt = batch["stories"][0]["images"][0]["image_prompt"]
+        for source in assignments[0]:
+            prompt = prompt.replace(source["name_en"], "")
+        batch["stories"][0]["images"][0]["image_prompt"] = prompt
+
+        rp.enforce_assigned_prompt_requirements(batch, assignments)
+
+        enriched = batch["stories"][0]["images"][0]["image_prompt"].lower()
+        for source in assignments[0]:
+            self.assertIn(source["name_en"].lower(), enriched)
+        self.assertIn("bright, clearly separated suit colors", enriched)
+        self.assertIn("skyscraper", enriched)
+        self.assertIn("no official logo", enriched)
+
     def test_rejects_identical_event_and_outcome_axes(self) -> None:
         batch, assignments = self.make_batch()
         event = next(source for source in assignments[0] if source["role"] == "event")

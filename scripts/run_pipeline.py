@@ -382,6 +382,44 @@ def extract_json(text: str) -> dict:
         return value
 
 
+def enforce_assigned_prompt_requirements(
+    batch: dict,
+    assigned_sources: list[list[dict[str, str]]],
+) -> None:
+    stories = batch.get("stories")
+    if not isinstance(stories, list) or len(stories) != len(assigned_sources):
+        return
+    for story, sources in zip(stories, assigned_sources):
+        if not isinstance(story, dict):
+            continue
+        images = story.get("images")
+        if not isinstance(images, list) or len(images) != 1 or not isinstance(images[0], dict):
+            continue
+        image = images[0]
+        prompt = str(image.get("image_prompt", "")).strip()
+        prompt_lower = prompt.lower()
+        additions: list[str] = []
+        for source in sources:
+            name = str(source.get("name_en", "")).strip()
+            if name and name.lower() not in prompt_lower:
+                additions.append(name)
+
+        role_source = next((source for source in sources if source.get("role") == "role"), {})
+        archetype_rule = SUPERHERO_ARCHETYPE_RULES.get(str(role_source.get("id", "")))
+        if archetype_rule:
+            for phrase in (
+                archetype_rule["name"],
+                archetype_rule["style"],
+                archetype_rule["scene_terms"][0],
+                "no official logo, no exact emblem, no exact costume copy",
+            ):
+                if phrase.lower() not in prompt_lower:
+                    additions.append(phrase)
+
+        if additions:
+            image["image_prompt"] = prompt + "\nRequired assigned visual details: " + "; ".join(additions) + "."
+
+
 def validate_story_batch(
     batch: dict,
     assigned_sources: list[list[dict[str, str]]],
@@ -591,6 +629,7 @@ def generate_story_batch(client: OpenAI, config: dict, concepts: str) -> list[di
             batch = extract_json((response.output_text or "").strip())
         except Exception as exc:
             return None, [f"invalid JSON: {exc}"]
+        enforce_assigned_prompt_requirements(batch, assignments)
         errors = validate_story_batch(batch, assignments, config)
         return (batch["stories"] if not errors else None), errors
 
