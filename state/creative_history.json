@@ -974,6 +974,34 @@
         ]
       },
       "published_key": "2026-08-28:04"
+    },
+    {
+      "story_id": "20260827201344-04-8182c136",
+      "title_ko": "달의 공룡 유리창",
+      "hook": "A dinosaur crosses the Moon",
+      "source_ids": [
+        "HCW002",
+        "HCE013",
+        "HCO004",
+        "HCR014",
+        "HCL011",
+        "HCP007",
+        "HCT003",
+        "HCX014",
+        "HCG010",
+        "HCV006"
+      ],
+      "axis_signature": "world:HCW002|event:HCE013|outcome:HCO004|role:HCR014|location:HCL011|prop:HCP007|twist:HCT003|expression:HCX014|gesture:HCG010|visual_hook:HCV006",
+      "creative_fingerprint": {
+        "location_ko": "번개 치는 산악 신전 파편과 달 착륙장 혼합 세트",
+        "core_prop_ko": "안전하게 층을 나눈 거대한 금 간 수족관 창",
+        "twist_ko": "거대한 도시가 살아 움직이는 탁상 모형으로 드러남",
+        "outcome_ko": "깨진 랜드마크가 딸깍 소리와 함께 안정적으로 복원됨",
+        "camera_setups": [
+          "21mm upward tilt from lunar dust through aquarium glass"
+        ]
+      },
+      "published_key": "2026-08-28:05"
     }
   ]
 }
