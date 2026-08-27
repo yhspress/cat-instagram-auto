@@ -946,6 +946,34 @@
         ]
       },
       "published_key": "2026-08-28:03"
+    },
+    {
+      "story_id": "20260827201344-03-08303abe",
+      "title_ko": "고리 위의 가짜 괴수",
+      "hook": "The ring station screams",
+      "source_ids": [
+        "HCW001",
+        "HCE012",
+        "HCO003",
+        "HCR013",
+        "HCL010",
+        "HCP006",
+        "HCT002",
+        "HCX013",
+        "HCG009",
+        "HCV005"
+      ],
+      "axis_signature": "world:HCW001|event:HCE012|outcome:HCO003|role:HCR013|location:HCL010|prop:HCP006|twist:HCT002|expression:HCX013|gesture:HCG009|visual_hook:HCV005",
+      "creative_fingerprint": {
+        "location_ko": "네온 지하철 정비터널로 꾸민 토성 고리 관측 세트",
+        "core_prop_ko": "비문 없는 발광 기하학 포털 링",
+        "twist_ko": "고양이 그림자가 실제 행동보다 1초 앞서 경고함",
+        "outcome_ko": "괴수는 어린이용 무해한 빛 투사로 축소됨",
+        "camera_setups": [
+          "18mm tunnel-center perspective with reflective floor and Saturn horizon"
+        ]
+      },
+      "published_key": "2026-08-28:04"
     }
   ]
 }
