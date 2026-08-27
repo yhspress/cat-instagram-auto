@@ -890,6 +890,34 @@
         ]
       },
       "published_key": "2026-08-27:01"
+    },
+    {
+      "story_id": "20260827201344-01-fb400a31",
+      "title_ko": "벽화에서 튀어나온 결투",
+      "hook": "The painted canyon breaks free",
+      "source_ids": [
+        "HCW019",
+        "HCE010",
+        "HCO001",
+        "HCR001",
+        "HCL008",
+        "HCP004",
+        "HCT015",
+        "HCX011",
+        "HCG007",
+        "HCV003"
+      ],
+      "axis_signature": "world:HCW019|event:HCE010|outcome:HCO001|role:HCR001|location:HCL008|prop:HCP004|twist:HCT015|expression:HCX011|gesture:HCG007|visual_hook:HCV003",
+      "creative_fingerprint": {
+        "location_ko": "새벽 아파트 주방과 서부 협곡 벽화 세트",
+        "core_prop_ko": "역회전 시간호를 비추는 황동 나침반",
+        "twist_ko": "분홍 코 반사 속 작은 범인이 사건을 조종함",
+        "outcome_ko": "벽화 속 작은 목격자들이 손을 들고 환호함",
+        "camera_setups": [
+          "24mm floor-level whip-pan from kitchen tiles into painted canyon"
+        ]
+      },
+      "published_key": "2026-08-27:02"
     }
   ]
 }
