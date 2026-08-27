@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-08-28:03",
+  "prepared_at": "2026-08-28T00:18:36.230816+09:00",
+  "slot": 3,
+  "story_id": "20260827201344-02-119c7d05",
+  "story": {
+    "title_ko": "사막문 금고 구조",
+    "hook": "The vault beams catch fire",
+    "caption_explanation_en": "A temple guardian recoils from a laser vault, then realizes the supposed enemy is trapped inside the tiny evacuation bus.",
+    "hashtags": [
+      "#DesertGuardian",
+      "#RescueTwist",
+      "#PhotorealCat"
+    ],
+    "hero_expression_en": "chaotic excited open-mouth face",
+    "hero_body_language_en": "sudden backward recoil",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW020",
+        "name_en": "Aviation adventure skyport",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE011",
+        "name_en": "Secret laser vault",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO002",
+        "name_en": "the apparent villain becomes the rescue target",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR012",
+        "name_en": "samurai-era courtyard guardian",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL009",
+        "name_en": "ancient desert temple threshold",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP005",
+        "name_en": "miniature evacuation bus",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT001",
+        "name_en": "gravity reverses only around the protagonist",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX012",
+        "name_en": "chaotic excited open-mouth face",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG008",
+        "name_en": "sudden backward recoil",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV004",
+        "name_en": "near-touching paw homage",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "하늘항의 레이저 금고가 고대 사원 문에서 열리고 수호자는 버스 속 적을 구한다.",
+    "continuity_ko": "고정된 얼굴과 네 개의 자연스러운 흰 발을 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "모래폭풍 속 고대 사원 입구와 구름항 세트",
+      "core_prop_ko": "금고 안을 질주하는 미니 대피 버스",
+      "twist_ko": "주변 물체만 하늘로 떠오르는 국소 중력 반전",
+      "outcome_ko": "위협적인 인물이 버스 안 구조 대상이 됨",
+      "camera_setups": [
+        "35mm chest-height diagonal view through temple threshold and levitating debris"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "35mm diagonal medium-wide with forced-perspective paw reach",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The samurai-era courtyard guardian performs a sudden backward recoil at an ancient desert temple threshold while a Secret laser vault projects harmless red security beams around a miniature evacuation bus. Gravity reverses only around the protagonist: stone dust and loose bus parts rise while the cat stays safely grounded. The apparent villain becomes the rescue target, visibly trapped inside the bus, and the cat's paw nearly touches a gloved human hand in an original fresco-inspired composition. The chaotic excited open-mouth face and sudden backward recoil are explicit. Use carved guardians, aviation adventure skyport airships above, dust rays, readable bus scale, laser geometry and near-touching paw as impact cues. Camera 35mm, medium-wide, slightly low viewpoint, deep layered depth of field, sunset amber and laser crimson lighting, realistic fur, paws, whiskers, shadows and reflections, padded safe set and compositing, no exact emblem, no text, no watermark, no UI, no captions, no famous artwork, no franchise design, no actor likeness, no readable title, no cartoon, no illustration, no 3D render, no plastic fur, no malformed anatomy, no duplicate cats or limbs.\nRequired assigned visual details: near-touching paw homage."
+      }
+    ],
+    "story_id": "20260827201344-02-119c7d05",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The vault beams catch fire\nA temple guardian recoils from a laser vault, then realizes the supposed enemy is trapped inside the tiny evacuation bus.\n#DesertGuardian #RescueTwist #PhotorealCat",
+  "media_paths": [
+    "public/posts/2026-08-28/slot_03/20260827201344-02-119c7d05/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-28/slot_03/20260827201344-02-119c7d05"
+}
