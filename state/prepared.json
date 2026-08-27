@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-08-28:05",
+  "prepared_at": "2026-08-28T05:31:01.587790+09:00",
+  "slot": 5,
+  "story_id": "20260827201344-04-8182c136",
+  "story": {
+    "title_ko": "달의 공룡 유리창",
+    "hook": "A dinosaur crosses the Moon",
+    "caption_explanation_en": "A monster-movie survivor stops a lunar aquarium disaster and snaps a miniature city landmark safely back together.",
+    "hashtags": [
+      "#MoonMonster",
+      "#SafeVFX",
+      "#FelineBlockbuster"
+    ],
+    "hero_expression_en": "dramatically annoyed face",
+    "hero_body_language_en": "one paw dramatically raised",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW002",
+        "name_en": "Moon landing frontier",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE013",
+        "name_en": "Dinosaur shadow reveal",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO004",
+        "name_en": "the broken landmark locks safely back into place",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR014",
+        "name_en": "monster-movie survivor",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL011",
+        "name_en": "storm-lit shattered mountain shrine",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP007",
+        "name_en": "giant cracked aquarium window",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT003",
+        "name_en": "the enormous city is a living tabletop model",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX014",
+        "name_en": "dramatically annoyed face",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG010",
+        "name_en": "one paw dramatically raised",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV006",
+        "name_en": "towering storm wall",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "달 착륙지의 깨진 수조창 너머 공룡 그림자가 번개 폭풍을 가르지만 도시는 탁상 모형이다.",
+    "continuity_ko": "성체 비율과 주황색 줄무늬를 동일하게 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "번개 치는 산악 신전 파편과 달 착륙장 혼합 세트",
+      "core_prop_ko": "안전하게 층을 나눈 거대한 금 간 수족관 창",
+      "twist_ko": "거대한 도시가 살아 움직이는 탁상 모형으로 드러남",
+      "outcome_ko": "깨진 랜드마크가 딸깍 소리와 함께 안정적으로 복원됨",
+      "camera_setups": [
+        "21mm upward tilt from lunar dust through aquarium glass"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "21mm upward tilt with giant foreground glass and miniature city reveal",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The monster-movie survivor stands at a storm-lit shattered mountain shrine on a Moon landing frontier, one paw dramatically raised toward a giant cracked aquarium window during a Dinosaur shadow reveal. A towering storm wall and enormous dinosaur silhouette fill the background. The enormous city is a living tabletop model, visibly revealed by miniature buildings beneath the window. The broken landmark locks safely back into place as the outcome. The dramatically annoyed face and one paw dramatically raised are explicit, with Earth on the horizon, cracked glass, lightning, dinosaur silhouette and miniature scale as impact cues. Camera 21mm, low angle, medium distance, upward viewpoint, deep depth of field, cold lunar light and hard lightning rim, realistic glass refraction, fur, paws, shadows and safe foam miniature construction, no text, no watermark, no UI, no captions, no famous artwork, no franchise design, no actor likeness, no readable title, no cartoon, no illustration, no 3D render, no plastic fur, no malformed anatomy, no duplicate cats or limbs."
+      }
+    ],
+    "story_id": "20260827201344-04-8182c136",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "A dinosaur crosses the Moon\nA monster-movie survivor stops a lunar aquarium disaster and snaps a miniature city landmark safely back together.\n#MoonMonster #SafeVFX #FelineBlockbuster",
+  "media_paths": [
+    "public/posts/2026-08-28/slot_05/20260827201344-04-8182c136/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-28/slot_05/20260827201344-04-8182c136"
+}
