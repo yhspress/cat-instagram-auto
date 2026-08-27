@@ -862,6 +862,34 @@
         ]
       },
       "published_key": "2026-08-26:05"
+    },
+    {
+      "story_id": "20260827122047-01-e8c820f1",
+      "title_ko": "구름 정원의 수정 폭발",
+      "hook": "The crystal falls into the flower storm",
+      "source_ids": [
+        "HCW018",
+        "HCE009",
+        "HCO015",
+        "HCR020",
+        "HCL007",
+        "HCP003",
+        "HCT014",
+        "HCX010",
+        "HCG006",
+        "HCV002"
+      ],
+      "axis_signature": "world:HCW018|event:HCE009|outcome:HCO015|role:HCR020|location:HCL007|prop:HCP003|twist:HCT014|expression:HCX010|gesture:HCG006|visual_hook:HCV002",
+      "creative_fingerprint": {
+        "location_ko": "구름 위 대리석 조각 온실",
+        "core_prop_ko": "투명 케이블 릴과 운석 수정",
+        "twist_ko": "폭발이 꽃잎 폭풍으로 변함",
+        "outcome_ko": "작은 발자국 하나가 거대 장치를 정지시킴",
+        "camera_setups": [
+          "18mm low wide forced-perspective shot through miniature city streets, cloud garden and marble statues towering behind"
+        ]
+      },
+      "published_key": "2026-08-27:01"
     }
   ]
 }
