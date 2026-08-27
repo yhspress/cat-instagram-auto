@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-08-28:04",
+  "prepared_at": "2026-08-28T03:16:55.152740+09:00",
+  "slot": 4,
+  "story_id": "20260827201344-03-08303abe",
+  "story": {
+    "title_ko": "고리 위의 가짜 괴수",
+    "hook": "The ring station screams",
+    "caption_explanation_en": "A frontier scout confronts a station breach on Saturn's rings, but the terrifying giant is only a playful projection.",
+    "hashtags": [
+      "#SaturnScout",
+      "#SpaceIllusion",
+      "#CatCinema"
+    ],
+    "hero_expression_en": "tiny roar",
+    "hero_body_language_en": "wide-legged defensive stance",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW001",
+        "name_en": "Saturn ring expedition",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE012",
+        "name_en": "Orbit station breach",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO003",
+        "name_en": "the giant threat is revealed as a harmless projection",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR013",
+        "name_en": "western canyon scout",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL010",
+        "name_en": "neon subway service tunnel",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP006",
+        "name_en": "luminous geometric portal ring",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT002",
+        "name_en": "the shadow acts one second ahead",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX013",
+        "name_en": "tiny roar",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG009",
+        "name_en": "wide-legged defensive stance",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV005",
+        "name_en": "impossible reflection",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "토성 고리 원정대의 지하철 터널에서 거대 괴수의 그림자가 먼저 움직인다.",
+    "continuity_ko": "동일한 치즈태비 털결과 흰 가슴을 장면마다 잠근다.",
+    "creative_fingerprint": {
+      "location_ko": "네온 지하철 정비터널로 꾸민 토성 고리 관측 세트",
+      "core_prop_ko": "비문 없는 발광 기하학 포털 링",
+      "twist_ko": "고양이 그림자가 실제 행동보다 1초 앞서 경고함",
+      "outcome_ko": "괴수는 어린이용 무해한 빛 투사로 축소됨",
+      "camera_setups": [
+        "18mm tunnel-center perspective with reflective floor and Saturn horizon"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "18mm centered tunnel perspective with reflection-led reveal",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The western canyon scout stands in a wide-legged defensive stance inside a neon subway service tunnel during an Orbit station breach across a Saturn ring expedition, one paw braced beside a luminous geometric portal ring. The shadow acts one second ahead, visibly pointing toward danger before the cat moves. An impossible reflection in wet flooring shows a gigantic monster behind him, but the outcome is the giant threat revealed as a harmless projection, with a tiny projector visible through the portal. The tiny roar and wide-legged defensive stance are explicit, with Saturn's iconic ring silhouette, portal glow, wet neon reflections, enormous reflected scale and readable scout costume as impact cues. Camera 18mm, low frontal viewpoint, medium-wide distance, deep focus on cat and tunnel, blue-magenta practical lighting with silver Saturn rim light, realistic physical grounding and safe VFX projection, no text, no watermark, no UI, no captions, no famous artwork, no franchise design, no actor likeness, no readable title, no cartoon, no illustration, no 3D render, no plastic fur, no malformed anatomy, no duplicate cats or limbs.\nRequired assigned visual details: the giant threat is revealed as a harmless projection."
+      }
+    ],
+    "story_id": "20260827201344-03-08303abe",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The ring station screams\nA frontier scout confronts a station breach on Saturn's rings, but the terrifying giant is only a playful projection.\n#SaturnScout #SpaceIllusion #CatCinema",
+  "media_paths": [
+    "public/posts/2026-08-28/slot_04/20260827201344-03-08303abe/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-28/slot_04/20260827201344-03-08303abe"
+}
