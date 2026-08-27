@@ -1,0 +1,104 @@
+{
+  "title_ko": "벽화에서 튀어나온 결투",
+  "hook": "The painted canyon breaks free",
+  "caption_explanation_en": "A wall-crawling rescuer catches a gallery disaster just as painted witnesses become a cheering crowd.",
+  "hashtags": [
+    "#CatHero",
+    "#GalleryChaos",
+    "#CinematicRescue"
+  ],
+  "hero_expression_en": "triumphant heroic expression",
+  "hero_body_language_en": "mid-air twist",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW019",
+      "name_en": "Western canyon showdown",
+      "category_ko": "HIGH_CONCEPT/worlds"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE010",
+      "name_en": "Museum painting escape",
+      "category_ko": "HIGH_CONCEPT/events"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO001",
+      "name_en": "the rescued crowd erupts in celebration",
+      "category_ko": "HIGH_CONCEPT/outcomes"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR001",
+      "name_en": "red-blue agile wall-crawling urban acrobat hero",
+      "category_ko": "HIGH_CONCEPT/roles"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL008",
+      "name_en": "cramped apartment kitchen at dawn",
+      "category_ko": "HIGH_CONCEPT/locations"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP004",
+      "name_en": "floating brass time compass",
+      "category_ko": "HIGH_CONCEPT/props"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT015",
+      "name_en": "the culprit is hidden in the cat's pink-nose reflection",
+      "category_ko": "HIGH_CONCEPT/twists"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX011",
+      "name_en": "triumphant heroic expression",
+      "category_ko": "HIGH_CONCEPT/expressions"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG007",
+      "name_en": "mid-air twist",
+      "category_ko": "HIGH_CONCEPT/gestures"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV003",
+      "name_en": "poster-like central silhouette",
+      "category_ko": "HIGH_CONCEPT/visual_hooks"
+    }
+  ],
+  "overview_ko": "새벽 주방의 벽화가 서부극 협곡으로 폭발하자 고양이 영웅이 시간을 비틀어 군중을 구한다.",
+  "continuity_ko": "주인공의 동일한 치즈태비 외형과 흰 발 무늬를 고정한다.",
+  "creative_fingerprint": {
+    "location_ko": "새벽 아파트 주방과 서부 협곡 벽화 세트",
+    "core_prop_ko": "역회전 시간호를 비추는 황동 나침반",
+    "twist_ko": "분홍 코 반사 속 작은 범인이 사건을 조종함",
+    "outcome_ko": "벽화 속 작은 목격자들이 손을 들고 환호함",
+    "camera_setups": [
+      "24mm floor-level whip-pan from kitchen tiles into painted canyon"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "Low floor-level 24mm whip-pan with central silhouette and frozen airborne action",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The protagonist is the red-blue agile wall-crawling urban acrobat hero in bright, clearly separated suit colors, performing a mid-air twist between a cramped apartment kitchen at dawn and a vast Western canyon showdown, as a Museum painting escape erupts through projected gallery walls. A floating brass time compass projects reversed-time arcs that visibly pull falling painted debris backward. The culprit is hidden in the cat's pink-nose reflection on a chrome kettle. The rescued crowd erupts in celebration as tiny painted witnesses cheer behind the safe rescue. The triumphant heroic expression and mid-air twist are explicit, with a poster-like central silhouette, strong backlight, canyon mesa silhouette, readable role, compass arcs, cheering witnesses, and harmless compositing. Camera 24mm, low angle, close-wide distance, viewer at paw height, crisp cat and compass with moderate depth of field, dawn gold mixed with theatrical gallery cyan, realistic paws, whiskers, fur, reflections, shadows and physical contact, transparent safety rig, no official logo, no exact costume copy, no text, no watermark, no UI, no captions, no famous artwork, no franchise design, no actor likeness, no readable title, no cartoon, no illustration, no 3D render, no plastic fur, no malformed anatomy, no duplicate cats or limbs.\nRequired assigned visual details: skyscraper; no official logo, no exact emblem, no exact costume copy."
+    }
+  ],
+  "story_id": "20260827201344-01-fb400a31",
+  "text_model_used": "gpt-5.6-luna"
+}
