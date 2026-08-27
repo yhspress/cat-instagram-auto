@@ -918,6 +918,34 @@
         ]
       },
       "published_key": "2026-08-27:02"
+    },
+    {
+      "story_id": "20260827201344-02-119c7d05",
+      "title_ko": "사막문 금고 구조",
+      "hook": "The vault beams catch fire",
+      "source_ids": [
+        "HCW020",
+        "HCE011",
+        "HCO002",
+        "HCR012",
+        "HCL009",
+        "HCP005",
+        "HCT001",
+        "HCX012",
+        "HCG008",
+        "HCV004"
+      ],
+      "axis_signature": "world:HCW020|event:HCE011|outcome:HCO002|role:HCR012|location:HCL009|prop:HCP005|twist:HCT001|expression:HCX012|gesture:HCG008|visual_hook:HCV004",
+      "creative_fingerprint": {
+        "location_ko": "모래폭풍 속 고대 사원 입구와 구름항 세트",
+        "core_prop_ko": "금고 안을 질주하는 미니 대피 버스",
+        "twist_ko": "주변 물체만 하늘로 떠오르는 국소 중력 반전",
+        "outcome_ko": "위협적인 인물이 버스 안 구조 대상이 됨",
+        "camera_setups": [
+          "35mm chest-height diagonal view through temple threshold and levitating debris"
+        ]
+      },
+      "published_key": "2026-08-28:03"
     }
   ]
 }
