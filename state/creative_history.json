@@ -1030,6 +1030,34 @@
         ]
       },
       "published_key": "2026-08-28:01"
+    },
+    {
+      "story_id": "20260827201344-06-0176a235",
+      "title_ko": "궤도 세트의 한 발",
+      "hook": "The tiny city is under attack",
+      "source_ids": [
+        "HCW004",
+        "HCE015",
+        "HCO006",
+        "HCR016",
+        "HCL013",
+        "HCP009",
+        "HCT005",
+        "HCX001",
+        "HCG012",
+        "HCV008"
+      ],
+      "axis_signature": "world:HCW004|event:HCE015|outcome:HCO006|role:HCR016|location:HCL013|prop:HCP009|twist:HCT005|expression:HCX001|gesture:HCG012|visual_hook:HCV008",
+      "creative_fingerprint": {
+        "location_ko": "영화 스튜디오 후면의 궤도 재난 세트",
+        "core_prop_ko": "한쪽 흰 발에 맞는 고대 돌 열쇠",
+        "twist_ko": "무작위 조연 고양이가 빌런인 척한 이중첩자",
+        "outcome_ko": "한 발 아래에 숨겨진 안전 탈출로가 열림",
+        "camera_setups": [
+          "16mm extreme low-angle from miniature street beneath a safe ledge"
+        ]
+      },
+      "published_key": "2026-08-28:02"
     }
   ]
 }
