@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-08-28:02",
+  "prepared_at": "2026-08-28T21:47:45.074049+09:00",
+  "slot": 2,
+  "story_id": "20260827201344-06-0176a235",
+  "story": {
+    "title_ko": "궤도 세트의 한 발",
+    "hook": "The tiny city is under attack",
+    "caption_explanation_en": "A time-travel archivist yawns over a miniature city while a double-agent cat switches sides and opens the escape route.",
+    "hashtags": [
+      "#OrbitalMystery",
+      "#TinyCity",
+      "#TimeArchivist"
+    ],
+    "hero_expression_en": "enormous open-mouth yawn",
+    "hero_body_language_en": "leaning far over a ledge",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW004",
+        "name_en": "Abandoned orbital station",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE015",
+        "name_en": "Miniature city defense",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO006",
+        "name_en": "the escape route opens beneath one decisive paw",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR016",
+        "name_en": "time-travel archivist",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL013",
+        "name_en": "backstage movie studio disaster set",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP009",
+        "name_en": "ancient paw-sized stone key",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT005",
+        "name_en": "the villain is a random supporting cat double agent",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX001",
+        "name_en": "enormous open-mouth yawn",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG012",
+        "name_en": "leaning far over a ledge",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV008",
+        "name_en": "extreme low-angle heroic frame",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "버려진 궤도 정거장의 재난 세트에서 거대한 고양이가 미니 도시를 지키며 돌 열쇠를 돌린다.",
+    "continuity_ko": "고정된 성체 체격과 자연스러운 흰 부츠 무늬를 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "영화 스튜디오 후면의 궤도 재난 세트",
+      "core_prop_ko": "한쪽 흰 발에 맞는 고대 돌 열쇠",
+      "twist_ko": "무작위 조연 고양이가 빌런인 척한 이중첩자",
+      "outcome_ko": "한 발 아래에 숨겨진 안전 탈출로가 열림",
+      "camera_setups": [
+        "16mm extreme low-angle from miniature street beneath a safe ledge"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "16mm extreme low-angle from miniature city street with ledge-overlook composition",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The time-travel archivist is leaning far over a ledge above a detailed miniature city during Miniature city defense inside an abandoned orbital station, staged on a backstage movie studio disaster set. An ancient paw-sized stone key is turned by one white paw. The villain is a random supporting cat double agent, a distinct black cat visibly changing sides beside the city. The escape route opens beneath one decisive paw as a glowing hatch. The enormous open-mouth yawn and leaning far over a ledge are explicit, with drifting orbital debris, city scale, extreme low-angle heroic frame and practical rigging as impact cues. Camera 16mm, extreme low viewpoint, close-wide distance, deep focus, hard studio sunlight through station windows, realistic safe ledge, transparent support, correct feline anatomy, no text, no watermark, no UI, no captions, no famous artwork, no franchise design, no actor likeness, no readable title, no cartoon, no illustration, no 3D render, no plastic fur, no malformed anatomy, no duplicate protagonist or limbs."
+      }
+    ],
+    "story_id": "20260827201344-06-0176a235",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The tiny city is under attack\nA time-travel archivist yawns over a miniature city while a double-agent cat switches sides and opens the escape route.\n#OrbitalMystery #TinyCity #TimeArchivist",
+  "media_paths": [
+    "public/posts/2026-08-28/slot_02/20260827201344-06-0176a235/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-28/slot_02/20260827201344-06-0176a235"
+}
