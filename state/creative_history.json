@@ -1058,6 +1058,34 @@
         ]
       },
       "published_key": "2026-08-28:02"
+    },
+    {
+      "story_id": "20260827201344-07-6c761faf",
+      "title_ko": "오로라 도서관의 배신",
+      "hook": "The ruin rises beneath the dome",
+      "source_ids": [
+        "HCW005",
+        "HCE016",
+        "HCO007",
+        "HCR017",
+        "HCL014",
+        "HCP010",
+        "HCT006",
+        "HCX002",
+        "HCG013",
+        "HCV009"
+      ],
+      "axis_signature": "world:HCW005|event:HCE016|outcome:HCO007|role:HCR017|location:HCL014|prop:HCP010|twist:HCT006|expression:HCX002|gesture:HCG013|visual_hook:HCV009",
+      "creative_fingerprint": {
+        "location_ko": "달빛 성 도서관과 오로라 고원 관측돔",
+        "core_prop_ko": "불꽃 튀는 소형 동력 코어",
+        "twist_ko": "두려운 괴수가 새끼를 감싸 보호하고 있음",
+        "outcome_ko": "라이벌 고양이가 마지막 코어 조각을 전달함",
+        "camera_setups": [
+          "50mm floor-level library shot with wire silhouette crossing aurora"
+        ]
+      },
+      "published_key": "2026-08-29:03"
     }
   ]
 }
