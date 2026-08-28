@@ -1114,6 +1114,34 @@
         ]
       },
       "published_key": "2026-08-29:04"
+    },
+    {
+      "story_id": "20260827201344-09-cb75995c",
+      "title_ko": "유리 빌딩의 고대 지도",
+      "hook": "The relic paints the rain",
+      "source_ids": [
+        "HCW007",
+        "HCE018",
+        "HCO009",
+        "HCR019",
+        "HCL001",
+        "HCP012",
+        "HCT008",
+        "HCX004",
+        "HCG015",
+        "HCV011"
+      ],
+      "axis_signature": "world:HCW007|event:HCE018|outcome:HCO009|role:HCR019|location:HCL001|prop:HCP012|twist:HCT008|expression:HCX004|gesture:HCG015|visual_hook:HCV011",
+      "creative_fingerprint": {
+        "location_ko": "교통 위 유리 초고층 외벽과 침수 신전 투영 세트",
+        "core_prop_ko": "거울처럼 빛나는 무표식 악당 가면",
+        "twist_ko": "모든 빗방울 중 하나만 움직여 길을 가리킴",
+        "outcome_ko": "미니어처 시민들이 고양이에게 보호자 왕관을 씌움",
+        "camera_setups": [
+          "40mm rooftop telephoto compression across glass facade and traffic"
+        ]
+      },
+      "published_key": "2026-08-29:05"
     }
   ]
 }
