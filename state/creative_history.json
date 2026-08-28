@@ -1002,6 +1002,34 @@
         ]
       },
       "published_key": "2026-08-28:05"
+    },
+    {
+      "story_id": "20260827201344-05-91af3fcd",
+      "title_ko": "화성의 반사 구조",
+      "hook": "The airship turns into lightning",
+      "source_ids": [
+        "HCW003",
+        "HCE014",
+        "HCO005",
+        "HCR015",
+        "HCL012",
+        "HCP008",
+        "HCT004",
+        "HCX015",
+        "HCG011",
+        "HCV007"
+      ],
+      "axis_signature": "world:HCW003|event:HCE014|outcome:HCO005|role:HCR015|location:HCL012|prop:HCP008|twist:HCT004|expression:HCX015|gesture:HCG011|visual_hook:HCV007",
+      "creative_fingerprint": {
+        "location_ko": "미니어처 해안 마을 광장과 화성 발굴 협곡",
+        "core_prop_ko": "바람에 휘날리는 무문양 구조 배너",
+        "twist_ko": "반사된 유리 경계 안에 구조 대상이 숨어 있음",
+        "outcome_ko": "도난 유물이 고양이를 선택해 빛을 두름",
+        "camera_setups": [
+          "32mm circular dolly around banner with portal framed behind cat"
+        ]
+      },
+      "published_key": "2026-08-28:01"
     }
   ]
 }
