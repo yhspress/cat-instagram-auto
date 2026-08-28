@@ -44,7 +44,8 @@
     "2026-08-28:05",
     "2026-08-28:01",
     "2026-08-28:02",
-    "2026-08-29:03"
+    "2026-08-29:03",
+    "2026-08-29:04"
   ],
   "posts": [
     {
@@ -488,6 +489,15 @@
       "published_at": "2026-08-28T16:42:41.076235+00:00",
       "media_urls": [
         "https://raw.githubusercontent.com/yhspress/cat-instagram-auto/main/public/posts/2026-08-29/slot_03/20260827201344-07-6c761faf/01_hero.jpg"
+      ]
+    },
+    {
+      "publication_key": "2026-08-29:04",
+      "story_id": "20260827201344-08-c8a142aa",
+      "media_id": "18091096397274414",
+      "published_at": "2026-08-28T19:26:18.492915+00:00",
+      "media_urls": [
+        "https://raw.githubusercontent.com/yhspress/cat-instagram-auto/main/public/posts/2026-08-29/slot_04/20260827201344-08-c8a142aa/01_hero.jpg"
       ]
     }
   ]
