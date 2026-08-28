@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-08-29:03",
+  "prepared_at": "2026-08-29T01:42:01.912014+09:00",
+  "slot": 3,
+  "story_id": "20260827201344-07-6c761faf",
+  "story": {
+    "title_ko": "오로라 도서관의 배신",
+    "hook": "The ruin rises beneath the dome",
+    "caption_explanation_en": "A cosmic heist mastermind hisses at a rising ruin, then watches a rival cat deliver the missing power-core piece.",
+    "hashtags": [
+      "#AlienHeist",
+      "#AuroraCats",
+      "#LibraryPortal"
+    ],
+    "hero_expression_en": "dramatic hiss with visible tiny fangs",
+    "hero_body_language_en": "dramatic exhausted flop",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW005",
+        "name_en": "Alien first-contact plateau",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE016",
+        "name_en": "Underwater ruin ascent",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO007",
+        "name_en": "the rival cat delivers the missing final piece",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR017",
+        "name_en": "cosmic heist mastermind",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL014",
+        "name_en": "moonlit castle library",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP010",
+        "name_en": "sparking miniature power core",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT006",
+        "name_en": "the feared monster is protecting its young",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX002",
+        "name_en": "dramatic hiss with visible tiny fangs",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG013",
+        "name_en": "dramatic exhausted flop",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV009",
+        "name_en": "safe wire silhouette",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "달빛 도서관 아래 수중 신전이 솟고, 괴수의 진짜 목적이 새끼 보호임이 드러난다.",
+    "continuity_ko": "주인공은 모든 장면에서 중앙의 유일한 치즈태비다.",
+    "creative_fingerprint": {
+      "location_ko": "달빛 성 도서관과 오로라 고원 관측돔",
+      "core_prop_ko": "불꽃 튀는 소형 동력 코어",
+      "twist_ko": "두려운 괴수가 새끼를 감싸 보호하고 있음",
+      "outcome_ko": "라이벌 고양이가 마지막 코어 조각을 전달함",
+      "camera_setups": [
+        "50mm floor-level library shot with wire silhouette crossing aurora"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "50mm floor-level lateral frame with safe wire silhouette and rising ruin",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cosmic heist mastermind makes a dramatic exhausted flop inside a moonlit castle library as an Underwater ruin ascent rises through the floor, revealing an alien first-contact plateau and impossible aurora beyond the stained glass. A sparking miniature power core glows in the foreground. The feared monster is protecting its young, visible behind the rising ruins, while a distinct calico rival cat delivers the missing final piece. The dramatic hiss with visible tiny fangs and dramatic exhausted flop are explicit. A safe wire silhouette, towering shelves, blue water bubbles, aurora scale and core sparks provide readable impact cues. Camera 50mm, low side viewpoint, medium distance, shallow-to-moderate depth of field, moonlight and cyan bioluminescent lighting, safe wire and transparent supports, realistic fur and anatomy, no text, no watermark, no UI, no captions, no famous artwork, no franchise design, no actor likeness, no readable title, no cartoon, no illustration, no 3D render, no plastic fur, no malformed anatomy, no duplicate protagonist or limbs.\nRequired assigned visual details: the rival cat delivers the missing final piece."
+      }
+    ],
+    "story_id": "20260827201344-07-6c761faf",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The ruin rises beneath the dome\nA cosmic heist mastermind hisses at a rising ruin, then watches a rival cat deliver the missing power-core piece.\n#AlienHeist #AuroraCats #LibraryPortal",
+  "media_paths": [
+    "public/posts/2026-08-29/slot_03/20260827201344-07-6c761faf/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-29/slot_03/20260827201344-07-6c761faf"
+}
