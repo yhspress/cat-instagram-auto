@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-08-28:01",
+  "prepared_at": "2026-08-28T15:07:46.522787+09:00",
+  "slot": 1,
+  "story_id": "20260827201344-05-91af3fcd",
+  "story": {
+    "title_ko": "화성의 반사 구조",
+    "hook": "The airship turns into lightning",
+    "caption_explanation_en": "A rescue pilot hugs a banner through a storm, discovers the victim inside a reflection, and wins the artifact's loyalty.",
+    "hashtags": [
+      "#MarsRescue",
+      "#PortalAction",
+      "#CatPilot"
+    ],
+    "hero_expression_en": "astonished silent gasp",
+    "hero_body_language_en": "hugging a giant prop",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW003",
+        "name_en": "Mars archaeological discovery",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE014",
+        "name_en": "Skyship storm turn",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO005",
+        "name_en": "the stolen artifact chooses the hero",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR015",
+        "name_en": "aviation rescue pilot",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL012",
+        "name_en": "miniature coastal town square",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP008",
+        "name_en": "wind-whipped blank rescue banner",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT004",
+        "name_en": "the rescue target is inside the reflection",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX015",
+        "name_en": "astonished silent gasp",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG011",
+        "name_en": "hugging a giant prop",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV007",
+        "name_en": "portal behind the hero",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "화성 발굴지 위 폭풍선이 방향을 틀고 거대한 구조 깃발의 반사면에서 대상이 나타난다.",
+    "continuity_ko": "주인공의 흰 목과 배, 네 흰 발을 명확히 보인다.",
+    "creative_fingerprint": {
+      "location_ko": "미니어처 해안 마을 광장과 화성 발굴 협곡",
+      "core_prop_ko": "바람에 휘날리는 무문양 구조 배너",
+      "twist_ko": "반사된 유리 경계 안에 구조 대상이 숨어 있음",
+      "outcome_ko": "도난 유물이 고양이를 선택해 빛을 두름",
+      "camera_setups": [
+        "32mm circular dolly around banner with portal framed behind cat"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "32mm circular dolly freeze with reflective portal boundary",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable, dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The aviation rescue pilot is hugging a giant prop, a wind-whipped blank rescue banner, above a miniature coastal town square on a Mars archaeological discovery set during a Skyship storm turn. A portal behind the hero glows through theatrical lightning. The rescue target is inside the reflection of a physically explained mirrored town window, while the stolen artifact chooses the hero and glows around the chest. The astonished silent gasp and hugging a giant prop are explicit. Show red Martian ruins, airship silhouette, banner, portal, reflection victim and glowing allegiance as readable impact cues. Camera 32mm, medium-wide, three-quarter viewpoint, moderate depth of field, copper storm light and electric blue portal rim, safe compositing and padded harness hidden behind banner, realistic anatomy, whiskers, paws, fur and shadows, no text, no logo, no watermark, no UI, no captions, no famous artwork, no franchise design, no actor likeness, no readable title, no cartoon, no illustration, no 3D render, no plastic fur, no malformed anatomy, no duplicate cats or limbs."
+      }
+    ],
+    "story_id": "20260827201344-05-91af3fcd",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The airship turns into lightning\nA rescue pilot hugs a banner through a storm, discovers the victim inside a reflection, and wins the artifact's loyalty.\n#MarsRescue #PortalAction #CatPilot",
+  "media_paths": [
+    "public/posts/2026-08-28/slot_01/20260827201344-05-91af3fcd/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-28/slot_01/20260827201344-05-91af3fcd"
+}
