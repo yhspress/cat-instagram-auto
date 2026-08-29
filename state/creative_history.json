@@ -1170,6 +1170,34 @@
         ]
       },
       "published_key": "2026-08-29:01"
+    },
+    {
+      "story_id": "20260829165452-01-7a7adb8b",
+      "title_ko": "궤도 망원경의 범인",
+      "hook": "The statue opens its eyes",
+      "source_ids": [
+        "HCW009",
+        "HCE020",
+        "HCO011",
+        "HCR002",
+        "HCL003",
+        "HCP014",
+        "HCT010",
+        "HCX006",
+        "HCG002",
+        "HCV013"
+      ],
+      "axis_signature": "world:HCW009|event:HCE020|outcome:HCO011|role:HCR002|location:HCL003|prop:HCP014|twist:HCT010|expression:HCX006|gesture:HCG002|visual_hook:HCV013",
+      "creative_fingerprint": {
+        "location_ko": "태양빛이 쏟아지는 궤도 관측 데크",
+        "core_prop_ko": "별자리 투사 망원경",
+        "twist_ko": "추격자가 행성 가장자리에서 미끄러져 구조를 기다림",
+        "outcome_ko": "반사면 속 작은 드론 조종자가 범인으로 드러남",
+        "camera_setups": [
+          "35mm rain-slick rooftop-to-orbit match cut, low three-quarter angle"
+        ]
+      },
+      "published_key": "2026-08-29:02"
     }
   ]
 }
