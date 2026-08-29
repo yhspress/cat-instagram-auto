@@ -1,1 +1,125 @@
-{}
+{
+  "publication_key": "2026-08-29:02",
+  "prepared_at": "2026-08-29T16:53:40.015274+09:00",
+  "slot": 2,
+  "story_id": "20260829165452-01-7a7adb8b",
+  "story": {
+    "title_ko": "궤도 망원경의 범인",
+    "hook": "The statue opens its eyes",
+    "caption_explanation_en": "A rooftop detective follows a reflection that turns a cosmic chase into an impossible rescue.",
+    "hashtags": [
+      "#CatCinema",
+      "#NeonMystery",
+      "#OrbitalRescue"
+    ],
+    "hero_expression_en": "tongue-out blep",
+    "hero_body_language_en": "both paws pressed against glass",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW009",
+        "name_en": "Neon megacity rooftop",
+        "concept_en": "a rain-soaked future megacity of towering neon architecture",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE020",
+        "name_en": "Colossal statue awakening",
+        "concept_en": "a statue's projected eyes open behind the hero",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO011",
+        "name_en": "the impossible reflection reveals the true culprit",
+        "concept_en": "the reflective surface delivers a readable visual answer",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR002",
+        "name_en": "dark caped nocturnal vigilante detective hero",
+        "concept_en": "an original rain-soaked gothic rooftop guardian with no exact emblem",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL003",
+        "name_en": "sunlit orbital observation deck",
+        "concept_en": "a clean station window overlooking a huge planet",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP014",
+        "name_en": "constellation-projecting telescope",
+        "concept_en": "a massive instrument casting an original star map",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT010",
+        "name_en": "the hero must save the pursuer",
+        "concept_en": "the chase reverses into an unmistakable rescue",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX006",
+        "name_en": "tongue-out blep",
+        "concept_en": "a brief natural tongue-out moment",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG002",
+        "name_en": "both paws pressed against glass",
+        "concept_en": "safe glass contact with realistic paw pads",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV013",
+        "name_en": "whale-sized shadow",
+        "concept_en": "a huge harmless silhouette crosses a luminous background",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "비에 젖은 탐정 고양이가 우주 관측창의 반사 속 진짜 범인을 구한다.",
+    "continuity_ko": "주인공의 고정된 치즈태비 외형과 어두운 망토 실루엣을 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "태양빛이 쏟아지는 궤도 관측 데크",
+      "core_prop_ko": "별자리 투사 망원경",
+      "twist_ko": "추격자가 행성 가장자리에서 미끄러져 구조를 기다림",
+      "outcome_ko": "반사면 속 작은 드론 조종자가 범인으로 드러남",
+      "camera_setups": [
+        "35mm rain-slick rooftop-to-orbit match cut, low three-quarter angle"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "35mm low three-quarter viewpoint through rain-covered orbital glass",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable blockbuster poster. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The scene visibly combines Neon megacity rooftop, Colossal statue awakening, the impossible reflection reveals the true culprit, dark caped nocturnal vigilante detective hero, sunlit orbital observation deck, constellation-projecting telescope, the hero must save the pursuer, tongue-out blep, both paws pressed against glass, and whale-sized shadow. Rainy gothic rooftop shadows surround a clean orbital observation deck; the cat presses both paws against glass while a constellation-projecting telescope casts a star map and a colossal projected statue opens glowing eyes behind him. The whale-sized shadow of the falling pursuer crosses the planet window, while the glass reflection clearly reveals a tiny drone operator as the true culprit. Event is the peak awakening; outcome is the readable culprit reveal. Strong scale, iconic skyline silhouette, telescope, shadow, expression, and decisive gesture. dark caped nocturnal vigilante detective hero, rain-soaked, dark, weighty cinematic tone, no exact emblem, one decisive action, safe compositing and transparent support, realistic paw pads, reflections, wet fur, no danger. hero_expression_en is tongue-out blep; hero_body_language_en is both paws pressed against glass. No logos, text, watermark, UI, famous artwork, franchise design, cartoon, illustration, 3D render, plastic fur, malformed anatomy, duplicate limbs, human features.\nRequired assigned visual details: rainy rooftop; no official logo, no exact emblem, no exact costume copy."
+      }
+    ],
+    "story_id": "20260829165452-01-7a7adb8b",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The statue opens its eyes\nA rooftop detective follows a reflection that turns a cosmic chase into an impossible rescue.\n#CatCinema #NeonMystery #OrbitalRescue",
+  "media_paths": [
+    "public/posts/2026-08-29/slot_02/20260829165452-01-7a7adb8b/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-29/slot_02/20260829165452-01-7a7adb8b"
+}

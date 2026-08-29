@@ -1,3 +1,1084 @@
 {
-  "stories": []
+  "stories": [
+    {
+      "title_ko": "궤도 망원경의 범인",
+      "hook": "The statue opens its eyes",
+      "caption_explanation_en": "A rooftop detective follows a reflection that turns a cosmic chase into an impossible rescue.",
+      "hashtags": [
+        "#CatCinema",
+        "#NeonMystery",
+        "#OrbitalRescue"
+      ],
+      "hero_expression_en": "tongue-out blep",
+      "hero_body_language_en": "both paws pressed against glass",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW009",
+          "name_en": "Neon megacity rooftop",
+          "concept_en": "a rain-soaked future megacity of towering neon architecture",
+          "category_ko": "HIGH_CONCEPT/worlds"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE020",
+          "name_en": "Colossal statue awakening",
+          "concept_en": "a statue's projected eyes open behind the hero",
+          "category_ko": "HIGH_CONCEPT/events"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO011",
+          "name_en": "the impossible reflection reveals the true culprit",
+          "concept_en": "the reflective surface delivers a readable visual answer",
+          "category_ko": "HIGH_CONCEPT/outcomes"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR002",
+          "name_en": "dark caped nocturnal vigilante detective hero",
+          "concept_en": "an original rain-soaked gothic rooftop guardian with no exact emblem",
+          "category_ko": "HIGH_CONCEPT/roles"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL003",
+          "name_en": "sunlit orbital observation deck",
+          "concept_en": "a clean station window overlooking a huge planet",
+          "category_ko": "HIGH_CONCEPT/locations"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP014",
+          "name_en": "constellation-projecting telescope",
+          "concept_en": "a massive instrument casting an original star map",
+          "category_ko": "HIGH_CONCEPT/props"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT010",
+          "name_en": "the hero must save the pursuer",
+          "concept_en": "the chase reverses into an unmistakable rescue",
+          "category_ko": "HIGH_CONCEPT/twists"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX006",
+          "name_en": "tongue-out blep",
+          "concept_en": "a brief natural tongue-out moment",
+          "category_ko": "HIGH_CONCEPT/expressions"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG002",
+          "name_en": "both paws pressed against glass",
+          "concept_en": "safe glass contact with realistic paw pads",
+          "category_ko": "HIGH_CONCEPT/gestures"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV013",
+          "name_en": "whale-sized shadow",
+          "concept_en": "a huge harmless silhouette crosses a luminous background",
+          "category_ko": "HIGH_CONCEPT/visual_hooks"
+        }
+      ],
+      "overview_ko": "비에 젖은 탐정 고양이가 우주 관측창의 반사 속 진짜 범인을 구한다.",
+      "continuity_ko": "주인공의 고정된 치즈태비 외형과 어두운 망토 실루엣을 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "태양빛이 쏟아지는 궤도 관측 데크",
+        "core_prop_ko": "별자리 투사 망원경",
+        "twist_ko": "추격자가 행성 가장자리에서 미끄러져 구조를 기다림",
+        "outcome_ko": "반사면 속 작은 드론 조종자가 범인으로 드러남",
+        "camera_setups": [
+          "35mm rain-slick rooftop-to-orbit match cut, low three-quarter angle"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "35mm low three-quarter viewpoint through rain-covered orbital glass",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable blockbuster poster. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The scene visibly combines Neon megacity rooftop, Colossal statue awakening, the impossible reflection reveals the true culprit, dark caped nocturnal vigilante detective hero, sunlit orbital observation deck, constellation-projecting telescope, the hero must save the pursuer, tongue-out blep, both paws pressed against glass, and whale-sized shadow. Rainy gothic rooftop shadows surround a clean orbital observation deck; the cat presses both paws against glass while a constellation-projecting telescope casts a star map and a colossal projected statue opens glowing eyes behind him. The whale-sized shadow of the falling pursuer crosses the planet window, while the glass reflection clearly reveals a tiny drone operator as the true culprit. Event is the peak awakening; outcome is the readable culprit reveal. Strong scale, iconic skyline silhouette, telescope, shadow, expression, and decisive gesture. dark caped nocturnal vigilante detective hero, rain-soaked, dark, weighty cinematic tone, no exact emblem, one decisive action, safe compositing and transparent support, realistic paw pads, reflections, wet fur, no danger. hero_expression_en is tongue-out blep; hero_body_language_en is both paws pressed against glass. No logos, text, watermark, UI, famous artwork, franchise design, cartoon, illustration, 3D render, plastic fur, malformed anatomy, duplicate limbs, human features.\nRequired assigned visual details: rainy rooftop; no official logo, no exact emblem, no exact costume copy."
+        }
+      ],
+      "story_id": "20260829165452-01-7a7adb8b",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "휘어진 탑의 새벽",
+      "hook": "The tower bends toward the cat",
+      "caption_explanation_en": "A tech defender catches a falling museum tower and accidentally turns disaster into sunrise spectacle.",
+      "hashtags": [
+        "#FelineHero",
+        "#TimeLab",
+        "#SunriseSpectacle"
+      ],
+      "hero_expression_en": "tongue sweeping across the nose",
+      "hero_body_language_en": "giant bracing stance",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW010",
+          "name_en": "Time-machine laboratory",
+          "concept_en": "a brass-and-glass laboratory where time ripples are visible",
+          "category_ko": "HIGH_CONCEPT/worlds"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE001",
+          "name_en": "Leaning tower rescue",
+          "concept_en": "the hero braces a leaning landmark before it falls in a VFX set",
+          "category_ko": "HIGH_CONCEPT/events"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO012",
+          "name_en": "the collapsing set becomes a sunrise stage",
+          "concept_en": "debris clears into a surprising warm celebratory reveal",
+          "category_ko": "HIGH_CONCEPT/outcomes"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR003",
+          "name_en": "armored billionaire-tech defender hero",
+          "concept_en": "an original flying high-tech rescue suit with no exact costume copy",
+          "category_ko": "HIGH_CONCEPT/roles"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL004",
+          "name_en": "flooded museum grand hall",
+          "concept_en": "a recognizable gallery transformed by shallow theatrical water",
+          "category_ko": "HIGH_CONCEPT/locations"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP015",
+          "name_en": "red theatrical countdown light",
+          "concept_en": "a simple non-text light cue that instantly signals urgency",
+          "category_ko": "HIGH_CONCEPT/props"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT011",
+          "name_en": "the landmark bends like a spring",
+          "concept_en": "a rigid structure becomes a controlled elastic VFX gag",
+          "category_ko": "HIGH_CONCEPT/twists"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX007",
+          "name_en": "tongue sweeping across the nose",
+          "concept_en": "a natural feline nose-lick",
+          "category_ko": "HIGH_CONCEPT/expressions"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG003",
+          "name_en": "giant bracing stance",
+          "concept_en": "wide grounded stance supporting a VFX-scale structure",
+          "category_ko": "HIGH_CONCEPT/gestures"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV014",
+          "name_en": "skyscraper canyon frame",
+          "concept_en": "towering buildings frame a central rescue moment",
+          "category_ko": "HIGH_CONCEPT/visual_hooks"
+        }
+      ],
+      "overview_ko": "고양이 기술 수호자가 물에 잠긴 박물관의 탄성 탑을 붙잡아 새벽 무대로 바꾼다.",
+      "continuity_ko": "밝은 청록과 금색의 독창적 테크 수트를 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "얕은 물이 찬 박물관 중앙홀",
+        "core_prop_ko": "붉은 극장식 카운트다운 램프",
+        "twist_ko": "탑이 고무처럼 휘어 고양이 쪽으로 되돌아옴",
+        "outcome_ko": "잔해가 걷히고 햇빛 무대와 관객석이 드러남",
+        "camera_setups": [
+          "24mm submerged floor-level wide angle facing the spring-bending tower"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "24mm floor-level wide angle with shallow water reflections",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a flooded museum grand hall inside a Time-machine laboratory, an armored billionaire-tech defender hero in bright, clearly separated suit colors plants a giant bracing stance against a leaning tower while a red theatrical countdown light flashes. The tower bends like a spring in safe VFX, water ripples, and a skyscraper canyon frame of towering gallery structures surrounds the cat. Outcome: the collapsed debris clears into a golden sunrise stage, visibly different from the rescue. Include Leaning tower rescue, collapsing set becomes a sunrise stage, tongue sweeping across the nose, giant bracing stance, skyscraper canyon frame, and one decisive action. The scene is a safe staged set with transparent supports, no exact costume copy, no official logo, realistic anatomy, shadows, wet reflections, crisp foreground, cinematic rim light, and deep depth of field. No text, watermark, UI, cartoon, illustration, 3D render, plastic fur, duplicate cats, malformed limbs, human features.\nRequired assigned visual details: the collapsing set becomes a sunrise stage; the landmark bends like a spring; flight; no official logo, no exact emblem, no exact costume copy."
+        }
+      ],
+      "story_id": "20260829165452-02-e4727a5d",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "벽화 열차의 응급품",
+      "hook": "The miniature train breaks loose",
+      "caption_explanation_en": "A thunder warrior halts a runaway train, revealing that the chase was an urgent medicine delivery.",
+      "hashtags": [
+        "#ThunderCat",
+        "#PortalCinema",
+        "#RescueTwist"
+      ],
+      "hero_expression_en": "wink-like one-eye squint",
+      "hero_body_language_en": "dramatic wall cling",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW011",
+          "name_en": "Renaissance museum portal",
+          "concept_en": "a museum gallery where a fresco-like world becomes a real film set",
+          "category_ko": "HIGH_CONCEPT/worlds"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE002",
+          "name_en": "Runaway train interception",
+          "concept_en": "the hero stops a runaway miniature train with cinematic forced perspective",
+          "category_ko": "HIGH_CONCEPT/events"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO013",
+          "name_en": "the pursued hero was carrying emergency medicine",
+          "concept_en": "the chase resolves as the package reaches its rescue target",
+          "category_ko": "HIGH_CONCEPT/outcomes"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR004",
+          "name_en": "thunder-god cosmic warrior hero",
+          "concept_en": "an original lightning-charged cosmic rescuer among shattered ruins",
+          "category_ko": "HIGH_CONCEPT/roles"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL005",
+          "name_en": "bioluminescent trench observation dome",
+          "concept_en": "a safe transparent chamber surrounded by deep-ocean light",
+          "category_ko": "HIGH_CONCEPT/locations"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP001",
+          "name_en": "cracked glowing rescue beacon",
+          "concept_en": "an oversized beacon whose fracture reveals the urgent signal",
+          "category_ko": "HIGH_CONCEPT/props"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT012",
+          "name_en": "the portal is no larger than one white paw",
+          "concept_en": "the tiny opening forces a precise exaggerated gesture",
+          "category_ko": "HIGH_CONCEPT/twists"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX008",
+          "name_en": "wink-like one-eye squint",
+          "concept_en": "a believable asymmetric feline eye closure",
+          "category_ko": "HIGH_CONCEPT/expressions"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG004",
+          "name_en": "dramatic wall cling",
+          "concept_en": "a safe low-set wall grip using invisible support",
+          "category_ko": "HIGH_CONCEPT/gestures"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV015",
+          "name_en": "museum world split",
+          "concept_en": "a gallery frame divides the real set from a painted-looking world",
+          "category_ko": "HIGH_CONCEPT/visual_hooks"
+        }
+      ],
+      "overview_ko": "벽화와 심해 돔이 갈라진 순간 번개 전사가 열차를 멈추고 약을 전달한다.",
+      "continuity_ko": "청색과 은색의 밝고 분리된 우주 전사 색상과 번개 효과를 고정한다.",
+      "creative_fingerprint": {
+        "location_ko": "생명광이 흐르는 심해 관측 돔",
+        "core_prop_ko": "금이 간 발광 구조 신호기",
+        "twist_ko": "포털이 흰 발 하나만 통과할 만큼 작음",
+        "outcome_ko": "열차 안 응급 의약품이 돔의 구조 대상에게 도착함",
+        "camera_setups": [
+          "32mm split-diopter view dividing fresco gallery and glowing trench dome"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "32mm split-diopter close-wide from floor beside the portal",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a Renaissance museum portal split with a bioluminescent trench observation dome, the thunder-god cosmic warrior hero performs a dramatic wall cling and catches a runaway miniature train beside a cracked glowing rescue beacon. A tiny portal no larger than one white paw explains the precise pose; lightning, wet blue light, flying train wheels, and a museum world split make the event legible. Outcome: the pursued hero was carrying emergency medicine, and the package visibly reaches a small safe medical pod. Include Runaway train interception, the pursued hero was carrying emergency medicine, the portal is no larger than one white paw, wink-like one-eye squint, dramatic wall cling, museum world split, one decisive action, bright, clearly separated suit colors, and no exact costume copy. Safe invisible supports, realistic paw pads, no danger, no logos, no text, no famous artwork, no cartoon or 3D render, no duplicate limbs.\nRequired assigned visual details: lightning storm; no official logo, no exact emblem, no exact costume copy."
+        }
+      ],
+      "story_id": "20260829165452-03-5ae68c23",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "사막 파도의 역전",
+      "hook": "The water wall fills the shrine",
+      "caption_explanation_en": "A speedster shields a miniature city while startled witnesses reveal the enormous monster is an ally.",
+      "hashtags": [
+        "#SpeedsterCat",
+        "#TempleStorm",
+        "#TinyWitnesses"
+      ],
+      "hero_expression_en": "guilty caught-in-the-act expression",
+      "hero_body_language_en": "upside-down hang",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW012",
+          "name_en": "Ancient Egyptian discovery",
+          "concept_en": "a torchlit temple chamber with monumental carved stone guardians",
+          "category_ko": "HIGH_CONCEPT/worlds"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE003",
+          "name_en": "Tidal wave shield",
+          "concept_en": "the hero protects a tiny city from a theatrical water-wall effect",
+          "category_ko": "HIGH_CONCEPT/events"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO014",
+          "name_en": "the monster bows to the fearless cat",
+          "concept_en": "the towering silhouette changes from threat to respectful ally",
+          "category_ko": "HIGH_CONCEPT/outcomes"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR005",
+          "name_en": "speedster in aerodynamic bodysuit",
+          "concept_en": "an original high-speed rescuer framed by motion streaks",
+          "category_ko": "HIGH_CONCEPT/roles"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL006",
+          "name_en": "wind-battered suspension bridge tower",
+          "concept_en": "a controlled rescue set high over a miniature city",
+          "category_ko": "HIGH_CONCEPT/locations"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP002",
+          "name_en": "unbranded aerodynamic hero shield",
+          "concept_en": "an original practical shield with no official emblem",
+          "category_ko": "HIGH_CONCEPT/props"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT013",
+          "name_en": "the crowd is made of distinct supporting cats",
+          "concept_en": "random cats become readable witnesses without competing with the protagonist",
+          "category_ko": "HIGH_CONCEPT/twists"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX009",
+          "name_en": "guilty caught-in-the-act expression",
+          "concept_en": "wide alert eyes and a tense little muzzle",
+          "category_ko": "HIGH_CONCEPT/expressions"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG005",
+          "name_en": "upside-down hang",
+          "concept_en": "a playful supported film-set pose without strain",
+          "category_ko": "HIGH_CONCEPT/gestures"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV001",
+          "name_en": "colossal landmark scale",
+          "concept_en": "the hero is huge beside a famous-looking but original landmark",
+          "category_ko": "HIGH_CONCEPT/visual_hooks"
+        }
+      ],
+      "overview_ko": "고속 전사가 거대한 물벽을 막는 동안 서로 다른 고양이 관중이 괴수의 진짜 의도를 본다.",
+      "continuity_ko": "밝고 분리된 적색과 청색 공기역학 수트, 네 발의 실제 해부학을 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "바람 부는 현수교 주탑 위의 미니어처 도시",
+        "core_prop_ko": "무문양 공기역학 영웅 방패",
+        "twist_ko": "겁먹은 관중은 모두 서로 다른 고양이들",
+        "outcome_ko": "거대한 괴수 실루엣이 고양이에게 고개 숙임",
+        "camera_setups": [
+          "18mm inverted crane from beneath the safe bridge miniature"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "18mm inverted crane viewpoint with frozen water-wall streaks",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable blockbuster action frame. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In an Ancient Egyptian discovery temple chamber fused with a wind-battered suspension bridge tower, the speedster in aerodynamic bodysuit hangs upside-down in a safe supported film-set pose while deflecting a theatrical tidal wave shield toward a miniature city. Bright, clearly separated suit colors, motion streaks, torchlit guardians, colossal landmark scale, and two distinct supporting cats in the crowd create readable impact. Event is the water wall striking; outcome is the monster bows to the fearless cat, visibly becoming an ally. Include Tidal wave shield, monster bows to the fearless cat, the crowd is made of distinct supporting cats, guilty caught-in-the-act expression, upside-down hang, colossal landmark scale, one decisive action, no official logo, safe VFX water, realistic fur and reflections. No text, watermark, franchise design, cartoon, illustration, 3D render, plastic fur, duplicate cats, malformed anatomy, or human features.\nRequired assigned visual details: unbranded aerodynamic hero shield; no official logo, no exact emblem, no exact costume copy."
+        }
+      ],
+      "story_id": "20260829165452-04-71c894f3",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "구름 정원의 발자국",
+      "hook": "The telescope catches a falling star",
+      "caption_explanation_en": "A mystic protector faces a crystal blast that transforms into flowers before one paw shuts the machine down.",
+      "hashtags": [
+        "#MysticCat",
+        "#CloudGarden",
+        "#FlowerStorm"
+      ],
+      "hero_expression_en": "intense suspicious side-eye",
+      "hero_body_language_en": "heroic low crouch",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW013",
+          "name_en": "Roman arena spectacle",
+          "concept_en": "a colossal ancient arena rebuilt as a safe cinematic set"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE004",
+          "name_en": "Giant telescope activation",
+          "concept_en": "a colossal telescope opens toward a strange new constellation"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO015",
+          "name_en": "one tiny pawprint stops the machine",
+          "concept_en": "a precise feline action visibly shuts down the oversized device"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR006",
+          "name_en": "mystical sorcerer protector with cloak and glowing power accents",
+          "concept_en": "an original dimensional guardian using geometric portals"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL007",
+          "name_en": "flower-filled cloud garden",
+          "concept_en": "a dreamlike garden suspended among soft moving clouds"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP003",
+          "name_en": "transparent emergency cable spool",
+          "concept_en": "a clearly safe support cable used as a readable action device"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT014",
+          "name_en": "the explosion becomes a storm of flowers",
+          "concept_en": "the expected impact transforms into harmless cinematic petals"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX010",
+          "name_en": "intense suspicious side-eye",
+          "concept_en": "sideward gaze with focused whiskers"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG006",
+          "name_en": "heroic low crouch",
+          "concept_en": "a powerful low balanced launch posture"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV002",
+          "name_en": "miniature city foreground",
+          "concept_en": "a detailed tiny city surrounds the normal-sized hero through forced perspective"
+        }
+      ],
+      "overview_ko": "구름 정원의 거대 망원경이 폭발하지만 꽃비가 되고 고양이의 한 발자국이 기계를 멈춘다.",
+      "continuity_ko": "밝고 분리된 보라색과 금색의 독창적 망토와 기하학 광원을 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "꽃과 구름 사이에 떠 있는 고대 경기장 정원",
+        "core_prop_ko": "투명 비상 케이블 릴",
+        "twist_ko": "수정 폭발이 무해한 꽃잎 폭풍으로 변함",
+        "outcome_ko": "한 발자국이 거대 망원경의 빛을 끔",
+        "camera_setups": [
+          "21mm macro-to-wide forced perspective from miniature arena street"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "21mm macro-to-wide forced perspective from the tiny city foreground",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a Roman arena spectacle transformed into a flower-filled cloud garden, the mystical sorcerer protector with cloak and glowing power accents crouches beside a giant telescope activation. A transparent emergency cable spool arcs around the safe rig as a strange constellation erupts, then the explosion becomes a storm of flowers. The cat's single pawprint visibly lands on a glowing control plate and shuts the machine down. Include Giant telescope activation, one tiny pawprint stops the machine, the explosion becomes a storm of flowers, intense suspicious side-eye, heroic low crouch, miniature city foreground, one decisive action, bright, clearly separated suit colors, no exact costume copy. Strong scale, petals, arena silhouette, portal geometry, and clean depth separation; safe compositing, no danger, no logos, no text, no cartoon, no illustration, no 3D render, no malformed anatomy.\nRequired assigned visual details: no official logo, no exact emblem, no exact costume copy."
+        }
+      ],
+      "story_id": "20260829165452-05-64302dfc",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "부엌의 시간 나침반",
+      "hook": "The compass freezes the morning",
+      "caption_explanation_en": "A shield hero spins through a dawn kitchen while a nose reflection identifies the hidden culprit.",
+      "hashtags": [
+        "#ShieldCat",
+        "#TimeCompass",
+        "#KitchenMystery"
+      ],
+      "hero_expression_en": "triumphant heroic expression",
+      "hero_body_language_en": "mid-air twist",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW014",
+          "name_en": "Medieval sky castle",
+          "concept_en": "a stormy castle courtyard high above clouds using VFX scale"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE005",
+          "name_en": "Ancient vault opening",
+          "concept_en": "a treasure vault opens to reveal a glowing impossible horizon"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO001",
+          "name_en": "the rescued crowd erupts in celebration",
+          "concept_en": "the danger resolves as tiny witnesses visibly cheer"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR007",
+          "name_en": "patriotic shield-bearing symbol hero",
+          "concept_en": "an original rescue leader with an unbranded defensive shield"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL008",
+          "name_en": "cramped apartment kitchen at dawn",
+          "concept_en": "an ordinary realistic home made strange by one impossible event"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP004",
+          "name_en": "floating brass time compass",
+          "concept_en": "a mechanical compass projecting visible arcs of reversed time"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT015",
+          "name_en": "the culprit is hidden in the cat's pink-nose reflection",
+          "concept_en": "an extreme optical clue preserves the canonical face"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX011",
+          "name_en": "triumphant heroic expression",
+          "concept_en": "bright determined eyes and proud relaxed whiskers"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG007",
+          "name_en": "mid-air twist",
+          "concept_en": "a safe composited airborne turn with natural anatomy"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV003",
+          "name_en": "poster-like central silhouette",
+          "concept_en": "central hero framing with cinematic backlight and no text"
+        }
+      ],
+      "overview_ko": "새벽 부엌에 열린 하늘성 금고를 막으며 고양이는 코 반사 속 범인을 찾아낸다.",
+      "continuity_ko": "밝고 분리된 청색과 금색 방패 영웅 장비, 무문양 방패를 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "해 뜨기 직전의 비좁은 아파트 부엌",
+        "core_prop_ko": "공중에 뜬 황동 시간 나침반",
+        "twist_ko": "분홍 코 반사에만 범인의 얼굴이 보임",
+        "outcome_ko": "작은 구조 대상들이 부엌 식탁에서 환호함",
+        "camera_setups": [
+          "40mm eye-level orbit around a safe composited mid-air kitchen spin"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "40mm eye-level orbital camera around the airborne protagonist",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable poster composition. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a cramped apartment kitchen at dawn invaded by a medieval sky castle vault opening, the patriotic shield-bearing symbol hero performs a mid-air twist while gripping an unbranded shield beside a floating brass time compass. Reversed-time arcs freeze cups and harmless crumbs; a poster-like central silhouette and warm dawn backlight make the event clear. The culprit is hidden in the cat's pink-nose reflection, while the rescued crowd erupts in celebration in the kitchen doorway. Include Ancient vault opening, the rescued crowd erupts in celebration, the culprit is hidden in the cat's pink-nose reflection, triumphant heroic expression, mid-air twist, poster-like central silhouette, one decisive action, bright, clearly separated suit colors, no exact emblem, safe wire compositing, realistic paws and reflections. No text, logo, watermark, famous artwork, franchise design, cartoon, illustration, 3D render, plastic fur, duplicate limbs, or human features.\nRequired assigned visual details: no official logo, no exact emblem, no exact costume copy."
+        }
+      ],
+      "story_id": "20260829165452-06-48d41635",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "사막문을 빠져나온 버스",
+      "hook": "The portal tears behind the ship",
+      "caption_explanation_en": "A mythic warrior recoils from a portal as floating debris reveals the apparent villain is the one who needs saving.",
+      "hashtags": [
+        "#WarriorCat",
+        "#PortalRescue",
+        "#DesertCinema"
+      ],
+      "hero_expression_en": "chaotic excited open-mouth face",
+      "hero_body_language_en": "sudden backward recoil",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW015",
+          "name_en": "Pirate flagship at dusk",
+          "concept_en": "a grand explorer ship on a theatrical storm-lit sea set"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE006",
+          "name_en": "Cosmic portal rupture",
+          "concept_en": "a safe circular portal tears open behind the hero"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO002",
+          "name_en": "the apparent villain becomes the rescue target",
+          "concept_en": "the confrontation flips into an unmistakable last-second rescue"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR008",
+          "name_en": "Amazonian warrior protector hero",
+          "concept_en": "an original mythic warrior rescuer with no franchise insignia"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL009",
+          "name_en": "ancient desert temple threshold",
+          "concept_en": "a monumental doorway with dust rays and carved guardians"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP005",
+          "name_en": "miniature evacuation bus",
+          "concept_en": "a detailed tiny vehicle that makes the rescue stakes immediate"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT001",
+          "name_en": "gravity reverses only around the protagonist",
+          "concept_en": "loose objects rise while the hero remains firmly grounded"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX012",
+          "name_en": "chaotic excited open-mouth face",
+          "concept_en": "an animated but anatomically plausible open-mouth reaction"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG008",
+          "name_en": "sudden backward recoil",
+          "concept_en": "a balanced startled hop on a safe set"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV004",
+          "name_en": "near-touching paw homage",
+          "concept_en": "a cat paw nearly touches a human hand in an original fresco-inspired composition"
+        }
+      ],
+      "overview_ko": "황혼의 해적선과 사막 신전 사이에서 전사가 포털 너머의 악당을 구조 대상으로 맞이한다.",
+      "continuity_ko": "비에 젖은 어둡고 무게감 있는 신화 전사 톤과 무문양 장비를 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "폭풍빛이 비치는 고대 사막 신전 입구",
+        "core_prop_ko": "미니어처 대피 버스",
+        "twist_ko": "고양이 주변에서만 중력이 거꾸로 흐름",
+        "outcome_ko": "위협적인 인물이 버스 안에서 구조를 기다림",
+        "camera_setups": [
+          "28mm chest-height diagonal through temple dust and pirate-deck portal"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "28mm chest-height diagonal viewpoint through the monumental doorway",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable blockbuster frame. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. At an ancient desert temple threshold connected by a cosmic portal rupture to a pirate flagship at dusk, the Amazonian warrior protector hero makes a sudden backward recoil as a miniature evacuation bus flies safely upward around him. Gravity reverses only around the protagonist: sand, ropes, and harmless debris float while his paws remain grounded. A near-touching paw homage composition points toward a frightened apparent villain inside the bus. Event is the portal rupture; outcome is the apparent villain becomes the rescue target. Include chaotic excited open-mouth face, sudden backward recoil, miniature evacuation bus, one decisive action, rain-soaked, dark, weighty cinematic tone, no franchise insignia, safe staged VFX, no logos, no text, no cartoon, no illustration, no 3D render, no animal distress, no malformed anatomy.\nRequired assigned visual details: battlefield rescue; no official logo, no exact emblem, no exact costume copy."
+        }
+      ],
+      "story_id": "20260829165452-07-29701622",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "네온 터널의 예고 그림자",
+      "hook": "The bridge drops under the beacon",
+      "caption_explanation_en": "A giant city protector braces a collapsing bridge while its shadow predicts the harmless reveal.",
+      "hashtags": [
+        "#GiantCat",
+        "#NoirTunnel",
+        "#ShadowClue"
+      ],
+      "hero_expression_en": "tiny roar",
+      "hero_body_language_en": "wide-legged defensive stance",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW016",
+          "name_en": "Noir detective city",
+          "concept_en": "a wet midnight city of rain, fog, and dramatic streetlight"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE007",
+          "name_en": "Bridge support rescue",
+          "concept_en": "the hero braces a collapsing bridge built as a controlled miniature set"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO003",
+          "name_en": "the giant threat is revealed as a harmless projection",
+          "concept_en": "the frightening scale collapses into a playful staged illusion"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR009",
+          "name_en": "giant-scale city protector",
+          "concept_en": "a guardian defending a miniature city through VFX scale"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL010",
+          "name_en": "neon subway service tunnel",
+          "concept_en": "a cinematic pursuit corridor with wet reflections and strong vanishing lines"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP006",
+          "name_en": "luminous geometric portal ring",
+          "concept_en": "an original circular device with non-franchise symbols"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT002",
+          "name_en": "the shadow acts one second ahead",
+          "concept_en": "a projected shadow visibly predicts the next danger"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX013",
+          "name_en": "tiny roar",
+          "concept_en": "a small dramatic feline roar without distress"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG009",
+          "name_en": "wide-legged defensive stance",
+          "concept_en": "four grounded paws and a dramatic protective posture"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV005",
+          "name_en": "impossible reflection",
+          "concept_en": "a physically explained reflection reveals a different scale or era"
+        }
+      ],
+      "overview_ko": "거대한 수호자가 네온 터널의 다리를 붙들지만 위협은 결국 빛의 투사로 축소된다.",
+      "continuity_ko": "비와 안개, 젖은 반사, 거대한 고양이와 미니어처 도시의 대비를 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "젖은 네온 지하철 정비 터널",
+        "core_prop_ko": "발광 기하학 포털 링",
+        "twist_ko": "그림자가 실제 행동보다 1초 먼저 움직임",
+        "outcome_ko": "괴수 규모가 어린이용 무해한 빛 투사로 작아짐",
+        "camera_setups": [
+          "18mm tunnel-center symmetrical view with reflective floor and portal ring"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "18mm centered tunnel perspective at miniature street height",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a Noir detective city and neon subway service tunnel, the giant-scale city protector holds a wide-legged defensive stance over a collapsing miniature bridge. A luminous geometric portal ring throws wet reflections across the floor; the cat gives a tiny roar while a whale-like giant shadow looms behind. The shadow acts one second ahead, visibly warning of the bridge break. The impossible reflection then reveals the giant threat as a harmless projection shrinking into a playful light image. Include Bridge support rescue, the giant threat is revealed as a harmless projection, tiny roar, wide-legged defensive stance, impossible reflection, one decisive action, safe miniature construction, forced perspective, realistic weight and shadows. No text, logos, watermark, franchise symbols, cartoon, illustration, 3D render, plastic fur, duplicate limbs, or human features."
+        }
+      ],
+      "story_id": "20260829165452-08-5c227869",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "폭풍 신전의 창문",
+      "hook": "The whale rises beside the shrine",
+      "caption_explanation_en": "A stealth infiltrator faces a whale-scale apparition while a living tabletop city restores the broken landmark.",
+      "hashtags": [
+        "#StealthCat",
+        "#WhaleShadow",
+        "#ShrineRescue"
+      ],
+      "hero_expression_en": "dramatically annoyed face",
+      "hero_body_language_en": "one paw dramatically raised",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW017",
+          "name_en": "Prehistoric valley",
+          "concept_en": "a giant prehistoric valley viewed through safe forced perspective"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE008",
+          "name_en": "Whale-scale encounter",
+          "concept_en": "a huge whale-like projection rises beside an observation window"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO004",
+          "name_en": "the broken landmark locks safely back into place",
+          "concept_en": "the structure visibly clicks into a stable restored position"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR010",
+          "name_en": "stealth museum infiltrator",
+          "concept_en": "a careful film-set operative using harmless theatrical tools"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL011",
+          "name_en": "storm-lit shattered mountain shrine",
+          "concept_en": "a high-altitude ruin framed by lightning and safe VFX debris"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP007",
+          "name_en": "giant cracked aquarium window",
+          "concept_en": "a safe layered set piece creating urgent scale without animal danger"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT003",
+          "name_en": "the enormous city is a living tabletop model",
+          "concept_en": "forced perspective reveals a practical miniature without weakening the stakes"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX014",
+          "name_en": "dramatically annoyed face",
+          "concept_en": "lowered lids and displeased feline body tension"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG010",
+          "name_en": "one paw dramatically raised",
+          "concept_en": "an upright decisive paw gesture"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV006",
+          "name_en": "towering storm wall",
+          "concept_en": "a theatrical storm wall creates immediate scale contrast"
+        }
+      ],
+      "overview_ko": "번개 치는 산악 신전에서 잠입 고양이가 거대한 고래 그림자와 마주하고 랜드마크를 복원한다.",
+      "continuity_ko": "검은 잠입 실루엣과 깨진 유리창, 안전한 강제 원근을 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "번개와 폭풍벽에 둘러싸인 산악 신전",
+        "core_prop_ko": "거대한 금 간 수족관 창",
+        "twist_ko": "거대 도시는 살아 움직이는 탁상 모형임",
+        "outcome_ko": "부서진 신전 랜드마크가 딸깍 소리와 함께 고정됨",
+        "camera_setups": [
+          "50mm compressed telephoto through layered aquarium glass toward the shrine"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "50mm compressed telephoto through the cracked aquarium window",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a Prehistoric valley viewed through safe forced perspective, the stealth museum infiltrator stands at a storm-lit shattered mountain shrine beside a giant cracked aquarium window. A whale-scale encounter rises as a harmless projection, its whale-sized silhouette crossing a towering storm wall; the cat makes one paw dramatically raised with a dramatically annoyed face. The enormous city is a living tabletop model, revealed by tiny moving streets below the glass. Outcome: the broken landmark locks safely back into place with visible mechanical alignment. Include Whale-scale encounter, broken landmark locks safely back into place, the enormous city is a living tabletop model, one paw dramatically raised, towering storm wall, one decisive action, safe VFX debris, transparent supports, realistic glass, no danger, no text, no logos, no cartoon, no illustration, no 3D render, no malformed anatomy."
+        }
+      ],
+      "story_id": "20260829165452-09-c68e6544",
+      "text_model_used": "gpt-5.6-luna"
+    },
+    {
+      "title_ko": "조각상과 수정 지도",
+      "hook": "The crystal falls through the museum",
+      "caption_explanation_en": "A pirate cartographer catches a meteor crystal, then watches the reflected rescue target choose him.",
+      "hashtags": [
+        "#CaptainCat",
+        "#CrystalCatch",
+        "#MuseumMagic"
+      ],
+      "hero_expression_en": "astonished silent gasp",
+      "hero_body_language_en": "hugging a giant prop",
+      "source_concepts": [
+        {
+          "role": "world",
+          "role_ko": "세계",
+          "id": "HCW018",
+          "name_en": "Classical sculpture museum",
+          "concept_en": "a marble museum where statues appear to awaken through projection"
+        },
+        {
+          "role": "event",
+          "role_ko": "사건",
+          "id": "HCE009",
+          "name_en": "Meteor crystal catch",
+          "concept_en": "the hero catches a falling glowing crystal in a controlled VFX moment"
+        },
+        {
+          "role": "outcome",
+          "role_ko": "결말",
+          "id": "HCO005",
+          "name_en": "the stolen artifact chooses the hero",
+          "concept_en": "the prop changes allegiance and glows around the protagonist"
+        },
+        {
+          "role": "role",
+          "role_ko": "역할",
+          "id": "HCR011",
+          "name_en": "pirate cartographer captain",
+          "concept_en": "an adventurous ship leader with an original map"
+        },
+        {
+          "role": "location",
+          "role_ko": "장소",
+          "id": "HCL012",
+          "name_en": "miniature coastal town square",
+          "concept_en": "a detailed tiny town that makes the protagonist visually colossal"
+        },
+        {
+          "role": "prop",
+          "role_ko": "소품",
+          "id": "HCP008",
+          "name_en": "wind-whipped blank rescue banner",
+          "concept_en": "a bold color shape with no text, logo, or official symbol"
+        },
+        {
+          "role": "twist",
+          "role_ko": "반전",
+          "id": "HCT004",
+          "name_en": "the rescue target is inside the reflection",
+          "concept_en": "the decisive action must cross a physically explained mirror boundary"
+        },
+        {
+          "role": "expression",
+          "role_ko": "표정",
+          "id": "HCX015",
+          "name_en": "astonished silent gasp",
+          "concept_en": "large eyes, parted mouth, and ears sharply forward"
+        },
+        {
+          "role": "gesture",
+          "role_ko": "몸짓",
+          "id": "HCG011",
+          "name_en": "hugging a giant prop",
+          "concept_en": "front paws wrapped around a harmless oversized practical prop"
+        },
+        {
+          "role": "visual_hook",
+          "role_ko": "시각 훅",
+          "id": "HCV007",
+          "name_en": "portal behind the hero",
+          "concept_en": "a luminous geometric portal frames the protagonist"
+        }
+      ],
+      "overview_ko": "거대한 항구 마을 광장에서 선장 고양이가 운석 수정을 붙잡고 반사 속 구조 대상을 구한다.",
+      "continuity_ko": "마블 조각상 홀과 작은 해안 마을의 강제 원근, 독창적 지도 선장을 유지한다.",
+      "creative_fingerprint": {
+        "location_ko": "미니어처 해안 마을이 펼쳐진 대리석 조각상 홀",
+        "core_prop_ko": "바람에 휘날리는 빈 구조 깃발",
+        "twist_ko": "구조 대상이 반사면 안에 갇혀 있음",
+        "outcome_ko": "도난 유물이 고양이를 선택해 황금빛을 두름",
+        "camera_setups": [
+          "30mm low dolly from miniature town square toward reflective marble portal"
+        ]
+      },
+      "images": [
+        {
+          "role": "HERO",
+          "camera_strategy": "30mm low dolly from the miniature town square toward a mirror boundary",
+          "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a Classical sculpture museum overlooking a miniature coastal town square, the pirate cartographer captain catches a falling glowing meteor crystal while hugging a giant wind-whipped blank rescue banner. A luminous geometric portal behind the hero frames the action, marble statues awaken through projection, and tiny buildings make the cat visually colossal. The rescue target is inside the reflection of a physically explained polished display panel; after the catch, the stolen artifact chooses the hero and glows around him. Include Meteor crystal catch, the stolen artifact chooses the hero, the rescue target is inside the reflection, astonished silent gasp, hugging a giant prop, portal behind the hero, one decisive action, safe controlled VFX, no text, no logo, no official symbol, no famous artwork, no franchise design, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate limbs."
+        }
+      ],
+      "story_id": "20260829165452-10-0917c1f2",
+      "text_model_used": "gpt-5.6-luna"
+    }
+  ]
 }
