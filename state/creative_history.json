@@ -1142,6 +1142,34 @@
         ]
       },
       "published_key": "2026-08-29:05"
+    },
+    {
+      "story_id": "20260827201344-10-d5ed42da",
+      "title_ko": "빙원 지붕의 일출 금고",
+      "hook": "The cable snaps over the ice",
+      "source_ids": [
+        "HCW008",
+        "HCE019",
+        "HCO010",
+        "HCR020",
+        "HCL002",
+        "HCP013",
+        "HCT009",
+        "HCX005",
+        "HCG001",
+        "HCV012"
+      ],
+      "axis_signature": "world:HCW008|event:HCE019|outcome:HCO010|role:HCR020|location:HCL002|prop:HCP013|twist:HCT009|expression:HCX005|gesture:HCG001|visual_hook:HCV012",
+      "creative_fingerprint": {
+        "location_ko": "자정의 고딕 옥상과 극지 빙원 균열 세트",
+        "core_prop_ko": "라벨 없는 밀봉 응급약 캡슐",
+        "twist_ko": "보물 금고 안에 물건 대신 내일의 일출이 있음",
+        "outcome_ko": "포털이 위험물을 안전하게 닫아 가둠",
+        "camera_setups": [
+          "85mm lens-through-cable close-up with sunrise portal bokeh"
+        ]
+      },
+      "published_key": "2026-08-29:01"
     }
   ]
 }
