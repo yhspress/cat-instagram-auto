@@ -1,0 +1,114 @@
+{
+  "title_ko": "사막 파도의 역전",
+  "hook": "The water wall fills the shrine",
+  "caption_explanation_en": "A speedster shields a miniature city while startled witnesses reveal the enormous monster is an ally.",
+  "hashtags": [
+    "#SpeedsterCat",
+    "#TempleStorm",
+    "#TinyWitnesses"
+  ],
+  "hero_expression_en": "guilty caught-in-the-act expression",
+  "hero_body_language_en": "upside-down hang",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW012",
+      "name_en": "Ancient Egyptian discovery",
+      "concept_en": "a torchlit temple chamber with monumental carved stone guardians",
+      "category_ko": "HIGH_CONCEPT/worlds"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE003",
+      "name_en": "Tidal wave shield",
+      "concept_en": "the hero protects a tiny city from a theatrical water-wall effect",
+      "category_ko": "HIGH_CONCEPT/events"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO014",
+      "name_en": "the monster bows to the fearless cat",
+      "concept_en": "the towering silhouette changes from threat to respectful ally",
+      "category_ko": "HIGH_CONCEPT/outcomes"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR005",
+      "name_en": "speedster in aerodynamic bodysuit",
+      "concept_en": "an original high-speed rescuer framed by motion streaks",
+      "category_ko": "HIGH_CONCEPT/roles"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL006",
+      "name_en": "wind-battered suspension bridge tower",
+      "concept_en": "a controlled rescue set high over a miniature city",
+      "category_ko": "HIGH_CONCEPT/locations"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP002",
+      "name_en": "unbranded aerodynamic hero shield",
+      "concept_en": "an original practical shield with no official emblem",
+      "category_ko": "HIGH_CONCEPT/props"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT013",
+      "name_en": "the crowd is made of distinct supporting cats",
+      "concept_en": "random cats become readable witnesses without competing with the protagonist",
+      "category_ko": "HIGH_CONCEPT/twists"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX009",
+      "name_en": "guilty caught-in-the-act expression",
+      "concept_en": "wide alert eyes and a tense little muzzle",
+      "category_ko": "HIGH_CONCEPT/expressions"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG005",
+      "name_en": "upside-down hang",
+      "concept_en": "a playful supported film-set pose without strain",
+      "category_ko": "HIGH_CONCEPT/gestures"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV001",
+      "name_en": "colossal landmark scale",
+      "concept_en": "the hero is huge beside a famous-looking but original landmark",
+      "category_ko": "HIGH_CONCEPT/visual_hooks"
+    }
+  ],
+  "overview_ko": "고속 전사가 거대한 물벽을 막는 동안 서로 다른 고양이 관중이 괴수의 진짜 의도를 본다.",
+  "continuity_ko": "밝고 분리된 적색과 청색 공기역학 수트, 네 발의 실제 해부학을 유지한다.",
+  "creative_fingerprint": {
+    "location_ko": "바람 부는 현수교 주탑 위의 미니어처 도시",
+    "core_prop_ko": "무문양 공기역학 영웅 방패",
+    "twist_ko": "겁먹은 관중은 모두 서로 다른 고양이들",
+    "outcome_ko": "거대한 괴수 실루엣이 고양이에게 고개 숙임",
+    "camera_setups": [
+      "18mm inverted crane from beneath the safe bridge miniature"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "18mm inverted crane viewpoint with frozen water-wall streaks",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable blockbuster action frame. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In an Ancient Egyptian discovery temple chamber fused with a wind-battered suspension bridge tower, the speedster in aerodynamic bodysuit hangs upside-down in a safe supported film-set pose while deflecting a theatrical tidal wave shield toward a miniature city. Bright, clearly separated suit colors, motion streaks, torchlit guardians, colossal landmark scale, and two distinct supporting cats in the crowd create readable impact. Event is the water wall striking; outcome is the monster bows to the fearless cat, visibly becoming an ally. Include Tidal wave shield, monster bows to the fearless cat, the crowd is made of distinct supporting cats, guilty caught-in-the-act expression, upside-down hang, colossal landmark scale, one decisive action, no official logo, safe VFX water, realistic fur and reflections. No text, watermark, franchise design, cartoon, illustration, 3D render, plastic fur, duplicate cats, malformed anatomy, or human features.\nRequired assigned visual details: unbranded aerodynamic hero shield; no official logo, no exact emblem, no exact costume copy."
+    }
+  ],
+  "story_id": "20260829165452-04-71c894f3",
+  "text_model_used": "gpt-5.6-luna"
+}
