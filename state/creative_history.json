@@ -1282,6 +1282,34 @@
         ]
       },
       "published_key": "2026-08-30:04"
+    },
+    {
+      "story_id": "20260829165452-05-64302dfc",
+      "title_ko": "구름 정원의 발자국",
+      "hook": "The telescope catches a falling star",
+      "source_ids": [
+        "HCW013",
+        "HCE004",
+        "HCO015",
+        "HCR006",
+        "HCL007",
+        "HCP003",
+        "HCT014",
+        "HCX010",
+        "HCG006",
+        "HCV002"
+      ],
+      "axis_signature": "world:HCW013|event:HCE004|outcome:HCO015|role:HCR006|location:HCL007|prop:HCP003|twist:HCT014|expression:HCX010|gesture:HCG006|visual_hook:HCV002",
+      "creative_fingerprint": {
+        "location_ko": "꽃과 구름 사이에 떠 있는 고대 경기장 정원",
+        "core_prop_ko": "투명 비상 케이블 릴",
+        "twist_ko": "수정 폭발이 무해한 꽃잎 폭풍으로 변함",
+        "outcome_ko": "한 발자국이 거대 망원경의 빛을 끔",
+        "camera_setups": [
+          "21mm macro-to-wide forced perspective from miniature arena street"
+        ]
+      },
+      "published_key": "2026-08-30:05"
     }
   ]
 }
