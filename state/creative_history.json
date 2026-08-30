@@ -1198,6 +1198,34 @@
         ]
       },
       "published_key": "2026-08-29:02"
+    },
+    {
+      "story_id": "20260829165452-02-e4727a5d",
+      "title_ko": "휘어진 탑의 새벽",
+      "hook": "The tower bends toward the cat",
+      "source_ids": [
+        "HCW010",
+        "HCE001",
+        "HCO012",
+        "HCR003",
+        "HCL004",
+        "HCP015",
+        "HCT011",
+        "HCX007",
+        "HCG003",
+        "HCV014"
+      ],
+      "axis_signature": "world:HCW010|event:HCE001|outcome:HCO012|role:HCR003|location:HCL004|prop:HCP015|twist:HCT011|expression:HCX007|gesture:HCG003|visual_hook:HCV014",
+      "creative_fingerprint": {
+        "location_ko": "얕은 물이 찬 박물관 중앙홀",
+        "core_prop_ko": "붉은 극장식 카운트다운 램프",
+        "twist_ko": "탑이 고무처럼 휘어 고양이 쪽으로 되돌아옴",
+        "outcome_ko": "잔해가 걷히고 햇빛 무대와 관객석이 드러남",
+        "camera_setups": [
+          "24mm submerged floor-level wide angle facing the spring-bending tower"
+        ]
+      },
+      "published_key": "2026-08-30:02"
     }
   ]
 }
