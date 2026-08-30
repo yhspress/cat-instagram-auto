@@ -1254,6 +1254,34 @@
         ]
       },
       "published_key": "2026-08-30:03"
+    },
+    {
+      "story_id": "20260829165452-04-71c894f3",
+      "title_ko": "사막 파도의 역전",
+      "hook": "The water wall fills the shrine",
+      "source_ids": [
+        "HCW012",
+        "HCE003",
+        "HCO014",
+        "HCR005",
+        "HCL006",
+        "HCP002",
+        "HCT013",
+        "HCX009",
+        "HCG005",
+        "HCV001"
+      ],
+      "axis_signature": "world:HCW012|event:HCE003|outcome:HCO014|role:HCR005|location:HCL006|prop:HCP002|twist:HCT013|expression:HCX009|gesture:HCG005|visual_hook:HCV001",
+      "creative_fingerprint": {
+        "location_ko": "바람 부는 현수교 주탑 위의 미니어처 도시",
+        "core_prop_ko": "무문양 공기역학 영웅 방패",
+        "twist_ko": "겁먹은 관중은 모두 서로 다른 고양이들",
+        "outcome_ko": "거대한 괴수 실루엣이 고양이에게 고개 숙임",
+        "camera_setups": [
+          "18mm inverted crane from beneath the safe bridge miniature"
+        ]
+      },
+      "published_key": "2026-08-30:04"
     }
   ]
 }
