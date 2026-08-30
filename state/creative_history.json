@@ -1226,6 +1226,34 @@
         ]
       },
       "published_key": "2026-08-30:02"
+    },
+    {
+      "story_id": "20260829165452-03-5ae68c23",
+      "title_ko": "벽화 열차의 응급품",
+      "hook": "The miniature train breaks loose",
+      "source_ids": [
+        "HCW011",
+        "HCE002",
+        "HCO013",
+        "HCR004",
+        "HCL005",
+        "HCP001",
+        "HCT012",
+        "HCX008",
+        "HCG004",
+        "HCV015"
+      ],
+      "axis_signature": "world:HCW011|event:HCE002|outcome:HCO013|role:HCR004|location:HCL005|prop:HCP001|twist:HCT012|expression:HCX008|gesture:HCG004|visual_hook:HCV015",
+      "creative_fingerprint": {
+        "location_ko": "생명광이 흐르는 심해 관측 돔",
+        "core_prop_ko": "금이 간 발광 구조 신호기",
+        "twist_ko": "포털이 흰 발 하나만 통과할 만큼 작음",
+        "outcome_ko": "열차 안 응급 의약품이 돔의 구조 대상에게 도착함",
+        "camera_setups": [
+          "32mm split-diopter view dividing fresco gallery and glowing trench dome"
+        ]
+      },
+      "published_key": "2026-08-30:03"
     }
   ]
 }
