@@ -1,0 +1,104 @@
+{
+  "title_ko": "부엌의 시간 나침반",
+  "hook": "The compass freezes the morning",
+  "caption_explanation_en": "A shield hero spins through a dawn kitchen while a nose reflection identifies the hidden culprit.",
+  "hashtags": [
+    "#ShieldCat",
+    "#TimeCompass",
+    "#KitchenMystery"
+  ],
+  "hero_expression_en": "triumphant heroic expression",
+  "hero_body_language_en": "mid-air twist",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW014",
+      "name_en": "Medieval sky castle",
+      "concept_en": "a stormy castle courtyard high above clouds using VFX scale"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE005",
+      "name_en": "Ancient vault opening",
+      "concept_en": "a treasure vault opens to reveal a glowing impossible horizon"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO001",
+      "name_en": "the rescued crowd erupts in celebration",
+      "concept_en": "the danger resolves as tiny witnesses visibly cheer"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR007",
+      "name_en": "patriotic shield-bearing symbol hero",
+      "concept_en": "an original rescue leader with an unbranded defensive shield"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL008",
+      "name_en": "cramped apartment kitchen at dawn",
+      "concept_en": "an ordinary realistic home made strange by one impossible event"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP004",
+      "name_en": "floating brass time compass",
+      "concept_en": "a mechanical compass projecting visible arcs of reversed time"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT015",
+      "name_en": "the culprit is hidden in the cat's pink-nose reflection",
+      "concept_en": "an extreme optical clue preserves the canonical face"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX011",
+      "name_en": "triumphant heroic expression",
+      "concept_en": "bright determined eyes and proud relaxed whiskers"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG007",
+      "name_en": "mid-air twist",
+      "concept_en": "a safe composited airborne turn with natural anatomy"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV003",
+      "name_en": "poster-like central silhouette",
+      "concept_en": "central hero framing with cinematic backlight and no text"
+    }
+  ],
+  "overview_ko": "새벽 부엌에 열린 하늘성 금고를 막으며 고양이는 코 반사 속 범인을 찾아낸다.",
+  "continuity_ko": "밝고 분리된 청색과 금색 방패 영웅 장비, 무문양 방패를 유지한다.",
+  "creative_fingerprint": {
+    "location_ko": "해 뜨기 직전의 비좁은 아파트 부엌",
+    "core_prop_ko": "공중에 뜬 황동 시간 나침반",
+    "twist_ko": "분홍 코 반사에만 범인의 얼굴이 보임",
+    "outcome_ko": "작은 구조 대상들이 부엌 식탁에서 환호함",
+    "camera_setups": [
+      "40mm eye-level orbit around a safe composited mid-air kitchen spin"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "40mm eye-level orbital camera around the airborne protagonist",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable poster composition. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a cramped apartment kitchen at dawn invaded by a medieval sky castle vault opening, the patriotic shield-bearing symbol hero performs a mid-air twist while gripping an unbranded shield beside a floating brass time compass. Reversed-time arcs freeze cups and harmless crumbs; a poster-like central silhouette and warm dawn backlight make the event clear. The culprit is hidden in the cat's pink-nose reflection, while the rescued crowd erupts in celebration in the kitchen doorway. Include Ancient vault opening, the rescued crowd erupts in celebration, the culprit is hidden in the cat's pink-nose reflection, triumphant heroic expression, mid-air twist, poster-like central silhouette, one decisive action, bright, clearly separated suit colors, no exact emblem, safe wire compositing, realistic paws and reflections. No text, logo, watermark, famous artwork, franchise design, cartoon, illustration, 3D render, plastic fur, duplicate limbs, or human features.\nRequired assigned visual details: no official logo, no exact emblem, no exact costume copy."
+    }
+  ],
+  "story_id": "20260829165452-06-48d41635",
+  "text_model_used": "gpt-5.6-luna"
+}
