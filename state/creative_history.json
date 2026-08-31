@@ -1394,6 +1394,34 @@
         ]
       },
       "published_key": "2026-08-31:03"
+    },
+    {
+      "story_id": "20260829165452-09-c68e6544",
+      "title_ko": "폭풍 신전의 창문",
+      "hook": "The whale rises beside the shrine",
+      "source_ids": [
+        "HCW017",
+        "HCE008",
+        "HCO004",
+        "HCR010",
+        "HCL011",
+        "HCP007",
+        "HCT003",
+        "HCX014",
+        "HCG010",
+        "HCV006"
+      ],
+      "axis_signature": "world:HCW017|event:HCE008|outcome:HCO004|role:HCR010|location:HCL011|prop:HCP007|twist:HCT003|expression:HCX014|gesture:HCG010|visual_hook:HCV006",
+      "creative_fingerprint": {
+        "location_ko": "번개와 폭풍벽에 둘러싸인 산악 신전",
+        "core_prop_ko": "거대한 금 간 수족관 창",
+        "twist_ko": "거대 도시는 살아 움직이는 탁상 모형임",
+        "outcome_ko": "부서진 신전 랜드마크가 딸깍 소리와 함께 고정됨",
+        "camera_setups": [
+          "50mm compressed telephoto through layered aquarium glass toward the shrine"
+        ]
+      },
+      "published_key": "2026-09-01:04"
     }
   ]
 }
