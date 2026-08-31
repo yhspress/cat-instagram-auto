@@ -1338,6 +1338,34 @@
         ]
       },
       "published_key": "2026-08-31:01"
+    },
+    {
+      "story_id": "20260829165452-07-29701622",
+      "title_ko": "사막문을 빠져나온 버스",
+      "hook": "The portal tears behind the ship",
+      "source_ids": [
+        "HCW015",
+        "HCE006",
+        "HCO002",
+        "HCR008",
+        "HCL009",
+        "HCP005",
+        "HCT001",
+        "HCX012",
+        "HCG008",
+        "HCV004"
+      ],
+      "axis_signature": "world:HCW015|event:HCE006|outcome:HCO002|role:HCR008|location:HCL009|prop:HCP005|twist:HCT001|expression:HCX012|gesture:HCG008|visual_hook:HCV004",
+      "creative_fingerprint": {
+        "location_ko": "폭풍빛이 비치는 고대 사막 신전 입구",
+        "core_prop_ko": "미니어처 대피 버스",
+        "twist_ko": "고양이 주변에서만 중력이 거꾸로 흐름",
+        "outcome_ko": "위협적인 인물이 버스 안에서 구조를 기다림",
+        "camera_setups": [
+          "28mm chest-height diagonal through temple dust and pirate-deck portal"
+        ]
+      },
+      "published_key": "2026-08-31:02"
     }
   ]
 }
