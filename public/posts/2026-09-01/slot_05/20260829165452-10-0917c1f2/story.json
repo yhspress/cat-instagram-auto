@@ -1,0 +1,104 @@
+{
+  "title_ko": "조각상과 수정 지도",
+  "hook": "The crystal falls through the museum",
+  "caption_explanation_en": "A pirate cartographer catches a meteor crystal, then watches the reflected rescue target choose him.",
+  "hashtags": [
+    "#CaptainCat",
+    "#CrystalCatch",
+    "#MuseumMagic"
+  ],
+  "hero_expression_en": "astonished silent gasp",
+  "hero_body_language_en": "hugging a giant prop",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW018",
+      "name_en": "Classical sculpture museum",
+      "concept_en": "a marble museum where statues appear to awaken through projection"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE009",
+      "name_en": "Meteor crystal catch",
+      "concept_en": "the hero catches a falling glowing crystal in a controlled VFX moment"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO005",
+      "name_en": "the stolen artifact chooses the hero",
+      "concept_en": "the prop changes allegiance and glows around the protagonist"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR011",
+      "name_en": "pirate cartographer captain",
+      "concept_en": "an adventurous ship leader with an original map"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL012",
+      "name_en": "miniature coastal town square",
+      "concept_en": "a detailed tiny town that makes the protagonist visually colossal"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP008",
+      "name_en": "wind-whipped blank rescue banner",
+      "concept_en": "a bold color shape with no text, logo, or official symbol"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT004",
+      "name_en": "the rescue target is inside the reflection",
+      "concept_en": "the decisive action must cross a physically explained mirror boundary"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX015",
+      "name_en": "astonished silent gasp",
+      "concept_en": "large eyes, parted mouth, and ears sharply forward"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG011",
+      "name_en": "hugging a giant prop",
+      "concept_en": "front paws wrapped around a harmless oversized practical prop"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV007",
+      "name_en": "portal behind the hero",
+      "concept_en": "a luminous geometric portal frames the protagonist"
+    }
+  ],
+  "overview_ko": "거대한 항구 마을 광장에서 선장 고양이가 운석 수정을 붙잡고 반사 속 구조 대상을 구한다.",
+  "continuity_ko": "마블 조각상 홀과 작은 해안 마을의 강제 원근, 독창적 지도 선장을 유지한다.",
+  "creative_fingerprint": {
+    "location_ko": "미니어처 해안 마을이 펼쳐진 대리석 조각상 홀",
+    "core_prop_ko": "바람에 휘날리는 빈 구조 깃발",
+    "twist_ko": "구조 대상이 반사면 안에 갇혀 있음",
+    "outcome_ko": "도난 유물이 고양이를 선택해 황금빛을 두름",
+    "camera_setups": [
+      "30mm low dolly from miniature town square toward reflective marble portal"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "30mm low dolly from the miniature town square toward a mirror boundary",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a Classical sculpture museum overlooking a miniature coastal town square, the pirate cartographer captain catches a falling glowing meteor crystal while hugging a giant wind-whipped blank rescue banner. A luminous geometric portal behind the hero frames the action, marble statues awaken through projection, and tiny buildings make the cat visually colossal. The rescue target is inside the reflection of a physically explained polished display panel; after the catch, the stolen artifact chooses the hero and glows around him. Include Meteor crystal catch, the stolen artifact chooses the hero, the rescue target is inside the reflection, astonished silent gasp, hugging a giant prop, portal behind the hero, one decisive action, safe controlled VFX, no text, no logo, no official symbol, no famous artwork, no franchise design, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate limbs."
+    }
+  ],
+  "story_id": "20260829165452-10-0917c1f2",
+  "text_model_used": "gpt-5.6-luna"
+}
