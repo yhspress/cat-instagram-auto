@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-09-01:04",
+  "prepared_at": "2026-09-01T00:05:00.386309+09:00",
+  "slot": 4,
+  "story_id": "20260829165452-09-c68e6544",
+  "story": {
+    "title_ko": "폭풍 신전의 창문",
+    "hook": "The whale rises beside the shrine",
+    "caption_explanation_en": "A stealth infiltrator faces a whale-scale apparition while a living tabletop city restores the broken landmark.",
+    "hashtags": [
+      "#StealthCat",
+      "#WhaleShadow",
+      "#ShrineRescue"
+    ],
+    "hero_expression_en": "dramatically annoyed face",
+    "hero_body_language_en": "one paw dramatically raised",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW017",
+        "name_en": "Prehistoric valley",
+        "concept_en": "a giant prehistoric valley viewed through safe forced perspective"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE008",
+        "name_en": "Whale-scale encounter",
+        "concept_en": "a huge whale-like projection rises beside an observation window"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO004",
+        "name_en": "the broken landmark locks safely back into place",
+        "concept_en": "the structure visibly clicks into a stable restored position"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR010",
+        "name_en": "stealth museum infiltrator",
+        "concept_en": "a careful film-set operative using harmless theatrical tools"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL011",
+        "name_en": "storm-lit shattered mountain shrine",
+        "concept_en": "a high-altitude ruin framed by lightning and safe VFX debris"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP007",
+        "name_en": "giant cracked aquarium window",
+        "concept_en": "a safe layered set piece creating urgent scale without animal danger"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT003",
+        "name_en": "the enormous city is a living tabletop model",
+        "concept_en": "forced perspective reveals a practical miniature without weakening the stakes"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX014",
+        "name_en": "dramatically annoyed face",
+        "concept_en": "lowered lids and displeased feline body tension"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG010",
+        "name_en": "one paw dramatically raised",
+        "concept_en": "an upright decisive paw gesture"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV006",
+        "name_en": "towering storm wall",
+        "concept_en": "a theatrical storm wall creates immediate scale contrast"
+      }
+    ],
+    "overview_ko": "번개 치는 산악 신전에서 잠입 고양이가 거대한 고래 그림자와 마주하고 랜드마크를 복원한다.",
+    "continuity_ko": "검은 잠입 실루엣과 깨진 유리창, 안전한 강제 원근을 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "번개와 폭풍벽에 둘러싸인 산악 신전",
+      "core_prop_ko": "거대한 금 간 수족관 창",
+      "twist_ko": "거대 도시는 살아 움직이는 탁상 모형임",
+      "outcome_ko": "부서진 신전 랜드마크가 딸깍 소리와 함께 고정됨",
+      "camera_setups": [
+        "50mm compressed telephoto through layered aquarium glass toward the shrine"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "50mm compressed telephoto through the cracked aquarium window",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a Prehistoric valley viewed through safe forced perspective, the stealth museum infiltrator stands at a storm-lit shattered mountain shrine beside a giant cracked aquarium window. A whale-scale encounter rises as a harmless projection, its whale-sized silhouette crossing a towering storm wall; the cat makes one paw dramatically raised with a dramatically annoyed face. The enormous city is a living tabletop model, revealed by tiny moving streets below the glass. Outcome: the broken landmark locks safely back into place with visible mechanical alignment. Include Whale-scale encounter, broken landmark locks safely back into place, the enormous city is a living tabletop model, one paw dramatically raised, towering storm wall, one decisive action, safe VFX debris, transparent supports, realistic glass, no danger, no text, no logos, no cartoon, no illustration, no 3D render, no malformed anatomy."
+      }
+    ],
+    "story_id": "20260829165452-09-c68e6544",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The whale rises beside the shrine\nA stealth infiltrator faces a whale-scale apparition while a living tabletop city restores the broken landmark.\n#StealthCat #WhaleShadow #ShrineRescue",
+  "media_paths": [
+    "public/posts/2026-09-01/slot_04/20260829165452-09-c68e6544/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-09-01/slot_04/20260829165452-09-c68e6544"
+}
