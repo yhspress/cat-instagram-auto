@@ -1310,6 +1310,34 @@
         ]
       },
       "published_key": "2026-08-30:05"
+    },
+    {
+      "story_id": "20260829165452-06-48d41635",
+      "title_ko": "부엌의 시간 나침반",
+      "hook": "The compass freezes the morning",
+      "source_ids": [
+        "HCW014",
+        "HCE005",
+        "HCO001",
+        "HCR007",
+        "HCL008",
+        "HCP004",
+        "HCT015",
+        "HCX011",
+        "HCG007",
+        "HCV003"
+      ],
+      "axis_signature": "world:HCW014|event:HCE005|outcome:HCO001|role:HCR007|location:HCL008|prop:HCP004|twist:HCT015|expression:HCX011|gesture:HCG007|visual_hook:HCV003",
+      "creative_fingerprint": {
+        "location_ko": "해 뜨기 직전의 비좁은 아파트 부엌",
+        "core_prop_ko": "공중에 뜬 황동 시간 나침반",
+        "twist_ko": "분홍 코 반사에만 범인의 얼굴이 보임",
+        "outcome_ko": "작은 구조 대상들이 부엌 식탁에서 환호함",
+        "camera_setups": [
+          "40mm eye-level orbit around a safe composited mid-air kitchen spin"
+        ]
+      },
+      "published_key": "2026-08-31:01"
     }
   ]
 }
