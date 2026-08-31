@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-08-31:03",
+  "prepared_at": "2026-08-31T19:55:57.739508+09:00",
+  "slot": 3,
+  "story_id": "20260829165452-08-5c227869",
+  "story": {
+    "title_ko": "네온 터널의 예고 그림자",
+    "hook": "The bridge drops under the beacon",
+    "caption_explanation_en": "A giant city protector braces a collapsing bridge while its shadow predicts the harmless reveal.",
+    "hashtags": [
+      "#GiantCat",
+      "#NoirTunnel",
+      "#ShadowClue"
+    ],
+    "hero_expression_en": "tiny roar",
+    "hero_body_language_en": "wide-legged defensive stance",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW016",
+        "name_en": "Noir detective city",
+        "concept_en": "a wet midnight city of rain, fog, and dramatic streetlight"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE007",
+        "name_en": "Bridge support rescue",
+        "concept_en": "the hero braces a collapsing bridge built as a controlled miniature set"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO003",
+        "name_en": "the giant threat is revealed as a harmless projection",
+        "concept_en": "the frightening scale collapses into a playful staged illusion"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR009",
+        "name_en": "giant-scale city protector",
+        "concept_en": "a guardian defending a miniature city through VFX scale"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL010",
+        "name_en": "neon subway service tunnel",
+        "concept_en": "a cinematic pursuit corridor with wet reflections and strong vanishing lines"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP006",
+        "name_en": "luminous geometric portal ring",
+        "concept_en": "an original circular device with non-franchise symbols"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT002",
+        "name_en": "the shadow acts one second ahead",
+        "concept_en": "a projected shadow visibly predicts the next danger"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX013",
+        "name_en": "tiny roar",
+        "concept_en": "a small dramatic feline roar without distress"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG009",
+        "name_en": "wide-legged defensive stance",
+        "concept_en": "four grounded paws and a dramatic protective posture"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV005",
+        "name_en": "impossible reflection",
+        "concept_en": "a physically explained reflection reveals a different scale or era"
+      }
+    ],
+    "overview_ko": "거대한 수호자가 네온 터널의 다리를 붙들지만 위협은 결국 빛의 투사로 축소된다.",
+    "continuity_ko": "비와 안개, 젖은 반사, 거대한 고양이와 미니어처 도시의 대비를 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "젖은 네온 지하철 정비 터널",
+      "core_prop_ko": "발광 기하학 포털 링",
+      "twist_ko": "그림자가 실제 행동보다 1초 먼저 움직임",
+      "outcome_ko": "괴수 규모가 어린이용 무해한 빛 투사로 작아짐",
+      "camera_setups": [
+        "18mm tunnel-center symmetrical view with reflective floor and portal ring"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "18mm centered tunnel perspective at miniature street height",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. In a Noir detective city and neon subway service tunnel, the giant-scale city protector holds a wide-legged defensive stance over a collapsing miniature bridge. A luminous geometric portal ring throws wet reflections across the floor; the cat gives a tiny roar while a whale-like giant shadow looms behind. The shadow acts one second ahead, visibly warning of the bridge break. The impossible reflection then reveals the giant threat as a harmless projection shrinking into a playful light image. Include Bridge support rescue, the giant threat is revealed as a harmless projection, tiny roar, wide-legged defensive stance, impossible reflection, one decisive action, safe miniature construction, forced perspective, realistic weight and shadows. No text, logos, watermark, franchise symbols, cartoon, illustration, 3D render, plastic fur, duplicate limbs, or human features."
+      }
+    ],
+    "story_id": "20260829165452-08-5c227869",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The bridge drops under the beacon\nA giant city protector braces a collapsing bridge while its shadow predicts the harmless reveal.\n#GiantCat #NoirTunnel #ShadowClue",
+  "media_paths": [
+    "public/posts/2026-08-31/slot_03/20260829165452-08-5c227869/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-08-31/slot_03/20260829165452-08-5c227869"
+}
