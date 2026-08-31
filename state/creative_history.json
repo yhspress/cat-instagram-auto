@@ -1366,6 +1366,34 @@
         ]
       },
       "published_key": "2026-08-31:02"
+    },
+    {
+      "story_id": "20260829165452-08-5c227869",
+      "title_ko": "네온 터널의 예고 그림자",
+      "hook": "The bridge drops under the beacon",
+      "source_ids": [
+        "HCW016",
+        "HCE007",
+        "HCO003",
+        "HCR009",
+        "HCL010",
+        "HCP006",
+        "HCT002",
+        "HCX013",
+        "HCG009",
+        "HCV005"
+      ],
+      "axis_signature": "world:HCW016|event:HCE007|outcome:HCO003|role:HCR009|location:HCL010|prop:HCP006|twist:HCT002|expression:HCX013|gesture:HCG009|visual_hook:HCV005",
+      "creative_fingerprint": {
+        "location_ko": "젖은 네온 지하철 정비 터널",
+        "core_prop_ko": "발광 기하학 포털 링",
+        "twist_ko": "그림자가 실제 행동보다 1초 먼저 움직임",
+        "outcome_ko": "괴수 규모가 어린이용 무해한 빛 투사로 작아짐",
+        "camera_setups": [
+          "18mm tunnel-center symmetrical view with reflective floor and portal ring"
+        ]
+      },
+      "published_key": "2026-08-31:03"
     }
   ]
 }
