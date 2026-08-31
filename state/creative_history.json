@@ -1422,6 +1422,34 @@
         ]
       },
       "published_key": "2026-09-01:04"
+    },
+    {
+      "story_id": "20260829165452-10-0917c1f2",
+      "title_ko": "조각상과 수정 지도",
+      "hook": "The crystal falls through the museum",
+      "source_ids": [
+        "HCW018",
+        "HCE009",
+        "HCO005",
+        "HCR011",
+        "HCL012",
+        "HCP008",
+        "HCT004",
+        "HCX015",
+        "HCG011",
+        "HCV007"
+      ],
+      "axis_signature": "world:HCW018|event:HCE009|outcome:HCO005|role:HCR011|location:HCL012|prop:HCP008|twist:HCT004|expression:HCX015|gesture:HCG011|visual_hook:HCV007",
+      "creative_fingerprint": {
+        "location_ko": "미니어처 해안 마을이 펼쳐진 대리석 조각상 홀",
+        "core_prop_ko": "바람에 휘날리는 빈 구조 깃발",
+        "twist_ko": "구조 대상이 반사면 안에 갇혀 있음",
+        "outcome_ko": "도난 유물이 고양이를 선택해 황금빛을 두름",
+        "camera_setups": [
+          "30mm low dolly from miniature town square toward reflective marble portal"
+        ]
+      },
+      "published_key": "2026-09-01:05"
     }
   ]
 }
