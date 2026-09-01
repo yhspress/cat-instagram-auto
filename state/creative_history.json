@@ -1478,6 +1478,34 @@
         ]
       },
       "published_key": "2026-09-01:01"
+    },
+    {
+      "story_id": "20260901182812-01-326a0e84",
+      "title_ko": "하늘항의 비밀 금고",
+      "hook": "The laser vault snaps shut",
+      "source_ids": [
+        "HCW020",
+        "HCE011",
+        "HCO007",
+        "HCR013",
+        "HCL014",
+        "HCP010",
+        "HCT006",
+        "HCX002",
+        "HCG013",
+        "HCV009"
+      ],
+      "axis_signature": "world:HCW020|event:HCE011|outcome:HCO007|role:HCR013|location:HCL014|prop:HCP010|twist:HCT006|expression:HCX002|gesture:HCG013|visual_hook:HCV009",
+      "creative_fingerprint": {
+        "location_ko": "달빛 서고의 비행선 정박 발코니",
+        "core_prop_ko": "푸른 불꽃의 미니 동력핵",
+        "twist_ko": "거대 그림자는 새끼를 품은 보호자",
+        "outcome_ko": "라이벌 고양이가 마지막 부품을 끼워 금고가 안정됨",
+        "camera_setups": [
+          "32mm floor-level library view through laser beams, moonlit stained glass, sharp foreground core and wire silhouette"
+        ]
+      },
+      "published_key": "2026-09-01:03"
     }
   ]
 }
