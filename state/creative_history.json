@@ -1450,6 +1450,34 @@
         ]
       },
       "published_key": "2026-09-01:05"
+    },
+    {
+      "story_id": "20260901102008-01-e2cca31b",
+      "title_ko": "벽화 협곡의 한 발",
+      "hook": "The painted canyon bursts into the gallery",
+      "source_ids": [
+        "HCW019",
+        "HCE010",
+        "HCO006",
+        "HCR012",
+        "HCL013",
+        "HCP009",
+        "HCT005",
+        "HCX001",
+        "HCG012",
+        "HCV008"
+      ],
+      "axis_signature": "world:HCW019|event:HCE010|outcome:HCO006|role:HCR012|location:HCL013|prop:HCP009|twist:HCT005|expression:HCX001|gesture:HCG012|visual_hook:HCV008",
+      "creative_fingerprint": {
+        "location_ko": "서부 세트와 박물관 무대가 겹친 백스테이지",
+        "core_prop_ko": "한쪽 흰 발에 맞는 고대 돌 열쇠",
+        "twist_ko": "검은 턱시도 고양이 악당이 배신하고 열쇠를 밀어줌",
+        "outcome_ko": "바닥 아래 밝은 안전 통로가 열림",
+        "camera_setups": [
+          "14mm extreme low-angle floor view, supported ledge lean, deep canyon projection, foreground key and crisp escape hatch"
+        ]
+      },
+      "published_key": "2026-09-01:01"
     }
   ]
 }
