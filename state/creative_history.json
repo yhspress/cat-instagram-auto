@@ -1506,6 +1506,34 @@
         ]
       },
       "published_key": "2026-09-01:03"
+    },
+    {
+      "story_id": "20260902091643-01-64015ec9",
+      "title_ko": "토성 고리의 한 수염",
+      "hook": "The station beacon tears open",
+      "source_ids": [
+        "HCW001",
+        "HCE012",
+        "HCO008",
+        "HCR014",
+        "HCL015",
+        "HCP011",
+        "HCT007",
+        "HCX003",
+        "HCG014",
+        "HCV010"
+      ],
+      "axis_signature": "world:HCW001|event:HCE012|outcome:HCO008|role:HCR014|location:HCL015|prop:HCP011|twist:HCT007|expression:HCX003|gesture:HCG014|visual_hook:HCV010",
+      "creative_fingerprint": {
+        "location_ko": "토성 고리 궤도철도 승강장",
+        "core_prop_ko": "무너지는 거대 책 더미",
+        "twist_ko": "일상 벽 너머의 우주",
+        "outcome_ko": "한 수염 앞에서 모든 재난이 정지",
+        "camera_setups": [
+          "24mm ultra-low rail-platform angle, stretched foreground cat, Saturn horizon and frozen debris halo"
+        ]
+      },
+      "published_key": "2026-09-02:01"
     }
   ]
 }
