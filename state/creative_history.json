@@ -1618,6 +1618,34 @@
         ]
       },
       "published_key": "2026-09-02:04"
+    },
+    {
+      "story_id": "20260902091643-05-2b727921",
+      "title_ko": "박물관의 봄철 탑",
+      "hook": "The flooded hall floor rises",
+      "source_ids": [
+        "HCW005",
+        "HCE016",
+        "HCO012",
+        "HCR018",
+        "HCL004",
+        "HCP015",
+        "HCT011",
+        "HCX007",
+        "HCG003",
+        "HCV014"
+      ],
+      "axis_signature": "world:HCW005|event:HCE016|outcome:HCO012|role:HCR018|location:HCL004|prop:HCP015|twist:HCT011|expression:HCX007|gesture:HCG003|visual_hook:HCV014",
+      "creative_fingerprint": {
+        "location_ko": "침수 박물관과 외계 고원 혼합 홀",
+        "core_prop_ko": "붉은 극장식 카운트다운 램프",
+        "twist_ko": "스프링처럼 휘는 랜드마크",
+        "outcome_ko": "새벽 무대가 된 붕괴 세트",
+        "camera_setups": [
+          "28mm waterline wide angle through skyscraper canyon frame, red countdown glow and rising temple floor"
+        ]
+      },
+      "published_key": "2026-09-02:05"
     }
   ]
 }
