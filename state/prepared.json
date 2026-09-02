@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-09-02:02",
+  "prepared_at": "2026-09-02T14:51:23.987207+09:00",
+  "slot": 2,
+  "story_id": "20260902091643-02-8879bcb3",
+  "story": {
+    "title_ko": "달빛 유리벽의 왕관",
+    "hook": "The dinosaur shadow crosses the glass",
+    "caption_explanation_en": "A rescue pilot confronts a dinosaur shadow and follows one moving raindrop to a tiny world that crowns the cat.",
+    "hashtags": [
+      "#LunarDrama",
+      "#CatPilot",
+      "#TinyKingdom"
+    ],
+    "hero_expression_en": "offended open-mouth protest",
+    "hero_body_language_en": "standing tall with forepaws elevated",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW002",
+        "name_en": "Moon landing frontier",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE013",
+        "name_en": "Dinosaur shadow reveal",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO009",
+        "name_en": "the miniature world crowns the cat as its protector",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR015",
+        "name_en": "aviation rescue pilot",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL001",
+        "name_en": "glass skyscraper exterior above traffic",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP012",
+        "name_en": "mirror-polished villain mask",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT008",
+        "name_en": "every raindrop freezes except one",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX004",
+        "name_en": "offended open-mouth protest",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG015",
+        "name_en": "standing tall with forepaws elevated",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV011",
+        "name_en": "frozen debris halo",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "달 착륙장과 유리 초고층 외벽이 겹친 순간 고양이가 공중의 단서를 지휘한다.",
+    "continuity_ko": "달빛과 빗물 반사, 안전한 유리 플랫폼, 고정된 털 무늬를 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "달 착륙장과 유리 외벽의 교차 발코니",
+      "core_prop_ko": "거울 광택 악당 가면",
+      "twist_ko": "한 방울만 움직이는 빗물",
+      "outcome_ko": "미니어처 시민들의 보호자 왕관",
+      "camera_setups": [
+        "35mm high-angle exterior view through glass, frozen debris halo, Earth horizon and tiny crown below"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "High-angle 35mm glass-facade view with the cat centered against a dinosaur shadow and suspended rain.",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is the aviation rescue pilot on a Moon landing frontier, outside a glass skyscraper exterior above traffic during a Dinosaur shadow reveal, standing tall with forepaws elevated and an offended open-mouth protest, batting one glowing raindrop toward a mirror-polished villain mask. Every raindrop freezes except one; the frozen debris halo surrounds the cat, while the miniature world below raises a tiny crown and crowns the cat as its protector. Readable scale, lunar horizon, role silhouette, frozen debris halo, expression, and gesture. Safe glass contact, composited dinosaur shadow, secured platform, no danger. No logos, no readable text, no watermark, no famous artwork, no franchise design, no exact emblem, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate cats or limbs, no human features.\nRequired assigned visual details: the miniature world crowns the cat as its protector."
+      }
+    ],
+    "story_id": "20260902091643-02-8879bcb3",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The dinosaur shadow crosses the glass\nA rescue pilot confronts a dinosaur shadow and follows one moving raindrop to a tiny world that crowns the cat.\n#LunarDrama #CatPilot #TinyKingdom",
+  "media_paths": [
+    "public/posts/2026-09-02/slot_02/20260902091643-02-8879bcb3/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-09-02/slot_02/20260902091643-02-8879bcb3"
+}
