@@ -1562,6 +1562,34 @@
         ]
       },
       "published_key": "2026-09-02:02"
+    },
+    {
+      "story_id": "20260902091643-03-db02a914",
+      "title_ko": "화성 일출 금고",
+      "hook": "The skyship turns into lightning",
+      "source_ids": [
+        "HCW003",
+        "HCE014",
+        "HCO010",
+        "HCR016",
+        "HCL002",
+        "HCP013",
+        "HCT009",
+        "HCX005",
+        "HCG001",
+        "HCV012"
+      ],
+      "axis_signature": "world:HCW003|event:HCE014|outcome:HCO010|role:HCR016|location:HCL002|prop:HCP013|twist:HCT009|expression:HCX005|gesture:HCG001|visual_hook:HCV012",
+      "creative_fingerprint": {
+        "location_ko": "화성 발굴 옥상 금고",
+        "core_prop_ko": "밀봉 응급약 캡슐",
+        "twist_ko": "금고 안의 내일 일출",
+        "outcome_ko": "포획된 위험물을 감싼 닫힌 포털",
+        "camera_setups": [
+          "50mm lens-through-rain close perspective, ancient map light across paws, lightning airship behind"
+        ]
+      },
+      "published_key": "2026-09-02:03"
     }
   ]
 }
