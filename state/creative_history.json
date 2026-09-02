@@ -1590,6 +1590,34 @@
         ]
       },
       "published_key": "2026-09-02:03"
+    },
+    {
+      "story_id": "20260902091643-04-439a5a06",
+      "title_ko": "궤도 도시의 반사범",
+      "hook": "The miniature city comes under attack",
+      "source_ids": [
+        "HCW004",
+        "HCE015",
+        "HCO011",
+        "HCR017",
+        "HCL003",
+        "HCP014",
+        "HCT010",
+        "HCX006",
+        "HCG002",
+        "HCV013"
+      ],
+      "axis_signature": "world:HCW004|event:HCE015|outcome:HCO011|role:HCR017|location:HCL003|prop:HCP014|twist:HCT010|expression:HCX006|gesture:HCG002|visual_hook:HCV013",
+      "creative_fingerprint": {
+        "location_ko": "태양빛 궤도 관측대",
+        "core_prop_ko": "별자리 투사 망원경",
+        "twist_ko": "추적자를 구해야 하는 도둑",
+        "outcome_ko": "반사면에 드러난 진짜 범인",
+        "camera_setups": [
+          "70mm compressed observation-deck angle through telescope glass, whale-sized shadow and miniature city below"
+        ]
+      },
+      "published_key": "2026-09-02:04"
     }
   ]
 }
