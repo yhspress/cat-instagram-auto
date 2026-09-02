@@ -1,0 +1,104 @@
+{
+  "title_ko": "궤도 도시의 반사범",
+  "hook": "The miniature city comes under attack",
+  "caption_explanation_en": "A heist mastermind shields a tiny city, then a telescope reflection reveals that the pursuer is the real culprit.",
+  "hashtags": [
+    "#OrbitalHeist",
+    "#CatDetective",
+    "#TinyCity"
+  ],
+  "hero_expression_en": "tongue-out blep",
+  "hero_body_language_en": "both paws pressed against glass",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW004",
+      "name_en": "Abandoned orbital station",
+      "category_ko": "HIGH_CONCEPT/worlds"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE015",
+      "name_en": "Miniature city defense",
+      "category_ko": "HIGH_CONCEPT/events"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO011",
+      "name_en": "the impossible reflection reveals the true culprit",
+      "category_ko": "HIGH_CONCEPT/outcomes"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR017",
+      "name_en": "cosmic heist mastermind",
+      "category_ko": "HIGH_CONCEPT/roles"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL003",
+      "name_en": "sunlit orbital observation deck",
+      "category_ko": "HIGH_CONCEPT/locations"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP014",
+      "name_en": "constellation-projecting telescope",
+      "category_ko": "HIGH_CONCEPT/props"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT010",
+      "name_en": "the hero must save the pursuer",
+      "category_ko": "HIGH_CONCEPT/twists"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX006",
+      "name_en": "tongue-out blep",
+      "category_ko": "HIGH_CONCEPT/expressions"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG002",
+      "name_en": "both paws pressed against glass",
+      "category_ko": "HIGH_CONCEPT/gestures"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV013",
+      "name_en": "whale-sized shadow",
+      "category_ko": "HIGH_CONCEPT/visual_hooks"
+    }
+  ],
+  "overview_ko": "버려진 궤도 정거장의 작은 도시를 지키던 고양이가 반사된 추적자의 정체를 폭로한다.",
+  "continuity_ko": "깨끗한 궤도 관측대, 투명 유리, 고정된 주인공 외형을 유지한다.",
+  "creative_fingerprint": {
+    "location_ko": "태양빛 궤도 관측대",
+    "core_prop_ko": "별자리 투사 망원경",
+    "twist_ko": "추적자를 구해야 하는 도둑",
+    "outcome_ko": "반사면에 드러난 진짜 범인",
+    "camera_setups": [
+      "70mm compressed observation-deck angle through telescope glass, whale-sized shadow and miniature city below"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "Compressed 70mm telescope view with layered glass reflections and a tiny city beneath the paw.",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is the cosmic heist mastermind on an abandoned orbital station, at a sunlit orbital observation deck during a Miniature city defense, both paws pressed against glass with a tongue-out blep, holding a constellation-projecting telescope against a whale-sized shadow. The hero must save the pursuer, and the impossible reflection reveals the true culprit inside the telescope lens; the miniature city is visibly shielded below. Strong orbital planet scale, telescope star map, shadow hook, expression, and gesture. Safe glass, harness hidden behind set, harmless VFX debris, no injury. No logos, no readable text, no watermark, no famous artwork, no franchise design, no exact emblem, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate cats or limbs, no human features."
+    }
+  ],
+  "story_id": "20260902091643-04-439a5a06",
+  "text_model_used": "gpt-5.6-luna"
+}
