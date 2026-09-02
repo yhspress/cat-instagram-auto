@@ -1534,6 +1534,34 @@
         ]
       },
       "published_key": "2026-09-02:01"
+    },
+    {
+      "story_id": "20260902091643-02-8879bcb3",
+      "title_ko": "달빛 유리벽의 왕관",
+      "hook": "The dinosaur shadow crosses the glass",
+      "source_ids": [
+        "HCW002",
+        "HCE013",
+        "HCO009",
+        "HCR015",
+        "HCL001",
+        "HCP012",
+        "HCT008",
+        "HCX004",
+        "HCG015",
+        "HCV011"
+      ],
+      "axis_signature": "world:HCW002|event:HCE013|outcome:HCO009|role:HCR015|location:HCL001|prop:HCP012|twist:HCT008|expression:HCX004|gesture:HCG015|visual_hook:HCV011",
+      "creative_fingerprint": {
+        "location_ko": "달 착륙장과 유리 외벽의 교차 발코니",
+        "core_prop_ko": "거울 광택 악당 가면",
+        "twist_ko": "한 방울만 움직이는 빗물",
+        "outcome_ko": "미니어처 시민들의 보호자 왕관",
+        "camera_setups": [
+          "35mm high-angle exterior view through glass, frozen debris halo, Earth horizon and tiny crown below"
+        ]
+      },
+      "published_key": "2026-09-02:02"
     }
   ]
 }
