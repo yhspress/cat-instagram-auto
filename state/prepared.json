@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-09-02:03",
+  "prepared_at": "2026-09-02T17:49:34.443516+09:00",
+  "slot": 3,
+  "story_id": "20260902091643-03-db02a914",
+  "story": {
+    "title_ko": "화성 일출 금고",
+    "hook": "The skyship turns into lightning",
+    "caption_explanation_en": "An archivist reaches for a medicine capsule while a stormship spins, revealing that tomorrow’s sunrise is the hidden treasure.",
+    "hashtags": [
+      "#MarsMystery",
+      "#TimeArchivist",
+      "#SunriseVault"
+    ],
+    "hero_expression_en": "huge shocked round eyes",
+    "hero_body_language_en": "both front paws thrust toward lens",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW003",
+        "name_en": "Mars archaeological discovery",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE014",
+        "name_en": "Skyship storm turn",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO010",
+        "name_en": "the portal closes around the captured hazard",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR016",
+        "name_en": "time-travel archivist",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL002",
+        "name_en": "rainy gothic rooftop at midnight",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP013",
+        "name_en": "sealed emergency medicine capsule",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT009",
+        "name_en": "the treasure is tomorrow's sunrise",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX005",
+        "name_en": "huge shocked round eyes",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG001",
+        "name_en": "both front paws thrust toward lens",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV012",
+        "name_en": "ancient map light",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "화성 발굴 유적 위 폭풍 비행선이 뒤집히며 고양이가 미래의 일출을 움켜쥔다.",
+    "continuity_ko": "젖은 고딕 지붕과 붉은 화성 지형, 안전한 포털 합성을 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "화성 발굴 옥상 금고",
+      "core_prop_ko": "밀봉 응급약 캡슐",
+      "twist_ko": "금고 안의 내일 일출",
+      "outcome_ko": "포획된 위험물을 감싼 닫힌 포털",
+      "camera_setups": [
+        "50mm lens-through-rain close perspective, ancient map light across paws, lightning airship behind"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "Rain-streaked 50mm lens-through-glass close view with the paws huge in foreground.",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is the time-travel archivist on a Mars archaeological discovery set, at a rainy gothic rooftop at midnight during a Skyship storm turn, both front paws thrust toward lens with huge shocked round eyes, grabbing a sealed emergency medicine capsule as an ancient map light traces glowing lines across the roof. The treasure is tomorrow's sunrise, visibly glowing inside a portal; the portal closes around the captured hazard as the stormship twists behind the cat. Strong Mars scale, storm silhouette, map light, expression, gesture, and safe compositing. Rain-soaked but protected stage, transparent support, no injury. No logos, no readable text, no watermark, no famous artwork, no franchise design, no exact emblem, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate cats or limbs, no human features."
+      }
+    ],
+    "story_id": "20260902091643-03-db02a914",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The skyship turns into lightning\nAn archivist reaches for a medicine capsule while a stormship spins, revealing that tomorrow’s sunrise is the hidden treasure.\n#MarsMystery #TimeArchivist #SunriseVault",
+  "media_paths": [
+    "public/posts/2026-09-02/slot_03/20260902091643-03-db02a914/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-09-02/slot_03/20260902091643-03-db02a914"
+}
