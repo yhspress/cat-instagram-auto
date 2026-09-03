@@ -1702,6 +1702,34 @@
         ]
       },
       "published_key": "2026-09-03:02"
+    },
+    {
+      "story_id": "20260902091643-08-9af384dc",
+      "title_ko": "구름 정원의 꽃폭발",
+      "hook": "The cable snaps above the clouds",
+      "source_ids": [
+        "HCW008",
+        "HCE019",
+        "HCO015",
+        "HCR001",
+        "HCL007",
+        "HCP003",
+        "HCT014",
+        "HCX010",
+        "HCG006",
+        "HCV002"
+      ],
+      "axis_signature": "world:HCW008|event:HCE019|outcome:HCO015|role:HCR001|location:HCL007|prop:HCP003|twist:HCT014|expression:HCX010|gesture:HCG006|visual_hook:HCV002",
+      "creative_fingerprint": {
+        "location_ko": "극지 얼음 균열 위 구름 정원",
+        "core_prop_ko": "투명 비상 케이블 릴",
+        "twist_ko": "폭발로 변한 꽃잎 폭풍",
+        "outcome_ko": "한 발자국으로 정지한 기계",
+        "camera_setups": [
+          "20mm macro foreground city to wide cloud-garden pullback, flower petals frozen around a low crouch"
+        ]
+      },
+      "published_key": "2026-09-03:03"
     }
   ]
 }
