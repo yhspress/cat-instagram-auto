@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-09-03:02",
+  "prepared_at": "2026-09-03T14:49:41.073578+09:00",
+  "slot": 2,
+  "story_id": "20260902091643-07-6202244b",
+  "story": {
+    "title_ko": "현수교 괴수의 절",
+    "hook": "The desert relic summons a giant",
+    "caption_explanation_en": "A guilty antihero hangs above a miniature city as a relic summons a monster, which unexpectedly bows and becomes an ally.",
+    "hashtags": [
+      "#BridgeMonster",
+      "#CatAntihero",
+      "#RescueCinema"
+    ],
+    "hero_expression_en": "guilty caught-in-the-act expression",
+    "hero_body_language_en": "upside-down hang",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW007",
+        "name_en": "Sunken ancient temple",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE018",
+        "name_en": "Desert relic signal",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO014",
+        "name_en": "the monster bows to the fearless cat",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR020",
+        "name_en": "eccentric comic antihero",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL006",
+        "name_en": "wind-battered suspension bridge tower",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP002",
+        "name_en": "unbranded aerodynamic hero shield",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT013",
+        "name_en": "the crowd is made of distinct supporting cats",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX009",
+        "name_en": "guilty caught-in-the-act expression",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG005",
+        "name_en": "upside-down hang",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV001",
+        "name_en": "colossal landmark scale",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "침수 사원과 현수교 탑 사이에서 매달린 고양이가 서로 다른 고양이 관중 앞에 괴수를 세운다.",
+    "continuity_ko": "다양한 보조 고양이는 최대 두 마리로 제한하고 주인공의 규모와 색을 분명히 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "바람 부는 현수교 탑과 침수 사원 세트",
+      "core_prop_ko": "무문양 공기역학 영웅 방패",
+      "twist_ko": "관중이 서로 다른 고양이들",
+      "outcome_ko": "괴수의 공손한 절과 동맹",
+      "camera_setups": [
+        "16mm inverted crane view beneath bridge tower, shield foreground, submerged temple and colossal silhouette"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "Inverted 16mm crane composition with safe wire-supported upside-down hang and monumental forced perspective.",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is the eccentric comic antihero in a Sunken ancient temple world, hanging upside-down from a wind-battered suspension bridge tower during a Desert relic signal, holding an unbranded aerodynamic hero shield with a guilty caught-in-the-act expression. The crowd is made of distinct supporting cats, two clearly different tuxedo and calico cats below; the relic projects a gigantic landmark-scale monster, which visibly bows to the fearless cat instead of attacking. Strong upside-down gesture, shield, colossal silhouette, temple scale, and readable outcome. Safe harness, miniature city, padded bridge, harmless projection, no strain or injury. No logos, no readable text, no watermark, no famous artwork, no franchise design, no exact emblem, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate cats or limbs, no human features.\nRequired assigned visual details: the monster bows to the fearless cat; upside-down hang; colossal landmark scale."
+      }
+    ],
+    "story_id": "20260902091643-07-6202244b",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The desert relic summons a giant\nA guilty antihero hangs above a miniature city as a relic summons a monster, which unexpectedly bows and becomes an ally.\n#BridgeMonster #CatAntihero #RescueCinema",
+  "media_paths": [
+    "public/posts/2026-09-03/slot_02/20260902091643-07-6202244b/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-09-03/slot_02/20260902091643-07-6202244b"
+}
