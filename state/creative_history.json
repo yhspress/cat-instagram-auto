@@ -1730,6 +1730,34 @@
         ]
       },
       "published_key": "2026-09-03:03"
+    },
+    {
+      "story_id": "20260902091643-09-59daf54b",
+      "title_ko": "네온 부엌의 시간범",
+      "hook": "The statue opens its neon eyes",
+      "source_ids": [
+        "HCW009",
+        "HCE020",
+        "HCO001",
+        "HCR002",
+        "HCL008",
+        "HCP004",
+        "HCT015",
+        "HCX011",
+        "HCG007",
+        "HCV003"
+      ],
+      "axis_signature": "world:HCW009|event:HCE020|outcome:HCO001|role:HCR002|location:HCL008|prop:HCP004|twist:HCT015|expression:HCX011|gesture:HCG007|visual_hook:HCV003",
+      "creative_fingerprint": {
+        "location_ko": "새벽 아파트 부엌과 네온 옥상 겹침",
+        "core_prop_ko": "공중 부유 황동 시간 나침반",
+        "twist_ko": "분홍 코 반사의 범인",
+        "outcome_ko": "환호하는 구조 군중",
+        "camera_setups": [
+          "42mm rotating mid-air Dutch angle, neon statue eyes behind kitchen, brass compass arcs and central silhouette"
+        ]
+      },
+      "published_key": "2026-09-03:04"
     }
   ]
 }
