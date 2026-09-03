@@ -1,0 +1,104 @@
+{
+  "title_ko": "사막 신전의 마지막 버스",
+  "hook": "The tower starts to lean",
+  "caption_explanation_en": "A tech defender recoils as gravity reverses around him, then rescues the apparent villain from a miniature evacuation bus.",
+  "hashtags": [
+    "#TechRescue",
+    "#DesertTemple",
+    "#GravityFlip"
+  ],
+  "hero_expression_en": "chaotic excited open-mouth face",
+  "hero_body_language_en": "sudden backward recoil",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW010",
+      "name_en": "Time-machine laboratory",
+      "category_ko": "HIGH_CONCEPT/worlds"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE001",
+      "name_en": "Leaning tower rescue",
+      "category_ko": "HIGH_CONCEPT/events"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO002",
+      "name_en": "the apparent villain becomes the rescue target",
+      "category_ko": "HIGH_CONCEPT/outcomes"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR003",
+      "name_en": "armored billionaire-tech defender hero",
+      "category_ko": "HIGH_CONCEPT/roles"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL009",
+      "name_en": "ancient desert temple threshold",
+      "category_ko": "HIGH_CONCEPT/locations"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP005",
+      "name_en": "miniature evacuation bus",
+      "category_ko": "HIGH_CONCEPT/props"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT001",
+      "name_en": "gravity reverses only around the protagonist",
+      "category_ko": "HIGH_CONCEPT/twists"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX012",
+      "name_en": "chaotic excited open-mouth face",
+      "category_ko": "HIGH_CONCEPT/expressions"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG008",
+      "name_en": "sudden backward recoil",
+      "category_ko": "HIGH_CONCEPT/gestures"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV004",
+      "name_en": "near-touching paw homage",
+      "category_ko": "HIGH_CONCEPT/visual_hooks"
+    }
+  ],
+  "overview_ko": "시간 실험실과 사막 신전이 충돌한 문턱에서 고양이가 떠오르는 버스를 구한다.",
+  "continuity_ko": "밝고 분리된 기술 슈트 색상, 안전한 반중력 VFX와 원본 구조를 유지한다.",
+  "creative_fingerprint": {
+    "location_ko": "고대 사막 신전과 황동 시간실험실 문턱",
+    "core_prop_ko": "미니어처 대피 버스",
+    "twist_ko": "주인공 주변만 역전된 중력",
+    "outcome_ko": "악당으로 보인 인물의 구조",
+    "camera_setups": [
+      "26mm chest-height diagonal view through dust rays, levitating bus, bending tower and near-touching paw composition"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "Chest-height 26mm diagonal angle with floating debris and a near-contact foreground paw.",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is the armored billionaire-tech defender hero in a Time-machine laboratory world, at an ancient desert temple threshold during a Leaning tower rescue, making a sudden backward recoil with a chaotic excited open-mouth face while reaching toward a miniature evacuation bus. Gravity reverses only around the protagonist, lifting dust and the bus while the tower leans; the apparent villain becomes the rescue target, visibly trapped safely inside the bus. Bright, clearly separated suit colors, original high-tech flight armor, near-touching paw homage, temple silhouette, scale, expression and gesture. No exact costume copy. Safe padded miniature, transparent support, harmless VFX, no fire or injury. No logos, no readable text, no watermark, no famous artwork, no franchise design, no exact emblem, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate cats or limbs, no human features.\nRequired assigned visual details: no official logo, no exact emblem, no exact costume copy."
+    }
+  ],
+  "story_id": "20260902091643-10-ea846ec4",
+  "text_model_used": "gpt-5.6-luna"
+}
