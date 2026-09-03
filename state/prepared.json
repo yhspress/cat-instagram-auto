@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-09-03:03",
+  "prepared_at": "2026-09-03T17:58:52.422175+09:00",
+  "slot": 3,
+  "story_id": "20260902091643-08-9af384dc",
+  "story": {
+    "title_ko": "구름 정원의 꽃폭발",
+    "hook": "The cable snaps above the clouds",
+    "caption_explanation_en": "A wall-crawling hero crosses a cable through a flower explosion, while one tiny pawprint shuts down the oversized machine.",
+    "hashtags": [
+      "#CloudGarden",
+      "#WallCrawlerCat",
+      "#FlowerBlast"
+    ],
+    "hero_expression_en": "intense suspicious side-eye",
+    "hero_body_language_en": "heroic low crouch",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW008",
+        "name_en": "Polar ice expedition",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE019",
+        "name_en": "Rooftop cable rescue",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO015",
+        "name_en": "one tiny pawprint stops the machine",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR001",
+        "name_en": "red-blue agile wall-crawling urban acrobat hero",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL007",
+        "name_en": "flower-filled cloud garden",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP003",
+        "name_en": "transparent emergency cable spool",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT014",
+        "name_en": "the explosion becomes a storm of flowers",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX010",
+        "name_en": "intense suspicious side-eye",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG006",
+        "name_en": "heroic low crouch",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV002",
+        "name_en": "miniature city foreground",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "극지 원정 장치가 구름 정원에서 폭발하지만 고양이의 한 발자국이 모든 것을 멈춘다.",
+    "continuity_ko": "빨강과 파랑의 분리된 슈퍼히어로 색상, 안전 케이블, 꽃잎 VFX를 유지한다.",
+    "creative_fingerprint": {
+      "location_ko": "극지 얼음 균열 위 구름 정원",
+      "core_prop_ko": "투명 비상 케이블 릴",
+      "twist_ko": "폭발로 변한 꽃잎 폭풍",
+      "outcome_ko": "한 발자국으로 정지한 기계",
+      "camera_setups": [
+        "20mm macro foreground city to wide cloud-garden pullback, flower petals frozen around a low crouch"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "Macro-to-wide 20mm forced perspective from the miniature city foreground toward the cable rescue.",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, one decisive action: an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The cat is the red-blue agile wall-crawling urban acrobat hero in a Polar ice expedition world, crossing a transparent emergency cable spool above a flower-filled cloud garden during a Rooftop cable rescue. The cat lands in a heroic low crouch with an intense suspicious side-eye; the explosion becomes a storm of flowers, and one tiny pawprint stops the machine beside a miniature city foreground. Bright, clearly separated suit colors, wall-crawling action grammar, huge cloud scale, cable, flower VFX, expression and gesture. No official logo. Safe transparent support cable, miniature set, harmless petals, no injury. No readable text, no watermark, no famous artwork, no franchise design, no exact emblem, no cartoon, no illustration, no 3D render, no plastic fur, no duplicate cats or limbs, no human features.\nRequired assigned visual details: skyscraper; no official logo, no exact emblem, no exact costume copy."
+      }
+    ],
+    "story_id": "20260902091643-08-9af384dc",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The cable snaps above the clouds\nA wall-crawling hero crosses a cable through a flower explosion, while one tiny pawprint shuts down the oversized machine.\n#CloudGarden #WallCrawlerCat #FlowerBlast",
+  "media_paths": [
+    "public/posts/2026-09-03/slot_03/20260902091643-08-9af384dc/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-09-03/slot_03/20260902091643-08-9af384dc"
+}
