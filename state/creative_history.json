@@ -1758,6 +1758,34 @@
         ]
       },
       "published_key": "2026-09-03:04"
+    },
+    {
+      "story_id": "20260902091643-10-ea846ec4",
+      "title_ko": "사막 신전의 마지막 버스",
+      "hook": "The tower starts to lean",
+      "source_ids": [
+        "HCW010",
+        "HCE001",
+        "HCO002",
+        "HCR003",
+        "HCL009",
+        "HCP005",
+        "HCT001",
+        "HCX012",
+        "HCG008",
+        "HCV004"
+      ],
+      "axis_signature": "world:HCW010|event:HCE001|outcome:HCO002|role:HCR003|location:HCL009|prop:HCP005|twist:HCT001|expression:HCX012|gesture:HCG008|visual_hook:HCV004",
+      "creative_fingerprint": {
+        "location_ko": "고대 사막 신전과 황동 시간실험실 문턱",
+        "core_prop_ko": "미니어처 대피 버스",
+        "twist_ko": "주인공 주변만 역전된 중력",
+        "outcome_ko": "악당으로 보인 인물의 구조",
+        "camera_setups": [
+          "26mm chest-height diagonal view through dust rays, levitating bus, bending tower and near-touching paw composition"
+        ]
+      },
+      "published_key": "2026-09-03:05"
     }
   ]
 }
