@@ -1674,6 +1674,34 @@
         ]
       },
       "published_key": "2026-09-03:01"
+    },
+    {
+      "story_id": "20260902091643-07-6202244b",
+      "title_ko": "현수교 괴수의 절",
+      "hook": "The desert relic summons a giant",
+      "source_ids": [
+        "HCW007",
+        "HCE018",
+        "HCO014",
+        "HCR020",
+        "HCL006",
+        "HCP002",
+        "HCT013",
+        "HCX009",
+        "HCG005",
+        "HCV001"
+      ],
+      "axis_signature": "world:HCW007|event:HCE018|outcome:HCO014|role:HCR020|location:HCL006|prop:HCP002|twist:HCT013|expression:HCX009|gesture:HCG005|visual_hook:HCV001",
+      "creative_fingerprint": {
+        "location_ko": "바람 부는 현수교 탑과 침수 사원 세트",
+        "core_prop_ko": "무문양 공기역학 영웅 방패",
+        "twist_ko": "관중이 서로 다른 고양이들",
+        "outcome_ko": "괴수의 공손한 절과 동맹",
+        "camera_setups": [
+          "16mm inverted crane view beneath bridge tower, shield foreground, submerged temple and colossal silhouette"
+        ]
+      },
+      "published_key": "2026-09-03:02"
     }
   ]
 }
