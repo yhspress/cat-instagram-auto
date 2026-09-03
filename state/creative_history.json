@@ -1646,6 +1646,34 @@
         ]
       },
       "published_key": "2026-09-02:05"
+    },
+    {
+      "story_id": "20260902091643-06-01b10bca",
+      "title_ko": "심해 시계의 약품",
+      "hook": "The books reverse their fall",
+      "source_ids": [
+        "HCW006",
+        "HCE017",
+        "HCO013",
+        "HCR019",
+        "HCL005",
+        "HCP001",
+        "HCT012",
+        "HCX008",
+        "HCG004",
+        "HCV015"
+      ],
+      "axis_signature": "world:HCW006|event:HCE017|outcome:HCO013|role:HCR019|location:HCL005|prop:HCP001|twist:HCT012|expression:HCX008|gesture:HCG004|visual_hook:HCV015",
+      "creative_fingerprint": {
+        "location_ko": "생물발광 해구 관측 돔",
+        "core_prop_ko": "금이 간 발광 구조 신호기",
+        "twist_ko": "흰 발 하나 크기의 포털",
+        "outcome_ko": "추적받던 영웅의 약품 전달",
+        "camera_setups": [
+          "32mm split-diopter wall-level view, blue cave glow, reversed giant books and paw-sized portal"
+        ]
+      },
+      "published_key": "2026-09-03:01"
     }
   ]
 }
