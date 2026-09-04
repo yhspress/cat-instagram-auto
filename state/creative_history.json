@@ -1814,6 +1814,34 @@
         ]
       },
       "published_key": "2026-09-04:01"
+    },
+    {
+      "story_id": "20260904090840-02-b1e2f97d",
+      "title_ko": "폭풍 신전의 한 발",
+      "hook": "The tidal wall reaches the shrine",
+      "source_ids": [
+        "HCW012",
+        "HCE003",
+        "HCO004",
+        "HCR005",
+        "HCL011",
+        "HCP007",
+        "HCT003",
+        "HCX014",
+        "HCG010",
+        "HCV006"
+      ],
+      "axis_signature": "world:HCW012|event:HCE003|outcome:HCO004|role:HCR005|location:HCL011|prop:HCP007|twist:HCT003|expression:HCX014|gesture:HCG010|visual_hook:HCV006",
+      "creative_fingerprint": {
+        "location_ko": "번개 산악 신전과 고대 발굴실",
+        "core_prop_ko": "층이 분리된 거대 금 간 수족관 창",
+        "twist_ko": "살아 움직이는 탁상 도시",
+        "outcome_ko": "신전 랜드마크가 제자리에서 잠김",
+        "camera_setups": [
+          "24mm upward waterline angle through aquarium glass, frozen speed streaks around the foreground paw"
+        ]
+      },
+      "published_key": "2026-09-04:02"
     }
   ]
 }
