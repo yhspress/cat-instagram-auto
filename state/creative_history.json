@@ -1786,6 +1786,34 @@
         ]
       },
       "published_key": "2026-09-03:05"
+    },
+    {
+      "story_id": "20260904090840-01-d76496b7",
+      "title_ko": "벽화 열차의 천둥",
+      "hook": "The runaway train breaks free",
+      "source_ids": [
+        "HCW011",
+        "HCE002",
+        "HCO003",
+        "HCR004",
+        "HCL010",
+        "HCP006",
+        "HCT002",
+        "HCX013",
+        "HCG009",
+        "HCV005"
+      ],
+      "axis_signature": "world:HCW011|event:HCE002|outcome:HCO003|role:HCR004|location:HCL010|prop:HCP006|twist:HCT002|expression:HCX013|gesture:HCG009|visual_hook:HCV005",
+      "creative_fingerprint": {
+        "location_ko": "르네상스 벽화 갤러리와 네온 정비터널이 겹친 세트",
+        "core_prop_ko": "무문양 발광 포털 링",
+        "twist_ko": "한 박자 먼저 움직이는 그림자",
+        "outcome_ko": "괴수가 무해한 빛 투사로 축소됨",
+        "camera_setups": [
+          "18mm rail-level frontal perspective with wet tunnel reflections and a portal ring framing the cat"
+        ]
+      },
+      "published_key": "2026-09-04:01"
     }
   ]
 }
