@@ -1870,6 +1870,34 @@
         ]
       },
       "published_key": "2026-09-04:03"
+    },
+    {
+      "story_id": "20260904090840-04-73991d3f",
+      "title_ko": "구름성의 돌 열쇠",
+      "hook": "The vault horizon bursts open",
+      "source_ids": [
+        "HCW014",
+        "HCE005",
+        "HCO006",
+        "HCR007",
+        "HCL013",
+        "HCP009",
+        "HCT005",
+        "HCX001",
+        "HCG012",
+        "HCV008"
+      ],
+      "axis_signature": "world:HCW014|event:HCE005|outcome:HCO006|role:HCR007|location:HCL013|prop:HCP009|twist:HCT005|expression:HCX001|gesture:HCG012|visual_hook:HCV008",
+      "creative_fingerprint": {
+        "location_ko": "구름 위 중세 성과 스튜디오 후면 재난 세트",
+        "core_prop_ko": "한쪽 흰 발에 맞는 고대 돌 열쇠",
+        "twist_ko": "악당 행세를 한 턱시도 이중첩자",
+        "outcome_ko": "발 아래 안전 탈출로가 열림",
+        "camera_setups": [
+          "14mm extreme low-angle from a supported low ledge, looking toward the vault horizon and key"
+        ]
+      },
+      "published_key": "2026-09-04:04"
     }
   ]
 }
