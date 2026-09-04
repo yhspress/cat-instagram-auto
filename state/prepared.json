@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-09-04:02",
+  "prepared_at": "2026-09-04T14:55:36.414661+09:00",
+  "slot": 2,
+  "story_id": "20260904090840-02-b1e2f97d",
+  "story": {
+    "title_ko": "폭풍 신전의 한 발",
+    "hook": "The tidal wall reaches the shrine",
+    "caption_explanation_en": "A speedster shields a tiny city from a theatrical tidal wall before the broken shrine clicks safely back together.",
+    "hashtags": [
+      "#FelineSpeedster",
+      "#StormShrine",
+      "#SafeVFX"
+    ],
+    "hero_expression_en": "dramatically annoyed face",
+    "hero_body_language_en": "one paw dramatically raised",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW012",
+        "name_en": "Ancient Egyptian discovery",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE003",
+        "name_en": "Tidal wave shield",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO004",
+        "name_en": "the broken landmark locks safely back into place",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR005",
+        "name_en": "speedster in aerodynamic bodysuit",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL011",
+        "name_en": "storm-lit shattered mountain shrine",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP007",
+        "name_en": "giant cracked aquarium window",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT003",
+        "name_en": "the enormous city is a living tabletop model",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX014",
+        "name_en": "dramatically annoyed face",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG010",
+        "name_en": "one paw dramatically raised",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV006",
+        "name_en": "towering storm wall",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "고대 신전의 거대한 물벽 앞에서 초고속 영웅이 도시를 지키고 랜드마크를 복원한다.",
+    "continuity_ko": "동일한 성묘 고양이 외형, 실사 털, 안전한 물벽과 미니어처 규모를 고정한다.",
+    "creative_fingerprint": {
+      "location_ko": "번개 산악 신전과 고대 발굴실",
+      "core_prop_ko": "층이 분리된 거대 금 간 수족관 창",
+      "twist_ko": "살아 움직이는 탁상 도시",
+      "outcome_ko": "신전 랜드마크가 제자리에서 잠김",
+      "camera_setups": [
+        "24mm upward waterline angle through aquarium glass, frozen speed streaks around the foreground paw"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "24mm upward waterline wide shot with diagonal storm composition",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. World: Ancient Egyptian discovery, location: storm-lit shattered mountain shrine. Event: Tidal wave shield, the cat executes one decisive action with one paw dramatically raised, projecting a safe aerodynamic energy shield across a tiny city behind a giant cracked aquarium window as a theatrical water wall towers toward it. Role: speedster in aerodynamic bodysuit, with bright, clearly separated suit colors, streaking motion trails, and no exact costume copy. Expression: dramatically annoyed face. Gesture: one paw dramatically raised. Twist: the enormous city is a living tabletop model, visibly revealed by miniature streets and tiny practical lamps at the base of the wave. Visual hook: towering storm wall. Outcome: the broken landmark locks safely back into place, visibly clicking into a restored shrine silhouette after the water effect parts. Strong scale, storm silhouette, role, prop, expression, gesture, and safe VFX cues. Correct feline anatomy, white paws, realistic water reflections, secure hidden supports, no danger or suffering; no cartoon, illustration, 3D render, plastic fur, malformed anatomy, duplicate cats, duplicate limbs, human features, logos, text, watermark, UI, captions, famous artwork, franchise design, actor likeness, readable title.\nRequired assigned visual details: motion streak; no official logo, no exact emblem, no exact costume copy."
+      }
+    ],
+    "story_id": "20260904090840-02-b1e2f97d",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The tidal wall reaches the shrine\nA speedster shields a tiny city from a theatrical tidal wall before the broken shrine clicks safely back together.\n#FelineSpeedster #StormShrine #SafeVFX",
+  "media_paths": [
+    "public/posts/2026-09-04/slot_02/20260904090840-02-b1e2f97d/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-09-04/slot_02/20260904090840-02-b1e2f97d"
+}
