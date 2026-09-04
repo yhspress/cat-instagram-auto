@@ -1842,6 +1842,34 @@
         ]
       },
       "published_key": "2026-09-04:02"
+    },
+    {
+      "story_id": "20260904090840-03-1aa4acb1",
+      "title_ko": "경기장의 거울 구조",
+      "hook": "The telescope wakes above the arena",
+      "source_ids": [
+        "HCW013",
+        "HCE004",
+        "HCO005",
+        "HCR006",
+        "HCL012",
+        "HCP008",
+        "HCT004",
+        "HCX015",
+        "HCG011",
+        "HCV007"
+      ],
+      "axis_signature": "world:HCW013|event:HCE004|outcome:HCO005|role:HCR006|location:HCL012|prop:HCP008|twist:HCT004|expression:HCX015|gesture:HCG011|visual_hook:HCV007",
+      "creative_fingerprint": {
+        "location_ko": "구름 위 로마 경기장과 축소 해안 광장",
+        "core_prop_ko": "문자 없는 바람맞는 구조 깃발",
+        "twist_ko": "거울 안에 갇힌 구조 대상",
+        "outcome_ko": "도난 유물이 영웅에게 빛을 입힘",
+        "camera_setups": [
+          "35mm over-the-shoulder circular arena view with the portal centered behind the cat"
+        ]
+      },
+      "published_key": "2026-09-04:03"
     }
   ]
 }
