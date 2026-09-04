@@ -1,0 +1,104 @@
+{
+  "title_ko": "해적 도서관의 균열",
+  "hook": "The portal tears behind the ship",
+  "caption_explanation_en": "A mythic warrior confronts a portal rupture in a moonlit library, while a rival cat completes the rescue at the last second.",
+  "hashtags": [
+    "#PortalStorm",
+    "#WarriorCat",
+    "#LibraryQuest"
+  ],
+  "hero_expression_en": "dramatic hiss with visible tiny fangs",
+  "hero_body_language_en": "dramatic exhausted flop",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW015",
+      "name_en": "Pirate flagship at dusk",
+      "category_ko": "HIGH_CONCEPT/worlds"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE006",
+      "name_en": "Cosmic portal rupture",
+      "category_ko": "HIGH_CONCEPT/events"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO007",
+      "name_en": "the rival cat delivers the missing final piece",
+      "category_ko": "HIGH_CONCEPT/outcomes"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR008",
+      "name_en": "Amazonian warrior protector hero",
+      "category_ko": "HIGH_CONCEPT/roles"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL014",
+      "name_en": "moonlit castle library",
+      "category_ko": "HIGH_CONCEPT/locations"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP010",
+      "name_en": "sparking miniature power core",
+      "category_ko": "HIGH_CONCEPT/props"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT006",
+      "name_en": "the feared monster is protecting its young",
+      "category_ko": "HIGH_CONCEPT/twists"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX002",
+      "name_en": "dramatic hiss with visible tiny fangs",
+      "category_ko": "HIGH_CONCEPT/expressions"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG013",
+      "name_en": "dramatic exhausted flop",
+      "category_ko": "HIGH_CONCEPT/gestures"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV009",
+      "name_en": "safe wire silhouette",
+      "category_ko": "HIGH_CONCEPT/visual_hooks"
+    }
+  ],
+  "overview_ko": "해질녘 해적선과 달빛 도서관이 충돌한 순간 전사가 포털을 막고 라이벌이 부품을 건넨다.",
+  "continuity_ko": "어두운 실사 톤과 안전 와이어 실루엣, 주인공의 동일한 털과 얼굴을 유지한다.",
+  "creative_fingerprint": {
+    "location_ko": "달빛 성 도서관과 폭풍 해적선 갑판",
+    "core_prop_ko": "불꽃 튀는 미니 동력 코어",
+    "twist_ko": "새끼를 감싼 거대 그림자 괴수",
+    "outcome_ko": "라이벌 고양이가 마지막 부품을 전달",
+    "camera_setups": [
+      "50mm floor-level library view through moonlit shelves with a safe wire silhouette crossing the portal"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "50mm floor-level compressed library shot with layered portal depth",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. World: Pirate flagship at dusk, location: moonlit castle library. Event: Cosmic portal rupture, the Amazonian warrior protector hero performs one decisive action, dramatically exhausted flop beside a sparking miniature power core as a safe circular dimensional rupture tears behind the shelves. Role: Amazonian warrior protector hero, rain-soaked, dark, weighty cinematic tone, original mythic armor language, no exact costume copy. Expression: dramatic hiss with visible tiny fangs. Gesture: dramatic exhausted flop. Twist: the feared monster is protecting its young, shown as a huge harmless wire silhouette curled around a small glowing nest beyond the portal. Visual hook: safe wire silhouette. Outcome: the rival cat delivers the missing final piece, a distinct cream cat extending the final core component into the hero's paw as the portal stabilizes. Strong portal, scale, silhouette, expression, gesture, and prop cues; safe VFX, padded floor, no injury, correct paws and whiskers. No cartoon, illustration, 3D render, plastic fur, malformed anatomy, duplicate limbs, human features, logos, text, watermark, UI, captions, famous artwork, franchise design, actor likeness, readable title.\nRequired assigned visual details: battlefield rescue; no official logo, no exact emblem, no exact costume copy."
+    }
+  ],
+  "story_id": "20260904090840-05-d3225da4",
+  "text_model_used": "gpt-5.6-luna"
+}
