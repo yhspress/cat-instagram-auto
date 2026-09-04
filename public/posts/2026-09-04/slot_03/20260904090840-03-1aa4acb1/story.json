@@ -1,0 +1,104 @@
+{
+  "title_ko": "경기장의 거울 구조",
+  "hook": "The telescope wakes above the arena",
+  "caption_explanation_en": "A mystical protector activates a colossal telescope, then finds the trapped rescue target inside the reflection.",
+  "hashtags": [
+    "#PortalGuardian",
+    "#ArenaMystery",
+    "#CatHero"
+  ],
+  "hero_expression_en": "astonished silent gasp",
+  "hero_body_language_en": "hugging a giant prop",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW013",
+      "name_en": "Roman arena spectacle",
+      "category_ko": "HIGH_CONCEPT/worlds"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE004",
+      "name_en": "Giant telescope activation",
+      "category_ko": "HIGH_CONCEPT/events"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO005",
+      "name_en": "the stolen artifact chooses the hero",
+      "category_ko": "HIGH_CONCEPT/outcomes"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR006",
+      "name_en": "mystical sorcerer protector with cloak and glowing power accents",
+      "category_ko": "HIGH_CONCEPT/roles"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL012",
+      "name_en": "miniature coastal town square",
+      "category_ko": "HIGH_CONCEPT/locations"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP008",
+      "name_en": "wind-whipped blank rescue banner",
+      "category_ko": "HIGH_CONCEPT/props"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT004",
+      "name_en": "the rescue target is inside the reflection",
+      "category_ko": "HIGH_CONCEPT/twists"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX015",
+      "name_en": "astonished silent gasp",
+      "category_ko": "HIGH_CONCEPT/expressions"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG011",
+      "name_en": "hugging a giant prop",
+      "category_ko": "HIGH_CONCEPT/gestures"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV007",
+      "name_en": "portal behind the hero",
+      "category_ko": "HIGH_CONCEPT/visual_hooks"
+    }
+  ],
+  "overview_ko": "거대한 로마 경기장 망원경이 열리자 고양이는 반사면 속 구조 대상을 발견한다.",
+  "continuity_ko": "주인공의 고정 외형과 투명 반사 경계, 해안 마을 미니어처를 유지한다.",
+  "creative_fingerprint": {
+    "location_ko": "구름 위 로마 경기장과 축소 해안 광장",
+    "core_prop_ko": "문자 없는 바람맞는 구조 깃발",
+    "twist_ko": "거울 안에 갇힌 구조 대상",
+    "outcome_ko": "도난 유물이 영웅에게 빛을 입힘",
+    "camera_setups": [
+      "35mm over-the-shoulder circular arena view with the portal centered behind the cat"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "35mm over-the-shoulder perspective with deep miniature foreground and glowing back portal",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. World: Roman arena spectacle, location: miniature coastal town square. Event: Giant telescope activation, the mystical sorcerer protector with cloak and glowing power accents performs one decisive action, hugging a giant prop, the wind-whipped blank rescue banner beside a colossal telescope opening a geometric star aperture. The expression is astonished silent gasp; the gesture is hugging a giant prop. Twist: the rescue target is inside the reflection, visibly seen as a tiny trapped figure in the telescope's physically explained mirror boundary. Visual hook: portal behind the hero. Outcome: the stolen artifact chooses the hero, wrapping the cat in warm gold light after the reflection opens. Role: mystical sorcerer protector with cloak and glowing power accents, bright, clearly separated suit colors, no exact emblem. Strong arena silhouette, miniature scale, portal, prop, face, and gesture; safe transparent support and compositing, correct paws and reflections. No cartoon, illustration, 3D render, plastic fur, malformed anatomy, duplicate cats, duplicate limbs, human features, logos, text, watermark, UI, captions, famous artwork, franchise design, actor likeness, readable title.\nRequired assigned visual details: no official logo, no exact emblem, no exact costume copy."
+    }
+  ],
+  "story_id": "20260904090840-03-1aa4acb1",
+  "text_model_used": "gpt-5.6-luna"
+}
