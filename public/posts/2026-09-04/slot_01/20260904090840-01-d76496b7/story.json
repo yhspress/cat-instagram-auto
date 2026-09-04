@@ -1,0 +1,104 @@
+{
+  "title_ko": "벽화 열차의 천둥",
+  "hook": "The runaway train breaks free",
+  "caption_explanation_en": "A thunder-god cosmic warrior intercepts a runaway train, only to expose the monster as harmless projected theater.",
+  "hashtags": [
+    "#CatCinema",
+    "#MiniatureMayhem",
+    "#PortalRescue"
+  ],
+  "hero_expression_en": "tiny roar",
+  "hero_body_language_en": "wide-legged defensive stance",
+  "source_concepts": [
+    {
+      "role": "world",
+      "role_ko": "세계",
+      "id": "HCW011",
+      "name_en": "Renaissance museum portal",
+      "category_ko": "HIGH_CONCEPT/worlds"
+    },
+    {
+      "role": "event",
+      "role_ko": "사건",
+      "id": "HCE002",
+      "name_en": "Runaway train interception",
+      "category_ko": "HIGH_CONCEPT/events"
+    },
+    {
+      "role": "outcome",
+      "role_ko": "결말",
+      "id": "HCO003",
+      "name_en": "the giant threat is revealed as a harmless projection",
+      "category_ko": "HIGH_CONCEPT/outcomes"
+    },
+    {
+      "role": "role",
+      "role_ko": "역할",
+      "id": "HCR004",
+      "name_en": "thunder-god cosmic warrior hero",
+      "category_ko": "HIGH_CONCEPT/roles"
+    },
+    {
+      "role": "location",
+      "role_ko": "장소",
+      "id": "HCL010",
+      "name_en": "neon subway service tunnel",
+      "category_ko": "HIGH_CONCEPT/locations"
+    },
+    {
+      "role": "prop",
+      "role_ko": "소품",
+      "id": "HCP006",
+      "name_en": "luminous geometric portal ring",
+      "category_ko": "HIGH_CONCEPT/props"
+    },
+    {
+      "role": "twist",
+      "role_ko": "반전",
+      "id": "HCT002",
+      "name_en": "the shadow acts one second ahead",
+      "category_ko": "HIGH_CONCEPT/twists"
+    },
+    {
+      "role": "expression",
+      "role_ko": "표정",
+      "id": "HCX013",
+      "name_en": "tiny roar",
+      "category_ko": "HIGH_CONCEPT/expressions"
+    },
+    {
+      "role": "gesture",
+      "role_ko": "몸짓",
+      "id": "HCG009",
+      "name_en": "wide-legged defensive stance",
+      "category_ko": "HIGH_CONCEPT/gestures"
+    },
+    {
+      "role": "visual_hook",
+      "role_ko": "시각 훅",
+      "id": "HCV005",
+      "name_en": "impossible reflection",
+      "category_ko": "HIGH_CONCEPT/visual_hooks"
+    }
+  ],
+  "overview_ko": "벽화 속 지하철 터널에서 천둥 전사가 폭주 열차를 막고 거대한 괴수의 정체를 폭로한다.",
+  "continuity_ko": "주인공의 고정된 치즈 태비 외형과 안전한 미니어처 촬영 질감을 유지한다.",
+  "creative_fingerprint": {
+    "location_ko": "르네상스 벽화 갤러리와 네온 정비터널이 겹친 세트",
+    "core_prop_ko": "무문양 발광 포털 링",
+    "twist_ko": "한 박자 먼저 움직이는 그림자",
+    "outcome_ko": "괴수가 무해한 빛 투사로 축소됨",
+    "camera_setups": [
+      "18mm rail-level frontal perspective with wet tunnel reflections and a portal ring framing the cat"
+    ]
+  },
+  "images": [
+    {
+      "role": "HERO",
+      "camera_strategy": "18mm low rail-level forced-perspective shot, centered vanishing lines",
+      "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable blockbuster poster. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. The world is Renaissance museum portal, the event is Runaway train interception: the cat performs one decisive action, bracing against a runaway miniature train rolling through a neon subway service tunnel while gripping a luminous geometric portal ring. The role is thunder-god cosmic warrior hero, wearing an original bright, clearly separated suit colors lightning-rescue costume with no official logo and safe controlled lightning VFX. The location is neon subway service tunnel, with a fresco-like museum gallery visible through the portal. The twist is the shadow acts one second ahead: the cat's projected shadow blocks the train before the real cat moves. The visual hook is impossible reflection, showing a gigantic roaring shadow and a tiny practical train in the wet floor. The outcome, visibly different from the incident, is the giant threat is revealed as a harmless projection, collapsing into playful stage light behind the train. The expression is tiny roar; the gesture is wide-legged defensive stance, exaggerated but feline-realistic. Strong scale contrast, iconic tunnel silhouette, assigned role, luminous ring, intense face, and safe compositing are all clearly readable. Real paws, whiskers, anatomy, reflections, traction, and shadows; theatrical miniature train on hidden rails, no impact or injury. no cartoon, illustration, 3D render, plastic fur, malformed anatomy, duplicate cats, duplicate limbs, human features, logos, text, watermark, UI, caption, famous artwork, franchise design, actor likeness, readable title.\nRequired assigned visual details: lightning storm; no official logo, no exact emblem, no exact costume copy."
+    }
+  ],
+  "story_id": "20260904090840-01-d76496b7",
+  "text_model_used": "gpt-5.6-luna"
+}
