@@ -1,1 +1,115 @@
-{}
+{
+  "publication_key": "2026-09-05:01",
+  "prepared_at": "2026-09-05T09:07:24.937061+09:00",
+  "slot": 1,
+  "story_id": "20260904090840-06-a68677a8",
+  "story": {
+    "title_ko": "우주벽의 수염",
+    "hook": "The bridge support gives way",
+    "caption_explanation_en": "A giant-scale city protector braces a collapsing miniature bridge until a wall opens onto outer space and freezes the disaster.",
+    "hashtags": [
+      "#NoirCat",
+      "#SpaceWall",
+      "#RescueMoment"
+    ],
+    "hero_expression_en": "furious internet-meme glare",
+    "hero_body_language_en": "body stretched toward camera",
+    "source_concepts": [
+      {
+        "role": "world",
+        "role_ko": "세계",
+        "id": "HCW016",
+        "name_en": "Noir detective city",
+        "category_ko": "HIGH_CONCEPT/worlds"
+      },
+      {
+        "role": "event",
+        "role_ko": "사건",
+        "id": "HCE007",
+        "name_en": "Bridge support rescue",
+        "category_ko": "HIGH_CONCEPT/events"
+      },
+      {
+        "role": "outcome",
+        "role_ko": "결말",
+        "id": "HCO008",
+        "name_en": "the entire disaster freezes one whisker from impact",
+        "category_ko": "HIGH_CONCEPT/outcomes"
+      },
+      {
+        "role": "role",
+        "role_ko": "역할",
+        "id": "HCR009",
+        "name_en": "giant-scale city protector",
+        "category_ko": "HIGH_CONCEPT/roles"
+      },
+      {
+        "role": "location",
+        "role_ko": "장소",
+        "id": "HCL015",
+        "name_en": "high-speed elevated rail platform",
+        "category_ko": "HIGH_CONCEPT/locations"
+      },
+      {
+        "role": "prop",
+        "role_ko": "소품",
+        "id": "HCP011",
+        "name_en": "collapsing stack of giant books",
+        "category_ko": "HIGH_CONCEPT/props"
+      },
+      {
+        "role": "twist",
+        "role_ko": "반전",
+        "id": "HCT007",
+        "name_en": "the ordinary wall opens onto outer space",
+        "category_ko": "HIGH_CONCEPT/twists"
+      },
+      {
+        "role": "expression",
+        "role_ko": "표정",
+        "id": "HCX003",
+        "name_en": "furious internet-meme glare",
+        "category_ko": "HIGH_CONCEPT/expressions"
+      },
+      {
+        "role": "gesture",
+        "role_ko": "몸짓",
+        "id": "HCG014",
+        "name_en": "body stretched toward camera",
+        "category_ko": "HIGH_CONCEPT/gestures"
+      },
+      {
+        "role": "visual_hook",
+        "role_ko": "시각 훅",
+        "id": "HCV010",
+        "name_en": "giant eye in the background",
+        "category_ko": "HIGH_CONCEPT/visual_hooks"
+      }
+    ],
+    "overview_ko": "느와르 철도 승강장에서 거대 수호자가 다리를 붙들고 우주로 열린 벽 앞에서 재난을 멈춘다.",
+    "continuity_ko": "고양이의 얼굴과 네 발 비율을 유지하며 책과 도시의 강제 원근을 강조한다.",
+    "creative_fingerprint": {
+      "location_ko": "비 내리는 느와르 고가철도 승강장",
+      "core_prop_ko": "거대한 폼 북 더미",
+      "twist_ko": "평범한 벽 너머의 외우주",
+      "outcome_ko": "충돌 직전 모든 재난이 정지",
+      "camera_setups": [
+        "27mm track-level push-in with the cat stretched over the lens and suspended books behind"
+      ]
+    },
+    "images": [
+      {
+        "role": "HERO",
+        "camera_strategy": "27mm track-level forward push with extreme foreground forced perspective",
+        "image_prompt": "Ultra-photorealistic live-action photography, vertical 4:5, mobile-thumbnail-readable. A dominant protagonist, an attractive adult Korean Shorthair orange-and-white cheese-tabby cat with a natural, balanced, sturdy build; bright warm cheese-orange short fur with realistic darker orange tabby stripes; large natural upright ears; a broad clean white blaze running from the forehead down between the eyes toward the pink nose; clean white fur around the mouth and muzzle, on the chin, continuing naturally down the entire neck, chest and belly; all four paws and lower feet covered in clean white fur like four neat white boots, with the white fur rising naturally from the toes and clearly visible whenever the paws are shown; a distinctive small congenital orange cheese-tabby fur marking around parts of the mouth area, naturally integrated into the otherwise white muzzle, explicitly a permanent fur pattern and never food, dirt or staining; round amber-brown eyes; pink nose; short dense realistic fur; natural whiskers; slightly rounded cheeks; realistic memorable face. World: Noir detective city, location: high-speed elevated rail platform. Event: Bridge support rescue, the giant-scale city protector performs one decisive action, body stretched toward camera while bracing a controlled miniature bridge against a collapsing stack of giant books. Role: giant-scale city protector, rain-soaked, dark, weighty cinematic tone, original unbranded protective gear, no official logo. Expression: furious internet-meme glare. Gesture: body stretched toward camera. Twist: the ordinary wall opens onto outer space, revealing stars and a blue planet through a safe composited doorway. Visual hook: giant eye in the background, a colossal projected eye watching from space. Outcome: the entire disaster freezes one whisker from impact, books and bridge suspended in a precise near-collision tableau. Strong scale, noir silhouette, prop, expression, gesture, and space-eye cues; practical foam books, hidden supports, correct anatomy, safe staging, wet reflections. No cartoon, illustration, 3D render, plastic fur, malformed anatomy, duplicate cats, duplicate limbs, human features, logos, text, watermark, UI, captions, famous artwork, franchise design, actor likeness, readable title."
+      }
+    ],
+    "story_id": "20260904090840-06-a68677a8",
+    "text_model_used": "gpt-5.6-luna"
+  },
+  "caption": "The bridge support gives way\nA giant-scale city protector braces a collapsing miniature bridge until a wall opens onto outer space and freezes the disaster.\n#NoirCat #SpaceWall #RescueMoment",
+  "media_paths": [
+    "public/posts/2026-09-05/slot_01/20260904090840-06-a68677a8/01_hero.jpg"
+  ],
+  "public_dir": "public/posts/2026-09-05/slot_01/20260904090840-06-a68677a8"
+}
