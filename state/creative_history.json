@@ -1926,6 +1926,34 @@
         ]
       },
       "published_key": "2026-09-04:05"
+    },
+    {
+      "story_id": "20260904090840-06-a68677a8",
+      "title_ko": "우주벽의 수염",
+      "hook": "The bridge support gives way",
+      "source_ids": [
+        "HCW016",
+        "HCE007",
+        "HCO008",
+        "HCR009",
+        "HCL015",
+        "HCP011",
+        "HCT007",
+        "HCX003",
+        "HCG014",
+        "HCV010"
+      ],
+      "axis_signature": "world:HCW016|event:HCE007|outcome:HCO008|role:HCR009|location:HCL015|prop:HCP011|twist:HCT007|expression:HCX003|gesture:HCG014|visual_hook:HCV010",
+      "creative_fingerprint": {
+        "location_ko": "비 내리는 느와르 고가철도 승강장",
+        "core_prop_ko": "거대한 폼 북 더미",
+        "twist_ko": "평범한 벽 너머의 외우주",
+        "outcome_ko": "충돌 직전 모든 재난이 정지",
+        "camera_setups": [
+          "27mm track-level push-in with the cat stretched over the lens and suspended books behind"
+        ]
+      },
+      "published_key": "2026-09-05:01"
     }
   ]
 }
